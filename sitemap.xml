@@ -2,142 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/usage/getting-started/</loc>
+    <loc>https://smcsdocs.zhsit.cn/login/</loc>
+    <lastmod>2021-09-25T01:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/login/t/</loc>
+    <lastmod>2021-09-25T01:06:33+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/login/captcha/</loc>
+    <lastmod>2021-09-25T01:06:33+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/login/login/</loc>
+    <lastmod>2021-09-25T01:06:33+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/usage/getting-started/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/usage/</loc>
+    <loc>https://smcsdocs.zhsit.cn/usage/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/features/</loc>
+    <loc>https://smcsdocs.zhsit.cn/features/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/usage/configuration/</loc>
+    <loc>https://smcsdocs.zhsit.cn/usage/configuration/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://smcsdocs.zhsit.cn/posts/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/posts/initial-release/</loc>
+    <loc>https://smcsdocs.zhsit.cn/posts/initial-release/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/tags/Documentation/</loc>
+    <loc>https://smcsdocs.zhsit.cn/tags/Documentation/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/posts/hello_geekdoc/</loc>
+    <loc>https://smcsdocs.zhsit.cn/posts/hello_geekdoc/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://smcsdocs.zhsit.cn/tags/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/_includes/</loc>
+    <loc>https://smcsdocs.zhsit.cn/_includes/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/_includes/include-page/</loc>
+    <loc>https://smcsdocs.zhsit.cn/_includes/include-page/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/features/code-blocks/</loc>
+    <loc>https://smcsdocs.zhsit.cn/features/code-blocks/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/features/theming/</loc>
+    <loc>https://smcsdocs.zhsit.cn/features/theming/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/usage/menus/</loc>
+    <loc>https://smcsdocs.zhsit.cn/usage/menus/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/buttons/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/buttons/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/columns/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/columns/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/features/dark-mode/</loc>
+    <loc>https://smcsdocs.zhsit.cn/features/dark-mode/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/expand/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/expand/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/hints/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/hints/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/features/icon-sets/</loc>
+    <loc>https://smcsdocs.zhsit.cn/features/icon-sets/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/icons/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/icons/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/images/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/images/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/includes/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/includes/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/katex/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/katex/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-1/level-1-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-1/level-1-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-1/level-1-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-1/level-1-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-1/level-1-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-1/level-1-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-1/level-1-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-1/level-1-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-1/level-1-3/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-1/level-1-3/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-1/level-1-3/level-1-3-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-1/level-1-3/level-1-3-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-2/level-2-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-2/level-2-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-2/level-2-1/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-2/level-2-1/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/collapse/level-2/level-2-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/collapse/level-2/level-2-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/level-2/level-2-2/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/level-2/level-2-2/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/mermaid/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/mermaid/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/tabs/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/tabs/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/toc/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/toc/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/shortcodes/toc-tree/</loc>
+    <loc>https://smcsdocs.zhsit.cn/shortcodes/toc-tree/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/toc-tree/</loc>
+    <loc>https://smcsdocs.zhsit.cn/toc-tree/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://smcsdocs.zhsit.cn/</loc>
     <lastmod>2021-09-23T10:27:02+08:00</lastmod>
   </url>
 </urlset>

@@ -14,11 +14,11 @@
 
 
 
-    <meta name="description" content="Demo collapsible menu entries.">
+    <meta name="description" content="步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到浏览器     graph TD 获取t -- |成功|获取验证码图片 -- |成功|用户登录 -- |成功|保存访问令牌和保存刷新令牌到浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 保存访问令牌和保存刷新令牌到浏览器 -- |失败|获取t;     ">
 
 
 
-    <title>Collapse | SMCS</title>
+    <title>登录 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -714,7 +714,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/login/" class="gdoc-nav__entry ">
+                    <a href="/login/" class="gdoc-nav__entry is-active">
                         登录
                     </a>
                 </span>
@@ -1382,12 +1382,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6d6e125c" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-6d6e125c" class="gdoc-nav__toggle" >
             <label for="navtree-6d6e125c" class="flex justify-between">
             
             
                 <span class="flex">
-                    <a href="/collapse/" class="gdoc-nav__entry is-active">
+                    <a href="/collapse/" class="gdoc-nav__entry ">
                         Collapse
                     </a>
                 </span>
@@ -1709,7 +1709,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Collapse</span><meta itemprop='position' content='2' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>登录</span><meta itemprop='position' content='2' /></li>
     
 
     
@@ -1721,7 +1721,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div>
         <span class="editpage">
             <svg class="icon gdoc_code"><use xlink:href="#gdoc_code"></use></svg>
-            <a href="https://github.com/thegeeklab/hugo-geekdoc/edit/main/exampleSite/content/collapse/_index.md">
+            <a href="https://github.com/thegeeklab/hugo-geekdoc/edit/main/exampleSite/content/login/_index.md">
                 Edit this page
             </a>
         </span>
@@ -1731,8 +1731,45 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Collapse</h1>
-        <p>Demo collapsible menu entries.</p>
+        <h1>登录</h1>
+        <div class="gdoc-page__anchorwrap">
+    <h4 id="步骤">
+        步骤：
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/login/#步骤" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 步骤：" href="#%e6%ad%a5%e9%aa%a4">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><blockquote>
+<ol>
+<li>通过 <a class="gdoc-markdown__link" href="/login/t">获取t</a> 接口取得t ;</li>
+<li>使用t,通过调用 <a class="gdoc-markdown__link" href="/login/captcha">生成验证码图片</a> 接口来生成验证码;</li>
+<li>调用 <a class="gdoc-markdown__link" href="/login/login">用户登录</a> 接口,获取访问令牌和刷新令牌;</li>
+<li>保存访问令牌和保存刷新令牌到浏览器</li>
+</ol>
+</blockquote>
+<div class="gdoc-columns flex flex-wrap">
+  
+  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+    <script defer src="/js/mermaid-0aef8fa252.min.js"></script>
+<script defer src="/js/mermaid-loader-1bd1515cbf.min.js"></script>
+<pre class="gdoc-mermaid mermaid text-center">
+graph TD
+    获取t --> |成功|获取验证码图片 -->  |成功|用户登录 --> |成功|保存访问令牌和保存刷新令牌到浏览器;
+    获取t --> |失败|获取t;
+    获取验证码图片 -->|失败|获取t;
+    用户登录 --> |失败|获取t;
+    保存访问令牌和保存刷新令牌到浏览器 --> |失败|获取t;
+
+</pre>
+
+  </div>
+  
+  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+    
+  </div>
+  
+</div>
+
 
     </article>
 
