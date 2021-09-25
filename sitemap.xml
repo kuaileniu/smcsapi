@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://smcsdocs.zhsit.cn/preface/</loc>
+    <lastmod>2021-09-25T17:42:12+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/login/</loc>
-    <lastmod>2021-09-25T01:40:11+08:00</lastmod>
+    <lastmod>2021-09-25T17:42:12+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/auth/</loc>
+    <lastmod>2021-09-25T17:42:12+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/login/t/</loc>
     <lastmod>2021-09-25T01:06:33+08:00</lastmod>
@@ -150,6 +156,6 @@
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/</loc>
-    <lastmod>2021-09-23T10:27:02+08:00</lastmod>
+    <lastmod>2021-09-25T16:40:15+08:00</lastmod>
   </url>
 </urlset>

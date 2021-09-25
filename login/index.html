@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到浏览器     graph TD 获取t -- |成功|获取验证码图片 -- |成功|用户登录 -- |成功|保存访问令牌和保存刷新令牌到浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 保存访问令牌和保存刷新令牌到浏览器 -- |失败|获取t;     ">
+    <meta name="description" content="步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。     graph TD 获取t -- |成功|获取验证码图片 -- |成功|用户登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 保存访问令牌和保存刷新令牌到客户端或浏览器 -- |失败|获取t;     ">
 
 
 
@@ -714,6 +714,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
+                    <a href="/preface/" class="gdoc-nav__entry ">
+                        前言
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
                     <a href="/login/" class="gdoc-nav__entry is-active">
                         登录
                     </a>
@@ -806,6 +832,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
         
     </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/auth/" class="gdoc-nav__entry ">
+                        认证机制
+                    </a>
+                </span>
+            
+            
 
             
             </li>
@@ -1744,7 +1796,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <li>通过 <a class="gdoc-markdown__link" href="/login/t">获取t</a> 接口取得t ;</li>
 <li>使用t,通过调用 <a class="gdoc-markdown__link" href="/login/captcha">生成验证码图片</a> 接口来生成验证码;</li>
 <li>调用 <a class="gdoc-markdown__link" href="/login/login">用户登录</a> 接口,获取访问令牌和刷新令牌;</li>
-<li>保存访问令牌和保存刷新令牌到浏览器</li>
+<li>保存访问令牌和保存刷新令牌到客户端或浏览器。</li>
 </ol>
 </blockquote>
 <div class="gdoc-columns flex flex-wrap">
@@ -1754,11 +1806,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <script defer src="/js/mermaid-loader-1bd1515cbf.min.js"></script>
 <pre class="gdoc-mermaid mermaid text-center">
 graph TD
-    获取t --> |成功|获取验证码图片 -->  |成功|用户登录 --> |成功|保存访问令牌和保存刷新令牌到浏览器;
+    获取t --> |成功|获取验证码图片 -->  |成功|用户登录 --> |成功|保存访问令牌和保存刷新令牌到客户端或浏览器;
     获取t --> |失败|获取t;
     获取验证码图片 -->|失败|获取t;
     用户登录 --> |失败|获取t;
-    保存访问令牌和保存刷新令牌到浏览器 --> |失败|获取t;
+    保存访问令牌和保存刷新令牌到客户端或浏览器 --> |失败|获取t;
 
 </pre>
 
