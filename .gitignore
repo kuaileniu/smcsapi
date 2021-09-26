@@ -1,9 +1,10 @@
-*
-!/**/
-!*.*
 .target
 target
 bin
+
+*
+!/**/
+!*.*
 src/debug
 _debug_bin
 __debug_bin
