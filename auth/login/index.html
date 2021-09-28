@@ -15,9 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2021-09-28
-步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明  说明：
- 参数中携带 t 的值为调用 获取t 接口获取的值； 参数中携带 vercode 的值为调用 生成验证码图片 接口获取的图片中显示的值；  样例： https://xxx.com/api/common/login
- 样例  body：
+步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明   t ：调用 获取t 接口获取的值； vercode ：调用 生成验证码图片 接口获取的图片中显示的值； username ：用户登录名 password ： 用户登录密码   样例  URL： https://xxx.com/api/common/login
+body：
 { &quot;t&quot;: &quot;1234567&quot;, &quot;username&quot;: &quot;15652963646&quot;, &quot;password&quot;: &quot;123456&quot;, &quot;vercode&quot;: &quot;6666&quot; }    返回数据     http code:200  { &quot;code&quot;: 0, &quot;status&quot;: 0, &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG8cBGI8fvHTAhPejPNEPoNg17vAEsBT8xBwlvFOa6mp1tVSIC6H9w%2FimTVefx3rX5OKP0BqXMTtRuBqZjE0UYqhH%2FzLzEv035GeC50RdigctnGOk7miyhsumvnrxNlO6vMAuEnv3hBBTO7cSw2BFerw%2FUZUdxgmCy9rjq1zmCKMH3fSyTYxSC17KWgDUZGkG%2F0Y95Hq8m2fattLTbqJyAXg%3D%3D&quot;, &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0fAtPxSm7atc30xcr%2FhJFx6qLyN8%2FDykjJSjpM4MyJje%2FoYI19mACC3h%2FkbeOYiR%2FQ%3D%3D&quot; }    登录流程图：      graph TD 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 登录 -- |失败|获取t;     ">
 
 
@@ -1050,12 +1049,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       说明
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>说明：</p>
-<ol>
-<li>参数中携带 t 的值为调用 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口获取的值；</li>
-<li>参数中携带 vercode 的值为调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口获取的图片中显示的值；</li>
+      <ol>
+<li>t ：调用 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口获取的值；</li>
+<li>vercode ：调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口获取的图片中显示的值；</li>
+<li>username ：用户登录名</li>
+<li>password ： 用户登录密码</li>
 </ol>
-<p>样例： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/login">https://xxx.com/api/common/login</a></p>
 
     </div>
   
@@ -1065,7 +1064,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>body：</p>
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/login">https://xxx.com/api/common/login</a></p>
+<p>body：</p>
 <pre tabindex="0"><code>{
     &quot;t&quot;: &quot;1234567&quot;,
     &quot;username&quot;: &quot;15652963646&quot;,
