@@ -15,7 +15,10 @@
 
 
     <meta name="description" content="更新日期: 2021-09-01
-整体说明     代码组成：本系统采用前端和服务器端分离架构开发，代码库分离； 部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署； 域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同； 域名端口后到第一段路径要求：不要使用 api 或 ws 开始 不可以: https://{domain}:{port}/api/yyyyy 不可以: https://{domain}:{port}/apixxxx/yyyyy;  协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议； 域名配置：前端系统采用的域名需告知服务器端工程师，提前在服务器端安全控制体系中配置； 报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式；  返回数据中的通用参数    &ldquo;code&rdquo;: 0, &ldquo;status&rdquo;: 0,">
+整体说明     代码组成：本系统采用前端和服务器端分离架构开发，代码库分离； 部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署； 域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同； 域名端口后到第一段路径要求：不要使用 api 或 ws 开始 不可以: https://{domain}:{port}/api/yyyyy 不可以: https://{domain}:{port}/apixxxx/yyyyy;  协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议； 域名配置：前端系统采用的域名需告知服务器端工程师，提前在服务器端安全控制体系中配置； 报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式；  返回数据中的通用参数      参数： status
+类型：number
+补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
+   编码 描述 解决方案     0 数据正确返回,不需要界面提示 &mdash;-   1 未正确返回数据,须界面提示,系统自动关闭提示 &mdash;-   2 未正确返回数据,但不要界面提示 &mdash;-   3 数据正确返回,但需要界面提示，系统自动关闭提示 &mdash;   4 未正确返回数据,须界面提示，由用户自己关闭提示 &mdash;-   5 数据正确返回,但需要界面提示，由用户自己关闭提示 &mdash;-      ">
 
 
 
@@ -1020,8 +1023,54 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h3>
-</div><p>&ldquo;code&rdquo;: 0,
-&ldquo;status&rdquo;: 0,</p>
+</div><ol>
+<li>
+<p>参数： status</p>
+<p>类型：number</p>
+<p>补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>数据正确返回,不需要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>未正确返回数据,须界面提示,系统自动关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>未正确返回数据,但不要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数据正确返回,但需要界面提示，系统自动关闭提示</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>未正确返回数据,须界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>数据正确返回,但需要界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
 
     </article>
 
