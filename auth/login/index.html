@@ -14,8 +14,11 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-09-26
-步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   登录流程图：      graph TD 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 保存访问令牌和保存刷新令牌到客户端或浏览器 -- |失败|获取t;     ">
+    <meta name="description" content="更新日期: 2021-09-28
+步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明  说明：
+ 参数中携带 t 的值为调用 获取t 接口获取的值； 参数中携带 vercode 的值为调用 生成验证码图片 接口获取的图片中显示的值；  样例： https://xxx.com/api/common/login
+ 样例  body：
+{ &quot;t&quot;: &quot;1234567&quot;, &quot;username&quot;: &quot;15652963646&quot;, &quot;password&quot;: &quot;123456&quot;, &quot;vercode&quot;: &quot;6666&quot; }    返回数据     http code:200  { &quot;code&quot;: 0, &quot;status&quot;: 0, &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG8cBGI8fvHTAhPejPNEPoNg17vAEsBT8xBwlvFOa6mp1tVSIC6H9w%2FimTVefx3rX5OKP0BqXMTtRuBqZjE0UYqhH%2FzLzEv035GeC50RdigctnGOk7miyhsumvnrxNlO6vMAuEnv3hBBTO7cSw2BFerw%2FUZUdxgmCy9rjq1zmCKMH3fSyTYxSC17KWgDUZGkG%2F0Y95Hq8m2fattLTbqJyAXg%3D%3D&quot;, &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0fAtPxSm7atc30xcr%2FhJFx6qLyN8%2FDykjJSjpM4MyJje%2FoYI19mACC3h%2FkbeOYiR%2FQ%3D%3D&quot; }    登录流程图：      graph TD 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 用户登录 -- |失败|获取t; 登录 -- |失败|获取t;     ">
 
 
 
@@ -1001,7 +1004,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>用户登录</h1>
-        <p><small>更新日期: 2021-09-26</small></p>
+        <p><small>更新日期: 2021-09-28</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="步骤">
         步骤：
@@ -1017,6 +1020,93 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <li>保存访问令牌和保存刷新令牌到客户端或浏览器。</li>
 </ol>
 </blockquote>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><ol>
+<li>url : https://{domain}:{port}/api/common/login</li>
+<li>http method : POST</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      说明
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>说明：</p>
+<ol>
+<li>参数中携带 t 的值为调用 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口获取的值；</li>
+<li>参数中携带 vercode 的值为调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口获取的图片中显示的值；</li>
+</ol>
+<p>样例： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/login">https://xxx.com/api/common/login</a></p>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>body：</p>
+<pre tabindex="0"><code>{
+    &quot;t&quot;: &quot;1234567&quot;,
+    &quot;username&quot;: &quot;15652963646&quot;,
+    &quot;password&quot;: &quot;123456&quot;,
+    &quot;vercode&quot;: &quot;6666&quot;
+}
+</code></pre>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      http code:200
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <pre tabindex="0"><code>{
+    &quot;code&quot;: 0,
+    &quot;status&quot;: 0,
+    &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG8cBGI8fvHTAhPejPNEPoNg17vAEsBT8xBwlvFOa6mp1tVSIC6H9w%2FimTVefx3rX5OKP0BqXMTtRuBqZjE0UYqhH%2FzLzEv035GeC50RdigctnGOk7miyhsumvnrxNlO6vMAuEnv3hBBTO7cSw2BFerw%2FUZUdxgmCy9rjq1zmCKMH3fSyTYxSC17KWgDUZGkG%2F0Y95Hq8m2fattLTbqJyAXg%3D%3D&quot;,
+    &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0fAtPxSm7atc30xcr%2FhJFx6qLyN8%2FDykjJSjpM4MyJje%2FoYI19mACC3h%2FkbeOYiR%2FQ%3D%3D&quot;
+}
+</code></pre>
+    </div>
+  
+</div>
+
 <div class="gdoc-page__anchorwrap">
     <h4 id="登录流程图">
         登录流程图：
@@ -1035,7 +1125,7 @@ graph TD
     获取t --> |失败|获取t;
     获取验证码图片 -->|失败|获取t;
     用户登录 --> |失败|获取t;
-    保存访问令牌和保存刷新令牌到客户端或浏览器 --> |失败|获取t;
+    登录 --> |失败|获取t;
 
 </pre>
 
