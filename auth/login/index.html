@@ -15,9 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2021-09-28
-步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明   t ：调用 获取t 接口获取的值； vercode ：调用 生成验证码图片 接口获取的图片中显示的值； username ：用户登录名 password ： 用户登录密码   样例  URL： https://xxx.com/api/common/login
-body：
-{ &quot;t&quot;: &quot;1234567&quot;, &quot;username&quot;: &quot;15652963646&quot;, &quot;password&quot;: &quot;123456&quot;, &quot;vercode&quot;: &quot;6666&quot; }    返回数据     http code:200  { &quot;status&quot;: 0, &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG8cBGI8fvHTAhPejPNEPoNg17vAEsBT8xBwlvFOa6mp1tVSIC6H9w%2FimTVefx3rX5OKP0BqXMTtRuBqZjE0UYqhH%2FzLzEv035GeC50RdigctnGOk7miyhsumvnrxNlO6vMAuEnv3hBBTO7cSw2BFerw%2FUZUdxgmCy9rjq1zmCKMH3fSyTYxSC17KWgDUZGkG%2F0Y95Hq8m2fattLTbqJyAXg%3D%3D&quot;, &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0fAtPxSm7atc30xcr%2FhJFx6qLyN8%2FDykjJSjpM4MyJje%2FoYI19mACC3h%2FkbeOYiR%2FQ%3D%3D&quot; }   http code:401  { &quot;status&quot;: 2, &quot;msg&quot;: &quot;Verification code error&quot; }    登录流程图：      graph TD 开始 -- 获取t; 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 -- 结束; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 登录 -- |失败|获取t;     ">
+步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   登录流程图：      graph TD 开始 -- 获取t; 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 -- 结束; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 登录 -- |失败|获取t;     基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明   t ：调用 获取t 接口获取的值； vercode ：调用 生成验证码图片 接口获取的图片中显示的值； username ：用户登录名 password ： 用户登录密码   样例  URL： https://xxx.">
 
 
 
@@ -869,6 +867,62 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
             
             
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">用户信息</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/staff/my-base-info/" class="gdoc-nav__entry ">
+                        获取用户自己的基本信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
             
         
             
@@ -1020,6 +1074,36 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </ol>
 </blockquote>
 <div class="gdoc-page__anchorwrap">
+    <h4 id="登录流程图">
+        登录流程图：
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#登录流程图" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 登录流程图：" href="#%e7%99%bb%e5%bd%95%e6%b5%81%e7%a8%8b%e5%9b%be">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class="gdoc-columns flex flex-wrap">
+  
+  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+    <script defer src="/js/mermaid-0aef8fa252.min.js"></script>
+<script defer src="/js/mermaid-loader-1bd1515cbf.min.js"></script>
+<pre class="gdoc-mermaid mermaid text-center">
+graph TD
+    开始 --> 获取t;
+    获取t --> |成功|获取验证码图片 -->  |成功|登录 --> |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 --> 结束;
+    获取t --> |失败|获取t;
+    获取验证码图片 -->|失败|获取t;
+    登录 --> |失败|获取t;
+
+</pre>
+
+  </div>
+  
+  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+    
+  </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
         <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
@@ -1111,7 +1195,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <pre tabindex="0"><code>{
-    &quot;status&quot;: 2,
+    &quot;status&quot;: 1,
     &quot;msg&quot;: &quot;Verification code error&quot;
 }
 </code></pre>
@@ -1120,33 +1204,146 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
-    <h4 id="登录流程图">
-        登录流程图：
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#登录流程图" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 登录流程图：" href="#%e7%99%bb%e5%bd%95%e6%b5%81%e7%a8%8b%e5%9b%be">
+    <h4 id="返回数据中的通用参数">
+        返回数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/login/#返回数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据中的通用参数" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><div class="gdoc-columns flex flex-wrap">
-  
-  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-    <script defer src="/js/mermaid-0aef8fa252.min.js"></script>
-<script defer src="/js/mermaid-loader-1bd1515cbf.min.js"></script>
-<pre class="gdoc-mermaid mermaid text-center">
-graph TD
-    开始 --> 获取t;
-    获取t --> |成功|获取验证码图片 -->  |成功|登录 --> |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 --> 结束;
-    获取t --> |失败|获取t;
-    获取验证码图片 -->|失败|获取t;
-    登录 --> |失败|获取t;
+</div>
 
-</pre>
 
-  </div>
-  
-  <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-    
-  </div>
-  
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： status</p>
+<p>类型：number</p>
+<p>补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>数据正确返回,不需要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>未正确返回数据,须界面提示,系统自动关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>未正确返回数据,但不要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数据正确返回,但需要界面提示，系统自动关闭提示</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>未正确返回数据,须界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>数据正确返回,但需要界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： msg<br>
+类型： string<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msg</td>
+<td>提示内容</td>
+<td>请求信息http header中lang,为en时返回英文;为zh-CN时返回简体中文;其它待定;</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： count<br>
+类型： number<br>
+可为空： 是 </p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>数据总条数</td>
+<td>分页查询时，符合查询条件的总数量，大于等于当前页的数据数量</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： data<br>
+类型： 不存在或为json对象。可能为空，可能为单对象{}，也可能为数组对象[{},{}]<br>
+说明： 业务数据，如果数据分页，data中为本页内的数据列表。总页数等信息在与data同级的参数中。</p>
+</li>
+<li>
+<p>data 节点内的通用参数</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orderNum</td>
+<td>number</td>
+<td>20210930003209</td>
+<td>排序号，默认按创建时间，前端若有需要可以修改</td>
+</tr>
+<tr>
+<td>createTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号被创建的时间，按年月日时分秒格式</td>
+</tr>
+<tr>
+<td>modifyTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号最后被修改的时间，按年月日时分秒格式，第一次的时间与创建时间相同</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
 </div>
 
 
@@ -1355,7 +1552,7 @@ graph TD
     <div class="container flex">
         <div class="flex flex-wrap">
             <span class="gdoc-footer__item gdoc-footer__item--row">
-                Built with <a href="#" class="gdoc-footer__link">Hugo</a> and
+                Built By <a href="#" class="gdoc-footer__link">Zhsit</a> and
                 <svg class="icon gdoc_heart"><use xlink:href="#gdoc_heart"></use></svg>
             </span>
             
