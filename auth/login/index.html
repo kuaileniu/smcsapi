@@ -14,8 +14,8 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-09-28
-步骤：      通过 获取t 接口取得t ; 使用t,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   登录流程图：      graph TD 开始 -- 获取t; 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 -- 结束; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 登录 -- |失败|获取t;     基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明   t ：调用 获取t 接口获取的值； vercode ：调用 生成验证码图片 接口获取的图片中显示的值； username ：用户登录名 password ： 用户登录密码   样例  URL： https://xxx.">
+    <meta name="description" content="更新日期: 2021-10-20
+步骤：      通过 获取t 接口取得t ; 使用T,通过调用 生成验证码图片 接口来生成验证码; 调用 用户登录 接口,获取访问令牌和刷新令牌; 保存访问令牌和保存刷新令牌到客户端或浏览器。   登录流程图：      graph TD 开始 -- 获取t; 获取t -- |成功|获取验证码图片 -- |成功|登录 -- |成功|保存访问令牌和保存刷新令牌到客户端或浏览器 -- 结束; 获取t -- |失败|获取t; 获取验证码图片 --|失败|获取t; 登录 -- |失败|获取t;     基本参数     url : https://{domain}:{port}/api/common/login http method : POST  请求数据     说明   T ：调用 获取t 接口获取的值； Vercode ：调用 生成验证码图片 接口获取的图片中显示的值； Username ：用户登录名 Password ： 用户登录密码   样例  URL： https://xxx.">
 
 
 
@@ -1057,7 +1057,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>用户登录</h1>
-        <p><small>更新日期: 2021-09-28</small></p>
+        <p><small>更新日期: 2021-10-20</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="步骤">
         步骤：
@@ -1068,7 +1068,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div><blockquote>
 <ol>
 <li>通过 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口取得t ;</li>
-<li>使用t,通过调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口来生成验证码;</li>
+<li>使用T,通过调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口来生成验证码;</li>
 <li>调用 <a class="gdoc-markdown__link" href="/auth/login">用户登录</a> 接口,获取访问令牌和刷新令牌;</li>
 <li>保存访问令牌和保存刷新令牌到客户端或浏览器。</li>
 </ol>
@@ -1134,10 +1134,10 @@ graph TD
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <ol>
-<li>t ：调用 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口获取的值；</li>
-<li>vercode ：调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口获取的图片中显示的值；</li>
-<li>username ：用户登录名</li>
-<li>password ： 用户登录密码</li>
+<li>T ：调用 <a class="gdoc-markdown__link" href="/auth/get_t">获取t</a> 接口获取的值；</li>
+<li>Vercode ：调用 <a class="gdoc-markdown__link" href="/auth/captcha">生成验证码图片</a> 接口获取的图片中显示的值；</li>
+<li>Username ：用户登录名</li>
+<li>Password ： 用户登录密码</li>
 </ol>
 
     </div>
@@ -1151,10 +1151,10 @@ graph TD
       <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/login">https://xxx.com/api/common/login</a></p>
 <p>body：</p>
 <pre tabindex="0"><code>{
-    &quot;t&quot;: &quot;1234567&quot;,
-    &quot;username&quot;: &quot;15652963646&quot;,
-    &quot;password&quot;: &quot;123456&quot;,
-    &quot;vercode&quot;: &quot;6666&quot;
+    &quot;T&quot;: &quot;1234567&quot;,
+    &quot;Username&quot;: &quot;15652963646&quot;,
+    &quot;Password&quot;: &quot;123456&quot;,
+    &quot;Vercode&quot;: &quot;6666&quot;
 }
 </code></pre>
     </div>
