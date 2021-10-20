@@ -17,7 +17,7 @@
     <meta name="description" content="更新日期: 2021-10-02
 基本参数     url : https://{domain}:{port}/api/staff/my-base-info http method : POST  请求数据    遵守鉴权机制 参数     参数名称 描述 举例     样例  URL： https://xxx.com/api/staff/my-base-info
 body：
-    返回数据     http code:200  { &quot;status&quot;: 0, &quot;data&quot;: { &quot;id&quot;: 2109300032090001, &quot;loginName&quot;: &quot;1565296&quot;, &quot;loginTimes&quot;: 4, &quot;lastLoginIp&quot;: &quot;127.0.0.1&quot;, &quot;lastLoginTime&quot;: &quot;2021-10-01 18:26:52&quot;, &quot;contact&quot;: &quot;010-66688800&quot;, &quot;realName&quot;: &quot;冯先生&quot;, &quot;orderNum&quot;: 20210930003209, &quot;createTime&quot;: &quot;2021-09-30 00:32:09&quot;, &quot;modifyTime&quot;: &quot;2021-09-30 00:32:09&quot; } }      data 参数       参数 类型 示例值 描述     id number 2109300032090001 用户的id   loginName string zhangsan 用户的登录账号   loginTimes number 4 用户登录的次数   lastLoginIp string 127.">
+    返回数据     http code:200  { &quot;status&quot;: 0, &quot;data&quot;: { &quot;Id&quot;: 2110192358330001, &quot;LoginName&quot;: &quot;13022963646&quot;, &quot;EmployeeNo&quot;: &quot;&quot;, &quot;ChineseName&quot;: &quot;冯先生&quot;, &quot;EnglishName&quot;: &quot;Tao&quot;, &quot;Email&quot;: &quot;&quot;, &quot;Telephone&quot;: &quot;&quot;, &quot;Cellphone&quot;: &quot;&quot;, &quot;WorkingLocation&quot;: &quot;&quot;, &quot;PermanentAddress&quot;: &quot;&quot;, &quot;Postcode&quot;: &quot;&quot;, &quot;StaffType&quot;: &quot;&quot;, &quot;Position&quot;: &quot;&quot;, &quot;DeptId&quot;: &quot;&quot;, &quot;IDType&quot;: &quot;&quot;, &quot;Nationality&quot;: &quot;&quot;, &quot;Language&quot;: &quot;&quot;, &quot;CostCenter&quot;: &quot;&quot;, &quot;Company&quot;: 201, &quot;Comments&quot;: &quot;&quot;, &quot;LoginTimes&quot;: 2, &quot;LastLoginIp&quot;: &quot;127.">
 
 
 
@@ -1139,16 +1139,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <pre tabindex="0"><code>{
     &quot;status&quot;: 0,
     &quot;data&quot;: {
-        &quot;id&quot;: 2109300032090001,
-        &quot;loginName&quot;: &quot;1565296&quot;,
-        &quot;loginTimes&quot;: 4,
-        &quot;lastLoginIp&quot;: &quot;127.0.0.1&quot;,
-        &quot;lastLoginTime&quot;: &quot;2021-10-01 18:26:52&quot;,
-        &quot;contact&quot;: &quot;010-66688800&quot;,
-        &quot;realName&quot;: &quot;冯先生&quot;,
-        &quot;orderNum&quot;: 20210930003209,
-        &quot;createTime&quot;: &quot;2021-09-30 00:32:09&quot;,
-        &quot;modifyTime&quot;: &quot;2021-09-30 00:32:09&quot;
+        &quot;Id&quot;: 2110192358330001,
+        &quot;LoginName&quot;: &quot;13022963646&quot;,
+        &quot;EmployeeNo&quot;: &quot;&quot;,
+        &quot;ChineseName&quot;: &quot;冯先生&quot;,
+        &quot;EnglishName&quot;: &quot;Tao&quot;,
+        &quot;Email&quot;: &quot;&quot;,
+        &quot;Telephone&quot;: &quot;&quot;,
+        &quot;Cellphone&quot;: &quot;&quot;,
+        &quot;WorkingLocation&quot;: &quot;&quot;,
+        &quot;PermanentAddress&quot;: &quot;&quot;,
+        &quot;Postcode&quot;: &quot;&quot;,
+        &quot;StaffType&quot;: &quot;&quot;,
+        &quot;Position&quot;: &quot;&quot;,
+        &quot;DeptId&quot;: &quot;&quot;,
+        &quot;IDType&quot;: &quot;&quot;,
+        &quot;Nationality&quot;: &quot;&quot;,
+        &quot;Language&quot;: &quot;&quot;,
+        &quot;CostCenter&quot;: &quot;&quot;,
+        &quot;Company&quot;: 201,
+        &quot;Comments&quot;: &quot;&quot;,
+        &quot;LoginTimes&quot;: 2,
+        &quot;LastLoginIp&quot;: &quot;127.0.0.1&quot;,
+        &quot;LastLoginTime&quot;: &quot;2021-10-20 09:57:25&quot;,
+        &quot;OrderNum&quot;: 20211019235833,
+        &quot;CreateTime&quot;: &quot;2021-10-19 23:58:33&quot;,
+        &quot;ModifyTime&quot;: &quot;2021-10-19 23:58:33&quot;
     }
 }
 </code></pre>
@@ -1183,40 +1199,142 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>id</td>
+<td>Id</td>
 <td>number</td>
 <td>2109300032090001</td>
 <td>用户的id</td>
 </tr>
 <tr>
-<td>loginName</td>
+<td>LoginName</td>
 <td>string</td>
 <td>zhangsan</td>
 <td>用户的登录账号</td>
 </tr>
 <tr>
-<td>loginTimes</td>
-<td>number</td>
-<td>4</td>
-<td>用户登录的次数</td>
+<td>EmployeeNo</td>
+<td>string</td>
+<td>a4</td>
+<td>员工号</td>
 </tr>
 <tr>
-<td>lastLoginIp</td>
+<td>ChineseName</td>
+<td>string</td>
+<td>冯先生</td>
+<td>中文名</td>
+</tr>
+<tr>
+<td>EnglishName</td>
+<td>string</td>
+<td>Tao</td>
+<td>英文名</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td><a class="gdoc-markdown__link" href="mailto:a@163.com">a@163.com</a></td>
+<td>电子邮箱</td>
+</tr>
+<tr>
+<td>Telephone</td>
+<td>string</td>
+<td>010-70334466</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>Cellphone</td>
+<td>string</td>
+<td>13011123345</td>
+<td>手机</td>
+</tr>
+<tr>
+<td>WorkingLocation</td>
+<td>string</td>
+<td>天津</td>
+<td>工作地点</td>
+</tr>
+<tr>
+<td>PermanentAddress</td>
+<td>string</td>
+<td>小山沟</td>
+<td>常住地址</td>
+</tr>
+<tr>
+<td>Postcode</td>
+<td>string</td>
+<td>292413</td>
+<td>邮编</td>
+</tr>
+<tr>
+<td>StaffType</td>
+<td>string</td>
+<td></td>
+<td>员工类型</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>string</td>
+<td>经理</td>
+<td>职位</td>
+</tr>
+<tr>
+<td>DeptId</td>
+<td>string</td>
+<td>210001</td>
+<td>部门ID</td>
+</tr>
+<tr>
+<td>IDType</td>
+<td>string</td>
+<td></td>
+<td>ID类型</td>
+</tr>
+<tr>
+<td>Nationality</td>
+<td>string</td>
+<td>英国</td>
+<td>国籍</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>string</td>
+<td>英语</td>
+<td>语言</td>
+</tr>
+<tr>
+<td>CostCenter</td>
+<td>string</td>
+<td>焊工</td>
+<td>成本中心</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>number</td>
+<td>201</td>
+<td>公司ID</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>string</td>
+<td>这里是备注文字</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>LoginTimes</td>
+<td>number</td>
+<td>3</td>
+<td>登录次数</td>
+</tr>
+<tr>
+<td>LastLoginIp</td>
 <td>string</td>
 <td>127.0.0.1</td>
 <td>最近登录时的ip地址</td>
 </tr>
 <tr>
-<td>contact</td>
+<td>LastLoginTime</td>
 <td>string</td>
-<td>010-66688800</td>
-<td>联系方式</td>
-</tr>
-<tr>
-<td>realName</td>
-<td>string</td>
-<td>孔x辉</td>
-<td>真实姓名</td>
+<td>2021-10-20 09:57:25</td>
+<td>最后登录时间</td>
 </tr>
 </tbody>
 </table> </div>
