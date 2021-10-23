@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://smcsdocs.zhsit.cn/preface/</loc>
-    <lastmod>2021-10-21T10:49:48+08:00</lastmod>
+    <lastmod>2021-10-23T17:18:49+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/my-base-info/</loc>
     <lastmod>2021-10-20T12:03:02+08:00</lastmod>
@@ -16,6 +16,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/</loc>
     <lastmod>2021-09-30T19:47:52+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff/get-staff-page/</loc>
+    <lastmod>2021-10-23T18:37:55+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/auth/get_t/</loc>
     <lastmod>2021-10-20T00:06:12+08:00</lastmod>
@@ -44,8 +47,11 @@
     <loc>https://smcsdocs.zhsit.cn/_includes/include-page/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/_includes/include_request_body_common/</loc>
+    <lastmod>2021-10-23T17:18:49+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include_response_body_common/</loc>
-    <lastmod>2021-10-21T20:46:21+08:00</lastmod>
+    <lastmod>2021-10-23T17:18:49+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/tags/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>

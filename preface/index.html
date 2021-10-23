@@ -15,10 +15,11 @@
 
 
     <meta name="description" content="更新日期: 2021-09-30
-整体说明     代码组成：本系统采用前端和服务器端分离架构开发，代码库分离； 部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署； 域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同； 域名端口后到第一段路径要求：不要使用 api 或 ws 开始 不可以: https://{domain}:{port}/api/yyyyy 不可以: https://{domain}:{port}/apixxxx/yyyyy;  协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议； 端口： 采用https协议时若采用默认443端口可省略；采用http协议时若采用默认80端口可省略； 域名配置：前端系统采用的域名和端口须告知服务器端工程师，提前在服务器端安全控制体系中配置； 报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式； 用户密码： 客户端不得保存用户密码； 前端调试时，建议使用修改调试代码所在电脑的hosts文件方式，调试时在浏览器地址栏中直接访问hosts中配置的域名；  返回数据中的通用参数       参数： status
+整体说明     代码组成：本系统采用前端和服务器端分离架构开发，代码库分离； 部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署； 域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同； 域名端口后到第一段路径要求：不要使用 api 或 ws 开始 不可以: https://{domain}:{port}/api/yyyyy 不可以: https://{domain}:{port}/apixxxx/yyyyy;  协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议； 端口： 采用https协议时若采用默认443端口可省略；采用http协议时若采用默认80端口可省略； 域名配置：前端系统采用的域名和端口须告知服务器端工程师，提前在服务器端安全控制体系中配置； 报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式； 用户密码： 客户端不得保存用户密码； 前端调试时，建议使用修改调试代码所在电脑的hosts文件方式，调试时在浏览器地址栏中直接访问hosts中配置的域名；  向服务器端发送数据中的通用参数       参数： page
 类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-   编码 描述 解决方案     0 数据正确返回/处理,不需要界面提示 &mdash;-   1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;-   2 未正确返回/处理数据,但不要界面提示 &mdash;-   3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash;   4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;-   5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;-      参数： msg">
+可为空： 是
+补充说明： 从1开始。
+   编码 类型 描述 解决方案     page number 查询数据的页次 分页查询时使用,为空时服务器端默认为是0      参数： limit">
 
 
 
@@ -943,6 +944,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/staff/get-staff-page/" class="gdoc-nav__entry ">
+                        获取用户信息(分页)
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -1102,6 +1129,70 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <li>前端调试时，建议使用修改调试代码所在电脑的hosts文件方式，调试时在浏览器地址栏中直接访问hosts中配置的域名；</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/preface/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+<div class="gdoc-page__anchorwrap">
     <h3 id="返回数据中的通用参数">
         返回数据中的通用参数
         <a data-clipboard-text="https://smcsdocs.zhsit.cn/preface/#返回数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据中的通用参数" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
@@ -1116,9 +1207,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 <div class="gdoc-include"><ol>
 <li>
-<p>参数： status</p>
-<p>类型：number</p>
-<p>补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
+<p>参数： status<br>
+类型：number<br>
+补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
 <div class=table-wrap> <table>
 <thead>
 <tr>
@@ -1219,7 +1310,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tr>
 <td>count</td>
 <td>数据总条数</td>
-<td>分页查询时，符合查询条件的总数量，大于等于当前页的数据数量</td>
+<td>分页查询时，符合查询条件的总数量</td>
 </tr>
 </tbody>
 </table> </div>
