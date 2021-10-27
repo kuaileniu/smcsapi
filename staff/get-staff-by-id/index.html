@@ -14,14 +14,14 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-09-29
-基本参数     url : https://{domain}:{port}/api/common/refresh-token http method : POST  请求数据     说明   access_token: 调用 用户登录 接口获取的 access_token 值； refresh_token: 调用 用户登录 接口获取的 refresh_token 值；   样例  URL： https://xxx.com/api/common/refresh-token
+    <meta name="description" content="更新日期: 2021-10-27
+基本参数     url : https://{domain}:{port}/api/staff/get-staff-by-id http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 必含 示例 描述     StaffId number 是 2110229007990001 用户ID     样例  URL： https://xxx.com/api/staff/get-staff-by-id
 body：
-{ &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG%2FR8cggbs1UpYzKkLpIA0m2UcCS3J5PiC2KjXKR2XLlk5tVT%2FMP5iILMzYQlwxFlFPP3PBBTVoxe2gLADOQULuKSOCqmjQ7l%2BbZGhbdtcnPoyn%2FhukxAdlzTWHAkX9lQcvuLpUGsN%2BWF4qmLliss7xSW2S9qto39QoFtKjzAMs67ED2%2BPZSY0OOzf9azlw%2FjGPEQK9f8bZr1Mx%2BoyucHUaA%3D%3D&quot;, &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0TZtVkoNs8DyJq7nPNlkyc%2B1LfZTSK%2F%2FQcJvge48iAcSLVIG%2F7qkcpqD5izo3iEKrUFDuheiPIg7uCHZfQU%2BiD0%3D&quot; }    返回数据     http code:200  { &quot;status&quot;: 0, &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjhLJxJqjVlUikJ5Uu1EkPs5Go8ycmloNRMprHzRAWhmi48UVD3urEN5ndcGAYL3I%2BVB47WxODfLcnDhjgUIfLNUtyAlCq19UOR%2B0HBY9FbejHZzrRm1oQ3QtTFXdIr3e10Fmmg4Z9kPvwzoG9bErjQMkRWqYfGRANBLBTjeD3aiFIo%2FeTUW3yqSyIcIID3l7CPzJQYHbX2cKAZDKKxo7LWTjwT%2BWyr1%2B5PEKbH1ZSmW2Q%3D%3D&quot;, &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0dlzlwmfoLRcKUVgPJlQpc3ha%2Bqn6BDOcyFIMLLgQQm0JV4tLaXlLAZjkVRk0pfmo6H91Qdr58T0cL%2FhFlqD1r8%3D&quot; }   http code:401  { &quot;status&quot;: 2, &quot;msg&quot;: &quot;An exception occurred while decoding the access token&quot; } 或">
+{ &#34;StaffId&#34;: 2110229007990001 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: { &#34;Id&#34;: 2110229007990001, &#34;LoginName&#34;: &#34;1&#34;, &#34;ChineseName&#34;: &#34;小王&#34;, &#34;Email&#34;: &#34;&#34;, &#34;Telephone&#34;: &#34;&#34;, &#34;Cellphone&#34;: &#34;&#34;, &#34;WorkingLocation&#34;: &#34;&#34;, &#34;PermanentAddress&#34;: &#34;&#34;, &#34;Postcode&#34;: &#34;&#34;, &#34;StaffType&#34;: &#34;&#34;, &#34;Position&#34;: &#34;&#34;, &#34;DeptId&#34;: 9, &#34;IDType&#34;: &#34;&#34;, &#34;Nationality&#34;: &#34;&#34;, &#34;Language&#34;: &#34;&#34;, &#34;CostCenter&#34;: &#34;&#34;, &#34;Company&#34;: 0, &#34;Comments&#34;: &#34;&#34;, &#34;AppToken&#34;: &#34;xxxxx&#34;, &#34;AppClientId&#34;: &#34;yyyy&#34;, &#34;LoginTimes&#34;: 0, &#34;LastLoginIp&#34;: &#34;&#34;, &#34;LastLoginTime&#34;: &#34;&#34;, &#34;OrderNum&#34;: 0, &#34;CreateTime&#34;: &#34;2021-10-26 12:07:59&#34;, &#34;ModifyTime&#34;: &#34;2021-10-26 12:39:27&#34;, &#34;Del&#34;: false } }   失败-1  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;请提供有效的用户Id&#34;, &#34;english_msg&#34;: &#34;Please provide a valid Staff ID.">
 
 
 
-    <title>刷新令牌 | SMCS</title>
+    <title>根据ID获取用户信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -848,7 +848,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/auth/refresh_token/" class="gdoc-nav__entry is-active">
+                    <a href="/auth/refresh_token/" class="gdoc-nav__entry ">
                         刷新令牌
                     </a>
                 </span>
@@ -956,7 +956,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff/get-staff-by-id/" class="gdoc-nav__entry ">
+                    <a href="/staff/get-staff-by-id/" class="gdoc-nav__entry is-active">
                         根据ID获取用户信息
                     </a>
                 </span>
@@ -1138,7 +1138,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/auth/' href='/auth/'><span itemprop='name'>鉴权机制</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>刷新令牌</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff/' href='/staff/'><span itemprop='name'>用户信息</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>根据ID获取用户信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1162,27 +1162,28 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>刷新令牌</h1>
-        <p><small>更新日期: 2021-09-29</small></p>
+        <h1>根据ID获取用户信息</h1>
+        <p><small>更新日期: 2021-10-27</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh_token/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/get-staff-by-id/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/common/refresh-token</li>
+<li>url : https://{domain}:{port}/api/staff/get-staff-by-id</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh_token/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/get-staff-by-id/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+
 
 
 
@@ -1191,13 +1192,29 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
       checked="checked"  />
     <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
-      说明
+      参数
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <ol>
-<li>access_token:  调用 <a class="gdoc-markdown__link" href="/auth/login">用户登录</a> 接口获取的 access_token 值；</li>
-<li>refresh_token: 调用 <a class="gdoc-markdown__link" href="/auth/login">用户登录</a> 接口获取的 refresh_token 值；</li>
-</ol>
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必含</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StaffId</td>
+<td>number</td>
+<td>是</td>
+<td>2110229007990001</td>
+<td>用户ID</td>
+</tr>
+</tbody>
+</table> </div>
 
     </div>
   
@@ -1207,21 +1224,20 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/refresh-token">https://xxx.com/api/common/refresh-token</a></p>
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/staff/get-staff-by-id">https://xxx.com/api/staff/get-staff-by-id</a></p>
 <p>body：</p>
-<pre tabindex="0"><code>{
-    &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG%2FR8cggbs1UpYzKkLpIA0m2UcCS3J5PiC2KjXKR2XLlk5tVT%2FMP5iILMzYQlwxFlFPP3PBBTVoxe2gLADOQULuKSOCqmjQ7l%2BbZGhbdtcnPoyn%2FhukxAdlzTWHAkX9lQcvuLpUGsN%2BWF4qmLliss7xSW2S9qto39QoFtKjzAMs67ED2%2BPZSY0OOzf9azlw%2FjGPEQK9f8bZr1Mx%2BoyucHUaA%3D%3D&quot;,
-    &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0TZtVkoNs8DyJq7nPNlkyc%2B1LfZTSK%2F%2FQcJvge48iAcSLVIG%2F7qkcpqD5izo3iEKrUFDuheiPIg7uCHZfQU%2BiD0%3D&quot;
-}
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;StaffId&#34;</span><span class="p">:</span> <span class="mi">2110229007990001</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
 </div>
-
+</p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh_token/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/get-staff-by-id/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1234,37 +1250,291 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
       checked="checked"  />
     <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
-      http code:200
+      成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <pre tabindex="0"><code>{
-    &quot;status&quot;: 0,
-    &quot;access_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjhLJxJqjVlUikJ5Uu1EkPs5Go8ycmloNRMprHzRAWhmi48UVD3urEN5ndcGAYL3I%2BVB47WxODfLcnDhjgUIfLNUtyAlCq19UOR%2B0HBY9FbejHZzrRm1oQ3QtTFXdIr3e10Fmmg4Z9kPvwzoG9bErjQMkRWqYfGRANBLBTjeD3aiFIo%2FeTUW3yqSyIcIID3l7CPzJQYHbX2cKAZDKKxo7LWTjwT%2BWyr1%2B5PEKbH1ZSmW2Q%3D%3D&quot;,
-    &quot;refresh_token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0dlzlwmfoLRcKUVgPJlQpc3ha%2Bqn6BDOcyFIMLLgQQm0JV4tLaXlLAZjkVRk0pfmo6H91Qdr58T0cL%2FhFlqD1r8%3D&quot;
-}
-</code></pre>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json">
+<span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2110229007990001</span><span class="p">,</span>
+        <span class="nt">&#34;LoginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;小王&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Email&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Telephone&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Cellphone&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;WorkingLocation&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;PermanentAddress&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Postcode&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;StaffType&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Position&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;DeptId&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+        <span class="nt">&#34;IDType&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Nationality&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Language&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;CostCenter&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Company&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&#34;Comments&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;AppToken&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxx&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;AppClientId&#34;</span><span class="p">:</span> <span class="s2">&#34;yyyy&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;LoginTimes&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&#34;LastLoginIp&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;LastLoginTime&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-10-26 12:07:59&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-10-26 12:39:27&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Del&#34;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
        />
     <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
-      http code:401
+      失败-1
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <pre tabindex="0"><code>{
-    &quot;status&quot;: 2,
-    &quot;msg&quot;: &quot;An exception occurred while decoding the access token&quot;
-}
-</code></pre><p>或</p>
-<pre tabindex="0"><code>{
-    &quot;status&quot;: 2,
-    &quot;msg&quot;: &quot;refresh_token expired&quot;
-}
-</code></pre>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;请提供有效的用户Id&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Please provide a valid Staff ID.&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-2"
+       />
+    <label for="tabs-uniqueid_response-2" class="gdoc-tabs__label">
+      失败-2
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;用户不存在&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;User not exist.&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
 </div>
 
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/get-staff-by-id/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必含</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>是</td>
+<td>2109300032090001</td>
+<td>用户的id</td>
+</tr>
+<tr>
+<td>LoginName</td>
+<td>string</td>
+<td>是</td>
+<td>hggfjt</td>
+<td>用户名(登录账号)</td>
+</tr>
+<tr>
+<td>EmployeeNo</td>
+<td>string</td>
+<td>-</td>
+<td>a123</td>
+<td>员工号</td>
+</tr>
+<tr>
+<td>ChineseName</td>
+<td>string</td>
+<td>-</td>
+<td>张三</td>
+<td>中文名</td>
+</tr>
+<tr>
+<td>EnglishName</td>
+<td>string</td>
+<td>-</td>
+<td>san.zhang</td>
+<td>英文名</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td>-</td>
+<td><a class="gdoc-markdown__link" href="mailto:a@163.com">a@163.com</a></td>
+<td>英文名</td>
+</tr>
+<tr>
+<td>Telephone</td>
+<td>string</td>
+<td>-</td>
+<td>010-8888888</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>Cellphone</td>
+<td>string</td>
+<td>-</td>
+<td>130111122222</td>
+<td>手机</td>
+</tr>
+<tr>
+<td>WorkingLocation</td>
+<td>string</td>
+<td>-</td>
+<td>天津</td>
+<td>地点</td>
+</tr>
+<tr>
+<td>PermanentAddress</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>地址</td>
+</tr>
+<tr>
+<td>Postcode</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>邮编</td>
+</tr>
+<tr>
+<td>StaffType</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>类型</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>职位</td>
+</tr>
+<tr>
+<td>DeptId</td>
+<td>number</td>
+<td>-</td>
+<td>123</td>
+<td>部门ID(正整数)</td>
+</tr>
+<tr>
+<td>IDType</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>ID类型</td>
+</tr>
+<tr>
+<td>Nationality</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>国籍</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>语言</td>
+</tr>
+<tr>
+<td>CostCenter</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>成本中心</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>公司ID</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>AppToken</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>App令牌</td>
+</tr>
+<tr>
+<td>AppClientId</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>App客户端ID</td>
+</tr>
+<tr>
+<td>LoginTimes</td>
+<td>number</td>
+<td>-</td>
+<td>xxx</td>
+<td>登录次数(正整数)</td>
+</tr>
+<tr>
+<td>LastLoginIp</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>上次登录ip</td>
+</tr>
+<tr>
+<td>OrderNum</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>排序号</td>
+</tr>
+<tr>
+<td>CreateTime</td>
+<td>string</td>
+<td>-</td>
+<td>2021-10-22 12:28:45</td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>ModifyTime</td>
+<td>string</td>
+<td>-</td>
+<td>2021-10-22 12:28:45</td>
+<td>修改时间</td>
+</tr>
+<tr>
+<td>Del</td>
+<td>boolean</td>
+<td>-</td>
+<td>true</td>
+<td>true表示被删除(未启用)</td>
+</tr>
+</tbody>
+</table> </div>
 
     </article>
 
