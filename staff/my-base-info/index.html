@@ -17,7 +17,7 @@
     <meta name="description" content="更新日期: 2021-10-02
 基本参数     url : https://{domain}:{port}/api/staff/my-base-info http method : POST  请求数据    遵守鉴权机制 参数     参数名称 描述 举例     样例  URL： https://xxx.com/api/staff/my-base-info
 body：
-    返回数据     http code:200  { &quot;status&quot;: 0, &quot;data&quot;: { &quot;Id&quot;: 2110192358330001, &quot;LoginName&quot;: &quot;13022963646&quot;, &quot;EmployeeNo&quot;: &quot;&quot;, &quot;ChineseName&quot;: &quot;冯先生&quot;, &quot;EnglishName&quot;: &quot;Tao&quot;, &quot;Email&quot;: &quot;&quot;, &quot;Telephone&quot;: &quot;&quot;, &quot;Cellphone&quot;: &quot;&quot;, &quot;WorkingLocation&quot;: &quot;&quot;, &quot;PermanentAddress&quot;: &quot;&quot;, &quot;Postcode&quot;: &quot;&quot;, &quot;StaffType&quot;: &quot;&quot;, &quot;Position&quot;: &quot;&quot;, &quot;DeptId&quot;: &quot;&quot;, &quot;IDType&quot;: &quot;&quot;, &quot;Nationality&quot;: &quot;&quot;, &quot;Language&quot;: &quot;&quot;, &quot;CostCenter&quot;: &quot;&quot;, &quot;Company&quot;: 201, &quot;Comments&quot;: &quot;&quot;, &quot;LoginTimes&quot;: 2, &quot;LastLoginIp&quot;: &quot;127.">
+    返回数据     http code:200  { &quot;status&quot;: 0, &quot;data&quot;: { &quot;Id&quot;: 2110192358330001, &quot;LoginName&quot;: &quot;13022963646&quot;, &quot;EmployeeNo&quot;: &quot;&quot;, &quot;ChineseName&quot;: &quot;冯先生&quot;, &quot;EnglishName&quot;: &quot;Tao&quot;, &quot;Email&quot;: &quot;&quot;, &quot;Telephone&quot;: &quot;&quot;, &quot;Cellphone&quot;: &quot;&quot;, &quot;WorkingLocation&quot;: &quot;&quot;, &quot;PermanentAddress&quot;: &quot;&quot;, &quot;Postcode&quot;: &quot;&quot;, &quot;StaffType&quot;: &quot;&quot;, &quot;Position&quot;: &quot;&quot;, &quot;DeptId&quot;: &quot;&quot;, &quot;IDType&quot;: &quot;&quot;, &quot;IDNumber&quot;: &quot;&quot;, &quot;Nationality&quot;: &quot;&quot;, &quot;Language&quot;: &quot;&quot;, &quot;CostCenter&quot;: &quot;&quot;, &quot;Company&quot;: 201, &quot;Comments&quot;: &quot;&quot;, &quot;LoginTimes&quot;: 2, &quot;LastLoginIp&quot;: &quot;127.">
 
 
 
@@ -1258,6 +1258,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         &quot;Position&quot;: &quot;&quot;,
         &quot;DeptId&quot;: &quot;&quot;,
         &quot;IDType&quot;: &quot;&quot;,
+        &quot;IDNumber&quot;: &quot;&quot;,
         &quot;Nationality&quot;: &quot;&quot;,
         &quot;Language&quot;: &quot;&quot;,
         &quot;CostCenter&quot;: &quot;&quot;,
@@ -1385,6 +1386,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>string</td>
 <td>210001</td>
 <td>部门ID</td>
+</tr>
+<tr>
+<td>IDNumber</td>
+<td>string</td>
+<td>xx</td>
+<td>ID号码</td>
 </tr>
 <tr>
 <td>IDType</td>
