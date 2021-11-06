@@ -8,9 +8,6 @@
     <loc>https://smcsdocs.zhsit.cn/staff/my-base-info/</loc>
     <lastmod>2021-11-03T12:18:39+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/company/add-company/</loc>
-    <lastmod>2021-11-04T22:51:43+08:00</lastmod>
-  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/add-staff/</loc>
     <lastmod>2021-11-03T12:18:39+08:00</lastmod>
   </url><url>
@@ -22,9 +19,6 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/</loc>
     <lastmod>2021-09-30T19:47:52+08:00</lastmod>
-  </url><url>
-    <loc>https://smcsdocs.zhsit.cn/company/get-company-page/</loc>
-    <lastmod>2021-11-04T22:51:43+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/dict/get-staff-page/</loc>
     <lastmod>2021-11-02T16:45:18+08:00</lastmod>
@@ -41,6 +35,9 @@
     <loc>https://smcsdocs.zhsit.cn/company/</loc>
     <lastmod>2021-11-04T22:07:46+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/department/</loc>
+    <lastmod>2021-11-05T19:09:31+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/auth/get_t/</loc>
     <lastmod>2021-10-20T00:06:12+08:00</lastmod>
   </url><url>
@@ -55,6 +52,30 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/</loc>
     <lastmod>2021-09-20T23:16:24+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/company/add-company/</loc>
+    <lastmod>2021-11-05T20:30:09+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/department/add-department/</loc>
+    <lastmod>2021-11-05T20:32:30+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/company/get-company-page/</loc>
+    <lastmod>2021-11-05T20:30:09+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/department/get-department-page/</loc>
+    <lastmod>2021-11-05T20:32:30+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/company/del-company/</loc>
+    <lastmod>2021-11-05T20:30:09+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/department/del-department/</loc>
+    <lastmod>2021-11-05T20:32:30+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/company/edit-company/</loc>
+    <lastmod>2021-11-06T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/department/edit-department/</loc>
+    <lastmod>2021-11-06T09:06:39+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>
