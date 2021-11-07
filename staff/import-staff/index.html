@@ -14,12 +14,16 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-04
-基本参数     url : https://{domain}:{port}/api/department/get-department-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Code string xxx 编码   Name string xxx 名称   Description string xxx 描述   OrderNum number 1 排序号   ManagerId number 1 部门经理ID   ParentId number 1 上级部门ID     样例  URL： https://xxx.">
+    <meta name="description" content="更新日期: 2021-11-07
+基本参数     url : https://{domain}:{port}/api/staff/import-staff http method : POST  请求数据    遵守鉴权机制 参数  form-data :
+key: file Value: 选择Excel文件   样例  URL： https://xxx.com/api/staff/edit-staffs
+body：
+不需要修改的字段请不要传给服务器端
+{ &#34;Ids&#34;: [ 2110229007990001, 2110229009390001 ], &#34;ChineseName&#34;: &#34;小王&#34;, &#34;Pwd&#34;: &#34;1&#34; }    返回数据     成功  { &#34;status&#34;: 0, &#34;msg&#34;: &#34;导入成功&#34;, &#34;english_msg&#34;: &#34;Import success.&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;导入失败&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    data 参数       参数 类型 必含 示例值 描述    向服务器端发送数据中的通用参数       参数： page">
 
 
 
-    <title>新增部门 | SMCS</title>
+    <title>导入用户(们)的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1084,7 +1088,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff/import-staff/" class="gdoc-nav__entry ">
+                    <a href="/staff/import-staff/" class="gdoc-nav__entry is-active">
                         导入用户(们)的信息
                     </a>
                 </span>
@@ -1330,7 +1334,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/department/add-department/" class="gdoc-nav__entry is-active">
+                    <a href="/department/add-department/" class="gdoc-nav__entry ">
                         新增部门
                     </a>
                 </span>
@@ -1538,7 +1542,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/department/' href='/department/'><span itemprop='name'>部门</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>新增部门</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff/' href='/staff/'><span itemprop='name'>用户信息</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>导入用户(们)的信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1562,23 +1566,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>新增部门</h1>
-        <p><small>更新日期: 2021-11-04</small></p>
+        <h1>导入用户(们)的信息</h1>
+        <p><small>更新日期: 2021-11-07</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/department/add-department/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/department/get-department-page</li>
+<li>url : https://{domain}:{port}/api/staff/import-staff</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/department/add-department/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1595,54 +1599,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       参数
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class=table-wrap> <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>类型</th>
-<th>示例</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Code</td>
-<td>string</td>
-<td>xxx</td>
-<td>编码</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>string</td>
-<td>xxx</td>
-<td>名称</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>string</td>
-<td>xxx</td>
-<td>描述</td>
-</tr>
-<tr>
-<td>OrderNum</td>
-<td>number</td>
-<td>1</td>
-<td>排序号</td>
-</tr>
-<tr>
-<td>ManagerId</td>
-<td>number</td>
-<td>1</td>
-<td>部门经理ID</td>
-</tr>
-<tr>
-<td>ParentId</td>
-<td>number</td>
-<td>1</td>
-<td>上级部门ID</td>
-</tr>
-</tbody>
-</table> </div>
+      <p>form-data :</p>
+<pre><code>key: file
+
+Value: 选择Excel文件
+</code></pre>
 
     </div>
   
@@ -1652,16 +1613,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/department/get-department-page">https://xxx.com/api/department/get-department-page</a></p>
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/staff/edit-staffs">https://xxx.com/api/staff/edit-staffs</a></p>
 <p>body：</p>
+<p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;code1&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Name&#34;</span><span class="p">:</span> <span class="s2">&#34;美孚&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;DeptType&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&#34;ManagerId&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">20211104231054</span><span class="p">,</span>
-    <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;他家有钱&#34;</span>
+    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mi">2110229007990001</span><span class="p">,</span>
+        <span class="mi">2110229009390001</span>
+    <span class="p">],</span>
+    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;小王&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Pwd&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -1671,7 +1632,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/department/add-department/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1687,13 +1648,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2110221205490001</span>
-    <span class="p">}</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> 
+<span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Import success.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -1704,10 +1663,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;名称不可用&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Name can&#39;t be used&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入失败&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -1717,7 +1676,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/department/add-department/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1726,23 +1685,80 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tr>
 <th>参数</th>
 <th>类型</th>
+<th>必含</th>
 <th>示例值</th>
 <th>描述</th>
 </tr>
 </thead>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td>Id</td>
+<td>page</td>
 <td>number</td>
-<td>2109300032090001</td>
-<td>部门的id</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
 </tr>
 </tbody>
 </table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/department/add-department/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/import-staff/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
