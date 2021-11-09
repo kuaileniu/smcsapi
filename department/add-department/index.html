@@ -14,8 +14,8 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-04
-基本参数     url : https://{domain}:{port}/api/department/get-department-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Code string xxx 编码   Name string xxx 名称   Description string xxx 描述   OrderNum number 1 排序号   ManagerId number 1 部门经理ID   ParentId number 1 上级部门ID     样例  URL： https://xxx.">
+    <meta name="description" content="更新日期: 2021-11-09
+基本参数     url : https://{domain}:{port}/api/department/add-department http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Code string xxx 编码   Name string xxx 名称   Description string xxx 描述   OrderNum number 1 排序号   ManagerId number 1 部门经理ID   ParentId number 1 上级部门ID     样例  URL： https://xxx.">
 
 
 
@@ -703,6 +703,14 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
             
             
+            
+        
+            
+            
+            
+        
+            
+            
 
             
             
@@ -1383,7 +1391,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/department/del-department/" class="gdoc-nav__entry ">
-                        删除部门
+                        删除部门(们)
                     </a>
                 </span>
             
@@ -1429,9 +1437,57 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
             
             
+
             
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">角色</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
         
             
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/role/add-role/" class="gdoc-nav__entry ">
+                        新增角色
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
             
             
         
@@ -1563,7 +1619,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>新增部门</h1>
-        <p><small>更新日期: 2021-11-04</small></p>
+        <p><small>更新日期: 2021-11-09</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -1572,7 +1628,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/department/get-department-page</li>
+<li>url : https://{domain}:{port}/api/department/add-department</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
@@ -1652,7 +1708,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/department/get-department-page">https://xxx.com/api/department/get-department-page</a></p>
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/department/add-department">https://xxx.com/api/department/add-department</a></p>
 <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;code1&#34;</span><span class="p">,</span>

@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-04
+    <meta name="description" content="更新日期: 2021-11-09
 基本参数     url : https://{domain}:{port}/api/department/get-department-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string 中石化 搜索文本内容     样例  URL： https://xxx.com/api/department/get-department-page
 body：
 { &#34;search&#34;:&#34;&#34;, &#34;page&#34;:1, &#34;limit&#34;:30 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 143042905470001, &#34;Code&#34;: &#34;&#34;, &#34;Name&#34;: &#34;IT部&#34;, &#34;Description&#34;: &#34;&#34;, &#34;DeptType&#34;: 0, &#34;ManagerId&#34;: 0, &#34;ParentId&#34;: 0, &#34;OrderNum&#34;: 20211104231054, &#34;CreateTime&#34;: &#34;2021-11-04 23:10:54&#34;, &#34;ModifyTime&#34;: &#34;2021-11-04 23:10:54&#34;, &#34;Del&#34;: false }, { &#34;Id&#34;: 143042905470002, &#34;Code&#34;: &#34;&#34;, &#34;Name&#34;: &#34;销售部&#34;, &#34;Description&#34;: &#34;&#34;, &#34;DeptType&#34;: 0, &#34;ManagerId&#34;: 0, &#34;ParentId&#34;: 0, &#34;OrderNum&#34;: 20211104231054, &#34;CreateTime&#34;: &#34;2021-11-04 23:10:54&#34;, &#34;ModifyTime&#34;: &#34;2021-11-04 23:10:54&#34;, &#34;Del&#34;: false } ], &#34;count&#34;: 2 }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数 类型 必含 示例值 描述     Id number 是 2109300032090001 公司的id   Name string 是 中石化 名称   Description string - 这是个大客户 描述   Code string - xx 编码   DeptType number - xx 类型   ManagerId number - xx 部门经理ID   ParentId number - xx 上级部门ID    向服务器端发送数据中的通用参数       参数： page">
@@ -705,6 +705,14 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
             
             
+            
+        
+            
+            
+            
+        
+            
+            
 
             
             
@@ -1385,7 +1393,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/department/del-department/" class="gdoc-nav__entry ">
-                        删除部门
+                        删除部门(们)
                     </a>
                 </span>
             
@@ -1431,9 +1439,57 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
             
             
+
             
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">角色</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
         
             
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/role/add-role/" class="gdoc-nav__entry ">
+                        新增角色
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
             
             
         
@@ -1565,7 +1621,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>获取部门信息(分页)</h1>
-        <p><small>更新日期: 2021-11-04</small></p>
+        <p><small>更新日期: 2021-11-09</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
