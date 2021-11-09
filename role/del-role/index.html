@@ -14,17 +14,13 @@
 
 
 
-    <meta name="description" content="参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-   编码 描述 解决方案     0 数据正确返回/处理,不需要界面提示 &mdash;-   1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;-   2 未正确返回/处理数据,但不要界面提示 &mdash;-   3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash;   4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;-   5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;-      参数： msg
-类型： string
-可为空： 是
-   编码 描述 解决方案     msg 中文提示内容 -      参数： english_msg">
+    <meta name="description" content="更新日期: 2021-11-09
+基本参数     url : https://{domain}:{port}/api/role/del-role http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids number[] [1,2] 角色id数组     样例  body：
+{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功&#34;, &#34;english_msg&#34;: &#34;Delete success&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败&#34;, &#34;english_msg&#34;: &#34;Delete failed&#34; }    服务器端返回客户端数据中的通用参数       参数： status">
 
 
 
-    <title>Include Response Body Common | SMCS</title>
+    <title>删除部门(们) | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1529,7 +1525,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/role/del-role/" class="gdoc-nav__entry ">
+                    <a href="/role/del-role/" class="gdoc-nav__entry is-active">
                         删除部门(们)
                     </a>
                 </span>
@@ -1677,7 +1673,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/_includes/' href='/_includes/'><span itemprop='name'>Includes</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Include Response Body Common</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/role/' href='/role/'><span itemprop='name'>角色</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除部门(们)</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1701,8 +1697,135 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Include Response Body Common</h1>
-        <ol>
+        <h1>删除部门(们)</h1>
+        <p><small>更新日期: 2021-11-09</small></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/del-role/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><ol>
+<li>url : https://{domain}:{port}/api/role/del-role</li>
+<li>http method : POST</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/del-role/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      参数
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ids</td>
+<td>number[]</td>
+<td>[1,2]</td>
+<td>角色id数组</td>
+</tr>
+</tbody>
+</table> </div>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>body：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mi">143042941580001</span><span class="p">,</span>
+        <span class="mi">143084106780001</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+</div>
+</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/del-role/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      成功
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Delete success&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+       />
+    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+      失败
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Delete failed&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="服务器端返回客户端数据中的通用参数">
+        服务器端返回客户端数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/del-role/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
 <li>
 <p>参数： status<br>
 类型：number<br>
@@ -1869,6 +1992,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </table> </div>
 </li>
 </ol>
+</div>
+
 
     </article>
 

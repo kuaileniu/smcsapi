@@ -41,6 +41,9 @@
     <loc>https://smcsdocs.zhsit.cn/company/get-company-page/</loc>
     <lastmod>2021-11-05T20:30:09+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/role/get-role-page/</loc>
+    <lastmod>2021-11-09T20:33:50+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/department/get-department-page/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
   </url><url>
@@ -53,6 +56,9 @@
     <loc>https://smcsdocs.zhsit.cn/department/del-department/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/role/del-role/</loc>
+    <lastmod>2021-11-09T20:46:33+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/get-staff-by-id/</loc>
     <lastmod>2021-11-07T14:50:22+08:00</lastmod>
   </url><url>
@@ -64,6 +70,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/edit-company/</loc>
     <lastmod>2021-11-06T09:05:48+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/role/edit-role/</loc>
+    <lastmod>2021-11-09T20:33:50+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/department/edit-department/</loc>
     <lastmod>2021-11-06T09:06:39+08:00</lastmod>
