@@ -35,8 +35,14 @@
     <loc>https://smcsdocs.zhsit.cn/department/add-department/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-have-this-role/</loc>
+    <lastmod>2021-11-20T15:35:53+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/del-staff/</loc>
     <lastmod>2021-11-07T14:50:22+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-not-have-this-role/</loc>
+    <lastmod>2021-11-20T15:35:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/get-company-page/</loc>
     <lastmod>2021-11-05T20:30:09+08:00</lastmod>
@@ -47,11 +53,17 @@
     <loc>https://smcsdocs.zhsit.cn/department/get-department-page/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/add-staff-for-role/</loc>
+    <lastmod>2021-11-21T09:16:39+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/edit-staffs/</loc>
     <lastmod>2021-11-07T14:50:22+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/add-role-for-staff/</loc>
+    <lastmod>2021-11-21T09:16:39+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/del-company/</loc>
-    <lastmod>2021-11-06T09:12:47+08:00</lastmod>
+    <lastmod>2021-11-21T08:35:48+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/department/del-department/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
@@ -64,6 +76,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/auth/</loc>
     <lastmod>2021-11-09T18:04:11+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/del-staff-for-role/</loc>
+    <lastmod>2021-11-21T09:49:30+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/</loc>
     <lastmod>2021-11-09T18:04:11+08:00</lastmod>
@@ -78,7 +93,10 @@
     <lastmod>2021-11-06T09:06:39+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/get-staff-page/</loc>
-    <lastmod>2021-11-07T14:50:22+08:00</lastmod>
+    <lastmod>2021-11-20T15:35:53+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/del-role-for-staff/</loc>
+    <lastmod>2021-11-21T09:49:30+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/dict/</loc>
     <lastmod>2021-11-09T18:04:11+08:00</lastmod>
@@ -100,6 +118,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/role/</loc>
     <lastmod>2021-11-09T18:04:11+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/staff-role/</loc>
+    <lastmod>2021-11-20T15:35:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>
