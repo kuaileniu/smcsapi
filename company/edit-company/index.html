@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2021-10-27
-基本参数     url : https://{domain}:{port}/api/company/edit-company http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 必含 示例 描述     Id number 是 143050937780001 公司ID   Code string - xxx 编码   Name string - xxx 名称   OrderNum number - 8 排序号   Description string - xxxx 描述     样例  URL： https://xxx.">
+基本参数     url : https://{domain}:{port}/api/company/edit-company http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 必含 示例 描述     Id number 是 143050937780001 公司ID   Code string - xxx 编码   Name string - xxx 名称   OrderNum number - 8 排序号   Description string - xxxx 描述     样例  body：">
 
 
 
@@ -1525,7 +1525,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/role/del-role/" class="gdoc-nav__entry ">
-                        删除部门(们)
+                        删除角色(们)
                     </a>
                 </span>
             
@@ -1900,7 +1900,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-permission/my-menu/" class="gdoc-nav__entry ">
+                    <a href="/staff-permission/my-menu-tree/" class="gdoc-nav__entry ">
                         获取自己拥有的菜单树
                     </a>
                 </span>
@@ -1926,8 +1926,142 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-permission/my-permission/" class="gdoc-nav__entry ">
+                    <a href="/staff-permission/my-permission-tree/" class="gdoc-nav__entry ">
                         获取自己拥有的权限(含菜单)树
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">业主/客户</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/add-jtblclient/" class="gdoc-nav__entry ">
+                        新增业主客户
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/del-jtblclient/" class="gdoc-nav__entry ">
+                        删除业主客户(们)
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/edit-jtblclient/" class="gdoc-nav__entry ">
+                        编辑业主客户的信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/get-jtblclient-page/" class="gdoc-nav__entry ">
+                        分页获取业主客户信息
                     </a>
                 </span>
             
@@ -2162,8 +2296,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/company/edit-company">https://xxx.com/api/company/edit-company</a></p>
-<p>body：</p>
+      <p>body：</p>
 <p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">143050937780001</span><span class="p">,</span>

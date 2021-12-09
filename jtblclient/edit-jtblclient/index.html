@@ -14,11 +14,12 @@
 
 
 
-    <meta name="description" content="SMCS">
+    <meta name="description" content="更新日期: 2021-12-07
+基本参数     url : https://{domain}:{port}/api/jtblclient/edit-jtblclient http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 144074477080001 业主客户id   Code string xxx 业主代码   OrganisationName string xxx 组织名称   Active boolean true/ 启用   Address string xxx市 地址   Email string x@163.com 邮箱   Post string xxx 邮编   LinkMan string 张三 联系人   Title string 经理 职务   Tel string 010-11223344 电话   Fax string 010-11223344 传真   Note string xxx 备注     样例  body：">
 
 
 
-    <title>角色权限关系 | SMCS</title>
+    <title>编辑业主客户的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2033,7 +2034,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtblclient/edit-jtblclient/" class="gdoc-nav__entry ">
+                    <a href="/jtblclient/edit-jtblclient/" class="gdoc-nav__entry is-active">
                         编辑业主客户的信息
                     </a>
                 </span>
@@ -2175,7 +2176,15 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>角色权限关系</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtblclient/' href='/jtblclient/'><span itemprop='name'>业主/客户</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>编辑业主客户的信息</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -2197,8 +2206,407 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>角色权限关系</h1>
-        
+        <h1>编辑业主客户的信息</h1>
+        <p><small>更新日期: 2021-12-07</small></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><ol>
+<li>url : https://{domain}:{port}/api/jtblclient/edit-jtblclient</li>
+<li>http method : POST</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      参数
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>144074477080001</td>
+<td>业主客户id</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>string</td>
+<td>xxx</td>
+<td>业主代码</td>
+</tr>
+<tr>
+<td>OrganisationName</td>
+<td>string</td>
+<td>xxx</td>
+<td>组织名称</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>boolean</td>
+<td>true/</td>
+<td>启用</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>string</td>
+<td>xxx市</td>
+<td>地址</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td><a class="gdoc-markdown__link" href="mailto:x@163.com">x@163.com</a></td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>string</td>
+<td>xxx</td>
+<td>邮编</td>
+</tr>
+<tr>
+<td>LinkMan</td>
+<td>string</td>
+<td>张三</td>
+<td>联系人</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>string</td>
+<td>经理</td>
+<td>职务</td>
+</tr>
+<tr>
+<td>Tel</td>
+<td>string</td>
+<td>010-11223344</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>Fax</td>
+<td>string</td>
+<td>010-11223344</td>
+<td>传真</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+</tbody>
+</table> </div>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>body：</p>
+<p>不需要修改的字段请不要传给服务器端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;Id&#34;</span><span class="p">:</span><span class="mi">144074477080001</span><span class="p">,</span>
+    <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;R03&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;OrganisationName&#34;</span><span class="p">:</span> <span class="s2">&#34;武当山02&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Active&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&#34;Address&#34;</span><span class="p">:</span> <span class="s2">&#34;北京市xxxx&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Email&#34;</span><span class="p">:</span> <span class="s2">&#34;1@qq.com&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Post&#34;</span><span class="p">:</span> <span class="s2">&#34;274928&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;LinkMan&#34;</span><span class="p">:</span> <span class="s2">&#34;张三&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Title&#34;</span><span class="p">:</span> <span class="s2">&#34;经理&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Tel&#34;</span><span class="p">:</span> <span class="s2">&#34;010-88665544&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Fax&#34;</span><span class="p">:</span> <span class="s2">&#34;010-xxxx&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;备注&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+</div>
+</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      成功
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2110221205490001</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+       />
+    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+      失败
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;组织名称不可为空&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;ClientName can&#39;t be blank&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>2109300032090001</td>
+<td>业主客户的id</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="服务器端返回客户端数据中的通用参数">
+        服务器端返回客户端数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： status<br>
+类型：number<br>
+补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>数据正确返回/处理,不需要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>未正确返回/处理数据,须界面提示,系统自动关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>未正确返回/处理数据,但不要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数据正确返回/处理,但需要界面提示，系统自动关闭提示</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>未正确返回/处理数据,须界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>数据正确返回/处理,但需要界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： msg<br>
+类型： string<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msg</td>
+<td>中文提示内容</td>
+<td>-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： english_msg<br>
+类型： string<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>english_msg</td>
+<td>英文提示内容</td>
+<td>-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： count<br>
+类型： number<br>
+可为空： 是 </p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>数据总条数</td>
+<td>分页查询时，符合查询条件的总数量</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： data<br>
+类型： 不存在或为json对象。可能为空，可能为单对象{}，也可能为数组对象[{},{}]<br>
+说明： 业务数据，如果数据分页，data中为本页内的数据列表。总页数等信息在与data同级的参数中。</p>
+</li>
+<li>
+<p>data 节点内的通用参数</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrderNum</td>
+<td>number</td>
+<td>20210930003209</td>
+<td>排序号，默认按创建时间，前端若有需要可以修改</td>
+</tr>
+<tr>
+<td>CreateTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号被创建的时间，按年月日时分秒格式</td>
+</tr>
+<tr>
+<td>ModifyTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号最后被修改的时间，按年月日时分秒格式，第一次的时间与创建时间相同</td>
+</tr>
+<tr>
+<td>Del</td>
+<td>boolean</td>
+<td>false</td>
+<td>false 表示没假删除也就是启用，true表示被假删除也就是未启用</td>
+</tr>
+<tr>
+<td>CreateBy</td>
+<td>string</td>
+<td>张无忌</td>
+<td>创建人</td>
+</tr>
+<tr>
+<td>ModifiedBy</td>
+<td>string</td>
+<td>乔峰</td>
+<td>修改人</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+
     </article>
 
                 

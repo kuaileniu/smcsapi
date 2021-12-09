@@ -14,11 +14,13 @@
 
 
 
-    <meta name="description" content="SMCS">
+    <meta name="description" content="更新日期: 2021-11-30
+基本参数     url : https://{domain}:{port}/api/staff-permission/my-menu-tree http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     样例  body：
+   返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;PermissionType&#34;: 1, &#34;MenuIcon&#34;: &#34;layui-icon-set&#34;, &#34;Children&#34;: [ { &#34;Id&#34;: 2, &#34;ParentId&#34;: 1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 3, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;项目&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 4, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 5, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;MenuURL&#34;: &#34;app/content/projectLogin&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 6, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目列表&#34;, &#34;MenuURL&#34;: &#34;app/content/projectList&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 7, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目设置&#34;, &#34;MenuURL&#34;: &#34;system/authorities&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 8, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目参数&#34;, &#34;MenuURL&#34;: &#34;app/content/paramter&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 9, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;导入数据&#34;, &#34;MenuURL&#34;: &#34;app/content/import&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 10, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目计划&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 11, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;甘特图&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 12, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;资源配置&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 13, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;生产&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 14, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;基础数据&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 17, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;管道数据&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 18, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;结构数据&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 15, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;图纸下发&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 19, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;材料匹配&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 20, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;工作包&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 21, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;创建批次&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 16, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;进度报告&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 22, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;批次报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 23, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;WBS报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 24, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;工作包报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 25, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;分包商报告&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 26, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;权限&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 27, &#34;ParentId&#34;: 26, &#34;ChineseName&#34;: &#34;权限管理&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 28, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;用户管理&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 29, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;角色管理&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 30, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;权限分配&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 31, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;用户项目&#34;, &#34;PermissionType&#34;: 2 } ] } ] } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询我的菜单失败&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    data 参数       参数 类型 必含 示例值 描述     Id number 是 2109300032090001 权限的id   ParentId number - -1 父级权限id   ChineseName string - 主页 权限的中文名称   EnglishName string - xxx 英文名   PermissionType number - 1 权限类型，1为目录，2为菜单，3为按钮   MenuURL string - app/pro/xxx 菜单路径   MenuIcon string - layui-icon-set 菜单的图标   Children 数组 - [{}] 子级权限数组    向服务器端发送数据中的通用参数       参数： page">
 
 
 
-    <title>角色权限关系 | SMCS</title>
+    <title>获取自己拥有的菜单树 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1899,7 +1901,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-permission/my-menu-tree/" class="gdoc-nav__entry ">
+                    <a href="/staff-permission/my-menu-tree/" class="gdoc-nav__entry is-active">
                         获取自己拥有的菜单树
                     </a>
                 </span>
@@ -2175,7 +2177,15 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>角色权限关系</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff-permission/' href='/staff-permission/'><span itemprop='name'>用户权限关系</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>获取自己拥有的菜单树</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -2197,8 +2207,644 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>角色权限关系</h1>
-        
+        <h1>获取自己拥有的菜单树</h1>
+        <p><small>更新日期: 2021-11-30</small></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><ol>
+<li>url : https://{domain}:{port}/api/staff-permission/my-menu-tree</li>
+<li>http method : POST</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      参数
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+</table> </div>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>body：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> 
+</code></pre></div>
+    </div>
+  
+</div>
+</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      成功
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;主页&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;MenuIcon&#34;</span><span class="p">:</span> <span class="s2">&#34;layui-icon-set&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;主页&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目登录&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目登录&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/projectLogin&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目列表&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/projectList&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目设置&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;system/authorities&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目参数&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/paramter&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;导入数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/import&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目计划&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;甘特图&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;资源配置&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;生产&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;基础数据&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;管道数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;结构数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;图纸下发&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;材料匹配&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;工作包&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;创建批次&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;进度报告&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;批次报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;WBS报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;工作包报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;分包商报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限管理&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;用户管理&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;角色管理&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限分配&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;用户项目&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+       />
+    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+      失败
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;查询我的菜单失败&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>必含</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>是</td>
+<td>2109300032090001</td>
+<td>权限的id</td>
+</tr>
+<tr>
+<td>ParentId</td>
+<td>number</td>
+<td>-</td>
+<td>-1</td>
+<td>父级权限id</td>
+</tr>
+<tr>
+<td>ChineseName</td>
+<td>string</td>
+<td>-</td>
+<td>主页</td>
+<td>权限的中文名称</td>
+</tr>
+<tr>
+<td>EnglishName</td>
+<td>string</td>
+<td>-</td>
+<td>xxx</td>
+<td>英文名</td>
+</tr>
+<tr>
+<td>PermissionType</td>
+<td>number</td>
+<td>-</td>
+<td>1</td>
+<td>权限类型，1为目录，2为菜单，3为按钮</td>
+</tr>
+<tr>
+<td>MenuURL</td>
+<td>string</td>
+<td>-</td>
+<td>app/pro/xxx</td>
+<td>菜单路径</td>
+</tr>
+<tr>
+<td>MenuIcon</td>
+<td>string</td>
+<td>-</td>
+<td>layui-icon-set</td>
+<td>菜单的图标</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>数组</td>
+<td>-</td>
+<td>[{}]</td>
+<td>子级权限数组</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="服务器端返回客户端数据中的通用参数">
+        服务器端返回客户端数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-permission/my-menu-tree/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： status<br>
+类型：number<br>
+补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>数据正确返回/处理,不需要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>1</td>
+<td>未正确返回/处理数据,须界面提示,系统自动关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>未正确返回/处理数据,但不要界面提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>数据正确返回/处理,但需要界面提示，系统自动关闭提示</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>未正确返回/处理数据,须界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>数据正确返回/处理,但需要界面提示，由用户自己关闭提示</td>
+<td>&mdash;-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： msg<br>
+类型： string<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>msg</td>
+<td>中文提示内容</td>
+<td>-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： english_msg<br>
+类型： string<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>english_msg</td>
+<td>英文提示内容</td>
+<td>-</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： count<br>
+类型： number<br>
+可为空： 是 </p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>数据总条数</td>
+<td>分页查询时，符合查询条件的总数量</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： data<br>
+类型： 不存在或为json对象。可能为空，可能为单对象{}，也可能为数组对象[{},{}]<br>
+说明： 业务数据，如果数据分页，data中为本页内的数据列表。总页数等信息在与data同级的参数中。</p>
+</li>
+<li>
+<p>data 节点内的通用参数</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrderNum</td>
+<td>number</td>
+<td>20210930003209</td>
+<td>排序号，默认按创建时间，前端若有需要可以修改</td>
+</tr>
+<tr>
+<td>CreateTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号被创建的时间，按年月日时分秒格式</td>
+</tr>
+<tr>
+<td>ModifyTime</td>
+<td>time</td>
+<td>2021-09-30 00:32:09</td>
+<td>本账号最后被修改的时间，按年月日时分秒格式，第一次的时间与创建时间相同</td>
+</tr>
+<tr>
+<td>Del</td>
+<td>boolean</td>
+<td>false</td>
+<td>false 表示没假删除也就是启用，true表示被假删除也就是未启用</td>
+</tr>
+<tr>
+<td>CreateBy</td>
+<td>string</td>
+<td>张无忌</td>
+<td>创建人</td>
+</tr>
+<tr>
+<td>ModifiedBy</td>
+<td>string</td>
+<td>乔峰</td>
+<td>修改人</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+
     </article>
 
                 

@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2021-11-09
-基本参数     url : https://{domain}:{port}/api/role/add-role http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Code string xxx 编码   Name string xxx 名称   Description string xxx 描述   OrderNum number 1 排序号   Internal boolean true 是内部角色     样例  URL： https://xxx.com/api/role/add-role
-body：">
+基本参数     url : https://{domain}:{port}/api/role/add-role http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Code string xxx 编码   Name string xxx 名称   Description string xxx 描述   OrderNum number 1 排序号   Internal boolean true 是内部角色     样例  body：
+{ &#34;Code&#34;: &#34;R007&#34;, &#34;Name&#34;: &#34;技术员1&#34;, &#34;Internal&#34;: true, &#34;OrderNum&#34;: 20211104231054, &#34;Description&#34;: &#34;干技术活的&#34; }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 2110221205490001 } }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;名称不可用&#34;, &#34;english_msg&#34;: &#34;Name can&#39;t be used&#34; }    data 参数       参数 类型 示例值 描述     Id number 2109300032090001 角色的id    服务器端返回客户端数据中的通用参数       参数： status">
 
 
 
@@ -1526,7 +1526,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/role/del-role/" class="gdoc-nav__entry ">
-                        删除部门(们)
+                        删除角色(们)
                     </a>
                 </span>
             
@@ -1901,7 +1901,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-permission/my-menu/" class="gdoc-nav__entry ">
+                    <a href="/staff-permission/my-menu-tree/" class="gdoc-nav__entry ">
                         获取自己拥有的菜单树
                     </a>
                 </span>
@@ -1927,8 +1927,142 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-permission/my-permission/" class="gdoc-nav__entry ">
+                    <a href="/staff-permission/my-permission-tree/" class="gdoc-nav__entry ">
                         获取自己拥有的权限(含菜单)树
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">业主/客户</span>
+            
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/add-jtblclient/" class="gdoc-nav__entry ">
+                        新增业主客户
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/del-jtblclient/" class="gdoc-nav__entry ">
+                        删除业主客户(们)
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/edit-jtblclient/" class="gdoc-nav__entry ">
+                        编辑业主客户的信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/jtblclient/get-jtblclient-page/" class="gdoc-nav__entry ">
+                        分页获取业主客户信息
                     </a>
                 </span>
             
@@ -2157,8 +2291,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/role/add-role">https://xxx.com/api/role/add-role</a></p>
-<p>body：</p>
+      <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;R007&#34;</span><span class="p">,</span>
     <span class="nt">&#34;Name&#34;</span><span class="p">:</span> <span class="s2">&#34;技术员1&#34;</span><span class="p">,</span>
