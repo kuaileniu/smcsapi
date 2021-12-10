@@ -23,8 +23,8 @@
     <loc>https://smcsdocs.zhsit.cn/preface/</loc>
     <lastmod>2021-11-09T18:04:11+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtblclient/add-jtblclient/</loc>
-    <lastmod>2021-12-08T14:18:34+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-client/add-jtbl-client/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/add-company/</loc>
     <lastmod>2021-12-07T21:30:41+08:00</lastmod>
@@ -38,6 +38,9 @@
     <loc>https://smcsdocs.zhsit.cn/department/add-department/</loc>
     <lastmod>2021-11-09T18:14:55+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-job/add-jtbl-job/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-have-this-role/</loc>
     <lastmod>2021-11-20T15:35:53+08:00</lastmod>
   </url><url>
@@ -50,11 +53,14 @@
     <loc>https://smcsdocs.zhsit.cn/role-permission/change-permission-for-role/</loc>
     <lastmod>2021-11-26T17:41:22+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtblclient/del-jtblclient/</loc>
-    <lastmod>2021-12-08T14:34:01+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-client/del-jtbl-client/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/del-staff/</loc>
     <lastmod>2021-11-07T14:50:22+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-job/del-jtbl-job/</loc>
+    <lastmod>2021-12-11T01:31:47+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-not-have-this-role/</loc>
     <lastmod>2021-11-20T15:35:53+08:00</lastmod>
@@ -77,17 +83,23 @@
     <loc>https://smcsdocs.zhsit.cn/staff-role/add-staff-for-role/</loc>
     <lastmod>2021-11-21T09:16:39+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtblclient/edit-jtblclient/</loc>
-    <lastmod>2021-12-08T16:41:28+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-client/edit-jtbl-client/</loc>
+    <lastmod>2021-12-11T01:31:47+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/edit-staffs/</loc>
     <lastmod>2021-11-07T14:50:22+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-job/edit-jtbl-job/</loc>
+    <lastmod>2021-12-11T01:31:47+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-role/add-role-for-staff/</loc>
     <lastmod>2021-11-21T09:16:39+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtblclient/get-jtblclient-page/</loc>
-    <lastmod>2021-12-08T17:01:52+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-client/get-jtbl-client-page/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-job/get-jtbl-job-page/</loc>
+    <lastmod>2021-12-11T01:31:47+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/del-company/</loc>
     <lastmod>2021-12-07T21:30:41+08:00</lastmod>
@@ -155,8 +167,11 @@
     <loc>https://smcsdocs.zhsit.cn/staff-permission/</loc>
     <lastmod>2021-11-30T01:36:42+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtblclient/</loc>
-    <lastmod>2021-12-08T14:17:18+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-client/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-job/</loc>
+    <lastmod>2021-12-11T01:21:40+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>
