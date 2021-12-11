@@ -14,12 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-11
-基本参数     url : https://{domain}:{port}/api/jtbl-area/edit-jtbl-area http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 144095520480001 分区ID   JobId number xxx 项目ID   AreaName string xxx 分区名称   AreaDescription string xxx 描述   LastCopiedSpool number 123 最后复制管段号   OnSkidArea number xxx 撬上区域   DeliveryGroupId number 123 发货组ID   Spare1 string xxxx 自定义字段1   Spare2 string xxxx 自定义字段2   Spare3 string xxxx 自定义字段3   Spare4 string xxxx 自定义字段4     样例  body：">
+    <meta name="description" content="更新日期: 2021-12-10
+基本参数     url : https://{domain}:{port}/api/jtbl-job/my-job-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string xxxxx 搜索文本内容     样例  body：
+{ &#34;search&#34;:&#34;&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 144095520480001, &#34;JobNo&#34;: &#34;项目号1&#34;, &#34;JobTitle&#34;: &#34;项目名称1&#34;, &#34;ClientId&#34;: 1, &#34;Active&#34;: false, &#34;OrderNo&#34;: &#34;OrderNo1&#34;, &#34;ContractNo&#34;: &#34;ContractNo1&#34;, &#34;JobType&#34;: &#34;structure&#34;, &#34;UserId&#34;: 123, &#34;IsModule&#34;: false, &#34;IsUniqSpoolNo&#34;: true, &#34;ImportWholeSpoolNo&#34;: true, &#34;TemplateAreaId&#34;: 4, &#34;MasterAreaId&#34;: 6, &#34;ProjectManagerId&#34;: 7, &#34;UOM&#34;: &#34;公制&#34;, &#34;ShowClientSpoolNo&#34;: false, &#34;NDTAutoNumbering&#34;: false, &#34;MaxWeldRepairCount&#34;: 8, &#34;WeldUniqueNoPrefix&#34;: &#34;xxx1&#34;, &#34;ShowWeldUniqueNo&#34;: true, &#34;SiteWelderPrefix&#34;: &#34;xx2&#34;, &#34;WeldUniqueNoPrefixSite&#34;: &#34;xx3&#34;, &#34;JobConsumableCertificatesFolder&#34;: &#34;xx4&#34;, &#34;MaterialCertFolder&#34;: &#34;xx5&#34;, &#34;ShowCertOrigin&#34;: false, &#34;IssuedForFab&#34;: 10, &#34;CutComp&#34;: 12, &#34;FitUpComp&#34;: 13, &#34;WeldComp&#34;: 14, &#34;WeldNDTComp&#34;: 15, &#34;SentPaint&#34;: 16, &#34;PaintComp&#34;: 17, &#34;Packed&#34;: 18, &#34;SentSite&#34;: 19, &#34;ReceivedSite&#34;: 20, &#34;MaterialMargin&#34;: 8.">
 
 
 
-    <title>编辑分区的信息 | SMCS</title>
+    <title>分页获取我的项目信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2302,7 +2303,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtbl-area/edit-jtbl-area/" class="gdoc-nav__entry is-active">
+                    <a href="/jtbl-area/edit-jtbl-area/" class="gdoc-nav__entry ">
                         编辑分区的信息
                     </a>
                 </span>
@@ -2622,7 +2623,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff-job/my-job-page/" class="gdoc-nav__entry ">
+                    <a href="/staff-job/my-job-page/" class="gdoc-nav__entry is-active">
                         分页获取我的项目信息
                     </a>
                 </span>
@@ -2744,7 +2745,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtbl-area/' href='/jtbl-area/'><span itemprop='name'>分区</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>编辑分区的信息</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff-job/' href='/staff-job/'><span itemprop='name'>用户项目</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页获取我的项目信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -2768,23 +2769,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>编辑分区的信息</h1>
-        <p><small>更新日期: 2021-12-11</small></p>
+        <h1>分页获取我的项目信息</h1>
+        <p><small>更新日期: 2021-12-10</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-area/edit-jtbl-area</li>
+<li>url : https://{domain}:{port}/api/jtbl-job/my-job-page</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2812,70 +2813,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>Id</td>
-<td>number</td>
-<td>144095520480001</td>
-<td>分区ID</td>
-</tr>
-<tr>
-<td>JobId</td>
-<td>number</td>
-<td>xxx</td>
-<td>项目ID</td>
-</tr>
-<tr>
-<td>AreaName</td>
+<td>search</td>
 <td>string</td>
-<td>xxx</td>
-<td>分区名称</td>
-</tr>
-<tr>
-<td>AreaDescription</td>
-<td>string</td>
-<td>xxx</td>
-<td>描述</td>
-</tr>
-<tr>
-<td>LastCopiedSpool</td>
-<td>number</td>
-<td>123</td>
-<td>最后复制管段号</td>
-</tr>
-<tr>
-<td>OnSkidArea</td>
-<td>number</td>
-<td>xxx</td>
-<td>撬上区域</td>
-</tr>
-<tr>
-<td>DeliveryGroupId</td>
-<td>number</td>
-<td>123</td>
-<td>发货组ID</td>
-</tr>
-<tr>
-<td>Spare1</td>
-<td>string</td>
-<td>xxxx</td>
-<td>自定义字段1</td>
-</tr>
-<tr>
-<td>Spare2</td>
-<td>string</td>
-<td>xxxx</td>
-<td>自定义字段2</td>
-</tr>
-<tr>
-<td>Spare3</td>
-<td>string</td>
-<td>xxxx</td>
-<td>自定义字段3</td>
-</tr>
-<tr>
-<td>Spare4</td>
-<td>string</td>
-<td>xxxx</td>
-<td>自定义字段4</td>
+<td>xxxxx</td>
+<td>搜索文本内容</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2889,19 +2830,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
-<p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144099490310001</span><span class="p">,</span>
-    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;AreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;AreaName1&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;AreaDescription1&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;LastCopiedSpool&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-    <span class="nt">&#34;OnSkidArea&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="nt">&#34;DeliveryGroupId&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
-    <span class="nt">&#34;Spare1&#34;</span><span class="p">:</span> <span class="s2">&#34;s&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Spare2&#34;</span><span class="p">:</span> <span class="s2">&#34;x&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Spare3&#34;</span><span class="p">:</span> <span class="s2">&#34;e&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Spare4&#34;</span><span class="p">:</span> <span class="s2">&#34;h&#34;</span>
+    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -2911,7 +2843,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2928,10 +2860,66 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span><span class="p">,</span>
-  
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144095520480001</span><span class="p">,</span>
+            <span class="nt">&#34;JobNo&#34;</span><span class="p">:</span> <span class="s2">&#34;项目号1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;JobTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;项目名称1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ClientId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Active&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;OrderNo&#34;</span><span class="p">:</span> <span class="s2">&#34;OrderNo1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ContractNo&#34;</span><span class="p">:</span> <span class="s2">&#34;ContractNo1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;JobType&#34;</span><span class="p">:</span> <span class="s2">&#34;structure&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;UserId&#34;</span><span class="p">:</span> <span class="mi">123</span><span class="p">,</span>
+            <span class="nt">&#34;IsModule&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;IsUniqSpoolNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;ImportWholeSpoolNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;TemplateAreaId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&#34;MasterAreaId&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+            <span class="nt">&#34;ProjectManagerId&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+            <span class="nt">&#34;UOM&#34;</span><span class="p">:</span> <span class="s2">&#34;公制&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ShowClientSpoolNo&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;NDTAutoNumbering&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;MaxWeldRepairCount&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="nt">&#34;WeldUniqueNoPrefix&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ShowWeldUniqueNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;SiteWelderPrefix&#34;</span><span class="p">:</span> <span class="s2">&#34;xx2&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;WeldUniqueNoPrefixSite&#34;</span><span class="p">:</span> <span class="s2">&#34;xx3&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;JobConsumableCertificatesFolder&#34;</span><span class="p">:</span> <span class="s2">&#34;xx4&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;MaterialCertFolder&#34;</span><span class="p">:</span> <span class="s2">&#34;xx5&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ShowCertOrigin&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+            <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+            <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+            <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+            <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+            <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
+            <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+            <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
+            <span class="nt">&#34;ReceivedSite&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="nt">&#34;MaterialMargin&#34;</span><span class="p">:</span> <span class="mf">8.4</span><span class="p">,</span>
+            <span class="nt">&#34;PaintMargin&#34;</span><span class="p">:</span> <span class="mf">8.5</span><span class="p">,</span>
+            <span class="nt">&#34;WeldMargin&#34;</span><span class="p">:</span> <span class="mf">8.6</span><span class="p">,</span>
+            <span class="nt">&#34;NDTMargin&#34;</span><span class="p">:</span> <span class="mf">8.8</span><span class="p">,</span>
+            <span class="nt">&#34;PWHTMargin&#34;</span><span class="p">:</span> <span class="mf">9.1</span><span class="p">,</span>
+            <span class="nt">&#34;HydroTestMargin&#34;</span><span class="p">:</span> <span class="mf">9.2</span><span class="p">,</span>
+            <span class="nt">&#34;SOFMachiningMargin&#34;</span><span class="p">:</span> <span class="mf">9.3</span><span class="p">,</span>
+            <span class="nt">&#34;GraceDaysRecieved&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&#34;GraceDaysNotRecieved&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&#34;NDTReportType&#34;</span><span class="p">:</span> <span class="s2">&#34;b1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;SpoolBarcodeType&#34;</span><span class="p">:</span> <span class="s2">&#34;b2&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;BarcodePrinter&#34;</span><span class="p">:</span> <span class="s2">&#34;b3&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PShotTagMessage&#34;</span><span class="p">:</span> <span class="s2">&#34;b4&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Currency&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;备注备注备注备注备注&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-11 01:20:04&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-11 01:20:04&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;OrganisationName&#34;</span><span class="p">:</span> <span class="s2">&#34;武当山02&#34;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -2942,10 +2930,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;分区名称不可为空。&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;AreaName can&#39;t be blank.&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;查询数据发生异常请稍后重试&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Error occurs when finding data&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -2955,24 +2943,402 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><div class=table-wrap> <table>
 <thead>
 <tr>
-<th>参数</th>
+<th>参数名称</th>
 <th>类型</th>
-<th>示例值</th>
+<th>示例</th>
 <th>描述</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>144095520480001</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>JobNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目号</td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>ClientId</td>
+<td>number</td>
+<td>1</td>
+<td>客户id</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>boolean</td>
+<td>true</td>
+<td>激活</td>
+</tr>
+<tr>
+<td>OrderNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>订单号</td>
+</tr>
+<tr>
+<td>ContractNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>合同号</td>
+</tr>
+<tr>
+<td>JobType</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目类型:pipeline代表管道，structure代表结构，other其它或多专业</td>
+</tr>
+<tr>
+<td>UserId</td>
+<td>number</td>
+<td>123</td>
+<td>用户ID</td>
+</tr>
+<tr>
+<td>IsModule</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>是模块项目</td>
+</tr>
+<tr>
+<td>IsUniqSpoolNo</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>是管段号唯一</td>
+</tr>
+<tr>
+<td>ImportWholeSpoolNo</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>是导入整个管段号</td>
+</tr>
+<tr>
+<td>TemplateAreaId</td>
+<td>number</td>
+<td>123</td>
+<td>模板区域ID</td>
+</tr>
+<tr>
+<td>MasterAreaId</td>
+<td>number</td>
+<td>123</td>
+<td>复制区域ID</td>
+</tr>
+<tr>
+<td>ProjectManagerId</td>
+<td>number</td>
+<td>123</td>
+<td>项目经理ID</td>
+</tr>
+<tr>
+<td>UOM</td>
+<td>string</td>
+<td>xxx</td>
+<td>单位</td>
+</tr>
+<tr>
+<td>ShowClientSpoolNo</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>显示客户管段号</td>
+</tr>
+<tr>
+<td>NDTAutoNumbering</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>探伤报告自动编号</td>
+</tr>
+<tr>
+<td>MaxWeldRepairCount</td>
+<td>number</td>
+<td>123</td>
+<td>焊接返修最大次数</td>
+</tr>
+<tr>
+<td>WeldUniqueNoPrefix</td>
+<td>string</td>
+<td>xxx</td>
+<td>焊接返修最大次数</td>
+</tr>
+<tr>
+<td>ShowWeldUniqueNo</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>显示焊缝唯一号</td>
+</tr>
+<tr>
+<td>SiteWelderPrefix</td>
+<td>string</td>
+<td>xxxx</td>
+<td>现场焊工前缀</td>
+</tr>
+<tr>
+<td>WeldUniqueNoPrefixSite</td>
+<td>string</td>
+<td>xxxx</td>
+<td>现场焊缝唯一号前缀</td>
+</tr>
+<tr>
+<td>JobConsumableCertificatesFolder</td>
+<td>string</td>
+<td>xxxx</td>
+<td>项目耗材证书文件夹</td>
+</tr>
+<tr>
+<td>MaterialCertFolder</td>
+<td>string</td>
+<td>xxxx</td>
+<td>材质证书文件夹</td>
+</tr>
+<tr>
+<td>ShowCertOrigin</td>
+<td>boolean</td>
+<td>false 或 true</td>
+<td>显示原产地</td>
+</tr>
+<tr>
+<td>IssuedForFab</td>
+<td>正整数</td>
+<td>45</td>
+<td>图纸下发百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>CutComp</td>
+<td>正整数</td>
+<td>45</td>
+<td>下料完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>FitUpComp</td>
+<td>正整数</td>
+<td>45</td>
+<td>组对完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>WeldComp</td>
+<td>正整数</td>
+<td>45</td>
+<td>焊接完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>WeldNDTComp</td>
+<td>正整数</td>
+<td>45</td>
+<td>探伤完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>SentPaint</td>
+<td>正整数</td>
+<td>45</td>
+<td>发往油漆百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>PaintComp</td>
+<td>正整数</td>
+<td>45</td>
+<td>油漆完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>Packed</td>
+<td>正整数</td>
+<td>45</td>
+<td>打包完成百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>SentSite</td>
+<td>正整数</td>
+<td>45</td>
+<td>发往现场百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>ReceivedSite</td>
+<td>正整数</td>
+<td>45</td>
+<td>现场收货百分比,例如45%时向服务器端提交45</td>
+</tr>
+<tr>
+<td>MaterialMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>材料利润</td>
+</tr>
+<tr>
+<td>PaintMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>油漆利润</td>
+</tr>
+<tr>
+<td>WeldMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>焊接利润</td>
+</tr>
+<tr>
+<td>NDTMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>探伤利润</td>
+</tr>
+<tr>
+<td>PWHTMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>热处理利润</td>
+</tr>
+<tr>
+<td>HydroTestMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>水压测试利润</td>
+</tr>
+<tr>
+<td>SOFMachiningMargin</td>
+<td>float</td>
+<td>3.2</td>
+<td>法兰加工利润</td>
+</tr>
+<tr>
+<td>GraceDaysRecieved</td>
+<td>正整数</td>
+<td>2</td>
+<td>宽限天数-接收的</td>
+</tr>
+<tr>
+<td>GraceDaysNotRecieved</td>
+<td>正整数</td>
+<td>2</td>
+<td>宽限天数-未接收的</td>
+</tr>
+<tr>
+<td>NDTReportType</td>
+<td>string</td>
+<td>xxxx</td>
+<td>探伤报告类型</td>
+</tr>
+<tr>
+<td>SpoolBarcodeType</td>
+<td>string</td>
+<td>xxxx</td>
+<td>管段条码类型</td>
+</tr>
+<tr>
+<td>BarcodePrinter</td>
+<td>string</td>
+<td>xxxx</td>
+<td>条码打印机</td>
+</tr>
+<tr>
+<td>PShotTagMessage</td>
+<td>string</td>
+<td>xxxx</td>
+<td>惩罚标签信息</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>string</td>
+<td>xxxx</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>string</td>
+<td>xxxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>OrganisationName</td>
+<td>string</td>
+<td>武当山0</td>
+<td>业主客户名称</td>
+</tr>
+</tbody>
 </table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff-job/my-job-page/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
