@@ -14,18 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-07
-基本参数     url : https://{domain}:{port}/api/download/download-staff-io-tpl http method : GET  请求数据    遵守鉴权机制 参数  |  样例  URL： https://xxx.com/api/download/download-staff-io-tpl   返回数据     成功  返回文件流
-Http.Header(&ldquo;Cache-Control&rdquo;, &ldquo;no-cache&rdquo;)
-Http.Header(&ldquo;Content-Type&rdquo;, &ldquo;application/vnd.ms-excel&rdquo;)
-Http.Header(&ldquo;Content-Disposition&rdquo;, &ldquo;attachment;filename=&quot;)
- 失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;下载失败&#34;, &#34;english_msg&#34;: &#34;Failed。&#34; }    服务器端返回客户端数据中的通用参数       参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。">
+    <meta name="description" content="更新日期: 2021-12-14
+基本参数     url : https://{domain}:{port}/api/jtbl-workshop/del-jtbl-workshop http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids number[] [1,2] 工厂/车间id数组     样例  body：
+{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    服务器端返回客户端数据中的通用参数       参数： status">
 
 
 
-    <title>下载用户Excel模版 | SMCS</title>
+    <title>删除工厂/车间 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1072,7 +1067,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff/download-staff-io-tpl/" class="gdoc-nav__entry is-active">
+                    <a href="/staff/download-staff-io-tpl/" class="gdoc-nav__entry ">
                         下载用户Excel模版
                     </a>
                 </span>
@@ -2844,7 +2839,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtbl-workshop/del-jtbl-workshop/" class="gdoc-nav__entry ">
+                    <a href="/jtbl-workshop/del-jtbl-workshop/" class="gdoc-nav__entry is-active">
                         删除工厂/车间
                     </a>
                 </span>
@@ -3018,7 +3013,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff/' href='/staff/'><span itemprop='name'>用户信息</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>下载用户Excel模版</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtbl-workshop/' href='/jtbl-workshop/'><span itemprop='name'>工厂/车间</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除工厂/车间</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -3042,23 +3037,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>下载用户Excel模版</h1>
-        <p><small>更新日期: 2021-11-07</small></p>
+        <h1>删除工厂/车间</h1>
+        <p><small>更新日期: 2021-12-14</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/del-jtbl-workshop/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/download/download-staff-io-tpl</li>
-<li>http method : GET</li>
+<li>url : https://{domain}:{port}/api/jtbl-workshop/del-jtbl-workshop</li>
+<li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/del-jtbl-workshop/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -3075,7 +3070,25 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       参数
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      |
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ids</td>
+<td>number[]</td>
+<td>[1,2]</td>
+<td>工厂/车间id数组</td>
+</tr>
+</tbody>
+</table> </div>
+
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
@@ -3084,7 +3097,14 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/download/download-staff-io-tpl">https://xxx.com/api/download/download-staff-io-tpl</a>
+      <p>body：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mi">143042941580001</span><span class="p">,</span>
+        <span class="mi">143084106780001</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
 </div>
@@ -3092,7 +3112,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/del-jtbl-workshop/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -3108,11 +3128,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>返回文件流</p>
-<p>Http.Header(&ldquo;Cache-Control&rdquo;, &ldquo;no-cache&rdquo;)</p>
-<p>Http.Header(&ldquo;Content-Type&rdquo;, &ldquo;application/vnd.ms-excel&rdquo;)</p>
-<p>Http.Header(&ldquo;Content-Disposition&rdquo;, &ldquo;attachment;filename=&quot;)</p>
-
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
@@ -3123,8 +3144,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;下载失败&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed。&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -3134,7 +3155,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/del-jtbl-workshop/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>

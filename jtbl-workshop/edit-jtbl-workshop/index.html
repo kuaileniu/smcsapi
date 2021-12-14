@@ -14,18 +14,12 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-07
-基本参数     url : https://{domain}:{port}/api/download/download-staff-io-tpl http method : GET  请求数据    遵守鉴权机制 参数  |  样例  URL： https://xxx.com/api/download/download-staff-io-tpl   返回数据     成功  返回文件流
-Http.Header(&ldquo;Cache-Control&rdquo;, &ldquo;no-cache&rdquo;)
-Http.Header(&ldquo;Content-Type&rdquo;, &ldquo;application/vnd.ms-excel&rdquo;)
-Http.Header(&ldquo;Content-Disposition&rdquo;, &ldquo;attachment;filename=&quot;)
- 失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;下载失败&#34;, &#34;english_msg&#34;: &#34;Failed。&#34; }    服务器端返回客户端数据中的通用参数       参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。">
+    <meta name="description" content="更新日期: 2021-12-14
+基本参数     url : https://{domain}:{port}/api/jtbl-workshop/edit-jtbl-workshop http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 144095520480001 工厂/车间ID   Code string xxx 工厂/车间代码   WorkshopName string xxx 工厂/车间名称   Active boolean true 激活   Address string xxx 地址   Email string 1@qq.com 邮箱地址   Post string xxx 邮编   ContactName string xxx 联系人姓名   ContactTitle string xxx 联系人职务   PhoneNo string xxx 电话   Note string xxxx 备注   JobId number 21999000 项目id     样例  body：">
 
 
 
-    <title>下载用户Excel模版 | SMCS</title>
+    <title>编辑工厂/车间的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1072,7 +1066,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/staff/download-staff-io-tpl/" class="gdoc-nav__entry is-active">
+                    <a href="/staff/download-staff-io-tpl/" class="gdoc-nav__entry ">
                         下载用户Excel模版
                     </a>
                 </span>
@@ -2870,7 +2864,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtbl-workshop/edit-jtbl-workshop/" class="gdoc-nav__entry ">
+                    <a href="/jtbl-workshop/edit-jtbl-workshop/" class="gdoc-nav__entry is-active">
                         编辑工厂/车间的信息
                     </a>
                 </span>
@@ -3018,7 +3012,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/staff/' href='/staff/'><span itemprop='name'>用户信息</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>下载用户Excel模版</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtbl-workshop/' href='/jtbl-workshop/'><span itemprop='name'>工厂/车间</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>编辑工厂/车间的信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -3042,23 +3036,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>下载用户Excel模版</h1>
-        <p><small>更新日期: 2021-11-07</small></p>
+        <h1>编辑工厂/车间的信息</h1>
+        <p><small>更新日期: 2021-12-14</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/edit-jtbl-workshop/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/download/download-staff-io-tpl</li>
-<li>http method : GET</li>
+<li>url : https://{domain}:{port}/api/jtbl-workshop/edit-jtbl-workshop</li>
+<li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/edit-jtbl-workshop/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -3075,7 +3069,91 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       参数
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      |
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>144095520480001</td>
+<td>工厂/车间ID</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>string</td>
+<td>xxx</td>
+<td>工厂/车间代码</td>
+</tr>
+<tr>
+<td>WorkshopName</td>
+<td>string</td>
+<td>xxx</td>
+<td>工厂/车间名称</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>boolean</td>
+<td>true</td>
+<td>激活</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>string</td>
+<td>xxx</td>
+<td>地址</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>string</td>
+<td><a class="gdoc-markdown__link" href="mailto:1@qq.com">1@qq.com</a></td>
+<td>邮箱地址</td>
+</tr>
+<tr>
+<td>Post</td>
+<td>string</td>
+<td>xxx</td>
+<td>邮编</td>
+</tr>
+<tr>
+<td>ContactName</td>
+<td>string</td>
+<td>xxx</td>
+<td>联系人姓名</td>
+</tr>
+<tr>
+<td>ContactTitle</td>
+<td>string</td>
+<td>xxx</td>
+<td>联系人职务</td>
+</tr>
+<tr>
+<td>PhoneNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>string</td>
+<td>xxxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>21999000</td>
+<td>项目id</td>
+</tr>
+</tbody>
+</table> </div>
+
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
@@ -3084,7 +3162,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/download/download-staff-io-tpl">https://xxx.com/api/download/download-staff-io-tpl</a>
+      <p>body：</p>
+<p>不需要修改的字段请不要传给服务器端</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144126572280001</span><span class="p">,</span>
+    <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;Code1&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;WorkshopName&#34;</span><span class="p">:</span> <span class="s2">&#34;WorkshopName1&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Active&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&#34;Address&#34;</span><span class="p">:</span> <span class="s2">&#34;Address&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Email&#34;</span><span class="p">:</span> <span class="s2">&#34;1@173.com&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;Post&#34;</span><span class="p">:</span> <span class="s2">&#34;272412&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;ContactName&#34;</span><span class="p">:</span> <span class="s2">&#34;zhang三&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;ContactTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;总监&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;PhoneNo&#34;</span><span class="p">:</span> <span class="s2">&#34;13011192345&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;FaxNo&#34;</span><span class="p">:</span> <span class="s2">&#34;010-12345678&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
 </div>
@@ -3092,7 +3186,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/edit-jtbl-workshop/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -3108,11 +3202,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>返回文件流</p>
-<p>Http.Header(&ldquo;Cache-Control&rdquo;, &ldquo;no-cache&rdquo;)</p>
-<p>Http.Header(&ldquo;Content-Type&rdquo;, &ldquo;application/vnd.ms-excel&rdquo;)</p>
-<p>Http.Header(&ldquo;Content-Disposition&rdquo;, &ldquo;attachment;filename=&quot;)</p>
-
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span><span class="p">,</span>
+  
+<span class="p">}</span>
+</code></pre></div>
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
@@ -3121,10 +3217,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;下载失败&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed。&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改失败,工厂/车间名称重复。&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed,duplicate WorkshopName.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -3132,9 +3228,26 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/edit-jtbl-workshop/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/staff/download-staff-io-tpl/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-workshop/edit-jtbl-workshop/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
