@@ -32,6 +32,9 @@
     <loc>https://smcsdocs.zhsit.cn/company/add-company/</loc>
     <lastmod>2021-12-07T21:30:41+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/subcontractor/add-subcontractor/</loc>
+    <lastmod>2021-12-13T09:35:07+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-area/add-jtbl-area/</loc>
     <lastmod>2021-12-11T12:53:14+08:00</lastmod>
   </url><url>
@@ -67,6 +70,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/del-jtbl-client/</loc>
     <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/subcontractor/del-subcontractor/</loc>
+    <lastmod>2021-12-14T15:37:31+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-area/del-jtbl-area/</loc>
     <lastmod>2021-12-11T12:53:14+08:00</lastmod>
@@ -107,6 +113,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/edit-jtbl-client/</loc>
     <lastmod>2021-12-11T01:31:47+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/subcontractor/edit-subcontractor/</loc>
+    <lastmod>2021-12-14T15:37:31+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-area/edit-jtbl-area/</loc>
     <lastmod>2021-12-11T12:53:14+08:00</lastmod>
   </url><url>
@@ -127,6 +136,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/get-jtbl-client-page/</loc>
     <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/subcontractor/get-subcontractor-page/</loc>
+    <lastmod>2021-12-14T15:37:31+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-area/get-jtbl-area-page/</loc>
     <lastmod>2021-12-11T12:53:14+08:00</lastmod>
@@ -220,6 +232,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-job/</loc>
     <lastmod>2021-12-11T21:45:37+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/subcontractor/</loc>
+    <lastmod>2021-12-13T09:35:07+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>
