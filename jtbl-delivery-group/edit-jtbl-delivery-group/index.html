@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2021-12-11
-基本参数     url : https://{domain}:{port}/api/jtbl-delivery-group/edit-jtbl-delivery-group http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 144095520480001 发货组ID   JobId number xxx 项目ID   DeliveryGroupName string xxx 发货组名称   DeliveryGroupDesc string xxx 发货组描述   RequiredOnSiteDate string 2021-11-22 12:13:09 到达现场日期   ModuleStartNumber number 1 模块开始数字   ModuleEndNumber number 123 模块结束数字   Note string xxxx 备注     样例  body：">
+基本参数     url : https://{domain}:{port}/api/jtbl-delivery-group/edit-jtbl-delivery-group http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 144095520480001 发货组ID   JobId number xxx 项目ID   DeliveryGroupName string xxx 发货组名称,当修改此值时需带上JobId   DeliveryGroupDesc string xxx 发货组描述,当修改此值时需带上JobId   RequiredOnSiteDate string 2021-11-22 12:13:09 到达现场日期   ModuleStartNumber number 1 模块开始数字   ModuleEndNumber number 123 模块结束数字   Note string xxxx 备注     样例  body：">
 
 
 
@@ -3095,13 +3095,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>DeliveryGroupName</td>
 <td>string</td>
 <td>xxx</td>
-<td>发货组名称</td>
+<td>发货组名称,当修改此值时需带上JobId</td>
 </tr>
 <tr>
 <td>DeliveryGroupDesc</td>
 <td>string</td>
 <td>xxx</td>
-<td>发货组描述</td>
+<td>发货组描述,当修改此值时需带上JobId</td>
 </tr>
 <tr>
 <td>RequiredOnSiteDate</td>
