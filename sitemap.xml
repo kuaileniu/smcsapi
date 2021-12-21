@@ -29,6 +29,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/add-jtbl-client/</loc>
     <lastmod>2021-12-11T01:21:40+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-priority/add-jtbl-priority/</loc>
+    <lastmod>2021-12-22T00:10:00+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/add-company/</loc>
     <lastmod>2021-12-07T21:30:41+08:00</lastmod>
   </url><url>
@@ -76,6 +79,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/del-jtbl-client/</loc>
     <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-priority/del-jtbl-priority/</loc>
+    <lastmod>2021-12-22T00:10:00+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/subcontractor/del-subcontractor/</loc>
     <lastmod>2021-12-14T15:37:31+08:00</lastmod>
@@ -125,6 +131,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/edit-jtbl-client/</loc>
     <lastmod>2021-12-11T01:31:47+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-priority/edit-jtbl-priority/</loc>
+    <lastmod>2021-12-22T00:10:00+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/subcontractor/edit-subcontractor/</loc>
     <lastmod>2021-12-14T15:37:31+08:00</lastmod>
   </url><url>
@@ -154,6 +163,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-client/get-jtbl-client-page/</loc>
     <lastmod>2021-12-11T01:21:40+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-priority/get-jtbl-priority-page/</loc>
+    <lastmod>2021-12-22T00:10:00+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/subcontractor/get-subcontractor-page/</loc>
     <lastmod>2021-12-14T15:37:31+08:00</lastmod>
@@ -271,6 +283,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/</loc>
     <lastmod>2021-12-16T00:12:36+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-priority/</loc>
+    <lastmod>2021-12-22T00:10:00+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2021-09-26T23:57:31+08:00</lastmod>
