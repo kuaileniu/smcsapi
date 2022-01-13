@@ -14,12 +14,12 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-09
-基本参数     url : https://{domain}:{port}/api/role/edit-role http method : POST  请求数据    遵守鉴权机制 参数     参数 类型 必含 示例值 描述     Id number 是 2109300032090001 角色的id   Name string - 管理员 名称   Description string - 这是个有权利的角色 描述   Code string - xx 编码   Internal boolean - true 是内部的     样例  body：">
+    <meta name="description" content="更新日期: 2022-01-13
+基本参数     url : https://{domain}:{port}/api/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   IssuedForFab 浮点数 0.34 图纸下发   CutComp 浮点数 0.34 下料完成   FitUpComp 浮点数 0.34 组对完成   WeldComp 浮点数 0.34 焊接完成   Ground 浮点数 0.34 打磨完成   DimInspected 浮点数 0.">
 
 
 
-    <title>编辑角色信息 | SMCS</title>
+    <title>添加或修改进度权重信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1550,7 +1550,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/role/edit-role/" class="gdoc-nav__entry is-active">
+                    <a href="/role/edit-role/" class="gdoc-nav__entry ">
                         编辑角色信息
                     </a>
                 </span>
@@ -4234,7 +4234,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/" class="gdoc-nav__entry ">
+                    <a href="/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/" class="gdoc-nav__entry is-active">
                         添加或修改进度权重信息
                     </a>
                 </span>
@@ -4356,7 +4356,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/role/' href='/role/'><span itemprop='name'>角色</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>编辑角色信息</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtbl_progress_weightings/' href='/jtbl_progress_weightings/'><span itemprop='name'>进度权重</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>添加或修改进度权重信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -4380,23 +4380,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>编辑角色信息</h1>
-        <p><small>更新日期: 2021-11-09</small></p>
+        <h1>添加或修改进度权重信息</h1>
+        <p><small>更新日期: 2022-01-13</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/edit-role/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/role/edit-role</li>
+<li>url : https://{domain}:{port}/api/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/edit-role/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4416,48 +4416,102 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <div class=table-wrap> <table>
 <thead>
 <tr>
-<th>参数</th>
+<th>参数名称</th>
 <th>类型</th>
-<th>必含</th>
-<th>示例值</th>
+<th>示例</th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Id</td>
+<td>JobId</td>
 <td>number</td>
-<td>是</td>
-<td>2109300032090001</td>
-<td>角色的id</td>
+<td>1</td>
+<td>项目id</td>
 </tr>
 <tr>
-<td>Name</td>
-<td>string</td>
-<td>-</td>
-<td>管理员</td>
-<td>名称</td>
+<td>IssuedForFab</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>图纸下发</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>string</td>
-<td>-</td>
-<td>这是个有权利的角色</td>
-<td>描述</td>
+<td>CutComp</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>下料完成</td>
 </tr>
 <tr>
-<td>Code</td>
-<td>string</td>
-<td>-</td>
-<td>xx</td>
-<td>编码</td>
+<td>FitUpComp</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>组对完成</td>
 </tr>
 <tr>
-<td>Internal</td>
-<td>boolean</td>
-<td>-</td>
-<td>true</td>
-<td>是内部的</td>
+<td>WeldComp</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>焊接完成</td>
+</tr>
+<tr>
+<td>Ground</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>打磨完成</td>
+</tr>
+<tr>
+<td>DimInspected</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>尺寸检验</td>
+</tr>
+<tr>
+<td>WeldNDTComp</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>探伤完成</td>
+</tr>
+<tr>
+<td>SentPaint</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>发往油漆</td>
+</tr>
+<tr>
+<td>PaintComp</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>油漆完成</td>
+</tr>
+<tr>
+<td>Packed</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>打包完成</td>
+</tr>
+<tr>
+<td>PunchListed</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>核查表完成</td>
+</tr>
+<tr>
+<td>SignedOff</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>签署放行</td>
+</tr>
+<tr>
+<td>SentSite</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>发往现场</td>
+</tr>
+<tr>
+<td>DocComplete</td>
+<td>浮点数</td>
+<td>0.34</td>
+<td>交工文档完成</td>
 </tr>
 </tbody>
 </table> </div>
@@ -4471,14 +4525,22 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
-<p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">143083874570001</span><span class="p">,</span>
-    <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;R01&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Name&#34;</span><span class="p">:</span> <span class="s2">&#34;管理员&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;拥有至高无上的权力&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Internal&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-    <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">20.6</span><span class="p">,</span>
+    <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+    <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+    <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+    <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+    <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+    <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mi">15</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -4488,7 +4550,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/edit-role/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4506,7 +4568,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;成功。&#34;</span><span class="p">,</span>
     <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -4518,10 +4580,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id不可为空&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be empty&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;查询数据发生异常请稍后重试&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Error occurs when finding data&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -4531,7 +4593,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/edit-role/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4595,7 +4657,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/role/edit-role/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
