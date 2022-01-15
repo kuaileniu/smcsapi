@@ -50,6 +50,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-isometric/add-jtbl-isometric/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/add-jtbl-pressure-guage/</loc>
+    <lastmod>2022-01-15T18:08:54+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-delivery-group/add-jtbl-delivery-group/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -121,6 +124,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-isometric/del-jtbl-isometric/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/del-jtbl-pressure-guage/</loc>
+    <lastmod>2022-01-15T18:08:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-delivery-group/del-jtbl-delivery-group/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -194,6 +200,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-isometric/edit-jtbl-isometric/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/edit-jtbl-pressure-guage/</loc>
+    <lastmod>2022-01-15T18:08:54+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-delivery-group/edit-jtbl-delivery-group/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -247,6 +256,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-isometric/get-jtbl-isometric-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/get-jtbl-pressure-guage-page/</loc>
+    <lastmod>2022-01-15T18:08:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-delivery-group/get-jtbl-delivery-group-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -400,6 +412,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl_progress_weightings/</loc>
     <lastmod>2022-01-13T23:25:48+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/</loc>
+    <lastmod>2022-01-15T18:08:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
