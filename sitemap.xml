@@ -80,6 +80,8 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/add-jtbl-plant-area/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/add-jtbl-ht-reports/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/department/add-department/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -151,6 +153,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/del-jtbl-plant-area/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/del-jtbl-ht-reports/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/del-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -227,6 +231,8 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/edit-jtbl-plant-area/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/edit-jtbl-ht-reports/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/edit-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -283,6 +289,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/plant-area-type/get-plant-area-type-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/get-jtbl-ht-reports-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/get-jtbl-job-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -415,6 +423,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-pressure-guage/</loc>
     <lastmod>2022-01-15T18:08:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
