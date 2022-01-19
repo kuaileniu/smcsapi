@@ -68,6 +68,9 @@
     <loc>https://smcsdocs.zhsit.cn/staff/add-staff/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool/add-jtbl-spool/</loc>
+    <lastmod>2022-01-19T10:59:34+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/add-jtbl-line/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -81,6 +84,7 @@
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/add-jtbl-ht-reports/</loc>
+    <lastmod>2022-01-18T23:41:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/department/add-department/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -145,6 +149,9 @@
     <loc>https://smcsdocs.zhsit.cn/staff/del-staff/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool/del-jtbl-spool/</loc>
+    <lastmod>2022-01-19T00:34:49+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/del-jtbl-line/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -155,6 +162,7 @@
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/del-jtbl-ht-reports/</loc>
+    <lastmod>2022-01-18T23:41:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/del-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -222,6 +230,9 @@
     <loc>https://smcsdocs.zhsit.cn/staff/edit-staffs/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool/edit-jtbl-spool/</loc>
+    <lastmod>2022-01-19T10:59:34+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/edit-jtbl-line/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -232,6 +243,7 @@
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/edit-jtbl-ht-reports/</loc>
+    <lastmod>2022-01-18T23:41:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/edit-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -278,6 +290,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-report-grouping/get-jtbl-report-grouping-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool/get-jtbl-spool-page/</loc>
+    <lastmod>2022-01-19T10:59:34+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/get-jtbl-line-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -291,6 +306,7 @@
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/get-jtbl-ht-reports-page/</loc>
+    <lastmod>2022-01-18T23:41:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/get-jtbl-job-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -425,6 +441,10 @@
     <lastmod>2022-01-15T18:08:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/</loc>
+    <lastmod>2022-01-18T23:41:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool/</loc>
+    <lastmod>2022-01-19T10:59:34+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
