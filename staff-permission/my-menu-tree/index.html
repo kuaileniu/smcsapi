@@ -16,7 +16,7 @@
 
     <meta name="description" content="更新日期: 2021-11-30
 基本参数     url : https://{domain}:{port}/api/staff-permission/my-menu-tree http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     样例  body：
-   返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;PermissionType&#34;: 1, &#34;MenuIcon&#34;: &#34;layui-icon-set&#34;, &#34;Children&#34;: [ { &#34;Id&#34;: 2, &#34;ParentId&#34;: 1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 3, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;项目&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 4, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 5, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;MenuURL&#34;: &#34;app/content/projectLogin&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 6, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目列表&#34;, &#34;MenuURL&#34;: &#34;app/content/projectList&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 7, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目设置&#34;, &#34;MenuURL&#34;: &#34;system/authorities&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 8, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目参数&#34;, &#34;MenuURL&#34;: &#34;app/content/paramter&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 9, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;导入数据&#34;, &#34;MenuURL&#34;: &#34;app/content/import&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 10, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目计划&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 11, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;甘特图&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 12, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;资源配置&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 13, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;生产&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 14, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;基础数据&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 17, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;管道数据&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 18, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;结构数据&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 15, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;图纸下发&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 19, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;材料匹配&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 20, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;工作包&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 21, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;创建批次&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 16, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;进度报告&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 22, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;批次报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 23, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;WBS报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 24, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;工作包报告&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 25, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;分包商报告&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 26, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;权限&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 27, &#34;ParentId&#34;: 26, &#34;ChineseName&#34;: &#34;权限管理&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 28, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;用户管理&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 29, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;角色管理&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 30, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;权限分配&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 31, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;用户项目&#34;, &#34;PermissionType&#34;: 2 } ] } ] } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询我的菜单失败&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    data 参数       参数 类型 必含 示例值 描述     Id number 是 2109300032090001 权限的id   ParentId number - -1 父级权限id   ChineseName string - 主页 权限的中文名称   EnglishName string - xxx 英文名   PermissionType number - 1 权限类型，1为目录，2为菜单，3为按钮   MenuURL string - app/pro/xxx 菜单路径   MenuIcon string - layui-icon-set 菜单的图标   Children 数组 - [{}] 子级权限数组    向服务器端发送数据中的通用参数       参数： page">
+   返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;EnglishName&#34;: &#34;Home&#34;, &#34;PermissionType&#34;: 1, &#34;MenuIcon&#34;: &#34;layui-icon-set&#34;, &#34;Children&#34;: [ { &#34;Id&#34;: 2, &#34;ParentId&#34;: 1, &#34;ChineseName&#34;: &#34;主页&#34;, &#34;EnglishName&#34;: &#34;Home&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 3, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;项目&#34;, &#34;EnglishName&#34;: &#34;Project&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 4, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;EnglishName&#34;: &#34;Project Login&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 5, &#34;ParentId&#34;: 4, &#34;ChineseName&#34;: &#34;项目登录&#34;, &#34;EnglishName&#34;: &#34;Project Login&#34;, &#34;MenuURL&#34;: &#34;app/content/projectLogin&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 6, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目列表&#34;, &#34;EnglishName&#34;: &#34;Project List&#34;, &#34;MenuURL&#34;: &#34;app/content/projectList&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 7, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目设置&#34;, &#34;EnglishName&#34;: &#34;Project Setup&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 8, &#34;ParentId&#34;: 7, &#34;ChineseName&#34;: &#34;项目参数&#34;, &#34;EnglishName&#34;: &#34;Project Parameter&#34;, &#34;MenuURL&#34;: &#34;app/content/paramter&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 9, &#34;ParentId&#34;: 7, &#34;ChineseName&#34;: &#34;导入数据&#34;, &#34;EnglishName&#34;: &#34;Import Data&#34;, &#34;MenuURL&#34;: &#34;app/content/import&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 10, &#34;ParentId&#34;: 3, &#34;ChineseName&#34;: &#34;项目计划&#34;, &#34;EnglishName&#34;: &#34;Project Plan&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 11, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;甘特图&#34;, &#34;EnglishName&#34;: &#34;Gantt Chart&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 12, &#34;ParentId&#34;: 10, &#34;ChineseName&#34;: &#34;资源配置&#34;, &#34;EnglishName&#34;: &#34;Resource Allocation&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 13, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;生产&#34;, &#34;EnglishName&#34;: &#34;Fabrication&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 14, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;基础数据&#34;, &#34;EnglishName&#34;: &#34;Drawing Data&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 17, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;管道数据&#34;, &#34;EnglishName&#34;: &#34;Piping Data&#34;, &#34;MenuURL&#34;: &#34;component/table/pipeline&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 18, &#34;ParentId&#34;: 14, &#34;ChineseName&#34;: &#34;结构数据&#34;, &#34;EnglishName&#34;: &#34;Structural Data&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 15, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;图纸下发&#34;, &#34;EnglishName&#34;: &#34;Batch Issue&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 19, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;材料匹配&#34;, &#34;EnglishName&#34;: &#34;Material Allocation&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 20, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;工作包&#34;, &#34;EnglishName&#34;: &#34;Work Package&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 21, &#34;ParentId&#34;: 15, &#34;ChineseName&#34;: &#34;创建批次&#34;, &#34;EnglishName&#34;: &#34;Create Batches&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 16, &#34;ParentId&#34;: 13, &#34;ChineseName&#34;: &#34;进度报告&#34;, &#34;EnglishName&#34;: &#34;Progress Report&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2, &#34;Children&#34;: [ { &#34;Id&#34;: 22, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;批次报告&#34;, &#34;EnglishName&#34;: &#34;Batch Report&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 23, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;WBS报告&#34;, &#34;EnglishName&#34;: &#34;WBS Report&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 24, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;工作包报告&#34;, &#34;EnglishName&#34;: &#34;WBS Report&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 25, &#34;ParentId&#34;: 16, &#34;ChineseName&#34;: &#34;分包商报告&#34;, &#34;EnglishName&#34;: &#34;Subcontractor Report&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 26, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;权限&#34;, &#34;EnglishName&#34;: &#34;Permission&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 27, &#34;ParentId&#34;: 26, &#34;ChineseName&#34;: &#34;权限管理&#34;, &#34;EnglishName&#34;: &#34;Permission Management&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 28, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;用户管理&#34;, &#34;EnglishName&#34;: &#34;Users&#34;, &#34;MenuURL&#34;: &#34;user/user/Users&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 29, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;角色管理&#34;, &#34;EnglishName&#34;: &#34;Roles&#34;, &#34;MenuURL&#34;: &#34;user/administrators/list&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 30, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;权限分配&#34;, &#34;EnglishName&#34;: &#34;Permission Assignment&#34;, &#34;MenuURL&#34;: &#34;user/administrators/role&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 31, &#34;ParentId&#34;: 27, &#34;ChineseName&#34;: &#34;项目用户&#34;, &#34;EnglishName&#34;: &#34;Project Users&#34;, &#34;MenuURL&#34;: &#34;set/user/projectList&#34;, &#34;PermissionType&#34;: 2 } ] } ] }, { &#34;Id&#34;: 32, &#34;ParentId&#34;: -1, &#34;ChineseName&#34;: &#34;设置&#34;, &#34;EnglishName&#34;: &#34;Setting&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 33, &#34;ParentId&#34;: 32, &#34;ChineseName&#34;: &#34;系统设置&#34;, &#34;EnglishName&#34;: &#34;System Setting&#34;, &#34;PermissionType&#34;: 1, &#34;Children&#34;: [ { &#34;Id&#34;: 34, &#34;ParentId&#34;: 33, &#34;ChineseName&#34;: &#34;网站设置&#34;, &#34;EnglishName&#34;: &#34;Website Setting&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 35, &#34;ParentId&#34;: 33, &#34;ChineseName&#34;: &#34;邮件服务&#34;, &#34;EnglishName&#34;: &#34;Email Service&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 36, &#34;ParentId&#34;: 33, &#34;ChineseName&#34;: &#34;PDA设置&#34;, &#34;EnglishName&#34;: &#34;PDA Setting&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 37, &#34;ParentId&#34;: 33, &#34;ChineseName&#34;: &#34;TBC&#34;, &#34;EnglishName&#34;: &#34;TBC&#34;, &#34;MenuURL&#34;: &#34;/&#34;, &#34;PermissionType&#34;: 2 }, { &#34;Id&#34;: 38, &#34;ParentId&#34;: 33, &#34;ChineseName&#34;: &#34;字典管理&#34;, &#34;EnglishName&#34;: &#34;Dictionary Management&#34;, &#34;MenuURL&#34;: &#34;set/user/list&#34;, &#34;PermissionType&#34;: 2 } ] }, { &#34;Id&#34;: 39, &#34;ParentId&#34;: 32, &#34;ChineseName&#34;: &#34;菜单配置&#34;, &#34;EnglishName&#34;: &#34;Menu Setting&#34;, &#34;MenuURL&#34;: &#34;menu&#34;, &#34;PermissionType&#34;: 2 } ] } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询我的菜单失败&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    data 参数       参数 类型 必含 示例值 描述     Id number 是 2109300032090001 权限的id   ParentId number - -1 父级权限id   ChineseName string - 主页 权限的中文名称   EnglishName string - xxx 英文名   PermissionType number - 1 权限类型，1为目录，2为菜单，3为按钮   MenuURL string - app/pro/xxx 菜单路径   MenuIcon string - layui-icon-set 菜单的图标   Children 数组 - [{}] 子级权限数组    向服务器端发送数据中的通用参数       参数： page">
 
 
 
@@ -4868,6 +4868,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;主页&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Home&#34;</span><span class="p">,</span>
             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="nt">&#34;MenuIcon&#34;</span><span class="p">:</span> <span class="s2">&#34;layui-icon-set&#34;</span><span class="p">,</span>
             <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
@@ -4875,6 +4876,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;主页&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Home&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                 <span class="p">}</span>
@@ -4884,46 +4886,55 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project&#34;</span><span class="p">,</span>
             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目登录&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Login&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目登录&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Login&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/projectLogin&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
-                        <span class="p">},</span>
-                        <span class="p">{</span>
-                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
-                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目列表&#34;</span><span class="p">,</span>
-                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/projectList&#34;</span><span class="p">,</span>
-                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
-                        <span class="p">},</span>
-                        <span class="p">{</span>
-                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目设置&#34;</span><span class="p">,</span>
-                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;system/authorities&#34;</span><span class="p">,</span>
-                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
-                        <span class="p">},</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目列表&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project List&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/projectList&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目设置&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Setup&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
-                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目参数&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Parameter&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/paramter&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
-                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;导入数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Import Data&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;app/content/import&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
@@ -4933,18 +4944,24 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目计划&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Plan&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;甘特图&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Gantt Chart&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;资源配置&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Resource Allocation&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
                     <span class="p">]</span>
@@ -4955,24 +4972,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;生产&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Fabrication&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;基础数据&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Drawing Data&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;管道数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Piping Data&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;component/table/pipeline&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;结构数据&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Structural Data&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
                     <span class="p">]</span>
@@ -4981,24 +5006,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;图纸下发&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Batch Issue&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;材料匹配&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Material Allocation&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;工作包&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Work Package&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;创建批次&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Create Batches&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
                     <span class="p">]</span>
@@ -5007,30 +5040,40 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;进度报告&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Progress Report&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;批次报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Batch Report&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;WBS报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;WBS Report&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;工作包报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;WBS Report&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;分包商报告&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Subcontractor Report&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
                     <span class="p">]</span>
@@ -5041,39 +5084,117 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Permission&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                 <span class="p">{</span>
                     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
                     <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">26</span><span class="p">,</span>
                     <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限管理&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Permission Management&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
                     <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
                     <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;用户管理&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Users&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;user/user/Users&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;角色管理&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Roles&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;user/administrators/list&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
                             <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;权限分配&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Permission Assignment&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;user/administrators/role&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">},</span>
                         <span class="p">{</span>
                             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
                             <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
-                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;用户项目&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;项目用户&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Project Users&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;set/user/projectList&#34;</span><span class="p">,</span>
                             <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                         <span class="p">}</span>
                     <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;设置&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Setting&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;系统设置&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;System Setting&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="nt">&#34;Children&#34;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">34</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;网站设置&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Website Setting&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;邮件服务&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Email Service&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">36</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;PDA设置&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;PDA Setting&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">37</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;TBC&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;TBC&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;/&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">},</span>
+                        <span class="p">{</span>
+                            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">38</span><span class="p">,</span>
+                            <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+                            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;字典管理&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Dictionary Management&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;set/user/list&#34;</span><span class="p">,</span>
+                            <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
+                        <span class="p">}</span>
+                    <span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">39</span><span class="p">,</span>
+                    <span class="nt">&#34;ParentId&#34;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span>
+                    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;菜单配置&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Menu Setting&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;MenuURL&#34;</span><span class="p">:</span> <span class="s2">&#34;menu&#34;</span><span class="p">,</span>
+                    <span class="nt">&#34;PermissionType&#34;</span><span class="p">:</span> <span class="mi">2</span>
                 <span class="p">}</span>
             <span class="p">]</span>
         <span class="p">}</span>
