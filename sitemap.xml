@@ -95,6 +95,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/add-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-sow/add-jtbl-sow/</loc>
+    <lastmod>2022-02-25T01:05:36+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-have-this-role/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -169,6 +172,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/del-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-sow/del-jtbl-sow/</loc>
+    <lastmod>2022-02-25T01:05:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff-role/get-staff-page-not-have-this-role/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -251,6 +257,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-ht-reports/edit-jtbl-ht-reports/</loc>
     <lastmod>2022-01-18T23:41:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-sow/edit-jtbl-sow/</loc>
+    <lastmod>2022-02-25T01:05:36+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/edit-jtbl-job/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -316,6 +325,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-job/get-jtbl-job-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-sow/get-jtbl-sow-page/</loc>
+    <lastmod>2022-02-25T01:05:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/company/del-company/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -454,6 +466,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/file_upload_download/</loc>
     <lastmod>2022-02-24T22:11:09+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-sow/</loc>
+    <lastmod>2022-02-25T01:05:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
