@@ -74,6 +74,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly/add-jtbl-assembly/</loc>
     <lastmod>2022-03-02T00:47:23+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/add-jtbl-assembly-items/</loc>
+    <lastmod>2022-03-04T01:48:19+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/add-staff/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -163,6 +166,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly/del-jtbl-assembly/</loc>
     <lastmod>2022-03-02T00:47:23+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/del-jtbl-assembly-items/</loc>
+    <lastmod>2022-03-04T01:48:19+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/del-staff/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -257,6 +263,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly/edit-jtbl-assembly/</loc>
     <lastmod>2022-03-02T00:47:23+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/edit-jtbl-assembly-items/</loc>
+    <lastmod>2022-03-04T01:48:19+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/staff/edit-staffs/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -324,7 +333,10 @@
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly/get-jtbl-assembly-page/</loc>
-    <lastmod>2022-03-03T23:02:47+08:00</lastmod>
+    <lastmod>2022-03-04T01:20:52+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/get-jtbl-assembly-items-page/</loc>
+    <lastmod>2022-03-04T01:48:19+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool/get-jtbl-spool-page/</loc>
     <lastmod>2022-01-19T11:07:52+08:00</lastmod>
@@ -499,6 +511,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly/</loc>
     <lastmod>2022-03-02T00:47:23+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/</loc>
+    <lastmod>2022-03-04T01:48:19+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
