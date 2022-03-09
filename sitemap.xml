@@ -89,6 +89,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-pipe-spec/add-jtbl-pipe-spec/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-component/add-jtbl-component/</loc>
+    <lastmod>2022-03-09T20:37:44+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/role/add-role/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -181,6 +184,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-pipe-spec/del-jtbl-pipe-spec/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-component/del-jtbl-component/</loc>
+    <lastmod>2022-03-09T20:37:44+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/del-jtbl-plant-area/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -278,6 +284,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-pipe-spec/edit-jtbl-pipe-spec/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-component/edit-jtbl-component/</loc>
+    <lastmod>2022-03-09T20:37:44+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/edit-jtbl-plant-area/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -346,6 +355,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-pipe-spec/get-jtbl-pipe-spec-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-component/get-jtbl-component-page/</loc>
+    <lastmod>2022-03-09T20:37:44+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-plant-area/get-jtbl-plant-area-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -514,6 +526,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-assembly-items/</loc>
     <lastmod>2022-03-04T01:48:19+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-component/</loc>
+    <lastmod>2022-03-09T20:37:44+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
