@@ -83,6 +83,9 @@
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool/add-jtbl-spool/</loc>
     <lastmod>2022-01-19T10:59:34+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/add-jtbl-spool-material/</loc>
+    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/add-jtbl-line/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
@@ -178,6 +181,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool/del-jtbl-spool/</loc>
     <lastmod>2022-01-19T00:34:49+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/del-jtbl-spool-material/</loc>
+    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/del-jtbl-line/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -275,6 +281,9 @@
     <loc>https://smcsdocs.zhsit.cn/staff/edit-staffs/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/edit-jtbl-spool-material/</loc>
+    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool/edit-jtbl-spool/</loc>
     <lastmod>2022-01-19T10:59:34+08:00</lastmod>
   </url><url>
@@ -349,6 +358,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool/get-jtbl-spool-page/</loc>
     <lastmod>2022-01-19T11:07:52+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/get-jtbl-spool-material-page/</loc>
+    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-line/get-jtbl-line-page/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
@@ -529,6 +541,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-component/</loc>
     <lastmod>2022-03-09T20:37:44+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/</loc>
+    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
