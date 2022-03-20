@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-11
-基本参数     url : https://{domain}:{port}/api/staff-job/get-staff-page-have-this-job http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   search string xxxxx 搜索文本内容     样例  body：
-{ &#34;JobId&#34;: 88888, &#34;search&#34;: &#34;&#34;, &#34;page&#34;: 1, &#34;limit&#34;: 30 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;LoginName&#34;: &#34;1565296&#34;, &#34;EmployeeNo&#34;: &#34;a123&#34;, &#34;ChineseName&#34;: &#34;冯先生&#34;, &#34;EnglishName&#34;: &#34;Tao&#34;, &#34;Del&#34;: false } ], &#34;count&#34;: 1 }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;JobId 不可为空&#34;, &#34;english_msg&#34;: &#34;JobId can&#39;t be empty.">
+    <meta name="description" content="更新日期: 2021-11-07
+基本参数     url : https://{domain}:{port}/api/jtbl-assembly/import-jtbl-assembly http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID(注意大小写)   file file xxxx Excel文件    form-data : key: JobId value: xxxx key: file value: 选择Excel文件  样例  URL： https://xxx.com/api/jtbl-assembly/import-jtbl-assembly
+form-data : key: JobId value: xxxx key: file value: 选择Excel文件">
 
 
 
-    <title>分页查询拥有此项目的用户列表 | SMCS</title>
+    <title>导入构件信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2581,7 +2581,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" checked>
             <label for="navtree-77298215" class="flex justify-between">
             
             
@@ -2752,7 +2752,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-03445743" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-03445743" class="gdoc-nav__toggle" checked>
             <label for="navtree-03445743" class="flex justify-between">
             
             
@@ -2938,7 +2938,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/" class="gdoc-nav__entry ">
+                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/" class="gdoc-nav__entry is-active">
                         导入构件信息
                     </a>
                 </span>
@@ -4317,7 +4317,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" >
             <label for="navtree-56282f5f" class="flex justify-between">
             
             
@@ -4770,7 +4770,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-76832460" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-76832460" class="gdoc-nav__toggle" >
             <label for="navtree-76832460" class="flex justify-between">
             
             
@@ -4854,7 +4854,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/" class="gdoc-nav__entry is-active">
+                    <a href="/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/" class="gdoc-nav__entry ">
                         分页查询拥有此项目的用户列表
                     </a>
                 </span>
@@ -6402,7 +6402,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/' href='/%E9%A1%B9%E7%9B%AE/'><span itemprop='name'>项目</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/staff-job/' href='/%E9%A1%B9%E7%9B%AE/staff-job/'><span itemprop='name'>用户项目</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页查询拥有此项目的用户列表</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/'><span itemprop='name'>构件</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>导入构件信息</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -6428,23 +6428,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>分页查询拥有此项目的用户列表</h1>
-        <p><small>更新日期: 2021-12-11</small></p>
+        <h1>导入构件信息</h1>
+        <p><small>更新日期: 2021-11-07</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/staff-job/get-staff-page-have-this-job</li>
+<li>url : https://{domain}:{port}/api/jtbl-assembly/import-jtbl-assembly</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -6475,17 +6475,20 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>JobId</td>
 <td>number</td>
 <td>1</td>
-<td>项目ID</td>
+<td>项目ID(注意大小写)</td>
 </tr>
 <tr>
-<td>search</td>
-<td>string</td>
-<td>xxxxx</td>
-<td>搜索文本内容</td>
+<td>file</td>
+<td>file</td>
+<td>xxxx</td>
+<td>Excel文件</td>
 </tr>
 </tbody>
 </table> </div>
-
+<p>form-data :
+<br>
+key: JobId         value: xxxx <br>
+key: file          value: 选择Excel文件
     </div>
   
     <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
@@ -6494,14 +6497,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>body：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">88888</span><span class="p">,</span>
-    <span class="nt">&#34;search&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;page&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">30</span>
-<span class="p">}</span>
-</code></pre></div>
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/jtbl-assembly/import-jtbl-assembly">https://xxx.com/api/jtbl-assembly/import-jtbl-assembly</a></p>
+<p>form-data :
+<br>
+key: JobId         value: xxxx <br>
+key: file          value: 选择Excel文件</p>
+
     </div>
   
 </div>
@@ -6509,7 +6510,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -6525,19 +6526,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> 
+<span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;LoginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1565296&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;EmployeeNo&#34;</span><span class="p">:</span> <span class="s2">&#34;a123&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;冯先生&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Tao&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Del&#34;</span><span class="p">:</span> <span class="kc">false</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Import success.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -6550,8 +6543,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;JobId 不可为空&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;JobId can&#39;t be empty.&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入失败&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -6561,7 +6554,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -6575,48 +6568,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>Id</td>
-<td>number</td>
-<td>是</td>
-<td>2109300032090001</td>
-<td>用户的id</td>
-</tr>
-<tr>
-<td>LoginName</td>
-<td>string</td>
-<td>是</td>
-<td>hggfjt</td>
-<td>用户名(登录账号)</td>
-</tr>
-<tr>
-<td>EmployeeNo</td>
-<td>string</td>
-<td>-</td>
-<td>a123</td>
-<td>员工号</td>
-</tr>
-<tr>
-<td>ChineseName</td>
-<td>string</td>
-<td>-</td>
-<td>张三</td>
-<td>中文名</td>
-</tr>
-<tr>
-<td>EnglishName</td>
-<td>string</td>
-<td>-</td>
-<td>san.zhang</td>
-<td>英文名</td>
-</tr>
-</tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -6680,7 +6636,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
