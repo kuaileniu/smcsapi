@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /tags/*
+
+Sitemap: https://smcsdocs.zhsit.cn/sitemap.xml
