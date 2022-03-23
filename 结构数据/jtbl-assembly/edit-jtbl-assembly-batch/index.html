@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2022-03-22
-基本参数     url : https://{domain}:{port}/api/jtbl-assembly/edit-jtbl-assembly-batch http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   Description string xxx 构件号描述   DrawingNo string xxx 图纸号   Rev string xxx 版本   RevDate 日期 2022-03-01 版本日期   RevRef string xxxx 版本说明   Quantity 整数 1 数量   WorkPackageID 整数 1 工作包Id   BatchIssueID 整数 1 生产批次Id   BatchIssueDate 日期 2022-03-01 批次下发日期   TransmittalNo string xxxx 传送单号   TransmittalDate 日期 2022-03-01 传送日期   AreaID 整数 1 分区Id   WBSID 整数 1 工作分解结构Id   PriorityID 整数 1 优先级Id   DeliveryGroupID 整数 1 发货组Id   BatchGroupID 整数 1 批次组Id   FabCategory string xxxx 加工类别   WeightEach float 1.">
+基本参数     url : https://{domain}:{port}/api/jtbl-assembly/edit-jtbl-assembly-batch http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids 整型数组 [2110222147230001,2110222148290001] 构件ID列表   JobId number 1 项目ID   Description string xxx 构件号描述   DrawingNo string xxx 图纸号   Rev string xxx 版本   RevDate 日期 2022-03-01 版本日期   RevRef string xxxx 版本说明   Quantity 整数 1 数量   WorkPackageID 整数 1 工作包Id   BatchIssueID 整数 1 生产批次Id   BatchIssueDate 日期 2022-03-01 批次下发日期   TransmittalNo string xxxx 传送单号   TransmittalDate 日期 2022-03-01 传送日期   AreaID 整数 1 分区Id   WBSID 整数 1 工作分解结构Id   PriorityID 整数 1 优先级Id   DeliveryGroupID 整数 1 发货组Id   BatchGroupID 整数 1 批次组Id   FabCategory string xxxx 加工类别   WeightEach float 1.">
 
 
 
@@ -6361,6 +6361,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
+<td>Ids</td>
+<td>整型数组</td>
+<td>[2110222147230001,2110222148290001]</td>
+<td>构件ID列表</td>
+</tr>
+<tr>
 <td>JobId</td>
 <td>number</td>
 <td>1</td>
@@ -6764,6 +6770,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <p>body：</p>
 <p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;Ids&#34;</span><span class="p">:[</span><span class="mi">147180927480001</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
     <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;构件号描述&#34;</span><span class="p">,</span>
     <span class="nt">&#34;DrawingNo&#34;</span><span class="p">:</span> <span class="s2">&#34;图纸号1&#34;</span><span class="p">,</span>
