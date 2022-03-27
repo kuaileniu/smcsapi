@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2022-03-04
-基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/add-jtbl-assembly-items http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   AssemblyID number 1 构件ID   Rev string xxx 版本   AssemblyItemNo string xxx 构件编码   Description string xxxxxx 描述   WeightEach float xxxx 单重kg   MainProfile string xxx 主材   PaintSpec string xxx 油漆规范   Quantity 整数 1 数量   TotalReqdQty 整数 1 总数量   IssuedForFabDate 日期 2022-03-01 图纸下发日期   CutCompDate 日期 2022-03-01 下料日期   FitUpDate 日期 2022-03-01 组对日期   WeldCompDate 日期 2022-03-01 焊接完成日期   GroundDate 日期 2022-03-01 打磨完成日期   DimInspectedDate 日期 2022-03-01 尺寸检验日期   SentPaintDate 日期 2022-03-01 发往油漆日期   PaintCompDate 日期 2022-03-01 油漆完成日期   PreAssemblyDate 日期 2022-03-01 预拼装日期   PackedDate 日期 2022-03-01 打包日期   PackageNo string xxx 包装号码   TruckNo string xxx 转运车号   BoxNo string xxx 箱号   PunchListedDate 日期 2022-03-01 核查表日期   SignedOffDate 日期 2022-03-01 放行日期   SentSiteDate 日期 2022-03-01 发往现场日期   DocCompletedDate 日期 2022-03-01 交工文档完成日期   PaintRepNo string xxx 油漆报告号   LaydownArea string xxx 放置区域   PreAssemblyNo string xxx 预拼装号   PreAssemblyLocation string xxx 预拼装地点   WorkPackageID 整数 1 工作包Id   BatchIssueID 整数 1 生产批次Id   BarcodePrinted bool true 条码已打印   ReferToModel string xxx 链接模型   ExcludeFromProgress bool true 进度统计排除   Comment string xxxx 备注   AttachSli json数组 [] 请看样例   Spare1 string xxxx 自定义字段1   Spare2 string xxxx 自定义字段2   Spare3 string xxxx 自定义字段3   Spare4 string xxxx 自定义字段4     样例  body：">
+基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/add-jtbl-assembly-items http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   AssemblyID number 1 构件ID   AssemblyItemNo string xxx 构件编码   Quantity 整数 1 数量   IssuedForFabDate 日期 2022-03-01 图纸下发日期   CutCompDate 日期 2022-03-01 下料日期   FitUpDate 日期 2022-03-01 组对日期   WeldCompDate 日期 2022-03-01 焊接完成日期   GroundDate 日期 2022-03-01 打磨完成日期   DimInspectedDate 日期 2022-03-01 尺寸检验日期   SentPaintDate 日期 2022-03-01 发往油漆日期   PaintCompDate 日期 2022-03-01 油漆完成日期   PreAssemblyDate 日期 2022-03-01 预拼装日期   PackedDate 日期 2022-03-01 打包日期   TruckNo string xxx 转运车号   BoxNo string xxx 箱号   PunchListedDate 日期 2022-03-01 核查表日期   SignedOffDate 日期 2022-03-01 放行日期   SentSiteDate 日期 2022-03-01 发往现场日期   DocCompletedDate 日期 2022-03-01 交工文档完成日期   PaintRepNo string xxx 油漆报告号   LaydownArea string xxx 放置区域   PreAssemblyNo string xxx 预拼装号   PreAssemblyLocation string xxx 预拼装地点   WorkPackageID 整数 1 工作包Id   PackageNoID 整数 1 包装号Id   BatchIssueID 整数 1 生产批次Id   BarcodePrinted bool true 条码已打印   ReferToModel string xxx 链接模型   ExcludeFromProgress bool true 进度统计排除   Comment string xxxx 备注   AttachSli json数组 [] 请看样例   Spare1 string xxxx 自定义字段1   Spare2 string xxxx 自定义字段2   Spare3 string xxxx 自定义字段3   Spare4 string xxxx 自定义字段4     样例  body：">
 
 
 
@@ -6399,52 +6399,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>构件ID</td>
 </tr>
 <tr>
-<td>Rev</td>
-<td>string</td>
-<td>xxx</td>
-<td>版本</td>
-</tr>
-<tr>
 <td>AssemblyItemNo</td>
 <td>string</td>
 <td>xxx</td>
 <td>构件编码</td>
 </tr>
 <tr>
-<td>Description</td>
-<td>string</td>
-<td>xxxxxx</td>
-<td>描述</td>
-</tr>
-<tr>
-<td>WeightEach</td>
-<td>float</td>
-<td>xxxx</td>
-<td>单重kg</td>
-</tr>
-<tr>
-<td>MainProfile</td>
-<td>string</td>
-<td>xxx</td>
-<td>主材</td>
-</tr>
-<tr>
-<td>PaintSpec</td>
-<td>string</td>
-<td>xxx</td>
-<td>油漆规范</td>
-</tr>
-<tr>
 <td>Quantity</td>
 <td>整数</td>
 <td>1</td>
 <td>数量</td>
-</tr>
-<tr>
-<td>TotalReqdQty</td>
-<td>整数</td>
-<td>1</td>
-<td>总数量</td>
 </tr>
 <tr>
 <td>IssuedForFabDate</td>
@@ -6505,12 +6469,6 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>日期</td>
 <td>2022-03-01</td>
 <td>打包日期</td>
-</tr>
-<tr>
-<td>PackageNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>包装号码</td>
 </tr>
 <tr>
 <td>TruckNo</td>
@@ -6577,6 +6535,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>整数</td>
 <td>1</td>
 <td>工作包Id</td>
+</tr>
+<tr>
+<td>PackageNoID</td>
+<td>整数</td>
+<td>1</td>
+<td>包装号Id</td>
 </tr>
 <tr>
 <td>BatchIssueID</td>
@@ -6653,14 +6617,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;AssemblyID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
     <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;100&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span>
-    <span class="nt">&#34;MainProfile&#34;</span><span class="p">:</span> <span class="s2">&#34;zxxxx&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;PaintSpec&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
     <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-    <span class="nt">&#34;TotalReqdQty&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
     <span class="nt">&#34;IssuedForFabDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
     <span class="nt">&#34;CutCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
     <span class="nt">&#34;FitUpDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
@@ -6671,7 +6629,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;PaintCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
     <span class="nt">&#34;PreAssemblyDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
     <span class="nt">&#34;PackedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;PackageID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;PackageNoID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;TruckNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
     <span class="nt">&#34;BoxNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
     <span class="nt">&#34;PunchListedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
