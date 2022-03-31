@@ -45,6 +45,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/add-jtbl-package-no/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/add-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/add-jtbl-isometric/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/add-jtbl-pressure-guage/</loc>
@@ -113,6 +115,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/del-jtbl-area/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/del-jtbl-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/del-jtbl-isometric/</loc>
   </url><url>
@@ -185,6 +189,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/edit-jtbl-package-no/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/edit-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/edit-jtbl-isometric/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/edit-jtbl-pressure-guage/</loc>
@@ -229,6 +235,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-not-have-this-job/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/get-jtbl-packing-list-raw-mt-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/get-jtbl-client-page/</loc>
   </url><url>
@@ -413,6 +421,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/edit-jtbl-assembly-batch/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/edit-jtbl-assembly-items-batch/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
