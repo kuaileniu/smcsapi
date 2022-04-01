@@ -15,12 +15,12 @@
 
 
     <meta name="description" content="更新日期: 2022-03-31
-基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids number[] [1,2] 包装清单id数组     样例  body：
+基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids number[] [1,2] 包装清单(原材料)id数组     样例  body：
 { &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    服务器端返回客户端数据中的通用参数       参数： status">
 
 
 
-    <title>删除包装清单 | SMCS</title>
+    <title>删除包装清单(原材料) | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -6262,7 +6262,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <label for="navtree-72902894" class="flex justify-between">
             
             
-                <span class="flex">包装清单</span>
+                <span class="flex">包装清单(原材料)</span>
             
             
                 <svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"></use></svg>
@@ -6291,7 +6291,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/add-jtbl-packing-list-raw-mt/" class="gdoc-nav__entry ">
-                        新增包装清单
+                        新增包装清单(原材料)
                     </a>
                 </span>
             
@@ -6317,7 +6317,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt/" class="gdoc-nav__entry is-active">
-                        删除包装清单
+                        删除包装清单(原材料)
                     </a>
                 </span>
             
@@ -6343,7 +6343,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/edit-jtbl-packing-list-raw-mt/" class="gdoc-nav__entry ">
-                        编辑包装清单信息
+                        编辑包装清单(原材料)信息
                     </a>
                 </span>
             
@@ -6369,7 +6369,148 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/get-jtbl-packing-list-raw-mt-page/" class="gdoc-nav__entry ">
-                        分页获包装清单信息
+                        分页获包装清单(原材料)信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+    </ul>
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            <input type="checkbox" id="navtree-1cb5f4ae" class="gdoc-nav__toggle" >
+            <label for="navtree-1cb5f4ae" class="flex justify-between">
+            
+            
+                <span class="flex">发货单</span>
+            
+            
+                <svg class="icon gdoc_keyborad_arrow_left"><use xlink:href="#gdoc_keyborad_arrow_left"></use></svg>
+                <svg class="icon gdoc_keyborad_arrow_down hidden"><use xlink:href="#gdoc_keyborad_arrow_down"></use></svg>
+            </label>
+            
+
+            
+                
+    
+
+    <ul class="gdoc-nav__list">
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/add-jtbl-delivery-docket/" class="gdoc-nav__entry ">
+                        新增发货单
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/del-jtbl-delivery-docket/" class="gdoc-nav__entry ">
+                        删除发货单
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/edit-jtbl-delivery-docket/" class="gdoc-nav__entry ">
+                        编辑发货单信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-jtbl-delivery-docket-page/" class="gdoc-nav__entry ">
+                        分页获发货单信息
                     </a>
                 </span>
             
@@ -6637,7 +6778,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/' href='/%E7%89%A9%E6%B5%81/'><span itemprop='name'>物流</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/' href='/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/'><span itemprop='name'>包装清单</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除包装清单</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/' href='/%E7%89%A9%E6%B5%81/'><span itemprop='name'>物流</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/' href='/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/'><span itemprop='name'>包装清单(原材料)</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除包装清单(原材料)</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -6663,7 +6804,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>删除包装清单</h1>
+        <h1>删除包装清单(原材料)</h1>
         <p><small>更新日期: 2022-03-31</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
@@ -6710,7 +6851,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>Ids</td>
 <td>number[]</td>
 <td>[1,2]</td>
-<td>包装清单id数组</td>
+<td>包装清单(原材料)id数组</td>
 </tr>
 </tbody>
 </table> </div>
