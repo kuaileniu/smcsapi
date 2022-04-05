@@ -47,6 +47,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/add-jtbl-packing-list-raw-mt/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-jtbl-packing-list-str/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/add-jtbl-isometric/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/add-jtbl-pressure-guage/</loc>
@@ -119,6 +121,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/del-jtbl-package-no/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/del-jtbl-isometric/</loc>
   </url><url>
@@ -195,6 +199,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/edit-jtbl-packing-list-raw-mt/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/edit-jtbl-packing-list-str/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/edit-jtbl-isometric/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/edit-jtbl-pressure-guage/</loc>
@@ -240,11 +246,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-not-have-this-job/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-page/</loc>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-assembly-items-page-have-this-package-no/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/get-jtbl-packing-list-raw-mt-page/</loc>
-  </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-jtbl-delivery-docket-page/</loc>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-packing-list-str-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/get-jtbl-client-page/</loc>
   </url><url>
@@ -258,17 +262,27 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/get-jtbl-area-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/get-jtbl-packing-list-raw-mt-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/get-jtbl-isometric-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/get-jtbl-pressure-guage-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-jtbl-delivery-docket-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/get-jtbl-delivery-group-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/get-jtbl-wbs-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/get-jtbl-workshop-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/get-jtbl-batch-group-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/get-jtbl-report-grouping-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-assembly-items-page-not-have-this-package-no/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/get-jtbl-assembly-page/</loc>
   </url><url>
@@ -294,8 +308,6 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/get-jtbl-job-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/get-jtbl-sow-page/</loc>
-  </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/get-jtbl-wbs-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/</loc>
   </url><url>
@@ -433,6 +445,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
