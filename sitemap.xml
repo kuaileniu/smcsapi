@@ -57,6 +57,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/add-jtbl-delivery-group/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/add-jtbl-employee/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/add-jtbl-wbs/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/add-jtbl-work-package/</loc>
@@ -137,6 +139,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/del-jtbl-delivery-docket/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/del-jtbl-delivery-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/del-jtbl-employee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/del-jtbl-wbs/</loc>
   </url><url>
@@ -221,6 +225,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/edit-jtbl-delivery-group/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/edit-jtbl-employee/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/edit-jtbl-wbs/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/edit-jtbl-work-package/</loc>
@@ -291,6 +297,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-jtbl-delivery-docket-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/get-jtbl-delivery-group-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/get-jtbl-wbs-page/</loc>
   </url><url>
@@ -459,6 +467,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/</loc>
     <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/download-jtbl-assembly-tpl-cn/</loc>
   </url><url>
