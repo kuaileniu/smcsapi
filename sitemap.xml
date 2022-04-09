@@ -71,6 +71,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/add-jtbl-assembly-items/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/add-jtbl-batch-issue/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/add-jtbl-batch-issue-name/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/add-staff/</loc>
@@ -149,6 +151,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/del-jtbl-assembly/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/del-jtbl-assembly-items/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/del-jtbl-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/del-jtbl-batch-issue-name/</loc>
   </url><url>
@@ -233,6 +237,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/edit-jtbl-batch-issue-name/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/edit-jtbl-batch-issue/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/edit-staffs/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/edit-jtbl-spool-material/</loc>
@@ -299,6 +305,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/get-jtbl-assembly-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-batch-issue-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/get-jtbl-batch-issue-name-page/</loc>
   </url><url>
@@ -473,6 +481,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
