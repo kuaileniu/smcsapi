@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2022-04-08
-基本参数     url : https://{domain}:{port}/api/jtbl-batch-issue/add-jtbl-batch-issue http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   BatchIssueNameID number 1 生产批次名称ID   Rev string xx 版本   WorkPackageID number xx 工作包ID   BatchIssueDate 日期 2022-09-11 批次下发日期   BatchIssueSent boolean true 批次已下发   TransmittalNo string true 传送单号   TransmittalDate 日期 2022-09-11 传送日期   SubcontractorID number xx 员工ID，JtblEmployee的ID   Comment string xxxx 备注     样例  body：">
+基本参数     url : https://{domain}:{port}/api/jtbl-batch-issue/add-jtbl-batch-issue http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目ID   BatchIssueNameID number 1 生产批次名称ID   Rev string xx 版本   WorkPackageID number xx 工作包ID   BatchIssueDate 日期 2022-09-11 批次下发日期   BatchIssueSent boolean true 批次已下发   TransmittalNo string true 传送单号   TransmittalDate 日期 2022-09-11 传送日期   SubcontractorID number xx 员工ID，JtblEmployee的ID   Comment string xxxx 备注   WorkshopID number xx 工厂/车间ID     样例  body：">
 
 
 
@@ -7666,6 +7666,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>string</td>
 <td>xxxx</td>
 <td>备注</td>
+</tr>
+<tr>
+<td>WorkshopID</td>
+<td>number</td>
+<td>xx</td>
+<td>工厂/车间ID</td>
 </tr>
 </tbody>
 </table> </div>
