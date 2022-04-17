@@ -355,6 +355,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-staff-for-role/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-have-this-batch-issue-copy/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-assembly-items-page-not-have-this-package-no/</loc>
@@ -373,6 +375,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-role-for-staff/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-not-have-this-batch-issue/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/dict/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/my-base-info/</loc>
@@ -380,6 +384,10 @@
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/download-staff-io-tpl/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-assembly-items-for-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/del-assembly-for-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/add-assembly-for-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/</loc>
   </url><url>
