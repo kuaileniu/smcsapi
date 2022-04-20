@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2022-04-06
-基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   PackageNoID number 1 包装号id   AssemblyItemsIDS number数组 [1] 构件编码id数组     样例  body：
-{ &#34;JobId&#34;: 1, &#34;PackageNoID&#34;: 1, &#34;AssemblyItemsIDS&#34;: [ 1, 147259178080001, 147264964080001, 147264966880001, 147264971580001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
+基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no http method : POST 数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   PackageNoID number 1 包装号id   AssemblyItemsIDS number数组 [1] 构件编码id数组   AssemblyItemNos string数组 [&ldquo;a&rdquo;,&ldquo;b&rdquo;] 构件编码数组     样例  body：
+{ &#34;JobId&#34;: 1, &#34;PackageNoID&#34;: 1, &#34;AssemblyItemsIDS&#34;: [ 1, 147259178080001, 147264964080001, 147264966880001, 147264971580001 ], &#34;AssemblyItemNos&#34;:[&#34;n1&#34;,&#34;n2&#34;] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
 
 
 
@@ -7570,6 +7570,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div><ol>
 <li>url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no</li>
 <li>http method : POST</li>
+<li>数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
@@ -7619,6 +7620,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>[1]</td>
 <td>构件编码id数组</td>
 </tr>
+<tr>
+<td>AssemblyItemNos</td>
+<td>string数组</td>
+<td>[&ldquo;a&rdquo;,&ldquo;b&rdquo;]</td>
+<td>构件编码数组</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -7640,7 +7647,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         <span class="mi">147264964080001</span><span class="p">,</span>
         <span class="mi">147264966880001</span><span class="p">,</span>
         <span class="mi">147264971580001</span>
-    <span class="p">]</span>
+    <span class="p">],</span>
+     <span class="nt">&#34;AssemblyItemNos&#34;</span><span class="p">:[</span><span class="s2">&#34;n1&#34;</span><span class="p">,</span><span class="s2">&#34;n2&#34;</span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
