@@ -14,9 +14,10 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-04-17
-基本参数     url : https://{domain}:{port}/api/jtbl-batch-issue/add-assembly-for-batch-issue http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   BatchIssueID number 1 生产批次id   AssemblyIDS number数组 [1] 构件id数组     样例  body：
-{ &#34;JobId&#34;: 1, &#34;BatchIssueID&#34;: 1, &#34;AssemblyIDS&#34;: [ 1, 147259178080001, 147264964080001, 147264966880001, 147264971580001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
+    <meta name="description" content="更新日期: 2022-04-20
+基本参数     url : https://{domain}:{port}/api/jtbl-batch-issue/add-assembly-for-batch-issue http method : POST  请求数据    遵守鉴权机制
+ 说明： 与提供的JobId相同的，对数组 AssemblyIDS 或 AssemblyNos 包含的构件都进行关联。 参数     参数名称 类型 示例 描述     JobId number 1 项目id   BatchIssueID number 1 生产批次id   AssemblyIDS number数组 [1] 构件id数组   AssemblyNos string数组 [&ldquo;a&rdquo;,&ldquo;b&rdquo;] 构件号数组     样例  body：
+{ &#34;JobId&#34;: 1, &#34;BatchIssueID&#34;: 1, &#34;AssemblyIDS&#34;: [ 1,2 ], &#34;AssemblyNos&#34;: [ &#34;1010-1200-B0001&#34;, &#34;1010-1200-B0002&#34; ] }      返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
 
 
 
@@ -7559,7 +7560,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>为生产批次关联构件</h1>
-        <p><small>更新日期: 2022-04-17</small></p>
+        <p><small>更新日期: 2022-04-20</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -7578,7 +7579,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a></p>
+<ul>
+<li>说明： 与提供的JobId相同的，对数组 AssemblyIDS 或 AssemblyNos 包含的构件都进行关联。
 
 
 
@@ -7619,6 +7622,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>[1]</td>
 <td>构件id数组</td>
 </tr>
+<tr>
+<td>AssemblyNos</td>
+<td>string数组</td>
+<td>[&ldquo;a&rdquo;,&ldquo;b&rdquo;]</td>
+<td>构件号数组</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -7635,18 +7644,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;BatchIssueID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;AssemblyIDS&#34;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="mi">1</span><span class="p">,</span>
-        <span class="mi">147259178080001</span><span class="p">,</span>
-        <span class="mi">147264964080001</span><span class="p">,</span>
-        <span class="mi">147264966880001</span><span class="p">,</span>
-        <span class="mi">147264971580001</span>
+        <span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
+    <span class="p">],</span>
+    <span class="nt">&#34;AssemblyNos&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&#34;1010-1200-B0001&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;1010-1200-B0002&#34;</span>
     <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
   
 </div>
-</p>
+</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
