@@ -14,9 +14,10 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-04-06
-基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no http method : POST 数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   PackageNoID number 1 包装号id   AssemblyItemsIDS number数组 [1] 构件编码id数组   AssemblyItemNos string数组 [&ldquo;a&rdquo;,&ldquo;b&rdquo;] 构件编码数组     样例  body：
-{ &#34;JobId&#34;: 1, &#34;PackageNoID&#34;: 1, &#34;AssemblyItemsIDS&#34;: [ 1, 147259178080001, 147264964080001, 147264966880001, 147264971580001 ], &#34;AssemblyItemNos&#34;:[&#34;n1&#34;,&#34;n2&#34;] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
+    <meta name="description" content="更新日期: 2022-04-20
+基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no http method : POST  请求数据    遵守鉴权机制
+ 说明： 数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。 参数     参数名称 类型 示例 描述     JobId number 1 项目id   PackageNoID number 1 包装号id   AssemblyItemsIDS number数组 [1] 构件编码id数组   AssemblyItemNos string数组 [&ldquo;a&rdquo;,&ldquo;b&rdquo;] 构件编码数组     样例  body：
+{ &#34;JobId&#34;: 1, &#34;PackageNoID&#34;: 1, &#34;AssemblyItemsIDS&#34;: [ 1, 147259178080001, 147264964080001, 147264966880001, 147264971580001 ], &#34;AssemblyItemNos&#34;:[&#34;n1&#34;,&#34;n2&#34;] }      返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
 
 
 
@@ -7559,7 +7560,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>为包装号关联构件编码</h1>
-        <p><small>更新日期: 2022-04-06</small></p>
+        <p><small>更新日期: 2022-04-20</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -7570,7 +7571,6 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div><ol>
 <li>url : https://{domain}:{port}/api/jtbl-packing-list-str/add-assembly-items-for-package-no</li>
 <li>http method : POST</li>
-<li>数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
@@ -7579,7 +7579,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a></p>
+<ul>
+<li>说明： 数组 AssemblyItemsIDS 和 AssemblyItemNos 包含的构建都进行关联。
 
 
 
@@ -7654,7 +7656,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </div>
   
 </div>
-</p>
+</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
