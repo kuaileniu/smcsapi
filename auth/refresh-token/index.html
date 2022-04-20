@@ -14,11 +14,14 @@
 
 
 
-    <meta name="description" content="SMCS">
+    <meta name="description" content="更新日期: 2022-04-20
+基本参数     url : https://{domain}:{port}/api/common/refresh-token http method : POST  请求数据     说明   access-token: 调用 用户登录 接口获取的 access-token 值； refresh-token: 调用 用户登录 接口获取的 refresh-token 值；   样例  URL： https://xxx.com/api/common/refresh-token
+body：
+{ &quot;access-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG%2FR8cggbs1UpYzKkLpIA0m2UcCS3J5PiC2KjXKR2XLlk5tVT%2FMP5iILMzYQlwxFlFPP3PBBTVoxe2gLADOQULuKSOCqmjQ7l%2BbZGhbdtcnPoyn%2FhukxAdlzTWHAkX9lQcvuLpUGsN%2BWF4qmLliss7xSW2S9qto39QoFtKjzAMs67ED2%2BPZSY0OOzf9azlw%2FjGPEQK9f8bZr1Mx%2BoyucHUaA%3D%3D&quot;, &quot;refresh-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0TZtVkoNs8DyJq7nPNlkyc%2B1LfZTSK%2F%2FQcJvge48iAcSLVIG%2F7qkcpqD5izo3iEKrUFDuheiPIg7uCHZfQU%2BiD0%3D&quot; }    返回数据     http code:200  { &quot;status&quot;: 0, &quot;access-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjhLJxJqjVlUikJ5Uu1EkPs5Go8ycmloNRMprHzRAWhmi48UVD3urEN5ndcGAYL3I%2BVB47WxODfLcnDhjgUIfLNUtyAlCq19UOR%2B0HBY9FbejHZzrRm1oQ3QtTFXdIr3e10Fmmg4Z9kPvwzoG9bErjQMkRWqYfGRANBLBTjeD3aiFIo%2FeTUW3yqSyIcIID3l7CPzJQYHbX2cKAZDKKxo7LWTjwT%2BWyr1%2B5PEKbH1ZSmW2Q%3D%3D&quot;, &quot;refresh-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0dlzlwmfoLRcKUVgPJlQpc3ha%2Bqn6BDOcyFIMLLgQQm0JV4tLaXlLAZjkVRk0pfmo6H91Qdr58T0cL%2FhFlqD1r8%3D&quot; }   http code:401  { &quot;status&quot;: 2, &quot;msg&quot;: &quot;An exception occurred while decoding the access token&quot; } 或">
 
 
 
-    <title>更新 一 | SMCS</title>
+    <title>刷新令牌 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -742,7 +745,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-ee18961c" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-ee18961c" class="gdoc-nav__toggle" checked>
             <label for="navtree-ee18961c" class="flex justify-between">
             
             
@@ -856,7 +859,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/auth/refresh-token/" class="gdoc-nav__entry ">
+                    <a href="/auth/refresh-token/" class="gdoc-nav__entry is-active">
                         刷新令牌
                     </a>
                 </span>
@@ -7431,20 +7434,6 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </section>
 
     
-    <section class="gdoc-nav--tags">
-        <h2>Tags</h2>
-        <ul class="gdoc-nav__list">
-            
-            
-            
-            <li>
-                <a class="gdoc-nav__entry " href="/tags/%E9%89%B4%E6%9D%83/">鉴权</a>
-            </li>
-            
-            
-        </ul>
-    </section>
-    
 
     <section class="gdoc-nav--more">
         
@@ -7502,31 +7491,170 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <div class="gdoc-page">
                 
-    <article class="gdoc-markdown gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">更新 一</h1>
-        <div class="gdoc-post__meta">
-          <span class="no-wrap">
-              <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-              <span class="gdoc-post__tag">
-                  <time datetime="2022-01-09T18:00:54&#43;08:00">
-                      
-                          Updated on
-                      
-                      Jan 9, 2022
-                  </time>
-              </span>
-          </span>
+    
 
-          <span class="no-wrap">
-              <svg class="icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-              <span class="gdoc-post__tag">0 min read</span>
-          </span>
-      </div>
-      </header>
-      <div>
+
+    
+
+
+
+
+
+
+<div class="gdoc-page__header flex flex-wrap
+     justify-between 
+    
+    " itemprop="breadcrumb">
+    
+    <div>
+        <svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            
+            
+            
+            
+    
+    
         
-      </div>
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/auth/' href='/auth/'><span itemprop='name'>鉴权机制</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>刷新令牌</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
+    
+
+        </ol>
+    </div>
+    
+    
+    <div>
+        <span class="editpage">
+            <svg class="icon gdoc_code"><use xlink:href="#gdoc_code"></use></svg>
+            <a href="#">
+                编辑此页
+            </a>
+        </span>
+    </div>
+    
+</div>
+
+
+    <article class="gdoc-markdown gdoc-markdown__align--left">
+        <h1>刷新令牌</h1>
+        <p><small>更新日期: 2022-04-20</small></p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh-token/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><ol>
+<li>url : https://{domain}:{port}/api/common/refresh-token</li>
+<li>http method : POST</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh-token/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      说明
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <ol>
+<li>access-token:  调用 <a class="gdoc-markdown__link" href="/auth/login">用户登录</a> 接口获取的 access-token 值；</li>
+<li>refresh-token: 调用 <a class="gdoc-markdown__link" href="/auth/login">用户登录</a> 接口获取的 refresh-token 值；</li>
+</ol>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/common/refresh-token">https://xxx.com/api/common/refresh-token</a></p>
+<p>body：</p>
+<pre tabindex="0"><code>{
+    &quot;access-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjiQb52bIEG98YvP8uKSIhpG%2FR8cggbs1UpYzKkLpIA0m2UcCS3J5PiC2KjXKR2XLlk5tVT%2FMP5iILMzYQlwxFlFPP3PBBTVoxe2gLADOQULuKSOCqmjQ7l%2BbZGhbdtcnPoyn%2FhukxAdlzTWHAkX9lQcvuLpUGsN%2BWF4qmLliss7xSW2S9qto39QoFtKjzAMs67ED2%2BPZSY0OOzf9azlw%2FjGPEQK9f8bZr1Mx%2BoyucHUaA%3D%3D&quot;,
+    &quot;refresh-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0TZtVkoNs8DyJq7nPNlkyc%2B1LfZTSK%2F%2FQcJvge48iAcSLVIG%2F7qkcpqD5izo3iEKrUFDuheiPIg7uCHZfQU%2BiD0%3D&quot;
+}
+</code></pre>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/auth/refresh-token/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      http code:200
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <pre tabindex="0"><code>{
+    &quot;status&quot;: 0,
+    &quot;access-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0SsiwH9nv6tcC7dcjwo5XjhLJxJqjVlUikJ5Uu1EkPs5Go8ycmloNRMprHzRAWhmi48UVD3urEN5ndcGAYL3I%2BVB47WxODfLcnDhjgUIfLNUtyAlCq19UOR%2B0HBY9FbejHZzrRm1oQ3QtTFXdIr3e10Fmmg4Z9kPvwzoG9bErjQMkRWqYfGRANBLBTjeD3aiFIo%2FeTUW3yqSyIcIID3l7CPzJQYHbX2cKAZDKKxo7LWTjwT%2BWyr1%2B5PEKbH1ZSmW2Q%3D%3D&quot;,
+    &quot;refresh-token&quot;: &quot;WVjhtoqU1Nok0iUBAlrj0dlzlwmfoLRcKUVgPJlQpc3ha%2Bqn6BDOcyFIMLLgQQm0JV4tLaXlLAZjkVRk0pfmo6H91Qdr58T0cL%2FhFlqD1r8%3D&quot;
+}
+</code></pre>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+       />
+    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+      http code:401
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <pre tabindex="0"><code>{
+    &quot;status&quot;: 2,
+    &quot;msg&quot;: &quot;An exception occurred while decoding the access token&quot;
+}
+</code></pre><p>或</p>
+<pre tabindex="0"><code>{
+    &quot;status&quot;: 2,
+    &quot;msg&quot;: &quot;refresh_token expired&quot;
+}
+</code></pre>
+    </div>
+  
+</div>
+
+
     </article>
 
                 
