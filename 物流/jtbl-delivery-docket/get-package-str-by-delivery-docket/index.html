@@ -14,13 +14,14 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-04-01
-基本参数     url : https://{domain}:{port}/api/jtbl-packing-list-str/del-jtbl-packing-list-str http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Ids number[] [1,2] 包装清单(结构)id数组     样例  body：
-{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; }    服务器端返回客户端数据中的通用参数       参数： status">
+    <meta name="description" content="更新日期: 2022-04-22
+基本参数     url : https://{domain}:{port}/api/jtbl-delivery-docket/get-package-str-by-delivery-docket http method : POST  请求数据    遵守鉴权机制
+ 查询 与给定的包装id相同或与给定的包装号相同的包装清单 参数     参数名称 类型 示例 描述     JobId number 1 项目id   DeliveryDocketId number 1 包装id   DeliveryDocketNo string xxx 包装号     样例  body：
+{ &#34;JobId&#34;: 1, &#34;DeliveryDocketId&#34;: 1, &#34;DeliveryDocketNo&#34;: &#34;d1&#34; }      返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: { &#34;JobId&#34;: 1, &#34;JobNo&#34;: &#34;项目号1&#34;, &#34;JobTitle&#34;: &#34;项目名称1&#34;, &#34;DeliveryDocketId&#34;: 1, &#34;DeliveryDocketNo&#34;: &#34;d1&#34;, &#34;ItemStrArray&#34;: [ { &#34;PackageNo&#34;: &#34;NO1&#34;, &#34;AssemblyNo&#34;: &#34;1010-1200-PL0009&#34;, &#34;Description&#34;: &#34;构件号描述&#34;, &#34;Rev&#34;: &#34;v1&#34;, &#34;WeightEach&#34;: 5.">
 
 
 
-    <title>删除包装清单(结构) | SMCS</title>
+    <title>根据发货单查询包装清单(结构，管道，原材料) | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -6262,7 +6263,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-1cb5f4ae" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-1cb5f4ae" class="gdoc-nav__toggle" checked>
             <label for="navtree-1cb5f4ae" class="flex justify-between">
             
             
@@ -6398,7 +6399,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/" class="gdoc-nav__entry ">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/" class="gdoc-nav__entry is-active">
                         根据发货单查询包装清单(结构，管道，原材料)
                     </a>
                 </span>
@@ -6429,7 +6430,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-413aca05" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-413aca05" class="gdoc-nav__toggle" >
             <label for="navtree-413aca05" class="flex justify-between">
             
             
@@ -7558,7 +7559,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/' href='/%E7%89%A9%E6%B5%81/'><span itemprop='name'>物流</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/' href='/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/'><span itemprop='name'>包装清单(结构)</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除包装清单(结构)</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/' href='/%E7%89%A9%E6%B5%81/'><span itemprop='name'>物流</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/' href='/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/'><span itemprop='name'>发货单</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>根据发货单查询包装清单(结构，管道，原材料)</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -7584,27 +7585,29 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>删除包装清单(结构)</h1>
-        <p><small>更新日期: 2022-04-01</small></p>
+        <h1>根据发货单查询包装清单(结构，管道，原材料)</h1>
+        <p><small>更新日期: 2022-04-22</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-packing-list-str/del-jtbl-packing-list-str</li>
+<li>url : https://{domain}:{port}/api/jtbl-delivery-docket/get-package-str-by-delivery-docket</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a>
+</div><p>遵守<a class="gdoc-markdown__link" href="/auth/">鉴权机制</a></p>
+<ul>
+<li>查询 与给定的包装id相同或与给定的包装号相同的包装清单
 
 
 
@@ -7628,10 +7631,22 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>Ids</td>
-<td>number[]</td>
-<td>[1,2]</td>
-<td>包装清单(结构)id数组</td>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目id</td>
+</tr>
+<tr>
+<td>DeliveryDocketId</td>
+<td>number</td>
+<td>1</td>
+<td>包装id</td>
+</tr>
+<tr>
+<td>DeliveryDocketNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>包装号</td>
 </tr>
 </tbody>
 </table> </div>
@@ -7646,20 +7661,21 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="mi">143042941580001</span><span class="p">,</span>
-        <span class="mi">143084106780001</span>
-    <span class="p">]</span>
+    
+    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;DeliveryDocketId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;DeliveryDocketNo&#34;</span><span class="p">:</span> <span class="s2">&#34;d1&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
   
 </div>
-</p>
+</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -7676,9 +7692,57 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&#34;JobNo&#34;</span><span class="p">:</span> <span class="s2">&#34;项目号1&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;JobTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;项目名称1&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;DeliveryDocketId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&#34;DeliveryDocketNo&#34;</span><span class="p">:</span> <span class="s2">&#34;d1&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;ItemStrArray&#34;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;NO1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;1010-1200-PL0009&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;构件号描述&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">,</span>
+                <span class="nt">&#34;TotalQuantity&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;10&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">10</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;NO1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;1010-1200-PL0009&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;构件号描述&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">,</span>
+                <span class="nt">&#34;TotalQuantity&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;100&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">99910</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;NO1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;1010-1200-PL0009&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;构件号描述&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">,</span>
+                <span class="nt">&#34;TotalQuantity&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;11&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">99910</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;NO1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;1010-1200-PL0009&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;构件号描述&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mf">5.1</span><span class="p">,</span>
+                <span class="nt">&#34;TotalQuantity&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;b&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">99910</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;后面可能添加包装清单（管道）、包装清单（原材料）到此对象中&#34;</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -7691,8 +7755,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;查询数据发生异常请稍后重试&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Error occurs when finding data&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -7700,9 +7764,176 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>JobNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目号</td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>DeliveryDocketId</td>
+<td>number</td>
+<td>1</td>
+<td>发货单Id</td>
+</tr>
+<tr>
+<td>DeliveryDocketNo</td>
+<td>string</td>
+<td>1xxx</td>
+<td>发货单号</td>
+</tr>
+<tr>
+<td>ItemStrArray</td>
+<td>数组(包装清单（结构）的数据)</td>
+<td></td>
+<td>见样例</td>
+</tr>
+<tr>
+<td>AssemblyNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>构件号</td>
+</tr>
+<tr>
+<td>Rev</td>
+<td>string</td>
+<td>xxx</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>AssemblyItemNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>构件编码</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>string</td>
+<td>xxx</td>
+<td>描述</td>
+</tr>
+<tr>
+<td>WeightEach</td>
+<td>float</td>
+<td>1.1</td>
+<td>单重kg</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>整数</td>
+<td>1</td>
+<td>数量</td>
+</tr>
+<tr>
+<td>TotalQuantity</td>
+<td>整数</td>
+<td>1</td>
+<td>总数量</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxxxx</td>
+<td>备注</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+<div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
