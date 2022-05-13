@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-04-09
-基本参数     url : https://{domain}:{port}/api/jtbl-employee/get-jtbl-employee-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string xxxxx 搜索文本内容   JobId number 1 项目id     样例  body：
-{ &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 148081070380001, &#34;EmployeeCode&#34;: &#34;a&#34;, &#34;EmployeeName&#34;: &#34;b&#34;, &#34;PipeFitterNo&#34;: &#34;c&#34;, &#34;WelderNo&#34;: &#34;d&#34;, &#34;InspectorNo&#34;: &#34;e&#34;, &#34;StaffID&#34;: 1, &#34;SiteShop&#34;: &#34;&#34;, &#34;SiteCode&#34;: &#34;&#34;, &#34;Activate&#34;: false, &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;bb.">
+    <meta name="description" content="更新日期: 2022-05-13
+基本参数     url : https://{domain}:{port}/api/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   DeliveryDocketID number 1 发货单id     样例  body：
+{ &#34;JobId&#34;: 144176379010001, &#34;DeliveryDocketID&#34;: 148022685410001 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 148098242210001, &#34;JobId&#34;: 144176379010001, &#34;PackageNo&#34;: &#34;BZH-002&#34;, &#34;DeliveryDocketID&#34;: 148022685410001, &#34;Length&#34;: 0, &#34;Width&#34;: 0, &#34;Height&#34;: 0, &#34;Volume&#34;: 0, &#34;ExtraWeight&#34;: 0, &#34;NetWeight&#34;: 0, &#34;GrossWeight&#34;: 0, &#34;WeighOutWeight&#34;: 0, &#34;Comment&#34;: &#34;Comments&#34; }, { &#34;Id&#34;: 148202036310001, &#34;JobId&#34;: 144176379010001, &#34;PackageNo&#34;: &#34;S01-01&#34;, &#34;DeliveryDocketID&#34;: 148022685410001, &#34;Length&#34;: 12, &#34;Width&#34;: 2, &#34;Height&#34;: 2, &#34;Volume&#34;: 48, &#34;ExtraWeight&#34;: 1000, &#34;NetWeight&#34;: 0, &#34;GrossWeight&#34;: 0, &#34;WeighOutWeight&#34;: 0, &#34;Comment&#34;: &#34;&#34; }, { &#34;Id&#34;: 149091250710001, &#34;JobId&#34;: 144176379010001, &#34;PackageNo&#34;: &#34;S01-07&#34;, &#34;DeliveryDocketID&#34;: 148022685410001, &#34;Length&#34;: 2, &#34;Width&#34;: 3, &#34;Height&#34;: 4, &#34;Volume&#34;: 24, &#34;ExtraWeight&#34;: 100, &#34;NetWeight&#34;: 0, &#34;GrossWeight&#34;: 0, &#34;WeighOutWeight&#34;: 2222, &#34;Comment&#34;: &#34;3434&#34; } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数名称 类型 示例 描述     Id number 144095520480001 包装号ID   JobId number 1 项目ID   PackageNo string xxxx 包装号   DeliveryDocketID number 1 发货单ID   Length float 1.">
 
 
 
-    <title>分页获取员工信息 | SMCS</title>
+    <title>根据发货单查询包装号信息列表 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -6113,7 +6113,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-ff2eae12" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-ff2eae12" class="gdoc-nav__toggle" checked>
             <label for="navtree-ff2eae12" class="flex justify-between">
             
             
@@ -6143,7 +6143,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-ebdf6234" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-ebdf6234" class="gdoc-nav__toggle" checked>
             <label for="navtree-ebdf6234" class="flex justify-between">
             
             
@@ -6279,7 +6279,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/" class="gdoc-nav__entry ">
+                    <a href="/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/" class="gdoc-nav__entry is-active">
                         根据发货单查询包装号信息列表
                     </a>
                 </span>
@@ -7424,7 +7424,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-be7a97ae" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-be7a97ae" class="gdoc-nav__toggle" >
             <label for="navtree-be7a97ae" class="flex justify-between">
             
             
@@ -7534,7 +7534,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/jtbl-employee/get-jtbl-employee-page/" class="gdoc-nav__entry is-active">
+                    <a href="/jtbl-employee/get-jtbl-employee-page/" class="gdoc-nav__entry ">
                         分页获取员工信息
                     </a>
                 </span>
@@ -7656,7 +7656,15 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/jtbl-employee/' href='/jtbl-employee/'><span itemprop='name'>员工</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页获取员工信息</span><meta itemprop='position' content='3' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/' href='/%E7%89%A9%E6%B5%81/'><span itemprop='name'>物流</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%89%A9%E6%B5%81/jtbl-package-no/' href='/%E7%89%A9%E6%B5%81/jtbl-package-no/'><span itemprop='name'>包装号</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>根据发货单查询包装号信息列表</span><meta itemprop='position' content='4' /></li>
+    
+
     
 
     
@@ -7680,23 +7688,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>分页获取员工信息</h1>
-        <p><small>更新日期: 2022-04-09</small></p>
+        <h1>根据发货单查询包装号信息列表</h1>
+        <p><small>更新日期: 2022-05-13</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-employee/get-jtbl-employee-page</li>
+<li>url : https://{domain}:{port}/api/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -7724,16 +7732,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>search</td>
-<td>string</td>
-<td>xxxxx</td>
-<td>搜索文本内容</td>
-</tr>
-<tr>
 <td>JobId</td>
 <td>number</td>
 <td>1</td>
 <td>项目id</td>
+</tr>
+<tr>
+<td>DeliveryDocketID</td>
+<td>number</td>
+<td>1</td>
+<td>发货单id</td>
 </tr>
 </tbody>
 </table> </div>
@@ -7748,10 +7756,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
+    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">144176379010001</span><span class="p">,</span>
+    <span class="nt">&#34;DeliveryDocketID&#34;</span><span class="p">:</span> <span class="mi">148022685410001</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -7761,7 +7767,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -7781,39 +7787,51 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">148081070380001</span><span class="p">,</span>
-            <span class="nt">&#34;EmployeeCode&#34;</span><span class="p">:</span> <span class="s2">&#34;a&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;EmployeeName&#34;</span><span class="p">:</span> <span class="s2">&#34;b&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;PipeFitterNo&#34;</span><span class="p">:</span> <span class="s2">&#34;c&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;WelderNo&#34;</span><span class="p">:</span> <span class="s2">&#34;d&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;InspectorNo&#34;</span><span class="p">:</span> <span class="s2">&#34;e&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;StaffID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;SiteShop&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;SiteCode&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Activate&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-            <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;bb.jpg&#34;</span><span class="p">,</span>
-                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
-                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
-                <span class="p">},</span>
-                <span class="p">{</span>
-                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
-                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
-                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
-                <span class="p">}</span>
-            <span class="p">],</span>
-            <span class="nt">&#34;CreatedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;ModifiedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-04-09 09:11:43&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-04-09 09:11:43&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;LoginName&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;EmployeeNo&#34;</span><span class="p">:</span> <span class="s2">&#34;a123&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;冯先生&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Tao&#34;</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">148098242210001</span><span class="p">,</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">144176379010001</span><span class="p">,</span>
+            <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;BZH-002&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;DeliveryDocketID&#34;</span><span class="p">:</span> <span class="mi">148022685410001</span><span class="p">,</span>
+            <span class="nt">&#34;Length&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;Width&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;Height&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;Volume&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;ExtraWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;NetWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;GrossWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;WeighOutWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;Comments&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">148202036310001</span><span class="p">,</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">144176379010001</span><span class="p">,</span>
+            <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;S01-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;DeliveryDocketID&#34;</span><span class="p">:</span> <span class="mi">148022685410001</span><span class="p">,</span>
+            <span class="nt">&#34;Length&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+            <span class="nt">&#34;Width&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;Height&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;Volume&#34;</span><span class="p">:</span> <span class="mi">48</span><span class="p">,</span>
+            <span class="nt">&#34;ExtraWeight&#34;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+            <span class="nt">&#34;NetWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;GrossWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;WeighOutWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">149091250710001</span><span class="p">,</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">144176379010001</span><span class="p">,</span>
+            <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;S01-07&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;DeliveryDocketID&#34;</span><span class="p">:</span> <span class="mi">148022685410001</span><span class="p">,</span>
+            <span class="nt">&#34;Length&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;Width&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&#34;Height&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&#34;Volume&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
+            <span class="nt">&#34;ExtraWeight&#34;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="nt">&#34;NetWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;GrossWeight&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&#34;WeighOutWeight&#34;</span><span class="p">:</span> <span class="mi">2222</span><span class="p">,</span>
+            <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;3434&#34;</span>
         <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -7837,7 +7855,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -7855,98 +7873,86 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>Id</td>
 <td>number</td>
 <td>144095520480001</td>
-<td>员工ID</td>
+<td>包装号ID</td>
 </tr>
 <tr>
-<td>EmployeeCode</td>
-<td>string</td>
-<td>xx</td>
-<td>员工代码</td>
-</tr>
-<tr>
-<td>EmployeeName</td>
-<td>string</td>
-<td>xxx</td>
-<td>员工名字</td>
-</tr>
-<tr>
-<td>PipeFitterNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>铆工号</td>
-</tr>
-<tr>
-<td>WelderNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>焊工号</td>
-</tr>
-<tr>
-<td>InspectorNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>检验员号</td>
-</tr>
-<tr>
-<td>StaffID</td>
+<td>JobId</td>
 <td>number</td>
 <td>1</td>
-<td>用户ID(staff表id)</td>
+<td>项目ID</td>
 </tr>
 <tr>
-<td>SiteShop</td>
+<td>PackageNo</td>
 <td>string</td>
-<td>xxxxxx</td>
-<td></td>
+<td>xxxx</td>
+<td>包装号</td>
 </tr>
 <tr>
-<td>SiteCode</td>
+<td>DeliveryDocketID</td>
+<td>number</td>
+<td>1</td>
+<td>发货单ID</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>float</td>
+<td>1.3</td>
+<td>长</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>float</td>
+<td>1.3</td>
+<td>宽</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>float</td>
+<td>1.3</td>
+<td>高</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>float</td>
+<td>1.3</td>
+<td>体积</td>
+</tr>
+<tr>
+<td>ExtraWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>包装重量kg</td>
+</tr>
+<tr>
+<td>NetWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>净重kg</td>
+</tr>
+<tr>
+<td>GrossWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>总重量kg</td>
+</tr>
+<tr>
+<td>WeighOutWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>过磅重量kg</td>
+</tr>
+<tr>
+<td>Comment</td>
 <td>string</td>
-<td>xxxxxx</td>
-<td></td>
-</tr>
-<tr>
-<td>Activate</td>
-<td>boolean</td>
-<td>true</td>
-<td>激活</td>
-</tr>
-<tr>
-<td>AttachSli</td>
-<td>json数组</td>
-<td>[]</td>
-<td>附件，请看样例</td>
-</tr>
-<tr>
-<td>LoginName</td>
-<td>string</td>
-<td>xxxxxx</td>
-<td>用户名(登录名)</td>
-</tr>
-<tr>
-<td>EmployeeNo</td>
-<td>string</td>
-<td>xxxxxx</td>
-<td>员工号</td>
-</tr>
-<tr>
-<td>ChineseName</td>
-<td>string</td>
-<td>xxxxxx</td>
-<td>中文名</td>
-</tr>
-<tr>
-<td>EnglishName</td>
-<td>string</td>
-<td>xxxxxx</td>
-<td>英文名</td>
+<td>xxxx</td>
+<td>备注</td>
 </tr>
 </tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -8010,7 +8016,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
