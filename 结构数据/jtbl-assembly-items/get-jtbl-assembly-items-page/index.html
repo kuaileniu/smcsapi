@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-03-07
+    <meta name="description" content="更新日期: 2022-05-17
 基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string xxxxx 搜索文本内容   JobId number 1 项目id     样例  body：
 { &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;WeldCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;GroundDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;DimInspectedDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;SentPaintDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;PaintCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;PreAssemblyDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;PackedDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;PackageNo&#34;: &#34;xxx&#34;, &#34;PackageNoID&#34;: 1, &#34;TruckNo&#34;: &#34;xxx&#34;, &#34;BoxNo&#34;: &#34;xxx&#34;, &#34;PunchListedDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;SignedOffDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;SentSiteDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;DocCompletedDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;PaintRepNo&#34;: &#34;11&#34;, &#34;LaydownArea&#34;: &#34;xxx&#34;, &#34;PreAssemblyNo&#34;: &#34;xxx&#34;, &#34;PreAssemblyLocation&#34;: &#34;xxxx&#34;, &#34;WorkPackageID&#34;: 1, &#34;BatchIssueID&#34;: 1, &#34;BarcodePrinted&#34;: false, &#34;ReferToModel&#34;: &#34;xxxx&#34;, &#34;ExcludeFromProgress&#34;: false, &#34;Comment&#34;: &#34;xxxxx&#34;, &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;清明上河图.">
 
@@ -7689,7 +7689,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>分页获取构件编码信息</h1>
-        <p><small>更新日期: 2022-03-07</small></p>
+        <p><small>更新日期: 2022-05-17</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -7853,7 +7853,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;JobTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;项目名称1&#34;</span><span class="p">,</span>
             <span class="nt">&#34;WorkPackage&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
             <span class="nt">&#34;BatchIssueNo&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-             <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span>
+            <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;BatchIssueName&#34;</span><span class="p">:</span> <span class="s2">&#34;生产批次#1&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;BatchIssueNameID&#34;</span><span class="p">:</span> <span class="mi">149129539910001</span>
         <span class="p">}</span>
     <span class="p">],</span>
     <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
@@ -8187,6 +8189,18 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>正整数</td>
 <td>1</td>
 <td>生产批次号</td>
+</tr>
+<tr>
+<td>BatchIssueName</td>
+<td>string</td>
+<td>xxxx</td>
+<td>生产批次名称</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>正整数</td>
+<td>1</td>
+<td>生产批次名称ID</td>
 </tr>
 </tbody>
 </table> </div>
