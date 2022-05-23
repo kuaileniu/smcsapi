@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-10
+    <meta name="description" content="更新日期: 2022-05-23
 基本参数     url : https://{domain}:{port}/api/jtbl-job/get-jtbl-job-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string xxxxx 搜索文本内容     样例  body：
 { &#34;search&#34;:&#34;&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;JobNo&#34;: &#34;项目号1&#34;, &#34;JobTitle&#34;: &#34;项目名称1&#34;, &#34;ClientId&#34;: 1, &#34;Active&#34;: false, &#34;OrderNo&#34;: &#34;OrderNo1&#34;, &#34;ContractNo&#34;: &#34;ContractNo1&#34;, &#34;JobType&#34;: &#34;structure&#34;, &#34;UserId&#34;: 2, &#34;IsModule&#34;: false, &#34;IsUniqSpoolNo&#34;: true, &#34;ImportWholeSpoolNo&#34;: true, &#34;TemplateAreaId&#34;: 1, &#34;MasterAreaId&#34;: 2, &#34;ProjectManagerId&#34;: 1, &#34;UOM&#34;: &#34;公制&#34;, &#34;ShowClientSpoolNo&#34;: false, &#34;NDTAutoNumbering&#34;: false, &#34;MaxWeldRepairCount&#34;: 8, &#34;WeldUniqueNoPrefix&#34;: &#34;xxx1&#34;, &#34;ShowWeldUniqueNo&#34;: true, &#34;SiteWelderPrefix&#34;: &#34;xx2&#34;, &#34;WeldUniqueNoPrefixSite&#34;: &#34;xx3&#34;, &#34;JobConsumableCertificatesFolder&#34;: &#34;xx4&#34;, &#34;MaterialCertFolder&#34;: &#34;xx5&#34;, &#34;ShowCertOrigin&#34;: false, &#34;IssuedForFab&#34;: 10, &#34;CutComp&#34;: 12, &#34;FitUpComp&#34;: 13, &#34;WeldComp&#34;: 14, &#34;WeldNDTComp&#34;: 15, &#34;SentPaint&#34;: 16, &#34;PaintComp&#34;: 17, &#34;Packed&#34;: 18, &#34;SentSite&#34;: 19, &#34;ReceivedSite&#34;: 20, &#34;MaterialMargin&#34;: 8.">
 
@@ -7689,7 +7689,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>分页获取项目信息</h1>
-        <p><small>更新日期: 2021-12-10</small></p>
+        <p><small>更新日期: 2022-05-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -7839,7 +7839,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;UserName&#34;</span><span class="p">:</span> <span class="s2">&#34;zhuge&#34;</span><span class="p">,</span>
             <span class="nt">&#34;TemplateAreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;AreaName1&#34;</span><span class="p">,</span>
             <span class="nt">&#34;MasterAreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;AreaName2&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;ProjectManagerName&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span>
+            <span class="nt">&#34;ProjectManagerName&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ProjectManagerEmployeeNo&#34;</span><span class="p">:</span> <span class="s2">&#34;a123&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ProjectManagerChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;冯先生&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ProjectManagerEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Tao&#34;</span>
         <span class="p">}</span>
     <span class="p">],</span>
     <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
@@ -7993,6 +7996,24 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>string</td>
 <td>x x x x</td>
 <td>项目经理名称</td>
+</tr>
+<tr>
+<td>ProjectManagerEmployeeNo</td>
+<td>string</td>
+<td>x x x x</td>
+<td>项目经理员工号</td>
+</tr>
+<tr>
+<td>ProjectManagerChineseName</td>
+<td>string</td>
+<td>x x x x</td>
+<td>项目经理中文名</td>
+</tr>
+<tr>
+<td>ProjectManagerEnglishName</td>
+<td>string</td>
+<td>x x x x</td>
+<td>项目经理英文名</td>
 </tr>
 <tr>
 <td>UOM</td>
