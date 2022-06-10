@@ -4,26 +4,25 @@
   <url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/dict/get-staff-page/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/auth/get_t/</loc>
-    <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/get_t/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/auth/captcha/</loc>
-    <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/captcha/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/auth/login/</loc>
-    <lastmod>2022-04-20T22:11:15+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/login/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/auth/refresh-token/</loc>
-    <lastmod>2022-04-20T22:14:07+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/refresh-token/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/preface/</loc>
     <lastmod>2022-03-10T23:26:41+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/auth/</loc>
-    <lastmod>2022-04-20T22:11:15+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/1.str-jtbl-batch-issue-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/file_upload_download/upload_pub/</loc>
   </url><url>
@@ -57,8 +56,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/add-jtbl-delivery-group/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/add-jtbl-employee/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/add-jtbl-employee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/add-jtbl-wbs/</loc>
   </url><url>
@@ -82,8 +80,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/add-jtbl-spool/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/add-jtbl-spool-material/</loc>
-    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/add-jtbl-spool-material/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/add-jtbl-line/</loc>
   </url><url>
@@ -110,6 +107,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-permission/my-menu-tree/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/get_jtbl_progress_weightings/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/2.str-jtbl-work-package-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/change-job-for-staff/</loc>
   </url><url>
@@ -141,8 +140,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/del-jtbl-delivery-group/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/del-jtbl-employee/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/del-jtbl-employee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/del-jtbl-wbs/</loc>
   </url><url>
@@ -166,8 +164,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/del-jtbl-spool/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/del-jtbl-spool-material/</loc>
-    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/del-jtbl-spool-material/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/del-jtbl-line/</loc>
   </url><url>
@@ -194,6 +191,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/get-role-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/get-department-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/3.str-jtbl-area-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/change-role-for-permission/</loc>
   </url><url>
@@ -227,8 +226,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/edit-jtbl-delivery-group/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/edit-jtbl-employee/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/edit-jtbl-employee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/edit-jtbl-wbs/</loc>
   </url><url>
@@ -250,8 +248,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/edit-staffs/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/edit-jtbl-spool-material/</loc>
-    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/edit-jtbl-spool-material/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/edit-jtbl-spool/</loc>
   </url><url>
@@ -268,6 +265,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/edit-jtbl-sow/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/edit-jtbl-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/4.str-jtbl-wbs-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/add-role-for-staff/</loc>
   </url><url>
@@ -301,8 +300,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/get-jtbl-delivery-group-page/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/get-jtbl-employee-page/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/get-jtbl-employee-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/get-jtbl-wbs-page/</loc>
   </url><url>
@@ -324,8 +322,7 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/get-jtbl-spool-page/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/get-jtbl-spool-material-page/</loc>
-    <lastmod>2022-03-10T15:59:38+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/get-jtbl-spool-material-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/get-jtbl-line-page/</loc>
   </url><url>
@@ -353,6 +350,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/5.str-jtbl-priority-report/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-staff-for-role/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-have-this-batch-issue/</loc>
@@ -375,6 +374,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/get-staff-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/6.str-jtbl-batch-group-report/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-assembly-items-for-package-no/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-role-for-staff/</loc>
@@ -385,6 +386,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/my-base-info/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/7.str-jtbl-delivery-group-report/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/download-staff-io-tpl/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-assembly-items-for-package-no/</loc>
@@ -392,6 +395,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/add-assembly-for-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/8.str-subcontractor-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/del-assembly-for-batch-issue/</loc>
   </url><url>
@@ -401,9 +406,13 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/9.str-jtbl-workshop-report/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-struct-by-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/10.str-jtbl-employee-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/</loc>
   </url><url>
@@ -487,11 +496,11 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-spool-material/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/jtbl-employee/</loc>
-    <lastmod>2022-04-09T09:36:33+08:00</lastmod>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/download-jtbl-assembly-tpl-cn/</loc>
   </url><url>
@@ -524,6 +533,9 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/_includes/i18n/</loc>
+    <lastmod>2022-06-10T15:40:32+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include-headers/</loc>
     <lastmod>2022-04-20T22:11:15+08:00</lastmod>
