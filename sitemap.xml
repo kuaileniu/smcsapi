@@ -350,6 +350,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/get-job-process-list/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/5.str-jtbl-priority-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-staff-for-role/</loc>
@@ -381,6 +383,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-assembly-items-for-package-no/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-role-for-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/set-my-jobs-show/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-not-have-this-batch-issue/</loc>
   </url><url>
@@ -487,6 +491,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/</loc>
   </url><url>
