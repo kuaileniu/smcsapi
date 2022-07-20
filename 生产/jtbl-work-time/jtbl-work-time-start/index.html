@@ -16,7 +16,7 @@
 
     <meta name="description" content="更新日期: 2022-07-20
 基本参数     url : https://{domain}:{port}/api/jtbl-work-time/jtbl-work-time-start http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     AssemblyItemID number 2 构件编码ID   JobProcessID number 2 工序ID，所有工序参见   Rev string &ldquo;1&rdquo; 版本   Repair boolean true 是否返修     样例  body：
-{ &#34;AssemblyItemID&#34;: 1, &#34;JobProcessID&#34;: 1, &#34;Rev&#34;:&#34;v1&#34;, &#34;Repair&#34;:true }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 151180365180001, &#34;JobId&#34;: 1, &#34;AssemblyItemID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;JobProcessID&#34;: 1, &#34;StartTime&#34;: &#34;2022-07-20 21:00:51&#34;, &#34;EndTime&#34;: &#34;&#34;, &#34;Repair&#34;: false, &#34;CompletedNum&#34;: 0, &#34;TotalNum&#34;: 10, &#34;InspectedPass&#34;: false, &#34;InspectedTime&#34;: &#34;&#34; } }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;构件编码ID不可为空。&#34;, &#34;english_msg&#34;: &#34;AssemblyItemID can&#39;t be blank.">
+{ &#34;AssemblyItemID&#34;: 1, &#34;JobProcessID&#34;: 1, &#34;Rev&#34;:&#34;v1&#34;, &#34;Repair&#34;:true }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 151181451580001, &#34;JobId&#34;: 1, &#34;AssemblyItemID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;JobProcessID&#34;: 1, &#34;WorkNo&#34;: &#34;&#34;, &#34;StartTime&#34;: &#34;2022-07-21 00:01:55&#34;, &#34;EndTime&#34;: &#34;&#34;, &#34;Hours&#34;: 0, &#34;Repair&#34;: true, &#34;CompletedNum&#34;: 0, &#34;TotalNum&#34;: 10, &#34;InspectedPass&#34;: false, &#34;InspectedTime&#34;: &#34;&#34; } }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;构件编码ID不可为空。&#34;, &#34;english_msg&#34;: &#34;AssemblyItemID can&#39;t be blank.">
 
 
 
@@ -7533,6 +7533,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-end/" class="gdoc-nav__entry ">
+                        工时结束计时
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
                     <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/del-jtbl-work-package/" class="gdoc-nav__entry ">
                         删除工时
                     </a>
@@ -8624,14 +8650,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
     <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
     <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">151180365180001</span><span class="p">,</span>
+        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">151181451580001</span><span class="p">,</span>
         <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&#34;AssemblyItemID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
         <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&#34;StartTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-20 21:00:51&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;WorkNo&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;StartTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 00:01:55&#34;</span><span class="p">,</span>
         <span class="nt">&#34;EndTime&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;Repair&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&#34;Hours&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&#34;Repair&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&#34;CompletedNum&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&#34;TotalNum&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
         <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -8657,6 +8685,109 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   
 </div>
 
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-start/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>1</td>
+<td>工时ID</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>AssemblyItemID</td>
+<td>number</td>
+<td>1</td>
+<td>构件编码ID</td>
+</tr>
+<tr>
+<td>Rev</td>
+<td>string</td>
+<td>&ldquo;1&rdquo;</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>JobProcessID</td>
+<td>number</td>
+<td>1</td>
+<td>工序ID</td>
+</tr>
+<tr>
+<td>WorkNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>工号</td>
+</tr>
+<tr>
+<td>StartTime</td>
+<td>时间</td>
+<td>&ldquo;2022-07-20 21:00:51&rdquo;</td>
+<td>工序开始计时时间</td>
+</tr>
+<tr>
+<td>EndTime</td>
+<td>时间</td>
+<td>&ldquo;2022-07-20 22:00:51&rdquo;</td>
+<td>工序结束计时时间</td>
+</tr>
+<tr>
+<td>Hours</td>
+<td>number</td>
+<td>1.2</td>
+<td>工 时</td>
+</tr>
+<tr>
+<td>Repair</td>
+<td>boolean</td>
+<td>true</td>
+<td>返修</td>
+</tr>
+<tr>
+<td>CompletedNum</td>
+<td>number</td>
+<td>0.6</td>
+<td>完成数目，进度为 {ompletedNum}/{TotalNum}，例如 0.6/10</td>
+</tr>
+<tr>
+<td>TotalNum</td>
+<td>number</td>
+<td>10</td>
+<td>总数目 ，进度为 {ompletedNum}/{TotalNum}，例如 0.6/10</td>
+</tr>
+<tr>
+<td>InspectedPass</td>
+<td>boolean</td>
+<td>false</td>
+<td>已经检验通过</td>
+</tr>
+<tr>
+<td>InspectedTime</td>
+<td>时间</td>
+<td>false</td>
+<td>检验通过时间</td>
+</tr>
+</tbody>
+</table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
