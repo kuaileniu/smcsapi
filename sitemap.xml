@@ -28,6 +28,11 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/change-staff-for-job/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/_includes/job_process/</loc>
+    <lastmod>2022-07-20T22:19:14+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-start/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/add-jtbl-client/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/add-jtbl-service/</loc>
@@ -342,6 +347,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/del-jtbl-work-package/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/del-role/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/del-department/</loc>
@@ -557,6 +564,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-one-jtbl-assembly-item/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
