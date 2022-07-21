@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2022-07-20
-基本参数     url : https://{domain}:{port}/api/jtbl-work-time/jtbl-work-time-end http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID     样例  body：
-{ &#34;Id&#34;:6 }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;操作成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, &#34;data&#34;: { &#34;Id&#34;: 6, &#34;JobId&#34;: 1, &#34;AssemblyItemID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;JobProcessID&#34;: 1, &#34;WorkNo&#34;: &#34;&#34;, &#34;StartTime&#34;: &#34;2022-07-20 21:00:51&#34;, &#34;EndTime&#34;: &#34;2022-07-21 00:12:19&#34;, &#34;Hours&#34;: 11.">
+基本参数     url : https://{domain}:{port}/api/jtbl-work-time/jtbl-work-time-end http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID   AttachSli json数组 [] 附件，请看样例     样例  body：
+{ &#34;Id&#34;:6, &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;bb.jpg&#34;, &#34;Path&#34;: &#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;, &#34;Size&#34;: 1895 }, { &#34;OriginName&#34;: &#34;a.jpg&#34;, &#34;Path&#34;: &#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;, &#34;Size&#34;: 1241 } ] }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;操作成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, &#34;data&#34;: { &#34;Id&#34;: 6, &#34;JobId&#34;: 1, &#34;AssemblyItemID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;JobProcessID&#34;: 1, &#34;WorkNo&#34;: &#34;&#34;, &#34;StartTime&#34;: &#34;2022-07-20 21:00:51&#34;, &#34;EndTime&#34;: &#34;2022-07-21 00:12:19&#34;, &#34;Hours&#34;: 11.">
 
 
 
@@ -8611,6 +8611,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>2</td>
 <td>工时ID</td>
 </tr>
+<tr>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>附件，请看样例</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -8624,7 +8630,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-   <span class="nt">&#34;Id&#34;</span><span class="p">:</span><span class="mi">6</span>
+   <span class="nt">&#34;Id&#34;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span>
+    <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;bb.jpg&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -8668,7 +8686,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         <span class="nt">&#34;CompletedNum&#34;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
         <span class="nt">&#34;TotalNum&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
         <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&#34;InspectedTime&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+        <span class="nt">&#34;InspectedTime&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;bb.jpg&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -8790,6 +8820,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>时间</td>
 <td>false</td>
 <td>检验通过时间</td>
+</tr>
+<tr>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>附件，请看样例</td>
 </tr>
 </tbody>
 </table> </div>
