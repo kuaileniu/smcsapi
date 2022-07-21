@@ -14,14 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-06
-基本参数     url : https://{domain}:{port}/api/staff/del-staff http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 143042904770001 用户id     样例  URL： https://xxx.com/api/staff/del-staff
-body：
-{ &#34;Id&#34;: 143042904770001 }    返回数据     成功  { &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功&#34;, &#34;english_msg&#34;: &#34;Success.&#34; }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败&#34;, &#34;english_msg&#34;: &#34;Failed。&#34; }    服务器端返回客户端数据中的通用参数       参数： status">
+    <meta name="description" content="更新日期: 2022-07-20
+基本参数     url : https://{domain}:{port}/api/jtbl-work-time/jtbl-work-time-inspected http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID   InspectedPass boolean true 检验通过   Note string xx 备注   AttachSli json数组 [] 附件，请看样例     样例  body：
+{ &#34;Id&#34;: 11, &#34;InspectedPass&#34;: true, &#34;Note&#34;:&#34;comment&#34;, &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;dd.">
 
 
 
-    <title>删除用户 | SMCS</title>
+    <title>工时结束计时 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -3172,7 +3171,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-f02d4b46" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-f02d4b46" class="gdoc-nav__toggle" >
             <label for="navtree-f02d4b46" class="flex justify-between">
             
             
@@ -3202,7 +3201,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-88d29430" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-88d29430" class="gdoc-nav__toggle" >
             <label for="navtree-88d29430" class="flex justify-between">
             
             
@@ -3260,7 +3259,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E6%9D%83%E9%99%90/staff/del-staff/" class="gdoc-nav__entry is-active">
+                    <a href="/%E6%9D%83%E9%99%90/staff/del-staff/" class="gdoc-nav__entry ">
                         删除用户
                     </a>
                 </span>
@@ -6867,7 +6866,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" checked>
             <label for="navtree-7e03f9c5" class="flex justify-between">
             
             
@@ -7476,7 +7475,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-45a62483" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-45a62483" class="gdoc-nav__toggle" checked>
             <label for="navtree-45a62483" class="flex justify-between">
             
             
@@ -7560,7 +7559,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/" class="gdoc-nav__entry ">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/" class="gdoc-nav__entry is-active">
                         工时结束计时
                     </a>
                 </span>
@@ -8563,7 +8562,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E6%9D%83%E9%99%90/' href='/%E6%9D%83%E9%99%90/'><span itemprop='name'>权限</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E6%9D%83%E9%99%90/staff/' href='/%E6%9D%83%E9%99%90/staff/'><span itemprop='name'>用户信息</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除用户</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/' href='/%E7%94%9F%E4%BA%A7/'><span itemprop='name'>生产</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/jtbl-work-time/' href='/%E7%94%9F%E4%BA%A7/jtbl-work-time/'><span itemprop='name'>工时</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>工时结束计时</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -8589,23 +8588,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>删除用户</h1>
-        <p><small>更新日期: 2021-11-06</small></p>
+        <h1>工时结束计时</h1>
+        <p><small>更新日期: 2022-07-20</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/del-staff/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/staff/del-staff</li>
+<li>url : https://{domain}:{port}/api/jtbl-work-time/jtbl-work-time-inspected</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/del-staff/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -8635,8 +8634,26 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tr>
 <td>Id</td>
 <td>number</td>
-<td>143042904770001</td>
-<td>用户id</td>
+<td>2</td>
+<td>工时ID</td>
+</tr>
+<tr>
+<td>InspectedPass</td>
+<td>boolean</td>
+<td>true</td>
+<td>检验通过</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>string</td>
+<td>xx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>附件，请看样例</td>
 </tr>
 </tbody>
 </table> </div>
@@ -8649,10 +8666,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       样例
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <p>URL： <a class="gdoc-markdown__link" href="https://xxx.com/api/staff/del-staff">https://xxx.com/api/staff/del-staff</a></p>
-<p>body：</p>
+      <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">143042904770001</span>
+    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+    <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&#34;Note&#34;</span><span class="p">:</span><span class="s2">&#34;comment&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;dd.jpg&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -8662,7 +8692,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/del-staff/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -8680,8 +8710,38 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;操作成功&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+        <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&#34;AssemblyItemID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&#34;WorkNo&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;InspectorNo&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;StartTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:01:41&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;EndTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:02:37&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Hours&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&#34;Repair&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&#34;CompletedNum&#34;</span><span class="p">:</span> <span class="mf">0.6</span><span class="p">,</span>
+        <span class="nt">&#34;TotalNum&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&#34;InspectedTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:03:00&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;comment&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;dd.jpg&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -8692,10 +8752,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed。&#34;</span>
+    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;构件编码ID不可为空。&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;AssemblyItemID can&#39;t be blank.&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -8703,9 +8763,130 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>1</td>
+<td>工时ID</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>AssemblyItemID</td>
+<td>number</td>
+<td>1</td>
+<td>构件编码ID</td>
+</tr>
+<tr>
+<td>Rev</td>
+<td>string</td>
+<td>&ldquo;1&rdquo;</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>JobProcessID</td>
+<td>number</td>
+<td>1</td>
+<td>工序ID</td>
+</tr>
+<tr>
+<td>WorkNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>工号（焊工等的）</td>
+</tr>
+<tr>
+<td>InspectorNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>检验员号</td>
+</tr>
+<tr>
+<td>StartTime</td>
+<td>时间</td>
+<td>&ldquo;2022-07-20 21:00:51&rdquo;</td>
+<td>工序开始计时时间</td>
+</tr>
+<tr>
+<td>EndTime</td>
+<td>时间</td>
+<td>&ldquo;2022-07-20 22:00:51&rdquo;</td>
+<td>工序结束计时时间</td>
+</tr>
+<tr>
+<td>Hours</td>
+<td>number</td>
+<td>1.2</td>
+<td>工 时</td>
+</tr>
+<tr>
+<td>Repair</td>
+<td>boolean</td>
+<td>true</td>
+<td>返修</td>
+</tr>
+<tr>
+<td>CompletedNum</td>
+<td>number</td>
+<td>0.6</td>
+<td>完成数目，进度为 {ompletedNum}/{TotalNum}，例如 0.6/10</td>
+</tr>
+<tr>
+<td>TotalNum</td>
+<td>number</td>
+<td>10</td>
+<td>总数目 ，进度为 {ompletedNum}/{TotalNum}，例如 0.6/10</td>
+</tr>
+<tr>
+<td>InspectedPass</td>
+<td>boolean</td>
+<td>false</td>
+<td>已经检验通过</td>
+</tr>
+<tr>
+<td>InspectedTime</td>
+<td>时间</td>
+<td>false</td>
+<td>检验通过时间</td>
+</tr>
+<tr>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>附件，请看样例</td>
+</tr>
+<tr>
+<td>Note</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/del-staff/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
