@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-05-13
+    <meta name="description" content="更新日期: 2022-07-27
 基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/get-one-jtbl-assembly-item http method : POST   优先使用 AssemblyItemsId ，不存在AssemblyItemsId时使用AssemblyItemNo  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 1 项目id   AssemblyItemsId number 1 构件编码id   AssemblyItemNo string no111 构件编码     样例  body：
-{ &#34;JobId&#34;: 1, &#34;AssemblyItemsId&#34;: 1, &#34;AssemblyItemNo&#34;: &#34;b&#34; }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: { &#34;Exists&#34;: true, &#34;PackageNo&#34;:&#34;No01&#34;, &#34;Id&#34;: 2, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;AssemblyItemNo&#34;: &#34;b&#34;, &#34;Quantity&#34;: 99910, &#34;IssuedForFabDate&#34;: &#34;2000-11-22&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01&#34;, &#34;FitUpDate&#34;: &#34;2022-03-01&#34;, &#34;WeldCompDate&#34;: &#34;2022-03-01&#34;, &#34;GroundDate&#34;: &#34;2022-03-01&#34;, &#34;DimInspectedDate&#34;: &#34;2022-03-01&#34;, &#34;SentPaintDate&#34;: &#34;2022-03-01&#34;, &#34;PaintCompDate&#34;: &#34;2022-03-01&#34;, &#34;PreAssemblyDate&#34;: &#34;2022-03-01&#34;, &#34;PackedDate&#34;: &#34;2022-03-01&#34;, &#34;PackageNoID&#34;: 148058739280001, &#34;TruckNo&#34;: &#34;xxx&#34;, &#34;BoxNo&#34;: &#34;xxx&#34;, &#34;PunchListedDate&#34;: &#34;2022-03-01&#34;, &#34;SignedOffDate&#34;: &#34;2022-03-01&#34;, &#34;SentSiteDate&#34;: &#34;2022-03-01&#34;, &#34;DocCompletedDate&#34;: &#34;2022-03-01&#34;, &#34;PaintRepNo&#34;: &#34;11&#34;, &#34;LaydownArea&#34;: &#34;xxx&#34;, &#34;PreAssemblyNo&#34;: &#34;xxx&#34;, &#34;PreAssemblyLocation&#34;: &#34;xxxx&#34;, &#34;WorkPackageID&#34;: 1, &#34;BatchIssueID&#34;: 1, &#34;BarcodePrinted&#34;: false, &#34;ReferToModel&#34;: &#34;xxxx&#34;, &#34;ExcludeFromProgress&#34;: false, &#34;Comment&#34;: &#34;xxxxx&#34;, &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;清明上河图.">
+{ &#34;JobId&#34;: 1, &#34;AssemblyItemsId&#34;: 1, &#34;AssemblyItemNo&#34;: &#34;b&#34; }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: { &#34;Exists&#34;: true, &#34;PackageNo&#34;:&#34;No01&#34;, &#34;Id&#34;: 2, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;AssemblyItemNo&#34;: &#34;b&#34;, &#34;Quantity&#34;: 99910, &#34;IssuedForFabDate&#34;: &#34;2000-11-22&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
 
 
 
@@ -8615,7 +8615,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>获取一个构件编码信息</h1>
-        <p><small>更新日期: 2022-05-13</small></p>
+        <p><small>更新日期: 2022-07-27</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -8730,16 +8730,21 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;b&#34;</span><span class="p">,</span>
         <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">99910</span><span class="p">,</span>
         <span class="nt">&#34;IssuedForFabDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2000-11-22&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;CutCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;FitUpDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;WeldCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;GroundDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;DimInspectedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;SentPaintDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;PaintCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;PreAssemblyDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;PackedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;PackageNoID&#34;</span><span class="p">:</span> <span class="mi">148058739280001</span><span class="p">,</span>
+        <span class="nt">&#34;CutCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>    
+        <span class="nt">&#34;FitUpDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;QtyFitUpComp&#34;</span><span class="p">:</span> <span class="mf">1.32</span><span class="p">,</span>
+        <span class="nt">&#34;FitupCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;WeldCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;QtWeldComp&#34;</span><span class="p">:</span> <span class="mf">34.89</span><span class="p">,</span>
+        <span class="nt">&#34;GroundDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;DimInspectedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;SentPaintDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;PaintCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;QtPaintComp&#34;</span><span class="p">:</span> <span class="mf">12.11</span><span class="p">,</span>
+        <span class="nt">&#34;PaintCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;PreAssemblyDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;PackedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;PackageNoID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
         <span class="nt">&#34;TruckNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
         <span class="nt">&#34;BoxNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
         <span class="nt">&#34;PunchListedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
@@ -9053,6 +9058,36 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>string</td>
 <td>xxxx</td>
 <td>自定义字段4</td>
+</tr>
+<tr>
+<td>QtyFitUpComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>组对完成数量</td>
+</tr>
+<tr>
+<td>FitupCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对检验日期</td>
+</tr>
+<tr>
+<td>QtWeldComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>焊接完成数量</td>
+</tr>
+<tr>
+<td>QtPaintComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>油漆完成数量</td>
+</tr>
+<tr>
+<td>PaintCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆检验日期</td>
 </tr>
 </tbody>
 </table> </div>

@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-03-27
+    <meta name="description" content="更新日期: 2022-07-27
 基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/edit-jtbl-assembly-items-batch http method : POST  请求数据    遵守鉴权机制
- 说明： 与提供的JobId相同的，对数组 Ids 或 AssemblyItemNos 包含的构件编码都进行修改。 参数     参数名称 类型 示例 描述     Ids 整型数组 [1,2] 构件编码ID列表   AssemblyItemNos string数组 [&ldquo;n1&rdquo;,&ldquo;n2&rdquo;] 构件编码数组   JobId number 1 项目ID   AssemblyID number 1 构件ID   Quantity 整数 1 数量   IssuedForFabDate 日期 2022-03-01 图纸下发日期   CutCompDate 日期 2022-03-01 下料日期   FitUpDate 日期 2022-03-01 组对日期   WeldCompDate 日期 2022-03-01 焊接完成日期   GroundDate 日期 2022-03-01 打磨完成日期   DimInspectedDate 日期 2022-03-01 尺寸检验日期   SentPaintDate 日期 2022-03-01 发往油漆日期   PaintCompDate 日期 2022-03-01 油漆完成日期   PreAssemblyDate 日期 2022-03-01 预拼装日期   PackedDate 日期 2022-03-01 打包日期   TruckNo string xxx 转运车号   BoxNo string xxx 箱号   PunchListedDate 日期 2022-03-01 核查表日期   SignedOffDate 日期 2022-03-01 放行日期   SentSiteDate 日期 2022-03-01 发往现场日期   DocCompletedDate 日期 2022-03-01 交工文档完成日期   PaintRepNo string xxx 油漆报告号   LaydownArea string xxx 放置区域   PreAssemblyNo string xxx 预拼装号   PreAssemblyLocation string xxx 预拼装地点   WorkPackageID 整数 1 工作包Id   PackageNoID 整数 1 包装号Id   BatchIssueID 整数 1 生产批次Id   BarcodePrinted bool true 条码已打印   ReferToModel string xxx 链接模型   ExcludeFromProgress bool true 进度统计排除   Comment string xxxx 备注   AttachSli json数组 [] 请看样例   Spare1 string xxxx 自定义字段1   Spare2 string xxxx 自定义字段2   Spare3 string xxxx 自定义字段3   Spare4 string xxxx 自定义字段4     样例  body：">
+ 说明： 与提供的JobId相同的，对数组 Ids 或 AssemblyItemNos 包含的构件编码都进行修改。 参数     参数名称 类型 示例 描述     Ids 整型数组 [1,2] 构件编码ID列表   AssemblyItemNos string数组 [&ldquo;n1&rdquo;,&ldquo;n2&rdquo;] 构件编码数组   JobId number 1 项目ID   AssemblyID number 1 构件ID   Quantity 整数 1 数量   IssuedForFabDate 日期 2022-03-01 图纸下发日期   CutCompDate 日期 2022-03-01 下料日期   FitUpDate 日期 2022-03-01 组对日期   WeldCompDate 日期 2022-03-01 焊接完成日期   GroundDate 日期 2022-03-01 打磨完成日期   DimInspectedDate 日期 2022-03-01 尺寸检验日期   SentPaintDate 日期 2022-03-01 发往油漆日期   PaintCompDate 日期 2022-03-01 油漆完成日期   PreAssemblyDate 日期 2022-03-01 预拼装日期   PackedDate 日期 2022-03-01 打包日期   TruckNo string xxx 转运车号   BoxNo string xxx 箱号   PunchListedDate 日期 2022-03-01 核查表日期   SignedOffDate 日期 2022-03-01 放行日期   SentSiteDate 日期 2022-03-01 发往现场日期   DocCompletedDate 日期 2022-03-01 交工文档完成日期   PaintRepNo string xxx 油漆报告号   LaydownArea string xxx 放置区域   PreAssemblyNo string xxx 预拼装号   PreAssemblyLocation string xxx 预拼装地点   WorkPackageID 整数 1 工作包Id   PackageNoID 整数 1 包装号Id   BatchIssueID 整数 1 生产批次Id   BarcodePrinted bool true 条码已打印   ReferToModel string xxx 链接模型   ExcludeFromProgress bool true 进度统计排除   Comment string xxxx 备注   AttachSli json数组 [] 请看样例   Spare1 string xxxx 自定义字段1   Spare2 string xxxx 自定义字段2   Spare3 string xxxx 自定义字段3   Spare4 string xxxx 自定义字段4   QtyFitUpComp 浮点数字 1.">
 
 
 
@@ -8615,7 +8615,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>批量编辑构件编码的信息</h1>
-        <p><small>更新日期: 2022-03-27</small></p>
+        <p><small>更新日期: 2022-07-27</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -8881,6 +8881,36 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>xxxx</td>
 <td>自定义字段4</td>
 </tr>
+<tr>
+<td>QtyFitUpComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>组对完成数量</td>
+</tr>
+<tr>
+<td>FitupCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对检验日期</td>
+</tr>
+<tr>
+<td>QtWeldComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>焊接完成数量</td>
+</tr>
+<tr>
+<td>QtPaintComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>油漆完成数量</td>
+</tr>
+<tr>
+<td>PaintCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆检验日期</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -8941,7 +8971,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;Spare1&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
     <span class="nt">&#34;Spare2&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxx&#34;</span><span class="p">,</span>
     <span class="nt">&#34;Spare3&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxx&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Spare4&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxxxx&#34;</span>
+    <span class="nt">&#34;Spare4&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxxxx&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;QtyFitUpComp&#34;</span><span class="p">:</span> <span class="mf">1.32</span><span class="p">,</span>
+    <span class="nt">&#34;FitupCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:11:12&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;QtWeldComp&#34;</span><span class="p">:</span> <span class="mf">34.89</span><span class="p">,</span>
+    <span class="nt">&#34;QtPaintComp&#34;</span><span class="p">:</span> <span class="mf">12.11</span><span class="p">,</span>
+    <span class="nt">&#34;PaintCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 10:10:10&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
