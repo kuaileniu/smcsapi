@@ -14,8 +14,8 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-07-20
-基本参数     url : https://{domain}:{port}/api/jtbl-work-time/edit-jtbl-work-time http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID   StartTime 时间 2022-07-21 11:01:41 开始时间   EndTime 时间 2022-07-21 11:01:41 结束时间   InspectedPass boolean true 检验通过   Note string xx 备注   AttachSli json数组 [] 附件，请看样例     样例  body：">
+    <meta name="description" content="更新日期: 2022-08-11
+基本参数     url : https://{domain}:{port}/api/jtbl-work-time/edit-jtbl-work-time http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID   StartTime 时间 2022-07-21 11:01:41 开始时间   EndTime 时间 2022-07-21 11:01:41 结束时间   CompletedNum number 0.65 完成数目(进度)   InspectedPass boolean true 检验通过   Note string xx 备注   AttachSli json数组 [] 附件，请看样例     样例  body：">
 
 
 
@@ -8666,7 +8666,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>编辑工时信息</h1>
-        <p><small>更新日期: 2022-07-20</small></p>
+        <p><small>更新日期: 2022-08-11</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -8727,6 +8727,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>结束时间</td>
 </tr>
 <tr>
+<td>CompletedNum</td>
+<td>number</td>
+<td>0.65</td>
+<td>完成数目(进度)</td>
+</tr>
+<tr>
 <td>InspectedPass</td>
 <td>boolean</td>
 <td>true</td>
@@ -8760,7 +8766,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
     <span class="nt">&#34;StartTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:01:41&#34;</span><span class="p">,</span>
     <span class="nt">&#34;EndTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:02:37&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Repair&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&#34;CompletedNum&#34;</span><span class="p">:</span><span class="mf">0.8</span><span class="p">,</span>
     <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;comment&#34;</span><span class="p">,</span>
     <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
