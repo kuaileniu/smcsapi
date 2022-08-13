@@ -102,6 +102,10 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/add-jtbl-job/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/add-job-task/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/get-job-task-list/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/add-job-task-assignee/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/add-jtbl-sow/</loc>
@@ -113,8 +117,6 @@
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-permission/my-menu-tree/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/get_jtbl_progress_weightings/</loc>
-  </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/2.str-jtbl-work-package-report/</loc>
   </url><url>
@@ -448,6 +450,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/10.str-jtbl-employee-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/</loc>
@@ -455,6 +459,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/edit-batch-issue-date-by-assembly/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/</loc>
   </url><url>
