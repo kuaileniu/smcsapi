@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-07-27
+    <meta name="description" content="更新日期: 2022-10-16
 基本参数     url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     search string xxxxx 搜索文本内容   JobId number 1 项目id     样例  body：
 { &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
 
@@ -8766,7 +8766,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>分页获取构件编码信息</h1>
-        <p><small>更新日期: 2022-07-27</small></p>
+        <p><small>更新日期: 2022-10-16</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -8925,6 +8925,26 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <span class="nt">&#34;Spare2&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxx&#34;</span><span class="p">,</span>
             <span class="nt">&#34;Spare3&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxx&#34;</span><span class="p">,</span>
             <span class="nt">&#34;Spare4&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxxxx&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;ProcuredDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;QtyCutComp&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;QtyMachinedBWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;QtyFitupChecked&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;QtGround&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;QtyMachinedAWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;QtyDimInspected&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;QtyPreAssembly&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;NDTDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span> 
+            <span class="nt">&#34;SandBlastedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span> 
+            <span class="nt">&#34;QtySandBlasted&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;QtyPaintChecked&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;SealingGlueDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;QtySealingGlue&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;RubberLinedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>	 
+            <span class="nt">&#34;QtyRubberLined&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+            <span class="nt">&#34;AssembliedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;QtyAssemblied&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span> 
             <span class="nt">&#34;CreatedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span><span class="p">,</span>
             <span class="nt">&#34;ModifiedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
             <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-04 01:43:01&#34;</span><span class="p">,</span>
@@ -9333,6 +9353,132 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>日期</td>
 <td>2022-03-01</td>
 <td>油漆检验日期</td>
+</tr>
+<tr>
+<td>ProcuredDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>采购日期</td>
+</tr>
+<tr>
+<td>QtyCutComp</td>
+<td>float</td>
+<td>1.3</td>
+<td>下料完成数量</td>
+</tr>
+<tr>
+<td>MachinedBeforeWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊前机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedBWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊前机加数量</td>
+</tr>
+<tr>
+<td>QtyFitupChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>组对检验数量</td>
+</tr>
+<tr>
+<td>QtGround</td>
+<td>float</td>
+<td>1.3</td>
+<td>打磨完成数量</td>
+</tr>
+<tr>
+<td>MachinedAfterWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊后机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedAWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊后机加数量</td>
+</tr>
+<tr>
+<td>QtyDimInspected</td>
+<td>float</td>
+<td>1.3</td>
+<td>尺寸检验数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>NDTDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>探伤日期</td>
+</tr>
+<tr>
+<td>SandBlastedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打砂日期</td>
+</tr>
+<tr>
+<td>QtySandBlasted</td>
+<td>float</td>
+<td>1.3</td>
+<td>打砂数量</td>
+</tr>
+<tr>
+<td>QtyPaintChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>油漆检验数量</td>
+</tr>
+<tr>
+<td>SealingGlueDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打胶日期</td>
+</tr>
+<tr>
+<td>QtySealingGlue</td>
+<td>float</td>
+<td>1.3</td>
+<td>打胶数量</td>
+</tr>
+<tr>
+<td>RubberLinedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>衬胶日期</td>
+</tr>
+<tr>
+<td>QtyRubberLined</td>
+<td>float</td>
+<td>1.3</td>
+<td>衬胶数量</td>
+</tr>
+<tr>
+<td>AssembliedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组装日期</td>
+</tr>
+<tr>
+<td>QtyAssemblied</td>
+<td>float</td>
+<td>1.3</td>
+<td>组装数量</td>
 </tr>
 </tbody>
 </table> </div>
