@@ -22,6 +22,8 @@
     <loc>https://smcsdocs.zhsit.cn/posts/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/1-add-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/1.str-jtbl-batch-issue-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/file_upload_download/upload_pub/</loc>
@@ -120,6 +122,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/get_jtbl_progress_weightings/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/2-del-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/2.str-jtbl-work-package-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/change-job-for-staff/</loc>
@@ -210,6 +214,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/get-department-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/3-edit-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/3.str-jtbl-area-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/change-role-for-permission/</loc>
@@ -285,6 +291,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/edit-jtbl-sow/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/edit-jtbl-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/4-get-tech-route-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/4.str-jtbl-wbs-report/</loc>
   </url><url>
@@ -374,6 +382,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/get-job-process-list/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/5-get-process-in-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/5.str-jtbl-priority-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-staff-for-role/</loc>
@@ -406,6 +416,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/get-my-employee-info/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/6-get-process-exclude-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/6.str-jtbl-batch-group-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-assembly-items-for-package-no/</loc>
@@ -422,6 +434,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/my-base-info/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/7-add-process-for-tech-route/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/7.str-jtbl-delivery-group-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/download-staff-io-tpl/</loc>
@@ -435,6 +449,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/get-jtbl-work-time-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/8-del-process-from-tech-route/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/8.str-subcontractor-report/</loc>
   </url><url>
@@ -601,6 +617,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-one-jtbl-assembly-item/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
     <lastmod>2022-01-09T18:00:54+08:00</lastmod>
