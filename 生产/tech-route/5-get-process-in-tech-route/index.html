@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-10-21
+    <meta name="description" content="更新日期: 2022-10-24
 基本参数     url : https://{domain}:{port}/api/tech-route/get-process-in-tech-route http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     TechRouteID number 1 工艺路线ID     样例  body：
-{ &#34;TechRouteID&#34;: 1 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 166634172980000, &#34;TechRouteID&#34;: 1, &#34;OrderNum&#34;: 1, &#34;JobProcessID&#34;: 1, &#34;JobProcessEnglishName&#34;: &#34;Issued For Fab&#34;, &#34;JobProcessChineseName&#34;: &#34;图纸下发&#34; }, { &#34;Id&#34;: 166634175080001, &#34;TechRouteID&#34;: 1, &#34;OrderNum&#34;: 2, &#34;JobProcessID&#34;: 2, &#34;JobProcessEnglishName&#34;: &#34;Cut&#34;, &#34;JobProcessChineseName&#34;: &#34;下料&#34; } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数名称 类型 示例 描述     Id number 144095520480001 工艺路线与工序关联ID   TechRouteID number 144095520480001 工艺路线ID   OrderNum number 1 排序号   JobProcessID number 1 工序ID   JobProcessEnglishName string Issued For Fab 工序英文名称   JobProcessChineseName string 图纸下发 工序中文名称    向服务器端发送数据中的通用参数       参数： page">
+{ &#34;TechRouteID&#34;: 1 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 166659987780000, &#34;TechRouteID&#34;: 1, &#34;OrderNum&#34;: 10, &#34;JobProcessID&#34;: 20, &#34;JobProcessEnglishName&#34;: &#34;Fit-Up Checked&#34;, &#34;JobProcessChineseName&#34;: &#34;组对检验&#34;, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数名称 类型 示例 描述     Id number 144095520480001 工艺路线与工序关联ID   TechRouteID number 144095520480001 工艺路线ID   OrderNum number 1 排序号   JobProcessID number 1 工序ID   JobProcessEnglishName string Issued For Fab 工序英文名称   JobProcessChineseName string 图纸下发 工序中文名称   AppAssemblyItem boolean true App端构件编码   AppAssemblyItemWorkTime boolean true App端构件编码(工时)   AppAssemblyItemQualityInspecte boolean true App端构件编码(质检)   AppBatchScan boolean true App端批量扫描   AppChartProcess boolean true App端图表工序   AppProgressReport boolean true App端进度报表   AppJobPlan boolean true App端项目计划    向服务器端发送数据中的通用参数       参数： page">
 
 
 
@@ -7980,6 +7980,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             </li>
             
             
+            
+            
         
     </ul>
 
@@ -9070,7 +9072,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>5 查询工艺路线包含的工序列表</h1>
-        <p><small>更新日期: 2022-10-21</small></p>
+        <p><small>更新日期: 2022-10-24</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9161,20 +9163,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
     <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">166634172980000</span><span class="p">,</span>
+            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">166659987780000</span><span class="p">,</span>
             <span class="nt">&#34;TechRouteID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Issued For Fab&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;图纸下发&#34;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">166634175080001</span><span class="p">,</span>
-            <span class="nt">&#34;TechRouteID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-            <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Cut&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;下料&#34;</span>
+            <span class="nt">&#34;OrderNum&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Fit-Up Checked&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;组对检验&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
@@ -9249,6 +9250,48 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>string</td>
 <td>图纸下发</td>
 <td>工序中文名称</td>
+</tr>
+<tr>
+<td>AppAssemblyItem</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码</td>
+</tr>
+<tr>
+<td>AppAssemblyItemWorkTime</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码(工时)</td>
+</tr>
+<tr>
+<td>AppAssemblyItemQualityInspecte</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码(质检)</td>
+</tr>
+<tr>
+<td>AppBatchScan</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端批量扫描</td>
+</tr>
+<tr>
+<td>AppChartProcess</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端图表工序</td>
+</tr>
+<tr>
+<td>AppProgressReport</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端进度报表</td>
+</tr>
+<tr>
+<td>AppJobPlan</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端项目计划</td>
 </tr>
 </tbody>
 </table> </div>
