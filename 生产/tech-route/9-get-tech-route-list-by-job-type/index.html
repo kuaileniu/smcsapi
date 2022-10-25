@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2022-10-24
-基本参数     url : https://{domain}:{port}/api/tech-route/get-tech-route-list-by-job-type http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobTypeID number 1 项目类型id(管道为1；结构为2，多专业为3)     样例  body：
-{ &#34;JobTypeID&#34;:1 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 166662040580000, &#34;RouteName&#34;: &#34;工艺路线1&#34;, &#34;JobTypeID&#34;: 1 } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数名称 类型 示例 描述     Id number 144095520480001 工艺路线ID   RouteName string xxxx 工艺路线名称   JobTypeID number 1 项目类型ID    向服务器端发送数据中的通用参数       参数： page">
+基本参数     url : https://{domain}:{port}/api/tech-route/get-tech-route-list-by-job-type http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobTypeID number 1 项目类型id(管道为1；结构为2，多专业为3)   JobID number 1 项目id     样例  body：
+{ &#34;JobTypeID&#34;:1 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 166662040580000, &#34;RouteName&#34;: &#34;工艺路线1&#34;, &#34;JobTypeID&#34;: 1, &#34;UsedByJob&#34;: true } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; }    data 参数       参数名称 类型 示例 描述     Id number 144095520480001 工艺路线ID   RouteName string xxxx 工艺路线名称   JobTypeID number 1 项目类型ID   UsedByJob boolean true 被此项目使用    向服务器端发送数据中的通用参数       参数： page">
 
 
 
@@ -9146,6 +9146,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>1</td>
 <td>项目类型id(管道为1；结构为2，多专业为3)</td>
 </tr>
+<tr>
+<td>JobID</td>
+<td>number</td>
+<td>1</td>
+<td>项目id</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -9191,7 +9197,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         <span class="p">{</span>
             <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">166662040580000</span><span class="p">,</span>
             <span class="nt">&#34;RouteName&#34;</span><span class="p">:</span> <span class="s2">&#34;工艺路线1&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;UsedByJob&#34;</span><span class="p">:</span> <span class="kc">true</span>
         <span class="p">}</span>
     <span class="p">]</span>
 <span class="p">}</span>
@@ -9248,6 +9255,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>number</td>
 <td>1</td>
 <td>项目类型ID</td>
+</tr>
+<tr>
+<td>UsedByJob</td>
+<td>boolean</td>
+<td>true</td>
+<td>被此项目使用</td>
 </tr>
 </tbody>
 </table> </div>
