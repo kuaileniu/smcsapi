@@ -14,12 +14,14 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-08-11
-基本参数     url : https://{domain}:{port}/api/jtbl-work-time/edit-jtbl-work-time http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     Id number 2 工时ID   StartTime 时间 2022-07-21 11:01:41 开始时间   EndTime 时间 2022-07-21 11:01:41 结束时间   Repair boolean true 返修   CompletedNum number 0.65 完成数目(进度)   InspectedPass boolean true 检验通过   Note string xx 备注   AttachSli json数组 [] 附件，请看样例     样例  body：">
+    <meta name="description" content="更新日期: 2022-11-06
+基本参数     url : https://{domain}:{port}/api/job-tech-route/get-process-by-job-and-type http method : POST  请求数据    遵守鉴权机制 参数     参数名称 类型 示例 描述     JobId number 144095520480001 项目ID   JobTypeID number 2 项目类型ID(管道为1；结构为2，多专业为3)     样例  body：
+不需要修改的字段请不要传给服务器端
+{ &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2 }    返回数据     成功  { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 1, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 2, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: true, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 3, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 20, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 4, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 5, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 7, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 8, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 14, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false } ] }   失败  { &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be blank&#34; }    data 参数       参数 类型 示例值 描述     JobId number 144095520480001 项目ID   JobTypeID number 2 项目类型ID   ProcessID number 2 工序ID   AppAssemblyItem boolean true App端构件编码   AppAssemblyItemWorkTime boolean true App端构件编码(工时)   AppAssemblyItemQualityInspecte boolean true App端构件编码(质检)   AppBatchScan boolean true App端批量扫描   AppChartProcess boolean true App端图表工序   AppProgressReport boolean true App端进度报表   AppJobPlan boolean true App端项目计划    服务器端返回客户端数据中的通用参数       参数： status">
 
 
 
-    <title>编辑工时信息 | SMCS</title>
+    <title>3 根据项目ID和项目类型查询工序的开关 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -4398,7 +4400,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" checked>
             <label for="navtree-56282f5f" class="flex justify-between">
             
             
@@ -6070,7 +6072,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-e451cb37" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-e451cb37" class="gdoc-nav__toggle" checked>
             <label for="navtree-e451cb37" class="flex justify-between">
             
             
@@ -6154,7 +6156,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/" class="gdoc-nav__entry ">
+                    <a href="/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/" class="gdoc-nav__entry is-active">
                         3 根据项目ID和项目类型查询工序的开关
                     </a>
                 </span>
@@ -7067,7 +7069,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" >
             <label for="navtree-7e03f9c5" class="flex justify-between">
             
             
@@ -7676,7 +7678,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-45a62483" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-45a62483" class="gdoc-nav__toggle" >
             <label for="navtree-45a62483" class="flex justify-between">
             
             
@@ -7812,7 +7814,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/" class="gdoc-nav__entry is-active">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/" class="gdoc-nav__entry ">
                         编辑工时信息
                     </a>
                 </span>
@@ -9237,7 +9239,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/' href='/%E7%94%9F%E4%BA%A7/'><span itemprop='name'>生产</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/jtbl-work-time/' href='/%E7%94%9F%E4%BA%A7/jtbl-work-time/'><span itemprop='name'>工时</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>编辑工时信息</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/' href='/%E9%A1%B9%E7%9B%AE/'><span itemprop='name'>项目</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/job-tech-route/' href='/%E9%A1%B9%E7%9B%AE/job-tech-route/'><span itemprop='name'>项目工艺路线</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>3 根据项目ID和项目类型查询工序的开关</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -9263,23 +9265,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>编辑工时信息</h1>
-        <p><small>更新日期: 2022-08-11</small></p>
+        <h1>3 根据项目ID和项目类型查询工序的开关</h1>
+        <p><small>更新日期: 2022-11-06</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-work-time/edit-jtbl-work-time</li>
+<li>url : https://{domain}:{port}/api/job-tech-route/get-process-by-job-and-type</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9307,52 +9309,16 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>Id</td>
+<td>JobId</td>
+<td>number</td>
+<td>144095520480001</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>JobTypeID</td>
 <td>number</td>
 <td>2</td>
-<td>工时ID</td>
-</tr>
-<tr>
-<td>StartTime</td>
-<td>时间</td>
-<td>2022-07-21 11:01:41</td>
-<td>开始时间</td>
-</tr>
-<tr>
-<td>EndTime</td>
-<td>时间</td>
-<td>2022-07-21 11:01:41</td>
-<td>结束时间</td>
-</tr>
-<tr>
-<td>Repair</td>
-<td>boolean</td>
-<td>true</td>
-<td>返修</td>
-</tr>
-<tr>
-<td>CompletedNum</td>
-<td>number</td>
-<td>0.65</td>
-<td>完成数目(进度)</td>
-</tr>
-<tr>
-<td>InspectedPass</td>
-<td>boolean</td>
-<td>true</td>
-<td>检验通过</td>
-</tr>
-<tr>
-<td>Note</td>
-<td>string</td>
-<td>xx</td>
-<td>备注</td>
-</tr>
-<tr>
-<td>AttachSli</td>
-<td>json数组</td>
-<td>[]</td>
-<td>附件，请看样例</td>
+<td>项目类型ID(管道为1；结构为2，多专业为3)</td>
 </tr>
 </tbody>
 </table> </div>
@@ -9366,26 +9332,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
+<p>不需要修改的字段请不要传给服务器端</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
-    <span class="nt">&#34;StartTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:01:41&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;EndTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21 11:02:37&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;Repair&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&#34;CompletedNum&#34;</span><span class="p">:</span><span class="mf">0.8</span><span class="p">,</span>
-    <span class="nt">&#34;InspectedPass&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;comment&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;dd.jpg&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;a.jpg&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
-            <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
+    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -9395,7 +9345,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9412,9 +9362,117 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
+    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&#34;JobTypeID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&#34;ProcessID&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemWorkTime&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppAssemblyItemQualityInspecte&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppBatchScan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppChartProcess&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -9428,7 +9486,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
     <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id不可为空&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be empty&#34;</span>
+    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be blank&#34;</span>
 <span class="p">}</span>
 </code></pre></div>
     </div>
@@ -9436,9 +9494,88 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数</th>
+<th>类型</th>
+<th>示例值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>144095520480001</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>JobTypeID</td>
+<td>number</td>
+<td>2</td>
+<td>项目类型ID</td>
+</tr>
+<tr>
+<td>ProcessID</td>
+<td>number</td>
+<td>2</td>
+<td>工序ID</td>
+</tr>
+<tr>
+<td>AppAssemblyItem</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码</td>
+</tr>
+<tr>
+<td>AppAssemblyItemWorkTime</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码(工时)</td>
+</tr>
+<tr>
+<td>AppAssemblyItemQualityInspecte</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端构件编码(质检)</td>
+</tr>
+<tr>
+<td>AppBatchScan</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端批量扫描</td>
+</tr>
+<tr>
+<td>AppChartProcess</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端图表工序</td>
+</tr>
+<tr>
+<td>AppProgressReport</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端进度报表</td>
+</tr>
+<tr>
+<td>AppJobPlan</td>
+<td>boolean</td>
+<td>true</td>
+<td>App端项目计划</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
