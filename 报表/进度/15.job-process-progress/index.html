@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-07-12
-基本参数 url : https://{domain}:{port}/api/str-report/job-process-progress http method : POST 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 JobId number 1 项目ID JobProcessIdArray number 数组 [1,2,3] 工序ID数组 样例 body：
-{ &#34;JobId&#34;: 1, &#34;JobProcessIdArray&#34;:[ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 ] } 返回数据 成功 { &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;JobProcessID&#34;: 1, &#34;JobProcessCode&#34;: &#34;IssuedForFab&#34;, &#34;JobProcessEnglishName&#34;: &#34;IssuedForFab&#34;, &#34;JobProcessChineseName&#34;: &#34;图纸下发&#34;, &#34;CompletedProgress&#34;: 0.0451 }, { &#34;JobProcessID&#34;: 2, &#34;JobProcessCode&#34;: &#34;CutComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;CutComp&#34;, &#34;JobProcessChineseName&#34;: &#34;下料完成&#34;, &#34;CompletedProgress&#34;: 0.1107 }, { &#34;JobProcessID&#34;: 3, &#34;JobProcessCode&#34;: &#34;FitUpComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;FitUpComp&#34;, &#34;JobProcessChineseName&#34;: &#34;组对完成&#34;, &#34;CompletedProgress&#34;: 0.">
+    <meta name="description" content="更新日期: 2023-06-02
+基本参数url : https://{domain}:{port}/api/str-report/job-process-progress http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID JobProcessIdArray number 数组 [1,2,3] 工序ID数组 样例body：
+{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;JobProcessID&#34;: 21, &#34;JobProcessCode&#34;: &#34;Procured&#34;, &#34;JobProcessEnglishName&#34;: &#34;Procured&#34;, &#34;JobProcessChineseName&#34;: &#34;采购&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 1, &#34;JobProcessCode&#34;: &#34;IssuedForFab&#34;, &#34;JobProcessEnglishName&#34;: &#34;Issued For Fab&#34;, &#34;JobProcessChineseName&#34;: &#34;图纸下发&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 2, &#34;JobProcessCode&#34;: &#34;CutComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;Cut&#34;, &#34;JobProcessChineseName&#34;: &#34;下料&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 16, &#34;JobProcessCode&#34;: &#34;MachinedBeforeWeld&#34;, &#34;JobProcessEnglishName&#34;: &#34;Machined Before Weld&#34;, &#34;JobProcessChineseName&#34;: &#34;焊前机加工&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 3, &#34;JobProcessCode&#34;: &#34;FitUpComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;Fit-Up&#34;, &#34;JobProcessChineseName&#34;: &#34;组对&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 20, &#34;JobProcessCode&#34;: &#34;FitupChecked&#34;, &#34;JobProcessEnglishName&#34;: &#34;Fit-Up Checked&#34;, &#34;JobProcessChineseName&#34;: &#34;组对检验&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 4, &#34;JobProcessCode&#34;: &#34;WeldComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;Welded&#34;, &#34;JobProcessChineseName&#34;: &#34;焊接&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 5, &#34;JobProcessCode&#34;: &#34;Ground&#34;, &#34;JobProcessEnglishName&#34;: &#34;Ground&#34;, &#34;JobProcessChineseName&#34;: &#34;打磨&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 18, &#34;JobProcessCode&#34;: &#34;MachinedAfterWeld&#34;, &#34;JobProcessEnglishName&#34;: &#34;Machined After Weld&#34;, &#34;JobProcessChineseName&#34;: &#34;焊后机加工&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 6, &#34;JobProcessCode&#34;: &#34;DimInspected&#34;, &#34;JobProcessEnglishName&#34;: &#34;Inspected After Weld&#34;, &#34;JobProcessChineseName&#34;: &#34;焊后检验&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 10, &#34;JobProcessCode&#34;: &#34;PreAssemblied&#34;, &#34;JobProcessEnglishName&#34;: &#34;Pre-Assemblied&#34;, &#34;JobProcessChineseName&#34;: &#34;预拼装&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 7, &#34;JobProcessCode&#34;: &#34;WeldNDTComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;NDT&#34;, &#34;JobProcessChineseName&#34;: &#34;探伤&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 8, &#34;JobProcessCode&#34;: &#34;SentPaint&#34;, &#34;JobProcessEnglishName&#34;: &#34;Sent To Paint&#34;, &#34;JobProcessChineseName&#34;: &#34;发往油漆&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 23, &#34;JobProcessCode&#34;: &#34;SandBlasted&#34;, &#34;JobProcessEnglishName&#34;: &#34;Sand Blasted&#34;, &#34;JobProcessChineseName&#34;: &#34;打砂&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 9, &#34;JobProcessCode&#34;: &#34;PaintComp&#34;, &#34;JobProcessEnglishName&#34;: &#34;Painted&#34;, &#34;JobProcessChineseName&#34;: &#34;油漆&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 24, &#34;JobProcessCode&#34;: &#34;PaintChecked&#34;, &#34;JobProcessEnglishName&#34;: &#34;Paint Checked&#34;, &#34;JobProcessChineseName&#34;: &#34;油漆检验&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 17, &#34;JobProcessCode&#34;: &#34;SealingGlue&#34;, &#34;JobProcessEnglishName&#34;: &#34;Sealing Glue&#34;, &#34;JobProcessChineseName&#34;: &#34;打胶&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 22, &#34;JobProcessCode&#34;: &#34;RubberLined&#34;, &#34;JobProcessEnglishName&#34;: &#34;Rubber Lined&#34;, &#34;JobProcessChineseName&#34;: &#34;衬胶&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 19, &#34;JobProcessCode&#34;: &#34;Assemblied&#34;, &#34;JobProcessEnglishName&#34;: &#34;Assemblied&#34;, &#34;JobProcessChineseName&#34;: &#34;组装&#34;, &#34;CompletedProgress&#34;: 0 }, { &#34;JobProcessID&#34;: 11, &#34;JobProcessCode&#34;: &#34;Packed&#34;, &#34;JobProcessEnglishName&#34;: &#34;Packed&#34;, &#34;JobProcessChineseName&#34;: &#34;打包&#34;, &#34;CompletedProgress&#34;: 0.">
 
 
 
@@ -9354,7 +9354,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>15.单个项目的工序进度</h1>
-        <p><small>更新日期: 2022-07-12</small></p>
+        <p><small>更新日期: 2023-06-02</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9421,151 +9421,184 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobProcessIdArray&#34;</span><span class="p">:[</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">15</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
-    </div>
-  
-</div>
-</p>
-<div class="gdoc-page__anchorwrap">
-    <h4 id="返回数据">
-        返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/15.job-process-progress/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div>
-
-
-
-<div class="gdoc-tabs">
-  
-    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
-      checked="checked"  />
-    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
-      成功
-    </label>
-    <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;Procured&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Procured&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;采购&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;IssuedForFab&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;IssuedForFab&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Issued For Fab&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;图纸下发&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;CutComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;CutComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;下料完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.1107</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Cut&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;下料&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;MachinedBeforeWeld&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Machined Before Weld&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;焊前机加工&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;FitUpComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;FitUpComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;组对完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Fit-Up&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;组对&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;FitupChecked&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Fit-Up Checked&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;组对检验&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;WeldComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;WeldComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;焊接完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Welded&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;焊接&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;Ground&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Ground&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打磨完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打磨&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;MachinedAfterWeld&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Machined After Weld&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;焊后机加工&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;DimInspected&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;DimInspected&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;尺寸检验&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Inspected After Weld&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;焊后检验&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;PreAssemblied&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Pre-Assemblied&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;预拼装&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;WeldNDTComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;WeldNDTComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;探伤完成&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;NDT&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;探伤&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;SentPaint&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;SentPaint&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Sent To Paint&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;发往油漆&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;SandBlasted&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Sand Blasted&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打砂&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;PaintComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;PaintComp&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;油漆完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Painted&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;油漆&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;PreAssemblied&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;PreAssemblied&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;预拼装完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.205</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;PaintChecked&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Paint Checked&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;油漆检验&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;SealingGlue&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Sealing Glue&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打胶&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;RubberLined&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Rubber Lined&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;衬胶&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;Assemblied&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Assemblied&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;组装&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;Packed&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Packed&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打包完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;打包&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0064</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;PunchListed&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;PunchListed&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;核查表完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Punch Listed&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;核查表&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;SignedOff&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;SignedOff&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Signed Off&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;签署放行&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;SentSite&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;SentSite&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Sent To Site&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;发往现场&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessID&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessCode&#34;</span><span class="p">:</span> <span class="s2">&#34;DocComplete&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;DocComplete&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;交工文档完成&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.0451</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Doc Complete&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobProcessChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;交工文档&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
   
-    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-2"
        />
-    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+    <label for="tabs-uniqueid_request-2" class="gdoc-tabs__label">
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
@@ -9578,7 +9611,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </div>
   
 </div>
-
+</p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数

@@ -15,9 +15,9 @@
 
 
     <meta name="description" content="更新日期: 2021-12-11
-基本参数 url : https://{domain}:{port}/api/jtbl-area/edit-jtbl-area http method : POST 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 Id number 144095520480001 分区ID JobId number xxx 项目ID AreaName string xxx 分区名称,当修改此值时需带上JobId AreaDescription string xxx 描述,当修改此值时需带上JobId LastCopiedSpool number 123 最后复制管段号 OnSkidArea number xxx 撬上区域 DeliveryGroupId number 123 发货组ID Spare1 string xxxx 自定义字段1 Spare2 string xxxx 自定义字段2 Spare3 string xxxx 自定义字段3 Spare4 string xxxx 自定义字段4 样例 body：
+基本参数url : https://{domain}:{port}/api/jtbl-area/edit-jtbl-area http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 144095520480001 分区ID JobId number xxx 项目ID AreaName string xxx 分区名称,当修改此值时需带上JobId AreaDescription string xxx 描述,当修改此值时需带上JobId LastCopiedSpool number 123 最后复制管段号 OnSkidArea number xxx 撬上区域 DeliveryGroupId number 123 发货组ID Spare1 string xxxx 自定义字段1 Spare2 string xxxx 自定义字段2 Spare3 string xxxx 自定义字段3 Spare4 string xxxx 自定义字段4 样例body：
 不需要修改的字段请不要传给服务器端
-{ &#34;Id&#34;: 144099490310001, &#34;JobId&#34;: 1, &#34;AreaName&#34;: &#34;AreaName1&#34;, &#34;AreaDescription&#34;: &#34;AreaDescription1&#34;, &#34;LastCopiedSpool&#34;: 4, &#34;OnSkidArea&#34;: 5, &#34;DeliveryGroupId&#34;: 6, &#34;Spare1&#34;: &#34;s&#34;, &#34;Spare2&#34;: &#34;x&#34;, &#34;Spare3&#34;: &#34;e&#34;, &#34;Spare4&#34;: &#34;h&#34; } 返回数据 成功 { &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, } 失败 { &#34;status&#34;: 1, &#34;msg&#34;: &#34;分区名称不可为空。&#34;, &#34;english_msg&#34;: &#34;AreaName can&#39;t be blank.">
+{ &#34;Id&#34;: 144099490310001, &#34;JobId&#34;: 1, &#34;AreaName&#34;: &#34;AreaName1&#34;, &#34;AreaDescription&#34;: &#34;AreaDescription1&#34;, &#34;LastCopiedSpool&#34;: 4, &#34;OnSkidArea&#34;: 5, &#34;DeliveryGroupId&#34;: 6, &#34;Spare1&#34;: &#34;s&#34;, &#34;Spare2&#34;: &#34;x&#34;, &#34;Spare3&#34;: &#34;e&#34;, &#34;Spare4&#34;: &#34;h&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;分区名称不可为空。&#34;, &#34;english_msg&#34;: &#34;AreaName can&#39;t be blank.">
 
 
 

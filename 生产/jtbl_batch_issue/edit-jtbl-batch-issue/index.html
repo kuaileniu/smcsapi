@@ -15,9 +15,9 @@
 
 
     <meta name="description" content="更新日期: 2022-04-08
-基本参数 url : https://{domain}:{port}/api/jtbl-batch-issue/edit-jtbl-batch-issue http method : POST 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 Id number 144095520480001 生产批次ID JobId number 1 项目ID BatchIssueNameID number 1 生产批次名称ID Rev string xx 版本 WorkPackageID number xx 工作包ID BatchIssueDate 日期 2022-09-11 批次下发日期 BatchIssueSent boolean true 批次已下发 TransmittalNo string true 传送单号 TransmittalDate 日期 2022-09-11 传送日期 SubcontractorID number xx 员工ID，JtblEmployee的ID Comment string xxxx 备注 WorkshopID number xx 工厂/车间ID 样例 body：
+基本参数url : https://{domain}:{port}/api/jtbl-batch-issue/edit-jtbl-batch-issue http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 144095520480001 生产批次ID JobId number 1 项目ID BatchIssueNameID number 1 生产批次名称ID Rev string xx 版本 WorkPackageID number xx 工作包ID BatchIssueDate 日期 2022-09-11 批次下发日期 BatchIssueSent boolean true 批次已下发 TransmittalNo string true 传送单号 TransmittalDate 日期 2022-09-11 传送日期 SubcontractorID number xx 员工ID，JtblEmployee的ID Comment string xxxx 备注 WorkshopID number xx 工厂/车间ID 样例body：
 不需要修改的字段请不要传给服务器端
-{ &#34;Id&#34;: 148074783080001, &#34;JobId&#34;: 1, &#34;BatchIssueName&#34;: &#34;生产批次名称1&#34;, &#34;Comment&#34;: &#34;兄弟们累了的话就休息休息吧&#34; } 返回数据 成功 { &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, } 失败 { &#34;status&#34;: 1, &#34;msg&#34;: &#34;xxx不可为空。&#34;, &#34;english_msg&#34;: &#34;xxx can&#39;t be blank.">
+{ &#34;Id&#34;: 148074783080001, &#34;JobId&#34;: 1, &#34;BatchIssueName&#34;: &#34;生产批次名称1&#34;, &#34;Comment&#34;: &#34;兄弟们累了的话就休息休息吧&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功&#34;, &#34;english_msg&#34;: &#34;Success&#34;, } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;xxx不可为空。&#34;, &#34;english_msg&#34;: &#34;xxx can&#39;t be blank.">
 
 
 

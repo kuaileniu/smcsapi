@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2022-01-15
-基本参数 url : https://{domain}:{port}/api/jtbl-pressure-guage/add-jtbl-pressure-guage http method : POST 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 JobId number 1 项目ID SerialNumber string xxxx 序列号 PressureRange string 40-89 压力范围 CalibrationCertNo string x1111 校验证书号 CalibrationExpiry 日期 2021-11-22 校验到期 样例 body：
-{ &#34;JobId&#34;: 1, &#34;SerialNumber&#34;: &#34;s1&#34;, &#34;PressureRange&#34;: &#34;50-80&#34;, &#34;CalibrationCertNo&#34;: &#34;a1&#34;, &#34;CalibrationExpiry&#34;: &#34;2025-01-20&#34; } 返回数据 成功 { &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 144230022080001 } } 失败 { &#34;status&#34;: 1, &#34;msg&#34;: &#34;添加失败,压力名称重复。&#34;, &#34;english_msg&#34;: &#34;Add failed,duplicate PipeSpec.">
+基本参数url : https://{domain}:{port}/api/jtbl-pressure-guage/add-jtbl-pressure-guage http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID SerialNumber string xxxx 序列号 PressureRange string 40-89 压力范围 CalibrationCertNo string x1111 校验证书号 CalibrationExpiry 日期 2021-11-22 校验到期 样例body：
+{ &#34;JobId&#34;: 1, &#34;SerialNumber&#34;: &#34;s1&#34;, &#34;PressureRange&#34;: &#34;50-80&#34;, &#34;CalibrationCertNo&#34;: &#34;a1&#34;, &#34;CalibrationExpiry&#34;: &#34;2025-01-20&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 144230022080001 } } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;添加失败,压力名称重复。&#34;, &#34;english_msg&#34;: &#34;Add failed,duplicate PipeSpec.">
 
 
 

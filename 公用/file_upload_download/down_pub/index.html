@@ -15,11 +15,11 @@
 
 
     <meta name="description" content="更新日期: 2022-02-24
-基本参数 url : https://{domain}:{port}/dfs/dl/pub/212/34/bd461e2e0e9b06898b9dc86a86f3511c_1319.png http method : GET 请求数据 遵守鉴权机制 参数 https://url/xxx.jpg
+基本参数url : https://{domain}:{port}/dfs/dl/pub/212/34/bd461e2e0e9b06898b9dc86a86f3511c_1319.png http method : GET 请求数据遵守鉴权机制 参数https://url/xxx.jpg
 需要用户为登录状态
 将来可能会在文件路径尾部追加信息,例如追加 &ldquo;?key=val&rdquo;, https://url/xxx.jpg?key=val
-样例 body：
-https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/bd461e2e0e9b06898b9dc86a86f3511c_1319.png 返回数据 成功 文件流 失败 无文件流 data 参数 服务器端返回客户端数据中的通用参数 参数： status
+样例body：
+https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/bd461e2e0e9b06898b9dc86a86f3511c_1319.png 返回数据成功文件流 失败无文件流 data 参数服务器端返回客户端数据中的通用参数参数： status
 类型：number
 补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
 编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 参数： msg

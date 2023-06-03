@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2021-12-24
-基本参数 url : https://{domain}:{port}/api/jtbl-service/add-jtbl-service http method : POST 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 JobId number xxx 项目ID ServiceName string xxx 介质名称 ServiceDescription string xxx 描述 NDTPercent 正整数 45 无损检测比例,例如45%时给服务器传45 Spare1 string xxxx 自定义字段1 Spare2 string xxxx 自定义字段2 Spare3 string xxxx 自定义字段3 Spare4 string xxxx 自定义字段4 样例 body：
-{ &#34;JobId&#34;: 1, &#34;ServiceName&#34;: &#34;介质名称1&#34;, &#34;ServiceDescription&#34;: &#34;描述&#34;, &#34;NDTPercent&#34;: 45, &#34;ServiceTypeId&#34;: 1, &#34;Spare1&#34;: &#34;Spare1&#34;, &#34;Spare2&#34;: &#34;Spare2&#34;, &#34;Spare3&#34;: &#34;Spare3&#34;, &#34;Spare4&#34;: &#34;Spare4&#34; } 返回数据 成功 { &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 144099490310001 } } 失败 { &#34;status&#34;: 1, &#34;msg&#34;: &#34;添加失败,介质名称重复。&#34;, &#34;english_msg&#34;: &#34;Add failed,duplicate ServiceName.">
+基本参数url : https://{domain}:{port}/api/jtbl-service/add-jtbl-service http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number xxx 项目ID ServiceName string xxx 介质名称 ServiceDescription string xxx 描述 NDTPercent 正整数 45 无损检测比例,例如45%时给服务器传45 Spare1 string xxxx 自定义字段1 Spare2 string xxxx 自定义字段2 Spare3 string xxxx 自定义字段3 Spare4 string xxxx 自定义字段4 样例body：
+{ &#34;JobId&#34;: 1, &#34;ServiceName&#34;: &#34;介质名称1&#34;, &#34;ServiceDescription&#34;: &#34;描述&#34;, &#34;NDTPercent&#34;: 45, &#34;ServiceTypeId&#34;: 1, &#34;Spare1&#34;: &#34;Spare1&#34;, &#34;Spare2&#34;: &#34;Spare2&#34;, &#34;Spare3&#34;: &#34;Spare3&#34;, &#34;Spare4&#34;: &#34;Spare4&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 144099490310001 } } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;添加失败,介质名称重复。&#34;, &#34;english_msg&#34;: &#34;Add failed,duplicate ServiceName.">
 
 
 

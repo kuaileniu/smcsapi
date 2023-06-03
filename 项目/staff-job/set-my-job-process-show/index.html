@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2022-07-09
-基本参数 url : https://{domain}:{port}/api/staff-job/set-my-job-process-show http method : POST 仅将给定工序设置为可展示,其它未包含在内的都设置为不可展示。若都设置为不可展示，可传输空数组。 请求数据 遵守鉴权机制 参数 参数名称 类型 示例 描述 ShowJobProcessIDs number数组 [1,2] 可展示的工序Id数组,其它的为不展示 样例 body：
-{ &#34;ShowJobProcessIDs&#34;: [ 1, 2 ] } 返回数据 成功 { &#34;status&#34;: 3, &#34;msg&#34;: &#34;设置成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败 { &#34;status&#34;: 1, &#34;msg&#34;: &#34;设置数据时发生异常，请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when setting data&#34; } 向服务器端发送数据中的通用参数 参数： page
+基本参数url : https://{domain}:{port}/api/staff-job/set-my-job-process-show http method : POST 仅将给定工序设置为可展示,其它未包含在内的都设置为不可展示。若都设置为不可展示，可传输空数组。 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 ShowJobProcessIDs number数组 [1,2] 可展示的工序Id数组,其它的为不展示 样例body：
+{ &#34;ShowJobProcessIDs&#34;: [ 1, 2 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;设置成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;设置数据时发生异常，请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when setting data&#34; } 向服务器端发送数据中的通用参数参数： page
 类型：number
 可为空： 是
 补充说明： 从1开始。
