@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-06-10
+    <meta name="description" content="更新日期: 2023-06-04
 基本参数url : https://{domain}:{port}/api/str-report/str-jtbl-area-report http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID 样例body：
-{ &#34;JobId&#34;: 1 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: { &#34;RecordArray&#34;: [ { &#34;AreaName&#34;: &#34;A01&#34;, &#34;AreaDescription&#34;: &#34;分区01&#34;, &#34;CompletedProgress&#34;: 0.2155, &#34;TargetTonnes&#34;: 8.9587, &#34;IssuedForFab&#34;: 2.0808, &#34;CutComp&#34;: 2.0807, &#34;FitUpComp&#34;: 2.0807, &#34;WeldComp&#34;: 0.7232, &#34;Ground&#34;: 0.7232, &#34;DimInspected&#34;: 0.7232, &#34;WeldNDTComp&#34;: 0, &#34;SentPaint&#34;: 0.7232, &#34;PaintComp&#34;: 0.7232, &#34;PreAssemblied&#34;: 0.7232, &#34;Packed&#34;: 0.7232, &#34;PunchListed&#34;: 0.7232, &#34;SignedOff&#34;: 0.">
+{ &#34;JobId&#34;: 1 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: { &#34;RecordArray&#34;: [ { &#34;AreaName&#34;: &#34;A01&#34;, &#34;AreaDescription&#34;: &#34;区域 01&#34;, &#34;CompletedProgress&#34;: 0.4707, &#34;TargetTonnes&#34;: 17.9504, &#34;IssuedForFab&#34;: 17.9504, &#34;CutComp&#34;: 17.9504, &#34;FitUpComp&#34;: 10.8546, &#34;WeldComp&#34;: 10.8546, &#34;Ground&#34;: 10.8546, &#34;DimInspected&#34;: 17.9504, &#34;WeldNDTComp&#34;: 10.8546, &#34;SentPaint&#34;: 17.9504, &#34;PaintComp&#34;: 10.8546, &#34;PreAssemblied&#34;: 10.8546, &#34;Packed&#34;: 0, &#34;PunchListed&#34;: 0, &#34;SignedOff&#34;: 0, &#34;SentSite&#34;: 0, &#34;DocComplete&#34;: 0, &#34;MachinedBeforeWeld&#34;: 10.">
 
 
 
@@ -9354,7 +9354,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>3.区域报告</h1>
-        <p><small>更新日期: 2022-06-10</small></p>
+        <p><small>更新日期: 2023-06-04</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9441,93 +9441,129 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       成功
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">&#34;RecordArray&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">            <span class="p">{</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;A01&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;分区01&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.2155</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">8.9587</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">2.0808</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">2.0807</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">2.0807</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mf">0.7232</span>
-</span></span><span class="line"><span class="cl">            <span class="p">},</span>
-</span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;A02&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;区域02&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">2.333</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;区域 01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.4707</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SealingGlue&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Assemblied&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitupChecked&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Procured&#34;</span><span class="p">:</span> <span class="mf">17.9504</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;RubberLined&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SandBlasted&#34;</span><span class="p">:</span> <span class="mf">10.8546</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintChecked&#34;</span><span class="p">:</span> <span class="mf">10.8546</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;A02&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;区域 02&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.3647</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mf">10.0357</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">14.2516</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">14.2516</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">24.2873</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="mf">10.0357</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SealingGlue&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="mf">10.0357</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Assemblied&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitupChecked&#34;</span><span class="p">:</span> <span class="mf">10.0357</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Procured&#34;</span><span class="p">:</span> <span class="mf">10.0357</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;RubberLined&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SandBlasted&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintChecked&#34;</span><span class="p">:</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">            <span class="p">},</span>
 </span></span><span class="line"><span class="cl">            <span class="p">{</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">                <span class="nt">&#34;AreaDescription&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.1384</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">64.8598</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">26.5699</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">9.9132</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">26.2293</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">22.1658</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">6.31</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">6.31</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mf">5.6924</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">6.31</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">8.5724</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">6.31</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mf">5.8336</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="mf">8.7933</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SealingGlue&#34;</span><span class="p">:</span> <span class="mf">7.93</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="mf">5.6924</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Assemblied&#34;</span><span class="p">:</span> <span class="mf">7.93</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;FitupChecked&#34;</span><span class="p">:</span> <span class="mf">7.052</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;Procured&#34;</span><span class="p">:</span> <span class="mf">25.9523</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;RubberLined&#34;</span><span class="p">:</span> <span class="mf">7.93</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;SandBlasted&#34;</span><span class="p">:</span> <span class="mf">7.93</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&#34;PaintChecked&#34;</span><span class="p">:</span> <span class="mf">5.6924</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
 </span></span><span class="line"><span class="cl">        <span class="p">],</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">&#34;TotalRecord&#34;</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;Total&#34;</span><span class="p">:</span> <span class="s2">&#34;B0001&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.136</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">14.1974</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">2.0808</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">2.0807</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">2.0807</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mf">0.7232</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mf">0.7232</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CompletedProgress&#34;</span><span class="p">:</span> <span class="mf">0.2454</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;TargetTonnes&#34;</span><span class="p">:</span> <span class="mf">107.0975</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mf">68.8076</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mf">52.1508</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mf">61.3712</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mf">57.3077</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Ground&#34;</span><span class="p">:</span> <span class="mf">41.4519</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DimInspected&#34;</span><span class="p">:</span> <span class="mf">48.5477</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mf">26.5827</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mf">38.512</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mf">33.6786</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PreAssemblied&#34;</span><span class="p">:</span> <span class="mf">41.4519</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mf">5.8336</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PunchListed&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SignedOff&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DocComplete&#34;</span><span class="p">:</span> <span class="mf">0.8606</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="mf">29.6836</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SealingGlue&#34;</span><span class="p">:</span> <span class="mf">18.7845</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="mf">26.5827</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Assemblied&#34;</span><span class="p">:</span> <span class="mf">18.7845</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitupChecked&#34;</span><span class="p">:</span> <span class="mf">27.9423</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Procured&#34;</span><span class="p">:</span> <span class="mf">53.9384</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;RubberLined&#34;</span><span class="p">:</span> <span class="mf">18.7845</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SandBlasted&#34;</span><span class="p">:</span> <span class="mf">18.7845</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintChecked&#34;</span><span class="p">:</span> <span class="mf">16.547</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -9686,6 +9722,60 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>float</td>
 <td>2.6327</td>
 <td>交工文档完成</td>
+</tr>
+<tr>
+<td>MachinedBeforeWeld</td>
+<td>float</td>
+<td>2.6327</td>
+<td>焊前机加工数量</td>
+</tr>
+<tr>
+<td>SealingGlue</td>
+<td>float</td>
+<td>2.6327</td>
+<td>打胶数量</td>
+</tr>
+<tr>
+<td>MachinedAfterWeld</td>
+<td>float</td>
+<td>2.6327</td>
+<td>焊后机加工数量</td>
+</tr>
+<tr>
+<td>Assemblied</td>
+<td>float</td>
+<td>2.6327</td>
+<td>组装</td>
+</tr>
+<tr>
+<td>FitupChecked</td>
+<td>float</td>
+<td>2.6327</td>
+<td>组对检验</td>
+</tr>
+<tr>
+<td>Procured</td>
+<td>float</td>
+<td>2.6327</td>
+<td>采购</td>
+</tr>
+<tr>
+<td>RubberLined</td>
+<td>float</td>
+<td>2.6327</td>
+<td>衬胶</td>
+</tr>
+<tr>
+<td>SandBlasted</td>
+<td>float</td>
+<td>2.6327</td>
+<td>打砂</td>
+</tr>
+<tr>
+<td>PaintChecked</td>
+<td>float</td>
+<td>2.6327</td>
+<td>油漆检验</td>
 </tr>
 <tr>
 <td>RequiredOnSiteDate</td>
