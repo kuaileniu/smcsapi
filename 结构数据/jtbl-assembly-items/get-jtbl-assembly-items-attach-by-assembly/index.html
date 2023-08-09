@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-15
-基本参数url : https://{domain}:{port}/api/jtbl-plant-area/get-jtbl-plant-area-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 JobId number 1 项目id 样例body：
-{ &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 144138284680001, &#34;JobId&#34;: 1, &#34;PlantAreaName&#34;: &#34;PlantAreaName40&#34;, &#34;PlantAreaDesc&#34;: &#34;PlantAreaDesc40&#34;, &#34;DateDueOnSite&#34;: &#34;2021-12-30 00:00:00&#34;, &#34;PlantAreaTypeId&#34;: 2, &#34;IsometricsRequired&#34;: 9990, &#34;CreatedBy&#34;: &#34;15652963xxx&#34;, &#34;ModifiedBy&#34;: &#34;1565296xxx&#34;, &#34;CreateTime&#34;: &#34;2021-12-16 00:07:26&#34;, &#34;ModifyTime&#34;: &#34;2021-12-16 00:08:08&#34;, &#34;PlantAreaTypeChineseName&#34;: &#34;单独复制&#34;, &#34;PlantAreaTypeEnglishName&#34;: &#34;Copy Separately&#34; } ], &#34;count&#34;: 1 } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;查询数据发生异常请稍后重试&#34;, &#34;english_msg&#34;: &#34;Error occurs when finding data&#34; } data 参数参数名称 类型 示例 描述 Id number 144095520480001 设备区域ID JobId number 21999000 项目id PlantAreaName string xxx 设备区域名称 PlantAreaDesc string xxx 设备区域描述 DateDueOnSite string 2021-12-30 到达现场日期 IsometricsRequired number 5 所含单线图数量 PlantAreaTypeId number 21999001 设备区域类型ID PlantAreaTypeChineseName string 单独复制 设备区域类型中文名称 PlantAreaTypeEnglishName string Copy Separately 设备区域类型英文名称 向服务器端发送数据中的通用参数参数： page">
+    <meta name="description" content="更新日期: 2023-08-09
+基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 AssemblyID number 1 构件id 样例body：
+{ &#34;search&#34;:&#34;&#34;, &#34;AssemblyID&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:3 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;AttachSli&#34;: [ { &#34;OriginName&#34;: &#34;1690421878819.jpg&#34;, &#34;Path&#34;: &#34;https://smartfab.cn/dfs/dl/pub/318/14/36c439ac1198cfb6aa2469f8e9368920_123138.jpg&#34;, &#34;Size&#34;: 123138 }, { &#34;OriginName&#34;: &#34;1690421878818.jpg&#34;, &#34;Path&#34;: &#34;https://smartfab.cn/dfs/dl/pub/318/14/be4282d8f6823d5cf97dc4d723d150fd_181164.jpg&#34;, &#34;Size&#34;: 181164 }, { &#34;OriginName&#34;: &#34;1691137614901_IMG_20230804_154732.jpg&#34;, &#34;Path&#34;: &#34;https://smartfab.cn/dfs/dl/pub/318/14/7fb228f475753b5f84130ce3522f7bf5_238855.jpg&#34;, &#34;Size&#34;: 238855 }, { &#34;OriginName&#34;: &#34;1690421878816.jpg&#34;, &#34;Path&#34;: &#34;https://smartfab.">
 
 
 
-    <title>分页获取设备区域信息 | SMCS</title>
+    <title>根据构件信息分页获取构件编码的附件信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1216,7 +1216,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-1fd8f4c4" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-1fd8f4c4" class="gdoc-nav__toggle" >
             <label for="navtree-1fd8f4c4" class="flex justify-between">
             
             
@@ -1309,7 +1309,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-1723345d" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-1723345d" class="gdoc-nav__toggle" >
             <label for="navtree-1723345d" class="flex justify-between">
             
             
@@ -1419,7 +1419,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/" class="gdoc-nav__entry is-active">
+                    <a href="/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/" class="gdoc-nav__entry ">
                         分页获取设备区域信息
                     </a>
                 </span>
@@ -2585,7 +2585,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" checked>
             <label for="navtree-77298215" class="flex justify-between">
             
             
@@ -2997,7 +2997,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" checked>
             <label for="navtree-cf91811c" class="flex justify-between">
             
             
@@ -3211,7 +3211,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/" class="gdoc-nav__entry ">
+                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/" class="gdoc-nav__entry is-active">
                         根据构件信息分页获取构件编码的附件信息
                     </a>
                 </span>
@@ -9379,7 +9379,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/' href='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/'><span itemprop='name'>管道数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/' href='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/'><span itemprop='name'>设备区域</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页获取设备区域信息</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/'><span itemprop='name'>构件编码</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>根据构件信息分页获取构件编码的附件信息</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -9405,23 +9405,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>分页获取设备区域信息</h1>
-        <p><small>更新日期: 2021-12-15</small></p>
+        <h1>根据构件信息分页获取构件编码的附件信息</h1>
+        <p><small>更新日期: 2023-08-09</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-plant-area/get-jtbl-plant-area-page</li>
+<li>url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9455,10 +9455,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>搜索文本内容</td>
 </tr>
 <tr>
-<td>JobId</td>
+<td>AssemblyID</td>
 <td>number</td>
 <td>1</td>
-<td>项目id</td>
+<td>构件id</td>
 </tr>
 </tbody>
 </table> </div>
@@ -9474,9 +9474,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;AssemblyID&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -9486,7 +9486,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9506,22 +9506,69 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144138284680001</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PlantAreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;PlantAreaName40&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PlantAreaDesc&#34;</span><span class="p">:</span> <span class="s2">&#34;PlantAreaDesc40&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DateDueOnSite&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-30 00:00:00&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PlantAreaTypeId&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IsometricsRequired&#34;</span><span class="p">:</span> <span class="mi">9990</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CreatedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963xxx&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ModifiedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;1565296xxx&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-16 00:07:26&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-16 00:08:08&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PlantAreaTypeChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;单独复制&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PlantAreaTypeEnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;Copy Separately&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690421878819.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/36c439ac1198cfb6aa2469f8e9368920_123138.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">123138</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690421878818.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/be4282d8f6823d5cf97dc4d723d150fd_181164.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">181164</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1691137614901_IMG_20230804_154732.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/7fb228f475753b5f84130ce3522f7bf5_238855.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">238855</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690421878816.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/317/37/92105c4b035f78d0fde2a4a618512b2a_224866.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">224866</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690421100915.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/b4377e475c85721b3e0373c667aa0ed9_239237.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">239237</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690939709450.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/12/bd8db07b326c2086a5507cd387429d60_260469.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">260469</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690941692617.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/12/4518fc86cd0a053945220cde8c7db55d_277637.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">277637</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690421878819.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/36c439ac1198cfb6aa2469f8e9368920_123138.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">123138</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;微信图片_20230804161038.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/14/136b5f71259697e16d7086cf69f6c9c9_147155.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">147155</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;1690940114654.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smartfab.cn/dfs/dl/pub/318/12/7840aaf038bc4cb36b3c0b42de3e3de7_298607.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">298607</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1660</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -9545,7 +9592,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9563,62 +9610,488 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>Id</td>
 <td>number</td>
 <td>144095520480001</td>
-<td>设备区域ID</td>
+<td>构件编码ID</td>
 </tr>
 <tr>
 <td>JobId</td>
 <td>number</td>
-<td>21999000</td>
-<td>项目id</td>
+<td>1</td>
+<td>项目ID</td>
 </tr>
 <tr>
-<td>PlantAreaName</td>
+<td>AssemblyID</td>
+<td>number</td>
+<td>1</td>
+<td>构件ID</td>
+</tr>
+<tr>
+<td>Rev</td>
 <td>string</td>
 <td>xxx</td>
-<td>设备区域名称</td>
+<td>版本</td>
 </tr>
 <tr>
-<td>PlantAreaDesc</td>
+<td>AssemblyItemNo</td>
 <td>string</td>
 <td>xxx</td>
-<td>设备区域描述</td>
+<td>构件编码</td>
 </tr>
 <tr>
-<td>DateDueOnSite</td>
+<td>Description</td>
 <td>string</td>
-<td>2021-12-30</td>
-<td>到达现场日期</td>
+<td>xxxxxx</td>
+<td>描述</td>
 </tr>
 <tr>
-<td>IsometricsRequired</td>
+<td>WeightEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>单重kg</td>
+</tr>
+<tr>
+<td>MainProfile</td>
+<td>string</td>
+<td>xxx</td>
+<td>主材</td>
+</tr>
+<tr>
+<td>PaintSpec</td>
+<td>string</td>
+<td>xxx</td>
+<td>油漆规范</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>整数</td>
+<td>1</td>
+<td>数量</td>
+</tr>
+<tr>
+<td>TotalReqdQty</td>
+<td>整数</td>
+<td>1</td>
+<td>总数量</td>
+</tr>
+<tr>
+<td>IssuedForFabDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>图纸下发日期</td>
+</tr>
+<tr>
+<td>CutCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>下料日期</td>
+</tr>
+<tr>
+<td>FitUpDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对日期</td>
+</tr>
+<tr>
+<td>WeldCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊接完成日期</td>
+</tr>
+<tr>
+<td>GroundDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打磨完成日期</td>
+</tr>
+<tr>
+<td>DimInspectedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>尺寸检验日期</td>
+</tr>
+<tr>
+<td>SentPaintDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>发往油漆日期</td>
+</tr>
+<tr>
+<td>PaintCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆完成日期</td>
+</tr>
+<tr>
+<td>PreAssemblyDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>预拼装日期</td>
+</tr>
+<tr>
+<td>PackedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打包日期</td>
+</tr>
+<tr>
+<td>PackageNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>包装号码</td>
+</tr>
+<tr>
+<td>PackageNoID</td>
 <td>number</td>
-<td>5</td>
-<td>所含单线图数量</td>
+<td>1</td>
+<td>包装号ID</td>
 </tr>
 <tr>
-<td>PlantAreaTypeId</td>
-<td>number</td>
-<td>21999001</td>
-<td>设备区域类型ID</td>
-</tr>
-<tr>
-<td>PlantAreaTypeChineseName</td>
+<td>TruckNo</td>
 <td>string</td>
-<td>单独复制</td>
-<td>设备区域类型中文名称</td>
+<td>xxx</td>
+<td>转运车号</td>
 </tr>
 <tr>
-<td>PlantAreaTypeEnglishName</td>
+<td>BoxNo</td>
 <td>string</td>
-<td>Copy Separately</td>
-<td>设备区域类型英文名称</td>
+<td>xxx</td>
+<td>箱号</td>
+</tr>
+<tr>
+<td>PunchListedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>核查表日期</td>
+</tr>
+<tr>
+<td>SignedOffDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>放行日期</td>
+</tr>
+<tr>
+<td>SentSiteDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>发往现场日期</td>
+</tr>
+<tr>
+<td>DocCompletedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>交工文档完成日期</td>
+</tr>
+<tr>
+<td>PaintRepNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>油漆报告号</td>
+</tr>
+<tr>
+<td>LaydownArea</td>
+<td>string</td>
+<td>xxx</td>
+<td>放置区域</td>
+</tr>
+<tr>
+<td>PreAssemblyNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>预拼装号</td>
+</tr>
+<tr>
+<td>PreAssemblyLocation</td>
+<td>string</td>
+<td>xxx</td>
+<td>预拼装地点</td>
+</tr>
+<tr>
+<td>WorkPackageID</td>
+<td>整数</td>
+<td>1</td>
+<td>工作包Id</td>
+</tr>
+<tr>
+<td>BatchIssueID</td>
+<td>整数</td>
+<td>1</td>
+<td>生产批次Id</td>
+</tr>
+<tr>
+<td>BarcodePrinted</td>
+<td>bool</td>
+<td>true</td>
+<td>条码已打印</td>
+</tr>
+<tr>
+<td>ReferToModel</td>
+<td>string</td>
+<td>xxx</td>
+<td>链接模型</td>
+</tr>
+<tr>
+<td>ExcludeFromProgress</td>
+<td>bool</td>
+<td>true</td>
+<td>进度统计排除</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>请看样例</td>
+</tr>
+<tr>
+<td>Spare1</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段1</td>
+</tr>
+<tr>
+<td>Spare2</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段2</td>
+</tr>
+<tr>
+<td>Spare3</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段3</td>
+</tr>
+<tr>
+<td>Spare4</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段4</td>
+</tr>
+<tr>
+<td>AssemblyNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>构件号</td>
+</tr>
+<tr>
+<td>JobNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>项目号</td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td>string</td>
+<td>xxxx</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>LengthEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>长</td>
+</tr>
+<tr>
+<td>WidthEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>宽</td>
+</tr>
+<tr>
+<td>HeightEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>高</td>
+</tr>
+<tr>
+<td>WorkPackage</td>
+<td>string</td>
+<td>xxxx</td>
+<td>工作包</td>
+</tr>
+<tr>
+<td>BatchIssueNo</td>
+<td>正整数</td>
+<td>1</td>
+<td>生产批次号</td>
+</tr>
+<tr>
+<td>BatchIssueName</td>
+<td>string</td>
+<td>xxxx</td>
+<td>生产批次名称</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>正整数</td>
+<td>1</td>
+<td>生产批次名称ID</td>
+</tr>
+<tr>
+<td>QtyFitUpComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>组对完成数量</td>
+</tr>
+<tr>
+<td>FitupCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对检验日期</td>
+</tr>
+<tr>
+<td>QtyWeldComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>焊接完成数量</td>
+</tr>
+<tr>
+<td>QtyPaintComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>油漆完成数量</td>
+</tr>
+<tr>
+<td>PaintCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆检验日期</td>
+</tr>
+<tr>
+<td>ProcuredDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>采购日期</td>
+</tr>
+<tr>
+<td>QtyCutComp</td>
+<td>float</td>
+<td>1.3</td>
+<td>下料完成数量</td>
+</tr>
+<tr>
+<td>MachinedBeforeWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊前机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedBWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊前机加数量</td>
+</tr>
+<tr>
+<td>QtyFitupChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>组对检验数量</td>
+</tr>
+<tr>
+<td>QtyGround</td>
+<td>float</td>
+<td>1.3</td>
+<td>打磨完成数量</td>
+</tr>
+<tr>
+<td>MachinedAfterWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊后机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedAWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊后机加数量</td>
+</tr>
+<tr>
+<td>QtyDimInspected</td>
+<td>float</td>
+<td>1.3</td>
+<td>尺寸检验数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>NDTDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>探伤日期</td>
+</tr>
+<tr>
+<td>SandBlastedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打砂日期</td>
+</tr>
+<tr>
+<td>QtySandBlasted</td>
+<td>float</td>
+<td>1.3</td>
+<td>打砂数量</td>
+</tr>
+<tr>
+<td>QtyPaintChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>油漆检验数量</td>
+</tr>
+<tr>
+<td>SealingGlueDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打胶日期</td>
+</tr>
+<tr>
+<td>QtySealingGlue</td>
+<td>float</td>
+<td>1.3</td>
+<td>打胶数量</td>
+</tr>
+<tr>
+<td>RubberLinedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>衬胶日期</td>
+</tr>
+<tr>
+<td>QtyRubberLined</td>
+<td>float</td>
+<td>1.3</td>
+<td>衬胶数量</td>
+</tr>
+<tr>
+<td>AssembliedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组装日期</td>
+</tr>
+<tr>
+<td>QtyAssemblied</td>
+<td>float</td>
+<td>1.3</td>
+<td>组装数量</td>
 </tr>
 </tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9682,7 +10155,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
