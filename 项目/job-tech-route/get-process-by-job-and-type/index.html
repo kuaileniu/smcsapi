@@ -14,10 +14,10 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-11-06
+    <meta name="description" content="更新日期: 2023-08-18
 基本参数url : https://{domain}:{port}/api/job-tech-route/get-process-by-job-and-type http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 144095520480001 项目ID JobTypeID number 2 项目类型ID(管道为1；结构为2，多专业为3) 样例body：
 不需要修改的字段请不要传给服务器端
-{ &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 1, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 2, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: true, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 3, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 20, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 4, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 5, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 7, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 8, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 14, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false } ] } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be blank&#34; } data 参数参数 类型 示例值 描述 JobId number 144095520480001 项目ID JobTypeID number 2 项目类型ID ProcessID number 2 工序ID 所有工序参见 AppAssemblyItem boolean true App端构件编码 AppAssemblyItemWorkTime boolean true App端构件编码(工时) AppAssemblyItemQualityInspecte boolean true App端构件编码(质检) AppBatchScan boolean true App端批量扫描 AppChartProcess boolean true App端图表工序 AppProgressReport boolean true App端进度报表 AppJobPlan boolean true App端项目计划 WebAssembly boolean true Web端构件 WebAssemblyItem boolean true Web端构件编码 服务器端返回客户端数据中的通用参数参数： status">
+{ &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 1, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 2, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: true, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 3, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 20, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 4, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 5, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 7, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 8, &#34;AppAssemblyItem&#34;: false, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false }, { &#34;JobId&#34;: 1, &#34;JobTypeID&#34;: 2, &#34;ProcessID&#34;: 14, &#34;AppAssemblyItem&#34;: true, &#34;AppAssemblyItemWorkTime&#34;: false, &#34;AppAssemblyItemQualityInspecte&#34;: false, &#34;AppBatchScan&#34;: false, &#34;AppChartProcess&#34;: false, &#34;AppProgressReport&#34;: false, &#34;AppJobPlan&#34;: false, &#34;WebAssembly&#34;: true, &#34;WebAssemblyItem&#34;: false, &#34;WebStatistics&#34;: false } ] } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be blank&#34; } data 参数参数 类型 示例值 描述 JobId number 144095520480001 项目ID JobTypeID number 2 项目类型ID ProcessID number 2 工序ID 所有工序参见 AppAssemblyItem boolean true App端构件编码 AppAssemblyItemWorkTime boolean true App端构件编码(工时) AppAssemblyItemQualityInspecte boolean true App端构件编码(质检) AppBatchScan boolean true App端批量扫描 AppChartProcess boolean true App端图表工序 AppProgressReport boolean true App端进度报表 AppJobPlan boolean true App端项目计划 WebAssembly boolean true Web端构件 WebAssemblyItem boolean true Web端构件编码 WebStatistics boolean true Web端统计 服务器端返回客户端数据中的通用参数参数： status">
 
 
 
@@ -9407,7 +9407,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>3 根据项目ID和项目类型查询工序的开关</h1>
-        <p><small>更新日期: 2022-11-06</small></p>
+        <p><small>更新日期: 2023-08-18</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9517,7 +9517,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9531,7 +9532,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9545,7 +9547,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9559,7 +9562,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9573,7 +9577,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9587,7 +9592,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9601,7 +9607,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9615,7 +9622,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">},</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -9629,7 +9637,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppProgressReport&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;AppJobPlan&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssembly&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebAssemblyItem&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WebStatistics&#34;</span><span class="p">:</span> <span class="kc">false</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -9740,6 +9749,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>boolean</td>
 <td>true</td>
 <td>Web端构件编码</td>
+</tr>
+<tr>
+<td>WebStatistics</td>
+<td>boolean</td>
+<td>true</td>
+<td>Web端统计</td>
 </tr>
 </tbody>
 </table> </div>
