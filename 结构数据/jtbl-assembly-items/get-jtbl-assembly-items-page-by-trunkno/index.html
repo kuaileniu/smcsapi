@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-12
-基本参数url : https://{domain}:{port}/api/staff-job/my-job-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 样例body：
-{ &#34;search&#34;:&#34;&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 144095520480001, &#34;JobNo&#34;: &#34;项目号1&#34;, &#34;JobTitle&#34;: &#34;项目名称1&#34;, &#34;ClientId&#34;: 1, &#34;Active&#34;: false, &#34;OrderNo&#34;: &#34;OrderNo1&#34;, &#34;ContractNo&#34;: &#34;ContractNo1&#34;, &#34;JobType&#34;: &#34;structure&#34;, &#34;UserId&#34;: 123, &#34;IsModule&#34;: false, &#34;IsUniqSpoolNo&#34;: true, &#34;ImportWholeSpoolNo&#34;: true, &#34;TemplateAreaId&#34;: 4, &#34;MasterAreaId&#34;: 6, &#34;ProjectManagerId&#34;: 7, &#34;UOM&#34;: &#34;公制&#34;, &#34;ShowClientSpoolNo&#34;: false, &#34;NDTAutoNumbering&#34;: false, &#34;MaxWeldRepairCount&#34;: 8, &#34;WeldUniqueNoPrefix&#34;: &#34;xxx1&#34;, &#34;ShowWeldUniqueNo&#34;: true, &#34;SiteWelderPrefix&#34;: &#34;xx2&#34;, &#34;WeldUniqueNoPrefixSite&#34;: &#34;xx3&#34;, &#34;JobConsumableCertificatesFolder&#34;: &#34;xx4&#34;, &#34;MaterialCertFolder&#34;: &#34;xx5&#34;, &#34;ShowCertOrigin&#34;: false, &#34;IssuedForFab&#34;: 10, &#34;CutComp&#34;: 12, &#34;FitUpComp&#34;: 13, &#34;WeldComp&#34;: 14, &#34;WeldNDTComp&#34;: 15, &#34;SentPaint&#34;: 16, &#34;PaintComp&#34;: 17, &#34;Packed&#34;: 18, &#34;SentSite&#34;: 19, &#34;ReceivedSite&#34;: 20, &#34;MaterialMargin&#34;: 8.">
+    <meta name="description" content="更新日期: 2023-08-24
+基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page-by-truckno http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 TruckNo string 1 转运车号 样例body：
+{ &#34;search&#34;:&#34;&#34;, &#34;TruckNo&#34;:&#34;a&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
 
 
 
-    <title>分页获取我的项目信息 | SMCS</title>
+    <title>根据转运车号分页获取构件编码信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2585,7 +2585,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" checked>
             <label for="navtree-77298215" class="flex justify-between">
             
             
@@ -2997,7 +2997,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" checked>
             <label for="navtree-cf91811c" class="flex justify-between">
             
             
@@ -3237,7 +3237,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/" class="gdoc-nav__entry ">
+                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/" class="gdoc-nav__entry is-active">
                         根据转运车号分页获取构件编码信息
                     </a>
                 </span>
@@ -4566,7 +4566,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-56282f5f" class="gdoc-nav__toggle" >
             <label for="navtree-56282f5f" class="flex justify-between">
             
             
@@ -5019,7 +5019,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-76832460" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-76832460" class="gdoc-nav__toggle" >
             <label for="navtree-76832460" class="flex justify-between">
             
             
@@ -5155,7 +5155,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/" class="gdoc-nav__entry is-active">
+                    <a href="/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/" class="gdoc-nav__entry ">
                         分页获取我的项目信息
                     </a>
                 </span>
@@ -9405,7 +9405,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/' href='/%E9%A1%B9%E7%9B%AE/'><span itemprop='name'>项目</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E9%A1%B9%E7%9B%AE/staff-job/' href='/%E9%A1%B9%E7%9B%AE/staff-job/'><span itemprop='name'>用户项目</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页获取我的项目信息</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/'><span itemprop='name'>构件编码</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>根据转运车号分页获取构件编码信息</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -9431,23 +9431,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>分页获取我的项目信息</h1>
-        <p><small>更新日期: 2021-12-12</small></p>
+        <h1>根据转运车号分页获取构件编码信息</h1>
+        <p><small>更新日期: 2023-08-24</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/staff-job/my-job-page</li>
+<li>url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page-by-truckno</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9480,6 +9480,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>xxxxx</td>
 <td>搜索文本内容</td>
 </tr>
+<tr>
+<td>TruckNo</td>
+<td>string</td>
+<td>1</td>
+<td>转运车号</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -9494,6 +9500,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;TruckNo&#34;</span><span class="p">:</span><span class="s2">&#34;a&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -9505,7 +9512,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9525,60 +9532,100 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144095520480001</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">147035178180001</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AssemblyID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;v1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AssemblyItemNo&#34;</span><span class="p">:</span> <span class="s2">&#34;100&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Description&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeightEach&#34;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MainProfile&#34;</span><span class="p">:</span> <span class="s2">&#34;zxxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintSpec&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Quantity&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;TotalReqdQty&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IssuedForFabDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CutCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitUpDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyFitUpComp&#34;</span><span class="p">:</span> <span class="mf">1.32</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitupCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyWeldComp&#34;</span><span class="p">:</span> <span class="mf">34.89</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;GroundDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DimInspectedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentPaintDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintCompDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyPaintComp&#34;</span><span class="p">:</span> <span class="mf">12.11</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintCheckedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-07-21&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PreAssemblyDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PackedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-30&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PackageNoID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;TruckNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BoxNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PunchListedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SignedOffDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentSiteDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;DocCompletedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01 00:00:00&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintRepNo&#34;</span><span class="p">:</span> <span class="s2">&#34;11&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;LaydownArea&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PreAssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PreAssemblyLocation&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WorkPackageID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BarcodePrinted&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ReferToModel&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ExcludeFromProgress&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AttachSli&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;清明上河图.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/b5f02682d8b69471b70ec415acc9965e_1895.png&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1895</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;OriginName&#34;</span><span class="p">:</span> <span class="s2">&#34;清明上河图.jpg&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Path&#34;</span><span class="p">:</span> <span class="s2">&#34;https://smcsapi.zhsit.cn/dfs/dl/pub/212/34/341bdf1f96e41c2da848770b89110909_1241.png&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&#34;Size&#34;</span><span class="p">:</span> <span class="mi">1241</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Spare1&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Spare2&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Spare3&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Spare4&#34;</span><span class="p">:</span> <span class="s2">&#34;xxxxxxxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ProcuredDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyCutComp&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MachinedBeforeWeld&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyMachinedBWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyFitupChecked&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyGround&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MachinedAfterWeld&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyMachinedAWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyDimInspected&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyPreAssembly&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;NDTDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SandBlastedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtySandBlasted&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyPaintChecked&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SealingGlueDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtySealingGlue&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;RubberLinedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>	 
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyRubberLined&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AssembliedDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;QtyAssemblied&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CreatedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;15652963646&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ModifiedBy&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-04 01:43:01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2022-03-04 01:43:01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;AssemblyNo&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobNo&#34;</span><span class="p">:</span> <span class="s2">&#34;项目号1&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;项目名称1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ClientId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Active&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;OrderNo&#34;</span><span class="p">:</span> <span class="s2">&#34;OrderNo1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ContractNo&#34;</span><span class="p">:</span> <span class="s2">&#34;ContractNo1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobType&#34;</span><span class="p">:</span> <span class="s2">&#34;structure&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;UserId&#34;</span><span class="p">:</span> <span class="mi">123</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IsModule&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IsUniqSpoolNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ImportWholeSpoolNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;TemplateAreaId&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MasterAreaId&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ProjectManagerId&#34;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;UOM&#34;</span><span class="p">:</span> <span class="s2">&#34;公制&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ShowClientSpoolNo&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;NDTAutoNumbering&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MaxWeldRepairCount&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldUniqueNoPrefix&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ShowWeldUniqueNo&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SiteWelderPrefix&#34;</span><span class="p">:</span> <span class="s2">&#34;xx2&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldUniqueNoPrefixSite&#34;</span><span class="p">:</span> <span class="s2">&#34;xx3&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;JobConsumableCertificatesFolder&#34;</span><span class="p">:</span> <span class="s2">&#34;xx4&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MaterialCertFolder&#34;</span><span class="p">:</span> <span class="s2">&#34;xx5&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ShowCertOrigin&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;IssuedForFab&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CutComp&#34;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;FitUpComp&#34;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldComp&#34;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldNDTComp&#34;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentPaint&#34;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintComp&#34;</span><span class="p">:</span> <span class="mi">17</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Packed&#34;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SentSite&#34;</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ReceivedSite&#34;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;MaterialMargin&#34;</span><span class="p">:</span> <span class="mf">8.4</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PaintMargin&#34;</span><span class="p">:</span> <span class="mf">8.5</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WeldMargin&#34;</span><span class="p">:</span> <span class="mf">8.6</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;NDTMargin&#34;</span><span class="p">:</span> <span class="mf">8.8</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PWHTMargin&#34;</span><span class="p">:</span> <span class="mf">9.1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;HydroTestMargin&#34;</span><span class="p">:</span> <span class="mf">9.2</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SOFMachiningMargin&#34;</span><span class="p">:</span> <span class="mf">9.3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;GraceDaysRecieved&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;GraceDaysNotRecieved&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;NDTReportType&#34;</span><span class="p">:</span> <span class="s2">&#34;b1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;SpoolBarcodeType&#34;</span><span class="p">:</span> <span class="s2">&#34;b2&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BarcodePrinter&#34;</span><span class="p">:</span> <span class="s2">&#34;b3&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PShotTagMessage&#34;</span><span class="p">:</span> <span class="s2">&#34;b4&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Currency&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Note&#34;</span><span class="p">:</span> <span class="s2">&#34;备注备注备注备注备注&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-11 01:20:04&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-11 01:20:04&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;OrganisationName&#34;</span><span class="p">:</span> <span class="s2">&#34;武当山02&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;LengthEach&#34;</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WidthEach&#34;</span><span class="p">:</span> <span class="mf">1.1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;HeightEach&#34;</span><span class="p">:</span> <span class="mf">3.1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;WorkPackage&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueNo&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;PackageNo&#34;</span><span class="p">:</span> <span class="s2">&#34;xxx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueName&#34;</span><span class="p">:</span> <span class="s2">&#34;生产批次#1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueNameID&#34;</span><span class="p">:</span> <span class="mi">149129539910001</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
@@ -9605,7 +9652,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9623,320 +9670,488 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>Id</td>
 <td>number</td>
 <td>144095520480001</td>
+<td>构件编码ID</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
 <td>项目ID</td>
 </tr>
 <tr>
-<td>JobNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>项目号</td>
-</tr>
-<tr>
-<td>JobTitle</td>
-<td>string</td>
-<td>xxx</td>
-<td>项目名称</td>
-</tr>
-<tr>
-<td>ClientId</td>
+<td>AssemblyID</td>
 <td>number</td>
 <td>1</td>
-<td>客户id</td>
+<td>构件ID</td>
 </tr>
 <tr>
-<td>Active</td>
-<td>boolean</td>
+<td>Rev</td>
+<td>string</td>
+<td>xxx</td>
+<td>版本</td>
+</tr>
+<tr>
+<td>AssemblyItemNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>构件编码</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>string</td>
+<td>xxxxxx</td>
+<td>描述</td>
+</tr>
+<tr>
+<td>WeightEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>单重kg</td>
+</tr>
+<tr>
+<td>MainProfile</td>
+<td>string</td>
+<td>xxx</td>
+<td>主材</td>
+</tr>
+<tr>
+<td>PaintSpec</td>
+<td>string</td>
+<td>xxx</td>
+<td>油漆规范</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>整数</td>
+<td>1</td>
+<td>数量</td>
+</tr>
+<tr>
+<td>TotalReqdQty</td>
+<td>整数</td>
+<td>1</td>
+<td>总数量</td>
+</tr>
+<tr>
+<td>IssuedForFabDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>图纸下发日期</td>
+</tr>
+<tr>
+<td>CutCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>下料日期</td>
+</tr>
+<tr>
+<td>FitUpDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对日期</td>
+</tr>
+<tr>
+<td>WeldCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊接完成日期</td>
+</tr>
+<tr>
+<td>GroundDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打磨完成日期</td>
+</tr>
+<tr>
+<td>DimInspectedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>尺寸检验日期</td>
+</tr>
+<tr>
+<td>SentPaintDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>发往油漆日期</td>
+</tr>
+<tr>
+<td>PaintCompDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆完成日期</td>
+</tr>
+<tr>
+<td>PreAssemblyDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>预拼装日期</td>
+</tr>
+<tr>
+<td>PackedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打包日期</td>
+</tr>
+<tr>
+<td>PackageNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>包装号码</td>
+</tr>
+<tr>
+<td>PackageNoID</td>
+<td>number</td>
+<td>1</td>
+<td>包装号ID</td>
+</tr>
+<tr>
+<td>TruckNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>转运车号</td>
+</tr>
+<tr>
+<td>BoxNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>箱号</td>
+</tr>
+<tr>
+<td>PunchListedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>核查表日期</td>
+</tr>
+<tr>
+<td>SignedOffDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>放行日期</td>
+</tr>
+<tr>
+<td>SentSiteDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>发往现场日期</td>
+</tr>
+<tr>
+<td>DocCompletedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>交工文档完成日期</td>
+</tr>
+<tr>
+<td>PaintRepNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>油漆报告号</td>
+</tr>
+<tr>
+<td>LaydownArea</td>
+<td>string</td>
+<td>xxx</td>
+<td>放置区域</td>
+</tr>
+<tr>
+<td>PreAssemblyNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>预拼装号</td>
+</tr>
+<tr>
+<td>PreAssemblyLocation</td>
+<td>string</td>
+<td>xxx</td>
+<td>预拼装地点</td>
+</tr>
+<tr>
+<td>WorkPackageID</td>
+<td>整数</td>
+<td>1</td>
+<td>工作包Id</td>
+</tr>
+<tr>
+<td>BatchIssueID</td>
+<td>整数</td>
+<td>1</td>
+<td>生产批次Id</td>
+</tr>
+<tr>
+<td>BarcodePrinted</td>
+<td>bool</td>
 <td>true</td>
-<td>激活</td>
+<td>条码已打印</td>
 </tr>
 <tr>
-<td>OrderNo</td>
+<td>ReferToModel</td>
 <td>string</td>
 <td>xxx</td>
-<td>订单号</td>
+<td>链接模型</td>
 </tr>
 <tr>
-<td>ContractNo</td>
-<td>string</td>
-<td>xxx</td>
-<td>合同号</td>
+<td>ExcludeFromProgress</td>
+<td>bool</td>
+<td>true</td>
+<td>进度统计排除</td>
 </tr>
 <tr>
-<td>JobType</td>
-<td>string</td>
-<td>xxx</td>
-<td>项目类型:pipeline代表管道，structure代表结构，other其它或多专业</td>
-</tr>
-<tr>
-<td>UserId</td>
-<td>number</td>
-<td>123</td>
-<td>用户ID</td>
-</tr>
-<tr>
-<td>IsModule</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>是模块项目</td>
-</tr>
-<tr>
-<td>IsUniqSpoolNo</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>是管段号唯一</td>
-</tr>
-<tr>
-<td>ImportWholeSpoolNo</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>是导入整个管段号</td>
-</tr>
-<tr>
-<td>TemplateAreaId</td>
-<td>number</td>
-<td>123</td>
-<td>模板区域ID</td>
-</tr>
-<tr>
-<td>MasterAreaId</td>
-<td>number</td>
-<td>123</td>
-<td>复制区域ID</td>
-</tr>
-<tr>
-<td>ProjectManagerId</td>
-<td>number</td>
-<td>123</td>
-<td>项目经理ID</td>
-</tr>
-<tr>
-<td>UOM</td>
-<td>string</td>
-<td>xxx</td>
-<td>单位</td>
-</tr>
-<tr>
-<td>ShowClientSpoolNo</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>显示客户管段号</td>
-</tr>
-<tr>
-<td>NDTAutoNumbering</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>探伤报告自动编号</td>
-</tr>
-<tr>
-<td>MaxWeldRepairCount</td>
-<td>number</td>
-<td>123</td>
-<td>焊接返修最大次数</td>
-</tr>
-<tr>
-<td>WeldUniqueNoPrefix</td>
-<td>string</td>
-<td>xxx</td>
-<td>焊接返修最大次数</td>
-</tr>
-<tr>
-<td>ShowWeldUniqueNo</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>显示焊缝唯一号</td>
-</tr>
-<tr>
-<td>SiteWelderPrefix</td>
-<td>string</td>
-<td>xxxx</td>
-<td>现场焊工前缀</td>
-</tr>
-<tr>
-<td>WeldUniqueNoPrefixSite</td>
-<td>string</td>
-<td>xxxx</td>
-<td>现场焊缝唯一号前缀</td>
-</tr>
-<tr>
-<td>JobConsumableCertificatesFolder</td>
-<td>string</td>
-<td>xxxx</td>
-<td>项目耗材证书文件夹</td>
-</tr>
-<tr>
-<td>MaterialCertFolder</td>
-<td>string</td>
-<td>xxxx</td>
-<td>材质证书文件夹</td>
-</tr>
-<tr>
-<td>ShowCertOrigin</td>
-<td>boolean</td>
-<td>false 或 true</td>
-<td>显示原产地</td>
-</tr>
-<tr>
-<td>IssuedForFab</td>
-<td>正整数</td>
-<td>45</td>
-<td>图纸下发百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>CutComp</td>
-<td>正整数</td>
-<td>45</td>
-<td>下料完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>FitUpComp</td>
-<td>正整数</td>
-<td>45</td>
-<td>组对完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>WeldComp</td>
-<td>正整数</td>
-<td>45</td>
-<td>焊接完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>WeldNDTComp</td>
-<td>正整数</td>
-<td>45</td>
-<td>探伤完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>SentPaint</td>
-<td>正整数</td>
-<td>45</td>
-<td>发往油漆百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>PaintComp</td>
-<td>正整数</td>
-<td>45</td>
-<td>油漆完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>Packed</td>
-<td>正整数</td>
-<td>45</td>
-<td>打包完成百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>SentSite</td>
-<td>正整数</td>
-<td>45</td>
-<td>发往现场百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>ReceivedSite</td>
-<td>正整数</td>
-<td>45</td>
-<td>现场收货百分比,例如45%时向服务器端提交45</td>
-</tr>
-<tr>
-<td>MaterialMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>材料利润</td>
-</tr>
-<tr>
-<td>PaintMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>油漆利润</td>
-</tr>
-<tr>
-<td>WeldMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>焊接利润</td>
-</tr>
-<tr>
-<td>NDTMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>探伤利润</td>
-</tr>
-<tr>
-<td>PWHTMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>热处理利润</td>
-</tr>
-<tr>
-<td>HydroTestMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>水压测试利润</td>
-</tr>
-<tr>
-<td>SOFMachiningMargin</td>
-<td>float</td>
-<td>3.2</td>
-<td>法兰加工利润</td>
-</tr>
-<tr>
-<td>GraceDaysRecieved</td>
-<td>正整数</td>
-<td>2</td>
-<td>宽限天数-接收的</td>
-</tr>
-<tr>
-<td>GraceDaysNotRecieved</td>
-<td>正整数</td>
-<td>2</td>
-<td>宽限天数-未接收的</td>
-</tr>
-<tr>
-<td>NDTReportType</td>
-<td>string</td>
-<td>xxxx</td>
-<td>探伤报告类型</td>
-</tr>
-<tr>
-<td>SpoolBarcodeType</td>
-<td>string</td>
-<td>xxxx</td>
-<td>管段条码类型</td>
-</tr>
-<tr>
-<td>BarcodePrinter</td>
-<td>string</td>
-<td>xxxx</td>
-<td>条码打印机</td>
-</tr>
-<tr>
-<td>PShotTagMessage</td>
-<td>string</td>
-<td>xxxx</td>
-<td>惩罚标签信息</td>
-</tr>
-<tr>
-<td>Currency</td>
-<td>string</td>
-<td>xxxx</td>
-<td>货币</td>
-</tr>
-<tr>
-<td>Note</td>
+<td>Comment</td>
 <td>string</td>
 <td>xxxx</td>
 <td>备注</td>
 </tr>
 <tr>
-<td>OrganisationName</td>
+<td>AttachSli</td>
+<td>json数组</td>
+<td>[]</td>
+<td>请看样例</td>
+</tr>
+<tr>
+<td>Spare1</td>
 <td>string</td>
-<td>武当山0</td>
-<td>业主客户名称</td>
+<td>xxxx</td>
+<td>自定义字段1</td>
+</tr>
+<tr>
+<td>Spare2</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段2</td>
+</tr>
+<tr>
+<td>Spare3</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段3</td>
+</tr>
+<tr>
+<td>Spare4</td>
+<td>string</td>
+<td>xxxx</td>
+<td>自定义字段4</td>
+</tr>
+<tr>
+<td>AssemblyNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>构件号</td>
+</tr>
+<tr>
+<td>JobNo</td>
+<td>string</td>
+<td>xxxx</td>
+<td>项目号</td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td>string</td>
+<td>xxxx</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>LengthEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>长</td>
+</tr>
+<tr>
+<td>WidthEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>宽</td>
+</tr>
+<tr>
+<td>HeightEach</td>
+<td>float</td>
+<td>xxxx</td>
+<td>高</td>
+</tr>
+<tr>
+<td>WorkPackage</td>
+<td>string</td>
+<td>xxxx</td>
+<td>工作包</td>
+</tr>
+<tr>
+<td>BatchIssueNo</td>
+<td>正整数</td>
+<td>1</td>
+<td>生产批次号</td>
+</tr>
+<tr>
+<td>BatchIssueName</td>
+<td>string</td>
+<td>xxxx</td>
+<td>生产批次名称</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>正整数</td>
+<td>1</td>
+<td>生产批次名称ID</td>
+</tr>
+<tr>
+<td>QtyFitUpComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>组对完成数量</td>
+</tr>
+<tr>
+<td>FitupCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组对检验日期</td>
+</tr>
+<tr>
+<td>QtyWeldComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>焊接完成数量</td>
+</tr>
+<tr>
+<td>QtyPaintComp</td>
+<td>浮点数字</td>
+<td>1.32</td>
+<td>油漆完成数量</td>
+</tr>
+<tr>
+<td>PaintCheckedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>油漆检验日期</td>
+</tr>
+<tr>
+<td>ProcuredDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>采购日期</td>
+</tr>
+<tr>
+<td>QtyCutComp</td>
+<td>float</td>
+<td>1.3</td>
+<td>下料完成数量</td>
+</tr>
+<tr>
+<td>MachinedBeforeWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊前机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedBWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊前机加数量</td>
+</tr>
+<tr>
+<td>QtyFitupChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>组对检验数量</td>
+</tr>
+<tr>
+<td>QtyGround</td>
+<td>float</td>
+<td>1.3</td>
+<td>打磨完成数量</td>
+</tr>
+<tr>
+<td>MachinedAfterWeld</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>焊后机加日期</td>
+</tr>
+<tr>
+<td>QtyMachinedAWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>焊后机加数量</td>
+</tr>
+<tr>
+<td>QtyDimInspected</td>
+<td>float</td>
+<td>1.3</td>
+<td>尺寸检验数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>QtyPreAssembly</td>
+<td>float</td>
+<td>1.3</td>
+<td>预拼装数量</td>
+</tr>
+<tr>
+<td>NDTDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>探伤日期</td>
+</tr>
+<tr>
+<td>SandBlastedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打砂日期</td>
+</tr>
+<tr>
+<td>QtySandBlasted</td>
+<td>float</td>
+<td>1.3</td>
+<td>打砂数量</td>
+</tr>
+<tr>
+<td>QtyPaintChecked</td>
+<td>float</td>
+<td>1.3</td>
+<td>油漆检验数量</td>
+</tr>
+<tr>
+<td>SealingGlueDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>打胶日期</td>
+</tr>
+<tr>
+<td>QtySealingGlue</td>
+<td>float</td>
+<td>1.3</td>
+<td>打胶数量</td>
+</tr>
+<tr>
+<td>RubberLinedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>衬胶日期</td>
+</tr>
+<tr>
+<td>QtyRubberLined</td>
+<td>float</td>
+<td>1.3</td>
+<td>衬胶数量</td>
+</tr>
+<tr>
+<td>AssembliedDate</td>
+<td>日期</td>
+<td>2022-03-01</td>
+<td>组装日期</td>
+</tr>
+<tr>
+<td>QtyAssemblied</td>
+<td>float</td>
+<td>1.3</td>
+<td>组装数量</td>
 </tr>
 </tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -10000,7 +10215,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
