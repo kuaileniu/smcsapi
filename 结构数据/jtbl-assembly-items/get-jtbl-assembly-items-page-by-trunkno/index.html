@@ -14,9 +14,9 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-08-24
-基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page-by-truckno http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 TruckNo string 1 转运车号 样例body：
-{ &#34;search&#34;:&#34;&#34;, &#34;TruckNo&#34;:&#34;a&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
+    <meta name="description" content="更新日期: 2023-08-25
+基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page-by-truckno http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 TruckNo string 1 转运车号 JobId 正整数 1 项目ID(必填)2023-09-04做非必填兼容，之后将去除兼容 样例body：
+{ &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;: 1, &#34;TruckNo&#34;:&#34;a&#34;, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
 
 
 
@@ -9458,7 +9458,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>根据转运车号分页获取构件编码信息</h1>
-        <p><small>更新日期: 2023-08-24</small></p>
+        <p><small>更新日期: 2023-08-25</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9512,6 +9512,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>1</td>
 <td>转运车号</td>
 </tr>
+<tr>
+<td>JobId</td>
+<td>正整数</td>
+<td>1</td>
+<td>项目ID(必填)2023-09-04做非必填兼容，之后将去除兼容</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -9526,6 +9532,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;TruckNo&#34;</span><span class="p">:</span><span class="s2">&#34;a&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
