@@ -14,13 +14,15 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-12-15
-基本参数url : https://{domain}:{port}/api/jtbl-plant-area/add-jtbl-plant-area http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 21999000 项目id PlantAreaName string xxx 设备区域名称 PlantAreaDesc string xxx 设备区域描述 DateDueOnSite string 2021-12-30 到达现场日期 IsometricsRequired number 5 所含单线图数量 PlantAreaTypeId number 21999001 设备区域类型ID 样例body：
-{ &#34;JobId&#34;: 10, &#34;PlantAreaName&#34;: &#34;PlantAreaName1&#34;, &#34;PlantAreaDesc&#34;: &#34;PlantAreaDesc1&#34;, &#34;DateDueOnSite&#34;: &#34;2021-12-30&#34;, &#34;IsometricsRequired&#34;: 30, &#34;PlantAreaTypeId&#34;: 1 } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 144099490310001 } } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;项目ID不可为空。&#34;, &#34;english_msg&#34;: &#34;JobId can&#39;t be blank.">
+    <meta name="description" content="更新日期: 2023-08-26
+基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/split-jtbl-assembly-items-by-server http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId 正整数 1 项目ID(必填) AssemblyID 正整数 1 构件ID(必填) 样例body：
+{ &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1 } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;拆分完毕。&#34;, &#34;english_msg&#34;: &#34;Split success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;无可拆分构件。&#34;, &#34;english_msg&#34;: &#34;There is no JtblAssembly to split.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： page
+类型：number
+可为空： 是">
 
 
 
-    <title>新增设备区域 | SMCS</title>
+    <title>服务器端自动拆分构件编码 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1216,7 +1218,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-1fd8f4c4" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-1fd8f4c4" class="gdoc-nav__toggle" >
             <label for="navtree-1fd8f4c4" class="flex justify-between">
             
             
@@ -1309,7 +1311,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-1723345d" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-1723345d" class="gdoc-nav__toggle" >
             <label for="navtree-1723345d" class="flex justify-between">
             
             
@@ -1341,7 +1343,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/" class="gdoc-nav__entry is-active">
+                    <a href="/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/" class="gdoc-nav__entry ">
                         新增设备区域
                     </a>
                 </span>
@@ -2585,7 +2587,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-77298215" class="gdoc-nav__toggle" checked>
             <label for="navtree-77298215" class="flex justify-between">
             
             
@@ -2997,7 +2999,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-cf91811c" class="gdoc-nav__toggle" checked>
             <label for="navtree-cf91811c" class="flex justify-between">
             
             
@@ -3289,7 +3291,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/" class="gdoc-nav__entry ">
+                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/" class="gdoc-nav__entry is-active">
                         服务器端自动拆分构件编码
                     </a>
                 </span>
@@ -9457,7 +9459,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/' href='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/'><span itemprop='name'>管道数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/' href='/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/'><span itemprop='name'>设备区域</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>新增设备区域</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/'><span itemprop='name'>构件编码</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>服务器端自动拆分构件编码</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -9483,23 +9485,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>新增设备区域</h1>
-        <p><small>更新日期: 2021-12-15</small></p>
+        <h1>服务器端自动拆分构件编码</h1>
+        <p><small>更新日期: 2023-08-26</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-plant-area/add-jtbl-plant-area</li>
+<li>url : https://{domain}:{port}/api/jtbl-assembly-items/split-jtbl-assembly-items-by-server</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9528,39 +9530,15 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tbody>
 <tr>
 <td>JobId</td>
-<td>number</td>
-<td>21999000</td>
-<td>项目id</td>
+<td>正整数</td>
+<td>1</td>
+<td>项目ID(必填)</td>
 </tr>
 <tr>
-<td>PlantAreaName</td>
-<td>string</td>
-<td>xxx</td>
-<td>设备区域名称</td>
-</tr>
-<tr>
-<td>PlantAreaDesc</td>
-<td>string</td>
-<td>xxx</td>
-<td>设备区域描述</td>
-</tr>
-<tr>
-<td>DateDueOnSite</td>
-<td>string</td>
-<td>2021-12-30</td>
-<td>到达现场日期</td>
-</tr>
-<tr>
-<td>IsometricsRequired</td>
-<td>number</td>
-<td>5</td>
-<td>所含单线图数量</td>
-</tr>
-<tr>
-<td>PlantAreaTypeId</td>
-<td>number</td>
-<td>21999001</td>
-<td>设备区域类型ID</td>
+<td>AssemblyID</td>
+<td>正整数</td>
+<td>1</td>
+<td>构件ID(必填)</td>
 </tr>
 </tbody>
 </table> </div>
@@ -9575,12 +9553,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;PlantAreaName&#34;</span><span class="p">:</span> <span class="s2">&#34;PlantAreaName1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;PlantAreaDesc&#34;</span><span class="p">:</span> <span class="s2">&#34;PlantAreaDesc1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;DateDueOnSite&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-30&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;IsometricsRequired&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;PlantAreaTypeId&#34;</span><span class="p">:</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;AssemblyID&#34;</span><span class="p">:</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -9590,7 +9564,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -9608,11 +9582,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">144099490310001</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;拆分完毕。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Split success.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -9625,8 +9596,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;项目ID不可为空。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;JobId can&#39;t be blank.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;无可拆分构件。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;There is no JtblAssembly to split.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -9636,32 +9607,88 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><div class=table-wrap> <table>
 <thead>
 <tr>
-<th>参数</th>
+<th>参数名称</th>
 <th>类型</th>
-<th>示例值</th>
+<th>示例</th>
 <th>描述</th>
+</tr>
+</thead>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Id</td>
+<td>page</td>
 <td>number</td>
-<td>2109300032090001</td>
-<td>设备区域id</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
 </tr>
 </tbody>
 </table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
