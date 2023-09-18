@@ -14,7 +14,7 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-08-08
+    <meta name="description" content="更新日期: 2023-09-18
 基本参数url : https://{domain}:{port}/api/jtbl-assembly/edit-jtbl-assembly http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 144095520480001 构件ID JobId number 1 项目ID AssemblyNo string xxxx 构件号 Description string xxx 构件号描述 DrawingNo string xxx 图纸号 Rev string xxx 版本 RevDate 日期 2022-03-01 版本日期 RevRef string xxxx 版本说明 Quantity 整数 1 数量 BatchIssueID 整数 1 生产批次Id BatchIssueDate 日期 2022-03-01 批次下发日期 TransmittalNo string xxxx 传送单号 TransmittalDate 日期 2022-03-01 传送日期 AreaID 整数 1 分区Id WBSID 整数 1 工作分解结构Id PriorityID 整数 1 优先级Id DeliveryGroupID 整数 1 发货组Id BatchGroupID 整数 1 批次组Id FabCategory string xxxx 加工类别 WeightEach float 1.">
 
 
@@ -9483,7 +9483,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>编辑构件的信息</h1>
-        <p><small>更新日期: 2023-08-08</small></p>
+        <p><small>更新日期: 2023-09-18</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9987,6 +9987,156 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>1.3</td>
 <td>组装数量</td>
 </tr>
+<tr>
+<td>QtyReceivedOnSite</td>
+<td>float</td>
+<td>1.3</td>
+<td>现场收货数量</td>
+</tr>
+<tr>
+<td>QtyPositioned</td>
+<td>float</td>
+<td>1.3</td>
+<td>就位数量</td>
+</tr>
+<tr>
+<td>QtyInstalled</td>
+<td>float</td>
+<td>1.3</td>
+<td>安装数量</td>
+</tr>
+<tr>
+<td>QtyTackWelded</td>
+<td>float</td>
+<td>1.3</td>
+<td>数量</td>
+</tr>
+<tr>
+<td>QtyDrilled</td>
+<td>float</td>
+<td>1.3</td>
+<td>钻孔数量</td>
+</tr>
+<tr>
+<td>QtySiteWelded</td>
+<td>float</td>
+<td>1.3</td>
+<td>现场焊接数量</td>
+</tr>
+<tr>
+<td>QtyBolted</td>
+<td>float</td>
+<td>1.3</td>
+<td>螺栓连接数量</td>
+</tr>
+<tr>
+<td>QtyGrouted</td>
+<td>float</td>
+<td>1.3</td>
+<td>灌浆数量</td>
+</tr>
+<tr>
+<td>QtySitePainted</td>
+<td>float</td>
+<td>1.3</td>
+<td>现场油漆数量</td>
+</tr>
+<tr>
+<td>QtyMarked</td>
+<td>float</td>
+<td>1.3</td>
+<td>划线数量</td>
+</tr>
+<tr>
+<td>QtyPreBended</td>
+<td>float</td>
+<td>1.3</td>
+<td>压头数量</td>
+</tr>
+<tr>
+<td>QtyRolled</td>
+<td>float</td>
+<td>1.3</td>
+<td>卷制数量</td>
+</tr>
+<tr>
+<td>QtyLongitudinalWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>纵缝焊接数量</td>
+</tr>
+<tr>
+<td>QtyLongitudinalNDT</td>
+<td>float</td>
+<td>1.3</td>
+<td>纵缝NDT数量</td>
+</tr>
+<tr>
+<td>QtyCircularSeamFitUp</td>
+<td>float</td>
+<td>1.3</td>
+<td>环缝组对数量</td>
+</tr>
+<tr>
+<td>QtyCircularSeamWeld</td>
+<td>float</td>
+<td>1.3</td>
+<td>环缝焊接数量</td>
+</tr>
+<tr>
+<td>QtyCircularSeamNDT</td>
+<td>float</td>
+<td>1.3</td>
+<td>环缝NDT数量</td>
+</tr>
+<tr>
+<td>QtyPWHT</td>
+<td>float</td>
+<td>1.3</td>
+<td>热处理数量</td>
+</tr>
+<tr>
+<td>QtyReleased</td>
+<td>float</td>
+<td>1.3</td>
+<td>释放数量</td>
+</tr>
+<tr>
+<td>QtyPressureTest</td>
+<td>float</td>
+<td>1.3</td>
+<td>试压数量</td>
+</tr>
+<tr>
+<td>QtyNodeAnticorrosion</td>
+<td>float</td>
+<td>1.3</td>
+<td>节点防腐填充数量</td>
+</tr>
+<tr>
+<td>QtyFinalInspection</td>
+<td>float</td>
+<td>1.3</td>
+<td>验收数量</td>
+</tr>
+<tr>
+<td>QtyLoadOut</td>
+<td>float</td>
+<td>1.3</td>
+<td>装船数量</td>
+</tr>
+<tr>
+<td>QtyOffshoreInstalled</td>
+<td>float</td>
+<td>1.3</td>
+<td>海上安装数量</td>
+</tr>
+<tr>
+<td>QtyOthers</td>
+<td>float</td>
+<td>1.3</td>
+<td>其他数量</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -10088,7 +10238,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyNDT&#34;</span><span class="p">:</span><span class="mf">1.3</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtySealingGlue&#34;</span><span class="p">:</span><span class="mf">1.3</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyRubberLined&#34;</span><span class="p">:</span><span class="mf">1.3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyAssemblied&#34;</span><span class="p">:</span><span class="mf">1.3</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyAssemblied&#34;</span><span class="p">:</span><span class="mf">1.3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyReceivedOnSite&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyPositioned&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyInstalled&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyTackWelded&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyDrilled&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtySiteWelded&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyBolted&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyGrouted&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtySitePainted&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyMarked&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyPreBended&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyRolled&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyLongitudinalWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyLongitudinalNDT&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyCircularSeamFitUp&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyCircularSeamWeld&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyCircularSeamNDT&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyPWHT&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyReleased&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyPressureTest&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyNodeAnticorrosion&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyFinalInspection&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyLoadOut&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyOffshoreInstalled&#34;</span><span class="p">:</span> <span class="mf">1.3</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;QtyOthers&#34;</span><span class="p">:</span> <span class="mf">1.3</span>    
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
