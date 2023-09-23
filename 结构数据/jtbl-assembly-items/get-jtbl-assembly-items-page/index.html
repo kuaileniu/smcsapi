@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2022-11-09
-基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 JobId number 1 项目id 样例body：
-{ &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
+    <meta name="description" content="更新日期: 2023-09-23
+基本参数url : https://{domain}:{port}/api/jtbl-assembly-items/get-jtbl-assembly-items-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 search string xxxxx 搜索文本内容 JobId number 1 项目id（必选） AssemblyID number 1 构件id （可选） BatchIssueID number 1 生产批次id （可选） WorkPackageID number 1 工作包id （可选） 样例body：
+{ &#34;search&#34;:&#34;&#34;, &#34;JobId&#34;:1, &#34;AssemblyID&#34;:167057044310007, &#34;BatchIssueID&#34;:167057494410035, &#34;WorkPackageID&#34;:167057483410033, &#34;page&#34;:1, &#34;limit&#34;:2 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 147035178180001, &#34;JobId&#34;: 1, &#34;AssemblyID&#34;: 1, &#34;Rev&#34;: &#34;v1&#34;, &#34;AssemblyItemNo&#34;: &#34;100&#34;, &#34;Description&#34;: &#34;xxxx&#34;, &#34;WeightEach&#34;: 5, &#34;MainProfile&#34;: &#34;zxxxx&#34;, &#34;PaintSpec&#34;: &#34;xxxx&#34;, &#34;Quantity&#34;: 10, &#34;TotalReqdQty&#34;: 30, &#34;IssuedForFabDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;CutCompDate&#34;: &#34;2022-03-01 00:00:00&#34;, &#34;FitUpDate&#34;: &#34;2022-03-30&#34;, &#34;QtyFitUpComp&#34;: 1.">
 
 
 
-    <title>分页获取构件编码信息 | SMCS</title>
+    <title>4.分页获取构件编码信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2980,6 +2980,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/8.get-assembly-base-info-page/" class="gdoc-nav__entry ">
+                        8.分页获取构件基本信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -3108,7 +3134,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page/" class="gdoc-nav__entry is-active">
-                        分页获取构件编码信息
+                        4.分页获取构件编码信息
                     </a>
                 </span>
             
@@ -3290,7 +3316,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
                 <span class="flex">
                     <a href="/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/" class="gdoc-nav__entry ">
-                        服务器端自动拆分构件编码
+                        12.服务器端自动拆分构件编码
                     </a>
                 </span>
             
@@ -7439,6 +7465,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl-work-package/get-jtbl-work-package-base-info-page-by-jobid/" class="gdoc-nav__entry ">
+                        5.分页获取工作包基本信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -7867,6 +7919,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 <span class="flex">
                     <a href="/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/edit-batch-issue-date-by-assembly/" class="gdoc-nav__entry ">
                         根据构件批量修改批次下发日期
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/" class="gdoc-nav__entry ">
+                        12.分页获取生产批次基本信息
                     </a>
                 </span>
             
@@ -9457,7 +9535,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/'><span itemprop='name'>构件编码</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>分页获取构件编码信息</span><meta itemprop='position' content='4' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/'><span itemprop='name'>结构数据</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/' href='/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/'><span itemprop='name'>构件编码</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>4.分页获取构件编码信息</span><meta itemprop='position' content='4' /></li>
     
 
     
@@ -9483,8 +9561,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>分页获取构件编码信息</h1>
-        <p><small>更新日期: 2022-11-09</small></p>
+        <h1>4.分页获取构件编码信息</h1>
+        <p><small>更新日期: 2023-09-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -9536,7 +9614,25 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>JobId</td>
 <td>number</td>
 <td>1</td>
-<td>项目id</td>
+<td>项目id（必选）</td>
+</tr>
+<tr>
+<td>AssemblyID</td>
+<td>number</td>
+<td>1</td>
+<td>构件id （可选）</td>
+</tr>
+<tr>
+<td>BatchIssueID</td>
+<td>number</td>
+<td>1</td>
+<td>生产批次id （可选）</td>
+</tr>
+<tr>
+<td>WorkPackageID</td>
+<td>number</td>
+<td>1</td>
+<td>工作包id （可选）</td>
 </tr>
 </tbody>
 </table> </div>
@@ -9553,6 +9649,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;search&#34;</span><span class="p">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;AssemblyID&#34;</span><span class="p">:</span><span class="mi">167057044310007</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;BatchIssueID&#34;</span><span class="p">:</span><span class="mi">167057494410035</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;WorkPackageID&#34;</span><span class="p">:</span><span class="mi">167057483410033</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">2</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
