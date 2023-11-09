@@ -14,8 +14,8 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-10-05
-基本参数url : https://{domain}:{port}/api/discipline/edit-part1-floor http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 第一部分专业楼层id Floor string xxx 层 Room string xxx 房间 Content string xxx 施工内容 UI string xxx 施工界面 Qty float 1.3 数量 Weighting float 0.3 权重(0~1) Comment string xxx 备注 样例body：
+    <meta name="description" content="更新日期: 2023-11-09
+基本参数url : https://{domain}:{port}/api/discipline/edit-part1-floor http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 第一部分专业楼层id UID string xxx 编号 Floor string xxx 层 Room string xxx 房间 Content string xxx 施工内容 UI string xxx 施工界面 Qty float 1.3 数量 Weighting float 0.3 权重(0~1) Comment string xxx 备注 样例body：
 { &#34;Id&#34;:169658152980012, &#34;Floor&#34;: &#34;三层&#34;, &#34;Content&#34;: &#34;Content等&#34;, &#34;UI&#34;: &#34;界面&#34;, &#34;Room&#34;: &#34;房间&#34;, &#34;Qty&#34;: 2, &#34;Weighting&#34;: 0.5, &#34;Comment&#34;: &#34;bei备注&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
 
 
@@ -1483,6 +1483,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/job-process/23.import-part-floor-data/" class="gdoc-nav__entry ">
+                        23. 导入 楼层数据
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -1618,7 +1644,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>4. 编辑第一部分专业楼层信息(含防腐、舾装、暖通)</h1>
-        <p><small>更新日期: 2023-10-05</small></p>
+        <p><small>更新日期: 2023-11-09</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
@@ -1665,6 +1691,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>number</td>
 <td>1</td>
 <td>第一部分专业楼层id</td>
+</tr>
+<tr>
+<td>UID</td>
+<td>string</td>
+<td>xxx</td>
+<td>编号</td>
 </tr>
 <tr>
 <td>Floor</td>
