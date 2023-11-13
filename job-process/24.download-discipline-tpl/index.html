@@ -14,22 +14,20 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-09-30
-整体说明代码组成：本系统采用前端和服务器端分离架构开发，代码库分离； 部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署； 域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同； 域名端口后到第一段路径要求：不要使用 api 或 ws 开始 不可以: https://{domain}:{port}/api/yyyyy 不可以: https://{domain}:{port}/apixxxx/yyyyy; 协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议； 端口： 采用https协议时若采用默认443端口可省略；采用http协议时若采用默认80端口可省略； 域名配置：前端系统采用的域名和端口须告知服务器端工程师，提前在服务器端安全控制体系中配置； 报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式； 用户密码： 客户端不得保存用户密码； 前端调试时，建议使用修改调试代码所在电脑的hosts文件方式，调试时在浏览器地址栏中直接访问hosts中配置的域名； 向服务器端发送数据中的通用参数参数： page
+    <meta name="description" content="更新日期: 2023-11-13
+基本参数目前只完成了 电仪讯 中、英文模板导入。其它模板接口不变，前端可先对接代码。
+url : https://{domain}:{port}/api/discipline/download-discipline-tpl/专业id/语言 http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 专业ID number 1 专业ID（严格区分大小写） 见 语言 string 语言 cn 或 en （中文为cn，英文为en） 样例url：
+https://{domain}:{port}/api/discipline/download-discipline-tpl/3/cn
+返回数据成功文件流
+失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;目前未支持的专业。&#34;, &#34;english_msg&#34;: &#34;Discipline unsupported now.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： page
 类型：number
 可为空： 是
 补充说明： 从1开始。
-编码 类型 描述 解决方案 page number 查询数据的页次 分页查询时使用,为空时服务器端默认为是0 参数： limit
-类型：number
-可为空： 是
-编码 类型 描述 解决方案 limit number 查询最大数量 分页查询时使用(最大为1万),为空时服务器端默认为是0 返回数据中的通用参数参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 100 未正确返回/处理数据,是因数据重复。 &mdash;- 参数： msg">
+编码 类型 描述 解决方案 page number 查询数据的页次 分页查询时使用,为空时服务器端默认为是0 参数： limit">
 
 
 
-    <title>前言 | SMCS</title>
+    <title>24. 下载 专业楼层模板 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -729,7 +727,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/preface/" class="gdoc-nav__entry is-active">
+                    <a href="/preface/" class="gdoc-nav__entry ">
                         前言
                     </a>
                 </span>
@@ -902,7 +900,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" checked>
             <label for="navtree-6ec7e873" class="flex justify-between">
             
             
@@ -1532,7 +1530,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/job-process/24.download-discipline-tpl/" class="gdoc-nav__entry ">
+                    <a href="/job-process/24.download-discipline-tpl/" class="gdoc-nav__entry is-active">
                         24. 下载 专业楼层模板
                     </a>
                 </span>
@@ -1648,7 +1646,15 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>前言</span><meta itemprop='position' content='2' /></li>
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/job-process/' href='/job-process/'><span itemprop='name'>专业</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>24. 下载 专业楼层模板</span><meta itemprop='position' content='3' /></li>
+    
+
     
 
     
@@ -1670,34 +1676,140 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>前言</h1>
-        <p><small>更新日期: 2021-09-30</small></p>
+        <h1>24. 下载 专业楼层模板</h1>
+        <p><small>更新日期: 2023-11-13</small></p>
 <div class="gdoc-page__anchorwrap">
-    <h3 id="整体说明">
-        整体说明
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/preface/#整体说明" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 整体说明" href="#%e6%95%b4%e4%bd%93%e8%af%b4%e6%98%8e">
+    <h4 id="基本参数">
+        基本参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h3>
-</div><ol>
-<li>代码组成：本系统采用前端和服务器端分离架构开发，代码库分离；</li>
-<li>部署：本系统采用前端和服务器端在研发阶段分开单独部署，交付不同客户时有根据需要有可能集合为一个整体后部署；</li>
-<li>域名：前端系统和服务器端系统在研发阶段分别使用不同域名；交付不同客户时根据需要可能采用同一个域名，也有可能采用不同域名；每家客户的域名不同；</li>
-<li>域名端口后到第一段路径要求：不要使用 api 或 ws 开始
-<pre tabindex="0"><code>不可以: https://{domain}:{port}/api/yyyyy 
-不可以: https://{domain}:{port}/apixxxx/yyyyy;
-</code></pre></li>
-<li>协议： 根据不同客户需求，系统可能使用 https 协议，也可能使用 http 协议；</li>
-<li>端口： 采用https协议时若采用默认443端口可省略；采用http协议时若采用默认80端口可省略；</li>
-<li>域名配置：前端系统采用的域名和端口须告知服务器端工程师，提前在服务器端安全控制体系中配置；</li>
-<li>报文体格式：无特殊说明，服务器端返回给客户端的报文体(http body)为json格式；</li>
-<li>用户密码： 客户端不得保存用户密码；</li>
-<li>前端调试时，建议使用修改调试代码所在电脑的hosts文件方式，调试时在浏览器地址栏中直接访问hosts中配置的域名；</li>
+    </h4>
+</div><p>目前只完成了   电仪讯 中、英文模板导入。其它模板接口不变，前端可先对接代码。</p>
+<ol>
+<li>url : https://{domain}:{port}/api/discipline/download-discipline-tpl/专业id/语言</li>
+<li>http method : POST</li>
 </ol>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="请求数据">
+        请求数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
+
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_request-0" class="gdoc-tabs__label">
+      参数
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专业ID</td>
+<td>number</td>
+<td>1</td>
+<td>专业ID（严格区分大小写） <a class="gdoc-markdown__link" href="/job-process/1.1.get-discipline-list/">见</a></td>
+</tr>
+<tr>
+<td>语言</td>
+<td>string</td>
+<td>语言</td>
+<td>cn 或 en （中文为cn，英文为en）</td>
+</tr>
+</tbody>
+</table> </div>
+
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_request" id="tabs-uniqueid_request-1"
+       />
+    <label for="tabs-uniqueid_request-1" class="gdoc-tabs__label">
+      样例
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>url：</p>
+<p>https://{domain}:{port}/api/discipline/download-discipline-tpl/3/cn</p>
+
+    </div>
+  
+</div>
+</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="返回数据">
+        返回数据
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+<div class="gdoc-tabs">
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-0"
+      checked="checked"  />
+    <label for="tabs-uniqueid_response-0" class="gdoc-tabs__label">
+      成功
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <p>文件流</p>
+<pre tabindex="0"><code></code></pre>
+    </div>
+  
+    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-1"
+       />
+    <label for="tabs-uniqueid_response-1" class="gdoc-tabs__label">
+      失败
+    </label>
+    <div class="gdoc-markdown--nested gdoc-tabs__content">
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;目前未支持的专业。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Discipline unsupported now.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+    </div>
+  
+</div>
+
+<div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+</table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/preface/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1759,12 +1871,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
-    <h3 id="返回数据中的通用参数">
-        返回数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/preface/#返回数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据中的通用参数" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+    <h4 id="服务器端返回客户端数据中的通用参数">
+        服务器端返回客户端数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h3>
+    </h4>
 </div>
 
 
