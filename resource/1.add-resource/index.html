@@ -14,17 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-11-09
-基本参数url : https://{domain}:{port}/api/discipline/import-part-floor-data http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID (严格区分大小写) DisciplineID number 1 专业ID（严格区分大小写） 见 file File Excel文件 文件 样例body：
-&#34;JobID&#34;= 1&#34;DisciplineID&#34; = 3&#34;file&#34; file文件 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;导入成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： page
-类型：number
-可为空： 是
-补充说明： 从1开始。
-编码 类型 描述 解决方案 page number 查询数据的页次 分页查询时使用,为空时服务器端默认为是0 参数： limit">
+    <meta name="description" content="更新日期: 2023-11-23
+基本参数url : https://{domain}:{port}/api/resource/add-resource http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 ResourceCode string DC01 资源code ResourceSpec string 50T吊03 旺海 规格 LiftingWeight float 1.3 起重量 DutyParameter string xxx 工况参数 ResourceStatus number 1 设备状态：1正常，2维修 InventoryStatus number 1 库存状态:1已归还，2已借出 WorkLocationID number 100 位置ID VehicleSource number 1 车辆来源：1自有，2外雇 Enable boolean true 启用状态true/false Comment string xxx 备注 样例body：
+{ &#34;ResourceCode&#34;: &#34;DC01&#34;, &#34;ResourceSpec&#34;: &#34;50T吊03 旺海&#34;, &#34;LiftingWeight&#34;: 50, &#34;DutyParameter&#34;: &#34;Duty Parameter&#34;, &#34;ResourceStatus&#34;: 1, &#34;InventoryStatus&#34;: 1, &#34;WorkLocationID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Enable&#34;: true, &#34;Comment&#34;: &#34;bei备注&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 170075346480001 } } 失败data 参数参数名称 类型 示例 描述 Id number 1 资源ID 向服务器端发送数据中的通用参数参数： page">
 
 
 
-    <title>23. 导入 楼层数据 | SMCS</title>
+    <title>1. 新增一个 资源 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -897,7 +893,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" >
             <label for="navtree-6ec7e873" class="flex justify-between">
             
             
@@ -1501,7 +1497,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/job-process/23.import-part-floor-data/" class="gdoc-nav__entry is-active">
+                    <a href="/job-process/23.import-part-floor-data/" class="gdoc-nav__entry ">
                         23. 导入 楼层数据
                     </a>
                 </span>
@@ -1558,7 +1554,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-71157c80" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-71157c80" class="gdoc-nav__toggle" checked>
             <label for="navtree-71157c80" class="flex justify-between">
             
             
@@ -1590,7 +1586,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/1.add-resource/" class="gdoc-nav__entry ">
+                    <a href="/resource/1.add-resource/" class="gdoc-nav__entry is-active">
                         1. 新增一个 资源
                     </a>
                 </span>
@@ -1712,7 +1708,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/job-process/' href='/job-process/'><span itemprop='name'>专业</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>23. 导入 楼层数据</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>1. 新增一个 资源</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1736,23 +1732,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>23. 导入 楼层数据</h1>
-        <p><small>更新日期: 2023-11-09</small></p>
+        <h1>1. 新增一个 资源</h1>
+        <p><small>更新日期: 2023-11-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/discipline/import-part-floor-data</li>
+<li>url : https://{domain}:{port}/api/resource/add-resource</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1780,22 +1776,64 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>JobId</td>
-<td>number</td>
-<td>1</td>
-<td>项目ID (严格区分大小写)</td>
+<td>ResourceCode</td>
+<td>string</td>
+<td>DC01</td>
+<td>资源code</td>
 </tr>
 <tr>
-<td>DisciplineID</td>
-<td>number</td>
-<td>1</td>
-<td>专业ID（严格区分大小写） <a class="gdoc-markdown__link" href="/job-process/1.1.get-discipline-list/">见</a></td>
+<td>ResourceSpec</td>
+<td>string</td>
+<td>50T吊03 旺海</td>
+<td>规格</td>
 </tr>
 <tr>
-<td>file</td>
-<td>File</td>
-<td>Excel文件</td>
-<td>文件</td>
+<td>LiftingWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>起重量</td>
+</tr>
+<tr>
+<td>DutyParameter</td>
+<td>string</td>
+<td>xxx</td>
+<td>工况参数</td>
+</tr>
+<tr>
+<td>ResourceStatus</td>
+<td>number</td>
+<td>1</td>
+<td>设备状态：1正常，2维修</td>
+</tr>
+<tr>
+<td>InventoryStatus</td>
+<td>number</td>
+<td>1</td>
+<td>库存状态:1已归还，2已借出</td>
+</tr>
+<tr>
+<td>WorkLocationID</td>
+<td>number</td>
+<td>100</td>
+<td>位置ID</td>
+</tr>
+<tr>
+<td>VehicleSource</td>
+<td>number</td>
+<td>1</td>
+<td>车辆来源：1自有，2外雇</td>
+</tr>
+<tr>
+<td>Enable</td>
+<td>boolean</td>
+<td>true</td>
+<td>启用状态true/false</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
 </tr>
 </tbody>
 </table> </div>
@@ -1809,11 +1847,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
-<pre tabindex="0"><code class="language-form" data-lang="form"> 
-    &#34;JobID&#34;= 1
-    &#34;DisciplineID&#34; = 3
-    &#34;file&#34;  file文件
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ResourceCode&#34;</span><span class="p">:</span> <span class="s2">&#34;DC01&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ResourceSpec&#34;</span><span class="p">:</span> <span class="s2">&#34;50T吊03 旺海&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;LiftingWeight&#34;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;DutyParameter&#34;</span><span class="p">:</span> <span class="s2">&#34;Duty Parameter&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ResourceStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;InventoryStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;WorkLocationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;VehicleSource&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Enable&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;bei备注&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
     </div>
   
 </div>
@@ -1821,7 +1867,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1839,8 +1885,11 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入成功。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">170075346480001</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -1860,7 +1909,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1873,11 +1922,19 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <th>描述</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>1</td>
+<td>资源ID</td>
+</tr>
+</tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1941,7 +1998,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/1.add-resource/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
