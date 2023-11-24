@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-11-09
-基本参数url : https://{domain}:{port}/api/discipline/edit-part1-floor http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 第一部分专业楼层id UID string xxx 编号 Floor string xxx 层 Room string xxx 房间 Content string xxx 施工内容 UI string xxx 施工界面 Qty float 1.3 数量 Weighting float 0.3 权重(0~1) Comment string xxx 备注 样例body：
-{ &#34;Id&#34;:169658152980012, &#34;Floor&#34;: &#34;三层&#34;, &#34;Content&#34;: &#34;Content等&#34;, &#34;UI&#34;: &#34;界面&#34;, &#34;Room&#34;: &#34;房间&#34;, &#34;Qty&#34;: 2, &#34;Weighting&#34;: 0.5, &#34;Comment&#34;: &#34;bei备注&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.">
+    <meta name="description" content="更新日期: 2023-11-23
+基本参数url : https://{domain}:{port}/api/resource/edit-resource-elements http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 资源要素ID Elements number 1 要素，对应资源设置界面。1 资源类型;2 工作地点;3 需求单位 ChineseName string 中文名称 吊车 EnglishName string 英文名称 Crane 样例body：
+{ &#34;Id&#34;: 1, &#34;Elements&#34;: 2, &#34;ChineseName&#34;: &#34;中文位置&#34;, &#34;EnglishName&#34;: &#34;英文位置&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be empty&#34; } 服务器端返回客户端数据中的通用参数参数： status">
 
 
 
-    <title>4. 编辑第一部分专业楼层信息(含防腐、舾装、暖通) | SMCS</title>
+    <title>7.编辑 资源要素 的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -893,7 +893,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-6ec7e873" class="gdoc-nav__toggle" >
             <label for="navtree-6ec7e873" class="flex justify-between">
             
             
@@ -1029,7 +1029,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/job-process/4.edit-part1-floor/" class="gdoc-nav__entry is-active">
+                    <a href="/job-process/4.edit-part1-floor/" class="gdoc-nav__entry ">
                         4. 编辑第一部分专业楼层信息(含防腐、舾装、暖通)
                     </a>
                 </span>
@@ -1554,7 +1554,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-71157c80" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-71157c80" class="gdoc-nav__toggle" checked>
             <label for="navtree-71157c80" class="flex justify-between">
             
             
@@ -1742,7 +1742,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/7.edit-resource-elements/" class="gdoc-nav__entry ">
+                    <a href="/resource/7.edit-resource-elements/" class="gdoc-nav__entry is-active">
                         7.编辑 资源要素 的信息
                     </a>
                 </span>
@@ -1888,7 +1888,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/job-process/' href='/job-process/'><span itemprop='name'>专业</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>4. 编辑第一部分专业楼层信息(含防腐、舾装、暖通)</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>7.编辑 资源要素 的信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1912,23 +1912,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>4. 编辑第一部分专业楼层信息(含防腐、舾装、暖通)</h1>
-        <p><small>更新日期: 2023-11-09</small></p>
+        <h1>7.编辑 资源要素 的信息</h1>
+        <p><small>更新日期: 2023-11-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/discipline/edit-part1-floor</li>
+<li>url : https://{domain}:{port}/api/resource/edit-resource-elements</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1958,56 +1958,26 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tr>
 <td>Id</td>
 <td>number</td>
+<td>2</td>
+<td>资源要素ID</td>
+</tr>
+<tr>
+<td>Elements</td>
+<td>number</td>
 <td>1</td>
-<td>第一部分专业楼层id</td>
+<td>要素，对应资源设置界面。1 资源类型;2 工作地点;3 需求单位</td>
 </tr>
 <tr>
-<td>UID</td>
+<td>ChineseName</td>
 <td>string</td>
-<td>xxx</td>
-<td>编号</td>
+<td>中文名称</td>
+<td>吊车</td>
 </tr>
 <tr>
-<td>Floor</td>
+<td>EnglishName</td>
 <td>string</td>
-<td>xxx</td>
-<td>层</td>
-</tr>
-<tr>
-<td>Room</td>
-<td>string</td>
-<td>xxx</td>
-<td>房间</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>string</td>
-<td>xxx</td>
-<td>施工内容</td>
-</tr>
-<tr>
-<td>UI</td>
-<td>string</td>
-<td>xxx</td>
-<td>施工界面</td>
-</tr>
-<tr>
-<td>Qty</td>
-<td>float</td>
-<td>1.3</td>
-<td>数量</td>
-</tr>
-<tr>
-<td>Weighting</td>
-<td>float</td>
-<td>0.3</td>
-<td>权重(0~1)</td>
-</tr>
-<tr>
-<td>Comment</td>
-<td>string</td>
-<td>xxx</td>
-<td>备注</td>
+<td>英文名称</td>
+<td>Crane</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2022,14 +1992,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Id&#34;</span><span class="p">:</span><span class="mi">169658152980012</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Floor&#34;</span><span class="p">:</span> <span class="s2">&#34;三层&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Content&#34;</span><span class="p">:</span> <span class="s2">&#34;Content等&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;UI&#34;</span><span class="p">:</span> <span class="s2">&#34;界面&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Room&#34;</span><span class="p">:</span> <span class="s2">&#34;房间&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Qty&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Weighting&#34;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;bei备注&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Elements&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ChineseName&#34;</span><span class="p">:</span> <span class="s2">&#34;中文位置&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;EnglishName&#34;</span><span class="p">:</span> <span class="s2">&#34;英文位置&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2039,7 +2005,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2058,20 +2024,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">169658152980012</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;JobID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DisciplineID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Floor&#34;</span><span class="p">:</span> <span class="s2">&#34;三层&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Room&#34;</span><span class="p">:</span> <span class="s2">&#34;房间&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Content&#34;</span><span class="p">:</span> <span class="s2">&#34;Content等&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;UI&#34;</span><span class="p">:</span> <span class="s2">&#34;界面&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Qty&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Weighting&#34;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Completion&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;bei备注&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2082,207 +2035,20 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;编辑数据发生异常请稍后重试&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Error occurs when editing data&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id不可为空&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be empty&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
   
-    <input type="radio" class="gdoc-tabs__control hidden" name="tabs-uniqueid_response" id="tabs-uniqueid_response-2"
-       />
-    <label for="tabs-uniqueid_response-2" class="gdoc-tabs__label">
-      失败
-    </label>
-    <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;编辑数据发生异常请稍后重试&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Error occurs when editing data&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
-    </div>
-  
-</div>
-
-<div class="gdoc-page__anchorwrap">
-    <h4 id="data-参数">
-        data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div><div class=table-wrap> <table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th>类型</th>
-<th>示例</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Id</td>
-<td>number</td>
-<td>1</td>
-<td>第一部分专业楼层id</td>
-</tr>
-<tr>
-<td>JobId</td>
-<td>number</td>
-<td>1</td>
-<td>项目ID</td>
-</tr>
-<tr>
-<td>DisciplineID</td>
-<td>number</td>
-<td>1</td>
-<td>专业ID</td>
-</tr>
-<tr>
-<td>Floor</td>
-<td>string</td>
-<td>xxx</td>
-<td>层</td>
-</tr>
-<tr>
-<td>Room</td>
-<td>string</td>
-<td>xxx</td>
-<td>房间</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>string</td>
-<td>xxx</td>
-<td>施工内容</td>
-</tr>
-<tr>
-<td>UI</td>
-<td>string</td>
-<td>xxx</td>
-<td>施工界面</td>
-</tr>
-<tr>
-<td>Qty</td>
-<td>float</td>
-<td>1.3</td>
-<td>数量</td>
-</tr>
-<tr>
-<td>Weighting</td>
-<td>float</td>
-<td>0.3</td>
-<td>权重(0~1)</td>
-</tr>
-<tr>
-<td>Completion</td>
-<td>float</td>
-<td>0.3</td>
-<td>完成、进度(0~1)</td>
-</tr>
-<tr>
-<td>Comment</td>
-<td>string</td>
-<td>xxx</td>
-<td>备注</td>
-</tr>
-</tbody>
-</table> </div>
-<div class="gdoc-page__anchorwrap">
-    <h4 id="向服务器端发送数据中的通用参数">
-        向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div>
-
-
-
-
-
-<div class="gdoc-include"><ol>
-<li>
-<p>参数： search<br>
-类型： string<br>
-可为空： 是<br>
-补充说明：</p>
-<div class=table-wrap> <table>
-<thead>
-<tr>
-<th>编码</th>
-<th>类型</th>
-<th>描述</th>
-<th>解决方案</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>search</td>
-<td>string</td>
-<td>查询条件</td>
-<td>xxxx</td>
-</tr>
-</tbody>
-</table> </div>
-</li>
-<li>
-<p>参数： page<br>
-类型：number<br>
-可为空： 是<br>
-补充说明： 从1开始。</p>
-<div class=table-wrap> <table>
-<thead>
-<tr>
-<th>编码</th>
-<th>类型</th>
-<th>描述</th>
-<th>解决方案</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>page</td>
-<td>number</td>
-<td>查询数据的页次</td>
-<td>分页查询时使用,为空时服务器端默认为是0</td>
-</tr>
-</tbody>
-</table> </div>
-</li>
-<li>
-<p>参数： limit<br>
-类型：number<br>
-可为空： 是</p>
-<div class=table-wrap> <table>
-<thead>
-<tr>
-<th>编码</th>
-<th>类型</th>
-<th>描述</th>
-<th>解决方案</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>limit</td>
-<td>number</td>
-<td>查询最大数量</td>
-<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
-</tr>
-</tbody>
-</table> </div>
-</li>
-</ol>
 </div>
 
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
