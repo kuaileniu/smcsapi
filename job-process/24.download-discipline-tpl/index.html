@@ -19,11 +19,11 @@
 url : https://{domain}:{port}/api/discipline/download-discipline-tpl/专业id/语言 http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 专业ID number 1 专业ID（严格区分大小写） 见 语言 string 语言 cn 或 en （中文为cn，英文为en） 样例url：
 https://{domain}:{port}/api/discipline/download-discipline-tpl/3/cn
 返回数据成功文件流
-失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;目前未支持的专业。&#34;, &#34;english_msg&#34;: &#34;Discipline unsupported now.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： page
-类型：number
+失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;目前未支持的专业。&#34;, &#34;english_msg&#34;: &#34;Discipline unsupported now.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： search
+类型： string
 可为空： 是
-补充说明： 从1开始。
-编码 类型 描述 解决方案 page number 查询数据的页次 分页查询时使用,为空时服务器端默认为是0 参数： limit">
+补充说明：
+编码 类型 描述 解决方案 search string 查询条件 xxxx 参数： page">
 
 
 
@@ -1657,6 +1657,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry ">
+                        4.分页获取 资源 信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -1935,6 +1961,30 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
 <div class="gdoc-include"><ol>
+<li>
+<p>参数： search<br>
+类型： string<br>
+可为空： 是<br>
+补充说明：</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search</td>
+<td>string</td>
+<td>查询条件</td>
+<td>xxxx</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
 <li>
 <p>参数： page<br>
 类型：number<br>

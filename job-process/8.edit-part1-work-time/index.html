@@ -16,9 +16,8 @@
 
     <meta name="description" content="更新日期: 2023-10-06
 基本参数url : https://{domain}:{port}/api/discipline/edit-part1-floor http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 第一部分专业工时id Date 日期 2022-01-01 日期 Completion float 0.4 完成进度(0~1) 样例body：
-{ &#34;Id&#34;: 169612726980010, &#34;Date&#34;: &#34;2022-01-01&#34;, &#34;Completion&#34;: 0.8 } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;修改失败&#34;, &#34;english_msg&#34;: &#34;Failed.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： page
-类型：number
-可为空： 是">
+{ &#34;Id&#34;: 169612726980010, &#34;Date&#34;: &#34;2022-01-01&#34;, &#34;Completion&#34;: 0.8 } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;修改失败&#34;, &#34;english_msg&#34;: &#34;Failed.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： search
+类型： string">
 
 
 
@@ -1652,6 +1651,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry ">
+                        4.分页获取 资源 信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -1953,6 +1978,30 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
 <div class="gdoc-include"><ol>
+<li>
+<p>参数： search<br>
+类型： string<br>
+可为空： 是<br>
+补充说明：</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search</td>
+<td>string</td>
+<td>查询条件</td>
+<td>xxxx</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
 <li>
 <p>参数： page<br>
 类型：number<br>

@@ -15,15 +15,12 @@
 
 
     <meta name="description" content="更新日期: 2023-11-23
-基本参数url : https://{domain}:{port}/api/resource/del-resource http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number[] [1,2] 资源id数组 样例body：
-{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; } 服务器端返回客户端数据中的通用参数参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 100 未正确返回/处理数据,是因数据重复。 &mdash;- 参数： msg">
+基本参数url : https://{domain}:{port}/api/resource/get-resource-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 样例body：
+{ &#34;search&#34;: &#34;dc&#34;, &#34;page&#34;: 1, &#34;limit&#34;: 30 } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;修改成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be empty&#34; } data 参数参数名称 类型 示例 描述 Id number 2 资源ID ResourceCode string DC01 资源code ResourceSpec string 50T吊03 旺海 规格 LiftingWeight float 1.">
 
 
 
-    <title>2.删除资源 | SMCS</title>
+    <title>4.分页获取 资源 信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1615,7 +1612,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/2.del-resource/" class="gdoc-nav__entry is-active">
+                    <a href="/resource/2.del-resource/" class="gdoc-nav__entry ">
                         2.删除资源
                     </a>
                 </span>
@@ -1667,7 +1664,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry ">
+                    <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry is-active">
                         4.分页获取 资源 信息
                     </a>
                 </span>
@@ -1789,7 +1786,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>2.删除资源</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>4.分页获取 资源 信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -1813,23 +1810,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>2.删除资源</h1>
+        <h1>4.分页获取 资源 信息</h1>
         <p><small>更新日期: 2023-11-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/2.del-resource/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/resource/del-resource</li>
+<li>url : https://{domain}:{port}/api/resource/get-resource-page</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/2.del-resource/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1855,14 +1852,6 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>Ids</td>
-<td>number[]</td>
-<td>[1,2]</td>
-<td>资源id数组</td>
-</tr>
-</tbody>
 </table> </div>
 
     </div>
@@ -1875,10 +1864,9 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">143042941580001</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">143084106780001</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;search&#34;</span><span class="p">:</span> <span class="s2">&#34;dc&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">30</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -1888,7 +1876,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/2.del-resource/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -1906,8 +1894,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -1918,10 +1906,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id不可为空&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be empty&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -1929,9 +1917,194 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </div>
 
 <div class="gdoc-page__anchorwrap">
+    <h4 id="data-参数">
+        data 参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div><div class=table-wrap> <table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>示例</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>2</td>
+<td>资源ID</td>
+</tr>
+<tr>
+<td>ResourceCode</td>
+<td>string</td>
+<td>DC01</td>
+<td>资源code</td>
+</tr>
+<tr>
+<td>ResourceSpec</td>
+<td>string</td>
+<td>50T吊03 旺海</td>
+<td>规格</td>
+</tr>
+<tr>
+<td>LiftingWeight</td>
+<td>float</td>
+<td>1.3</td>
+<td>起重量</td>
+</tr>
+<tr>
+<td>DutyParameter</td>
+<td>string</td>
+<td>xxx</td>
+<td>工况参数</td>
+</tr>
+<tr>
+<td>ResourceStatus</td>
+<td>number</td>
+<td>1</td>
+<td>设备状态：1正常，2维修</td>
+</tr>
+<tr>
+<td>InventoryStatus</td>
+<td>number</td>
+<td>1</td>
+<td>库存状态:1已归还，2已借出</td>
+</tr>
+<tr>
+<td>WorkLocationID</td>
+<td>number</td>
+<td>100</td>
+<td>位置ID</td>
+</tr>
+<tr>
+<td>VehicleSource</td>
+<td>number</td>
+<td>1</td>
+<td>车辆来源：1自有，2外雇</td>
+</tr>
+<tr>
+<td>Enable</td>
+<td>boolean</td>
+<td>true</td>
+<td>启用状态true/false</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>WorkLocationChineseName</td>
+<td>string</td>
+<td>xxx</td>
+<td>中文位置</td>
+</tr>
+<tr>
+<td>WorkLocationEnglishName</td>
+<td>string</td>
+<td>xxx</td>
+<td>英文位置</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="向服务器端发送数据中的通用参数">
+        向服务器端发送数据中的通用参数
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+
+
+
+
+
+<div class="gdoc-include"><ol>
+<li>
+<p>参数： search<br>
+类型： string<br>
+可为空： 是<br>
+补充说明：</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search</td>
+<td>string</td>
+<td>查询条件</td>
+<td>xxxx</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： page<br>
+类型：number<br>
+可为空： 是<br>
+补充说明： 从1开始。</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>number</td>
+<td>查询数据的页次</td>
+<td>分页查询时使用,为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+<li>
+<p>参数： limit<br>
+类型：number<br>
+可为空： 是</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>number</td>
+<td>查询最大数量</td>
+<td>分页查询时使用(最大为1万),为空时服务器端默认为是0</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
+</ol>
+</div>
+
+<div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/2.del-resource/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/4.get-resource-page/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>

@@ -16,7 +16,7 @@
 
     <meta name="description" content="更新日期: 2023-11-23
 基本参数url : https://{domain}:{port}/api/resource/add-resource http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 ResourceCode string DC01 资源code ResourceSpec string 50T吊03 旺海 规格 LiftingWeight float 1.3 起重量 DutyParameter string xxx 工况参数 ResourceStatus number 1 设备状态：1正常，2维修 InventoryStatus number 1 库存状态:1已归还，2已借出 WorkLocationID number 100 位置ID VehicleSource number 1 车辆来源：1自有，2外雇 Enable boolean true 启用状态true/false Comment string xxx 备注 样例body：
-{ &#34;ResourceCode&#34;: &#34;DC01&#34;, &#34;ResourceSpec&#34;: &#34;50T吊03 旺海&#34;, &#34;LiftingWeight&#34;: 50, &#34;DutyParameter&#34;: &#34;Duty Parameter&#34;, &#34;ResourceStatus&#34;: 1, &#34;InventoryStatus&#34;: 1, &#34;WorkLocationID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Enable&#34;: true, &#34;Comment&#34;: &#34;bei备注&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 170075346480001 } } 失败data 参数参数名称 类型 示例 描述 Id number 1 资源ID 向服务器端发送数据中的通用参数参数： page">
+{ &#34;ResourceCode&#34;: &#34;DC01&#34;, &#34;ResourceSpec&#34;: &#34;50T吊03 旺海&#34;, &#34;LiftingWeight&#34;: 50, &#34;DutyParameter&#34;: &#34;Duty Parameter&#34;, &#34;ResourceStatus&#34;: 1, &#34;InventoryStatus&#34;: 1, &#34;WorkLocationID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Enable&#34;: true, &#34;Comment&#34;: &#34;bei备注&#34; } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;添加成功&#34;, &#34;english_msg&#34;: &#34;Add success&#34;, &#34;data&#34;: { &#34;Id&#34;: 170075346480001 } } 失败data 参数参数名称 类型 示例 描述 Id number 1 资源ID 向服务器端发送数据中的通用参数参数： search">
 
 
 
@@ -1650,6 +1650,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
         
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry ">
+                        4.分页获取 资源 信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
     </ul>
 
             
@@ -1997,6 +2023,30 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
 <div class="gdoc-include"><ol>
+<li>
+<p>参数： search<br>
+类型： string<br>
+可为空： 是<br>
+补充说明：</p>
+<div class=table-wrap> <table>
+<thead>
+<tr>
+<th>编码</th>
+<th>类型</th>
+<th>描述</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>search</td>
+<td>string</td>
+<td>查询条件</td>
+<td>xxxx</td>
+</tr>
+</tbody>
+</table> </div>
+</li>
 <li>
 <p>参数： page<br>
 类型：number<br>
