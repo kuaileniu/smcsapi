@@ -15,15 +15,11 @@
 
 
     <meta name="description" content="更新日期: 2023-11-23
-基本参数url : https://{domain}:{port}/api/resource/del-car-request http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number[] [1,2] 用车申请id数组 样例body：
-{ &#34;Ids&#34;: [ 170098579980002, 170098589580003, 170098589780004 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; } 服务器端返回客户端数据中的通用参数参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 100 未正确返回/处理数据,是因数据重复。 &mdash;- 参数： msg">
+基本参数url : https://{domain}:{port}/api/resource/edit-car-request http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 车辆申请ID JobId number 1 项目ID RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false RequestDepartmentID number 1 需求单位ID ResourceID number 1 车辆规格ID VehicleSource number 1 车辆来源1自有，2租赁 Qty number 1 台数 WorkContent string xxxx 工作内容 GoodsSizeTons string xxxx 货物重量及规格 WorkLocationID int64 xxxx 工作地点ID UsingDate 日期 2023-11-20 使用日期 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlannedHours number 4.">
 
 
 
-    <title>10.删除一（多）个 用车申请 | SMCS</title>
+    <title>11.编辑 用车申请 的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -1845,7 +1841,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/10.del-car-request/" class="gdoc-nav__entry is-active">
+                    <a href="/resource/10.del-car-request/" class="gdoc-nav__entry ">
                         10.删除一（多）个 用车申请
                     </a>
                 </span>
@@ -1871,7 +1867,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/11.edit-car-request/" class="gdoc-nav__entry ">
+                    <a href="/resource/11.edit-car-request/" class="gdoc-nav__entry is-active">
                         11.编辑 用车申请 的信息
                     </a>
                 </span>
@@ -1993,7 +1989,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>10.删除一（多）个 用车申请</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>11.编辑 用车申请 的信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -2017,23 +2013,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>10.删除一（多）个 用车申请</h1>
+        <h1>11.编辑 用车申请 的信息</h1>
         <p><small>更新日期: 2023-11-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/10.del-car-request/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/11.edit-car-request/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/resource/del-car-request</li>
+<li>url : https://{domain}:{port}/api/resource/edit-car-request</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/10.del-car-request/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/11.edit-car-request/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2061,10 +2057,148 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </thead>
 <tbody>
 <tr>
-<td>Ids</td>
-<td>number[]</td>
-<td>[1,2]</td>
-<td>用车申请id数组</td>
+<td>Id</td>
+<td>number</td>
+<td>2</td>
+<td>车辆申请ID</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>number</td>
+<td>1</td>
+<td>申请状态1待审批，2已审批，3已驳回</td>
+</tr>
+<tr>
+<td>TemporaryRequest</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否临时用车: true,false</td>
+</tr>
+<tr>
+<td>OvertimeRequest</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否加班用车: true,false</td>
+</tr>
+<tr>
+<td>RequestDepartmentID</td>
+<td>number</td>
+<td>1</td>
+<td>需求单位ID</td>
+</tr>
+<tr>
+<td>ResourceID</td>
+<td>number</td>
+<td>1</td>
+<td>车辆规格ID</td>
+</tr>
+<tr>
+<td>VehicleSource</td>
+<td>number</td>
+<td>1</td>
+<td>车辆来源1自有，2租赁</td>
+</tr>
+<tr>
+<td>Qty</td>
+<td>number</td>
+<td>1</td>
+<td>台数</td>
+</tr>
+<tr>
+<td>WorkContent</td>
+<td>string</td>
+<td>xxxx</td>
+<td>工作内容</td>
+</tr>
+<tr>
+<td>GoodsSizeTons</td>
+<td>string</td>
+<td>xxxx</td>
+<td>货物重量及规格</td>
+</tr>
+<tr>
+<td>WorkLocationID</td>
+<td>int64</td>
+<td>xxxx</td>
+<td>工作地点ID</td>
+</tr>
+<tr>
+<td>UsingDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>使用日期</td>
+</tr>
+<tr>
+<td>PlanWorkingTime</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>计划工作时间</td>
+</tr>
+<tr>
+<td>PlanWorkingTime</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>计划工作时间</td>
+</tr>
+<tr>
+<td>PlannedHours</td>
+<td>number</td>
+<td>4.3</td>
+<td>计划台班数（小时）</td>
+</tr>
+<tr>
+<td>ActualHours</td>
+<td>number</td>
+<td>4.3</td>
+<td>实际台班数（小时）</td>
+</tr>
+<tr>
+<td>Requester</td>
+<td>string</td>
+<td>xxx</td>
+<td>申请人</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>string</td>
+<td>xxx</td>
+<td>联系方式</td>
+</tr>
+<tr>
+<td>RequestDptLeader</td>
+<td>string</td>
+<td>xxx</td>
+<td>申请部门领导</td>
+</tr>
+<tr>
+<td>Driver</td>
+<td>string</td>
+<td>xxx</td>
+<td>司机</td>
+</tr>
+<tr>
+<td>TeamLeader</td>
+<td>string</td>
+<td>xxx</td>
+<td>机械作业队队长</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>RejectReason</td>
+<td>string</td>
+<td>xxx</td>
+<td>驳回原因</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2079,11 +2213,51 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">170098579980002</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">170098589580003</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">170098589780004</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;ID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 项目ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 是否临时用车
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;TemporaryRequest&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 是否加班用车
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;OvertimeRequest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 需求单位ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestDepartmentID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 车辆规格ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ResourceID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 车辆来源1自有，2租赁
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;VehicleSource&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 台数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Qty&#34;</span><span class="p">:</span> <span class="mi">99</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工作内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkContent&#34;</span><span class="p">:</span> <span class="s2">&#34;工作内容&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 货物重量及规格
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;GoodsSizeTons&#34;</span><span class="p">:</span> <span class="s2">&#34;货物重量及规格&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工作地点ID,ResourceElements的element为2时的ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkLocationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 使用日期
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;UsingDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 计划工作时间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;PlanWorkingTime&#34;</span><span class="p">:</span> <span class="s2">&#34;8:40-20:40&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 计划台班数（小时）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;PlannedHours&#34;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 实际台班数（小时）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ActualHours&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请人
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Requester&#34;</span><span class="p">:</span> <span class="s2">&#34;关羽&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 联系方式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Contact&#34;</span><span class="p">:</span> <span class="s2">&#34;1301112876&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请部门领导
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestDptLeader&#34;</span><span class="p">:</span> <span class="s2">&#34;刘备&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 司机
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Driver&#34;</span><span class="p">:</span> <span class="s2">&#34;马超&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 机械作业队队长
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;TeamLeader&#34;</span><span class="p">:</span> <span class="s2">&#34;糜竺&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 备注
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;备注&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RejectReason&#34;</span><span class="p">:</span> <span class="s2">&#34;驳回原因&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2093,7 +2267,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/10.del-car-request/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/11.edit-car-request/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2111,8 +2285,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2123,10 +2297,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id不可为空&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Id can&#39;t be empty&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2136,7 +2310,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/10.del-car-request/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/11.edit-car-request/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>

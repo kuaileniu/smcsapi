@@ -15,7 +15,7 @@
 
 
     <meta name="description" content="更新日期: 2023-11-23
-基本参数url : https://{domain}:{port}/api/resource/add-car-request http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false SubcontractorID number 1 需求单位（分包商）ID ResourceID number 1 车辆规格ID VehicleSource number 1 车辆来源1自有，2租赁 Qty number 1 台数 WorkContent string xxxx 工作内容 GoodsSizeTons string xxxx 货物重量及规格 WorkLocationID int64 xxxx 工作地点ID UsingDate 日期 2023-11-20 使用日期 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlannedHours number 4.">
+基本参数url : https://{domain}:{port}/api/resource/add-car-request http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false RequestDepartmentID number 1 需求单位ID ResourceID number 1 车辆规格ID VehicleSource number 1 车辆来源1自有，2租赁 Qty number 1 台数 WorkContent string xxxx 工作内容 GoodsSizeTons string xxxx 货物重量及规格 WorkLocationID int64 xxxx 工作地点ID UsingDate 日期 2023-11-20 使用日期 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlannedHours number 4.">
 
 
 
@@ -1663,6 +1663,30 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
+                    <a href="/resource/4.1.get-resource-list/" class="gdoc-nav__entry ">
+                        4.1. 根据条件查询资源列表
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
                     <a href="/resource/4.get-resource-page/" class="gdoc-nav__entry ">
                         4.分页获取 资源 信息
                     </a>
@@ -1819,6 +1843,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 <span class="flex">
                     <a href="/resource/10.del-car-request/" class="gdoc-nav__entry ">
                         10.删除一（多）个 用车申请
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/resource/11.edit-car-request/" class="gdoc-nav__entry ">
+                        11.编辑 用车申请 的信息
                     </a>
                 </span>
             
@@ -2031,10 +2081,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>是否加班用车: true,false</td>
 </tr>
 <tr>
-<td>SubcontractorID</td>
+<td>RequestDepartmentID</td>
 <td>number</td>
 <td>1</td>
-<td>需求单位（分包商）ID</td>
+<td>需求单位ID</td>
 </tr>
 <tr>
 <td>ResourceID</td>
@@ -2166,7 +2216,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="c1">// 是否加班用车
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;OvertimeRequest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 需求单位ID
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;SubcontractorID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestDepartmentID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 车辆规格ID
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ResourceID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 车辆来源1自有，2租赁
