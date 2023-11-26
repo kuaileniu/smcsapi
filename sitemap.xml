@@ -18,24 +18,24 @@
     <loc>https://smcsdocs.zhsit.cn/posts/</loc>
     <lastmod>2023-10-06T22:11:56+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/add-subcontractor/</loc>
-  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/1.add-jtbl-job/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/del-subcontractor/</loc>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/add-subcontractor/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/2.del-jtbl-job/</loc>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/edit-subcontractor/</loc>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/del-subcontractor/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/3.edit-jtbl-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/edit-subcontractor/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/1.1.get-discipline-list/</loc>
     <lastmod>2023-10-29T20:10:01+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/get-subcontractor-page/</loc>
-  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/4.get-jtbl-job-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/get-subcontractor-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/1.2.get-discipline-completion/</loc>
     <lastmod>2023-11-09T20:08:30+08:00</lastmod>
@@ -57,32 +57,44 @@
     <loc>https://smcsdocs.zhsit.cn/resource/3.edit-resource/</loc>
     <lastmod>2023-11-24T00:13:33+08:00</lastmod>
   </url><url>
-    <loc>https://smcsdocs.zhsit.cn/resource/4.1.get-resource-list/</loc>
-    <lastmod>2023-11-26T21:05:27+08:00</lastmod>
-  </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/4.get-resource-page/</loc>
-    <lastmod>2023-11-24T22:32:09+08:00</lastmod>
+    <lastmod>2023-11-26T21:25:30+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/resource/4.1.get-resource-list/</loc>
+    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/resource/4.2.get-resource-by-id/</loc>
+    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/5.add-resource-elements/</loc>
-    <lastmod>2023-11-24T23:10:11+08:00</lastmod>
+    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/</loc>
-    <lastmod>2023-11-24T23:46:34+08:00</lastmod>
+    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/</loc>
-    <lastmod>2023-11-24T23:46:34+08:00</lastmod>
+    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/8.get-resource-elements-page/</loc>
-    <lastmod>2023-11-24T23:46:34+08:00</lastmod>
+    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/resource/8.1.get-resource-elements-list/</loc>
+    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/9.add-car-request/</loc>
-    <lastmod>2023-11-26T19:22:13+08:00</lastmod>
+    <lastmod>2023-11-26T22:25:50+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/10.del-car-request/</loc>
-    <lastmod>2023-11-26T16:42:00+08:00</lastmod>
+    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/11.edit-car-request/</loc>
-    <lastmod>2023-11-26T19:22:13+08:00</lastmod>
+    <lastmod>2023-11-26T22:25:50+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/resource/12.get-car-request-page/</loc>
+    <lastmod>2023-11-26T23:29:17+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/resource/13.get-car-request-list/</loc>
+    <lastmod>2023-11-26T23:29:17+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/</loc>
     <lastmod>2023-10-06T22:11:56+08:00</lastmod>
