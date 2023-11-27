@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2023-11-23
-基本参数url : https://{domain}:{port}/api/resource/get-car-request-list http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 用车申请ID（若想根据id查询单条信息，可传入此值，则最多返回一条数据） JobId number 1 项目ID RequestNo string xxxx 申请单号(此字段为模糊查询) 样例body：
-{ &#34;Id&#34;: 1, // 项目ID &#34;JobId&#34;: 1, // 申请单号 &#34;RequestNo&#34;: &#34;202311&#34; } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;JobId&#34;: 1, &#34;RequestNo&#34;: &#34;20231126-4&#34;, &#34;RequestDate&#34;: &#34;&#34;, &#34;RequestStatus&#34;: 1, &#34;TemporaryRequest&#34;: false, &#34;OvertimeRequest&#34;: true, &#34;RequestDepartmentID&#34;: 1, &#34;ResourceID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Qty&#34;: 99, &#34;WorkContent&#34;: &#34;工作内容&#34;, &#34;GoodsSizeTons&#34;: &#34;货物重量及规格&#34;, &#34;WorkLocationID&#34;: 1, &#34;UsingDate&#34;: &#34;2023-11-20&#34;, &#34;PlanWorkingTime&#34;: &#34;8:40-20:40&#34;, &#34;PlannedHours&#34;: 4.">
+基本参数url : https://{domain}:{port}/api/resource/get-car-request-list http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 用车申请ID（若想根据id查询单条信息，可传入此值，则最多返回一条数据） JobId number 1 项目ID RequestNo string xxxx 申请单号(此字段为模糊查询) RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false UsingDate 日期 2023-11-20 使用日期 RequestDate 日期 2023-11-20 申请日期 样例body：
+{ &#34;Id&#34;: 1, // 项目ID &#34;JobId&#34;: 1, // 申请单号 &#34;RequestNo&#34;: &#34;202311&#34;, &#34;RequestStatus&#34;: 1, &#34;TemporaryRequest&#34;: false, &#34;OvertimeRequest&#34;: true, &#34;UsingDate&#34;: &#34;2023-11-20&#34;, &#34;RequestDate&#34;: &#34;2023-11-20&#34; } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 1, &#34;JobId&#34;: 1, &#34;RequestNo&#34;: &#34;20231126-4&#34;, &#34;RequestDate&#34;: &#34;&#34;, &#34;RequestStatus&#34;: 1, &#34;TemporaryRequest&#34;: false, &#34;OvertimeRequest&#34;: true, &#34;RequestDepartmentID&#34;: 1, &#34;ResourceID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Qty&#34;: 99, &#34;WorkContent&#34;: &#34;工作内容&#34;, &#34;GoodsSizeTons&#34;: &#34;货物重量及规格&#34;, &#34;WorkLocationID&#34;: 1, &#34;UsingDate&#34;: &#34;2023-11-20&#34;, &#34;PlanWorkingTime&#34;: &#34;8:40-20:40&#34;, &#34;PlannedHours&#34;: 4.">
 
 
 
@@ -2504,6 +2504,36 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>xxxx</td>
 <td>申请单号(此字段为模糊查询)</td>
 </tr>
+<tr>
+<td>RequestStatus</td>
+<td>number</td>
+<td>1</td>
+<td>申请状态1待审批，2已审批，3已驳回</td>
+</tr>
+<tr>
+<td>TemporaryRequest</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否临时用车: true,false</td>
+</tr>
+<tr>
+<td>OvertimeRequest</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否加班用车: true,false</td>
+</tr>
+<tr>
+<td>UsingDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>使用日期</td>
+</tr>
+<tr>
+<td>RequestDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>申请日期</td>
+</tr>
 </tbody>
 </table> </div>
 
@@ -2521,7 +2551,12 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="c1">// 项目ID
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 申请单号 
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestNo&#34;</span><span class="p">:</span> <span class="s2">&#34;202311&#34;</span> 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestNo&#34;</span><span class="p">:</span> <span class="s2">&#34;202311&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;RequestStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;TemporaryRequest&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;OvertimeRequest&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;UsingDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;RequestDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
