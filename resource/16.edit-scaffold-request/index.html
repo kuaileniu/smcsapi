@@ -15,7 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2023-11-23
-基本参数url : https://{domain}:{port}/api/resource/edit-scaffold-request http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 脚手架申请ID JobId number 1 项目ID RequestDate 日期 2023-11-20 申请日期 RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 ErectDate 日期 2023-11-20 搭设施工日期 ScaffoldErect boolean true 是否脚手架搭设: true,false ScaffoldDismantle boolean true 是否脚手架拆除: true,false DismantleDate 日期 2023-11-20 拆除施工日期 RequestDepartmentID number 1 需求单位ID WorkContent string xxxx 施工内容 WorkLocationID int64 xxxx 工作地点ID STRLocationNo string xxx 结构位置/编号 UsedFor string xxx 用途 Requester string xxx 申请人 Contact string xxx 联系方式 Comment string xxx 备注 RejectReason string xxx 驳回原因 样例body：">
+基本参数url : https://{domain}:{port}/api/resource/edit-scaffold-request http method : POST 请求数据审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：
+&#34;Id&#34;: 1, // 申请状态1待审批，2已审批，3已驳回 &#34;RequestStatus&#34;: 2, // 驳回原因 &#34;RejectReason&#34;: &#34;&#34; 遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 脚手架申请ID JobId number 1 项目ID RequestDate 日期 2023-11-20 申请日期 RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 ErectDate 日期 2023-11-20 搭设施工日期 ScaffoldErect boolean true 是否脚手架搭设: true,false ScaffoldDismantle boolean true 是否脚手架拆除: true,false DismantleDate 日期 2023-11-20 拆除施工日期 RequestDepartmentID number 1 需求单位ID WorkContent string xxxx 施工内容 WorkLocationID int64 xxxx 工作地点ID STRLocationNo string xxx 结构位置/编号 UsedFor string xxx 用途 Requester string xxx 申请人 Contact string xxx 联系方式 Comment string xxx 备注 RejectReason string xxx 驳回原因 样例body：">
 
 
 
@@ -2270,6 +2271,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
+                    <a href="/resource/11.1.batch-edit-car-request/" class="gdoc-nav__entry ">
+                        11.1.批量编辑 用车申请 的信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
                     <a href="/resource/12.get-car-request-page/" class="gdoc-nav__entry ">
                         12.分页获取 用车申请 信息
                     </a>
@@ -2376,6 +2403,32 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 <span class="flex">
                     <a href="/resource/16.edit-scaffold-request/" class="gdoc-nav__entry is-active">
                         16.编辑 脚手架申请 的信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/resource/16.1.batch-edit-scaffold-request/" class="gdoc-nav__entry ">
+                        16.1.批量编辑 脚手架申请 的信息
                     </a>
                 </span>
             
@@ -2592,7 +2645,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
+</div><p>审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;Id&#34;</span><span class="err">:</span> <span class="mi">1</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RequestStatus&#34;</span><span class="err">:</span> <span class="mi">2</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RejectReason&#34;</span><span class="err">:</span> <span class="s2">&#34;&#34;</span>
+</span></span></code></pre></div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
 
 
 

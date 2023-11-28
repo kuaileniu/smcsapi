@@ -14,16 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-11-24
-基本参数url : https://{domain}:{port}/api/resource/del-resource-elements http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number[] [1,2] 资源要素id数组 样例body：
-{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; } 服务器端返回客户端数据中的通用参数参数： status
-类型：number
-补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
-编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 100 未正确返回/处理数据,是因数据重复。 &mdash;- 参数： msg">
+    <meta name="description" content="更新日期: 2023-11-23
+基本参数url : https://{domain}:{port}/api/resource/batch-edit-scaffold-request http method : POST 请求数据批量审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：
+&#34;Ids&#34;: [1,3], // 申请状态1待审批，2已审批，3已驳回 &#34;RequestStatus&#34;: 2, // 驳回原因 &#34;RejectReason&#34;: &#34;&#34; 遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number数组 [2,3] 脚手架申请ID数组 JobId number 1 项目ID RequestDate 日期 2023-11-20 申请日期 RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 ErectDate 日期 2023-11-20 搭设施工日期 ScaffoldErect boolean true 是否脚手架搭设: true,false ScaffoldDismantle boolean true 是否脚手架拆除: true,false DismantleDate 日期 2023-11-20 拆除施工日期 RequestDepartmentID number 1 需求单位ID WorkContent string xxxx 施工内容 WorkLocationID int64 xxxx 工作地点ID STRLocationNo string xxx 结构位置/编号 UsedFor string xxx 用途 Requester string xxx 申请人 Contact string xxx 联系方式 Comment string xxx 备注 RejectReason string xxx 驳回原因 样例body：">
 
 
 
-    <title>6.删除一（多）个 资源要素 | SMCS</title>
+    <title>16.1.批量编辑 脚手架申请 的信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2094,7 +2091,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/6.del-resource-elements/" class="gdoc-nav__entry is-active">
+                    <a href="/resource/6.del-resource-elements/" class="gdoc-nav__entry ">
                         6.删除一（多）个 资源要素
                     </a>
                 </span>
@@ -2430,7 +2427,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/resource/16.1.batch-edit-scaffold-request/" class="gdoc-nav__entry ">
+                    <a href="/resource/16.1.batch-edit-scaffold-request/" class="gdoc-nav__entry is-active">
                         16.1.批量编辑 脚手架申请 的信息
                     </a>
                 </span>
@@ -2604,7 +2601,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>6.删除一（多）个 资源要素</span><meta itemprop='position' content='3' /></li>
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/resource/' href='/resource/'><span itemprop='name'>资源</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>16.1.批量编辑 脚手架申请 的信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -2628,27 +2625,33 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>6.删除一（多）个 资源要素</h1>
-        <p><small>更新日期: 2023-11-24</small></p>
+        <h1>16.1.批量编辑 脚手架申请 的信息</h1>
+        <p><small>更新日期: 2023-11-23</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/16.1.batch-edit-scaffold-request/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/resource/del-resource-elements</li>
+<li>url : https://{domain}:{port}/api/resource/batch-edit-scaffold-request</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/16.1.batch-edit-scaffold-request/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
-</div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
+</div><p>批量审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;Ids&#34;</span><span class="err">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RequestStatus&#34;</span><span class="err">:</span> <span class="mi">2</span><span class="err">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RejectReason&#34;</span><span class="err">:</span> <span class="s2">&#34;&#34;</span>
+</span></span></code></pre></div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
 
 
 
@@ -2673,9 +2676,105 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tbody>
 <tr>
 <td>Ids</td>
-<td>number[]</td>
-<td>[1,2]</td>
-<td>资源要素id数组</td>
+<td>number数组</td>
+<td>[2,3]</td>
+<td>脚手架申请ID数组</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>RequestDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>申请日期</td>
+</tr>
+<tr>
+<td>RequestStatus</td>
+<td>number</td>
+<td>1</td>
+<td>申请状态1待审批，2已审批，3已驳回</td>
+</tr>
+<tr>
+<td>ErectDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>搭设施工日期</td>
+</tr>
+<tr>
+<td>ScaffoldErect</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否脚手架搭设: true,false</td>
+</tr>
+<tr>
+<td>ScaffoldDismantle</td>
+<td>boolean</td>
+<td>true</td>
+<td>是否脚手架拆除: true,false</td>
+</tr>
+<tr>
+<td>DismantleDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>拆除施工日期</td>
+</tr>
+<tr>
+<td>RequestDepartmentID</td>
+<td>number</td>
+<td>1</td>
+<td>需求单位ID</td>
+</tr>
+<tr>
+<td>WorkContent</td>
+<td>string</td>
+<td>xxxx</td>
+<td>施工内容</td>
+</tr>
+<tr>
+<td>WorkLocationID</td>
+<td>int64</td>
+<td>xxxx</td>
+<td>工作地点ID</td>
+</tr>
+<tr>
+<td>STRLocationNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>结构位置/编号</td>
+</tr>
+<tr>
+<td>UsedFor</td>
+<td>string</td>
+<td>xxx</td>
+<td>用途</td>
+</tr>
+<tr>
+<td>Requester</td>
+<td>string</td>
+<td>xxx</td>
+<td>申请人</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>string</td>
+<td>xxx</td>
+<td>联系方式</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>RejectReason</td>
+<td>string</td>
+<td>xxx</td>
+<td>驳回原因</td>
 </tr>
 </tbody>
 </table> </div>
@@ -2690,10 +2789,39 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">143042941580001</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">143084106780001</span>
-</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 项目ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">9999</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请日期
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 搭设施工日期
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ErectDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 是否脚手架搭设
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ScaffoldErect&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 是否脚手架拆除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;ScaffoldDismantle&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 拆除施工日期
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;DismantleDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 需求单位ID,ResourceElements的element为3时的ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestDepartmentID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 施工内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkContent&#34;</span><span class="p">:</span> <span class="s2">&#34;施工内容&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工作地点ID,ResourceElements的element为2时的ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkLocationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 结构位置/编号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;STRLocationNo&#34;</span><span class="p">:</span> <span class="s2">&#34;结构位置/编号&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 用途
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;UsedFor&#34;</span><span class="p">:</span> <span class="s2">&#34;用途&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请人
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Requester&#34;</span><span class="p">:</span> <span class="s2">&#34;张三&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 联系方式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Contact&#34;</span><span class="p">:</span> <span class="s2">&#34;010-888888&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 备注
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;备注&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RejectReason&#34;</span><span class="p">:</span> <span class="s2">&#34;驳回原因&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2703,7 +2831,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/16.1.batch-edit-scaffold-request/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -2721,8 +2849,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;修改成功。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success.&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2733,10 +2861,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Ids不可为空&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Ids can&#39;t be empty&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -2746,7 +2874,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/resource/16.1.batch-edit-scaffold-request/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
