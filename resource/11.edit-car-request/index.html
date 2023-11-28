@@ -16,7 +16,7 @@
 
     <meta name="description" content="更新日期: 2023-11-23
 基本参数url : https://{domain}:{port}/api/resource/edit-car-request http method : POST 请求数据审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：
-&#34;Id&#34;: 1, // 申请状态1待审批，2已审批，3已驳回 &#34;RequestStatus&#34;: 2, // 驳回原因 &#34;RejectReason&#34;: &#34;&#34; 遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 车辆申请ID RequestDate 日期 2023-11-20 申请日期 JobId number 1 项目ID RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false RequestDepartmentID number 1 需求单位ID ResourceID number 1 车辆规格ID VehicleSource number 1 车辆来源1自有，2租赁 Qty number 1 台数 WorkContent string xxxx 工作内容 GoodsSizeTons string xxxx 货物重量及规格 WorkLocationID int64 xxxx 工作地点ID UsingDate 日期 2023-11-20 使用日期 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlannedHours number 4.">
+{ &#34;Id&#34;: 1, // 申请状态1待审批，2已审批，3已驳回 &#34;RequestStatus&#34;: 2, // 驳回原因 &#34;RejectReason&#34;: &#34;&#34; } 或 { &#34;Id&#34;: 1, // 申请状态1待审批，2已审批，3已驳回 &#34;RequestStatus&#34;: 2, // 驳回原因 &#34;RejectReason&#34;: null } 遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 车辆申请ID RequestDate 日期 2023-11-20 申请日期 JobId number 1 项目ID RequestStatus number 1 申请状态1待审批，2已审批，3已驳回 TemporaryRequest boolean true 是否临时用车: true,false OvertimeRequest boolean true 是否加班用车: true,false RequestDepartmentID number 1 需求单位ID ResourceID number 1 车辆规格ID VehicleSource number 1 车辆来源1自有，2租赁 Qty number 1 台数 WorkContent string xxxx 工作内容 GoodsSizeTons string xxxx 货物重量及规格 WorkLocationID int64 xxxx 工作地点ID UsingDate 日期 2023-11-20 使用日期 PlanWorkingTime 日期 2023-11-20 计划工作时间 PlannedHours number 4.">
 
 
 
@@ -2646,11 +2646,21 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         </a>
     </h4>
 </div><p>审批通过或驳回都可以使用此接口，将最终申请状态传给服务器端即可，若要将驳回原因变为空，可以这么设置（其它雷同）：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">    <span class="s2">&#34;Id&#34;</span><span class="err">:</span> <span class="mi">1</span><span class="err">,</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RequestStatus&#34;</span><span class="err">:</span> <span class="mi">2</span><span class="err">,</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestStatus&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="s2">&#34;RejectReason&#34;</span><span class="err">:</span> <span class="s2">&#34;&#34;</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RejectReason&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> 
+</span></span><span class="line"><span class="cl"><span class="err">或</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 申请状态1待审批，2已审批，3已驳回
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RequestStatus&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 驳回原因
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;RejectReason&#34;</span><span class="p">:</span> <span class="kc">null</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>遵守<a class="gdoc-markdown__link" href="/%e9%89%b4%e6%9d%83%e6%9c%ba%e5%88%b6/">鉴权机制</a>
 
 
