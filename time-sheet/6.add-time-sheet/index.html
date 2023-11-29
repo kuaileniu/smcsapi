@@ -14,13 +14,13 @@
 
 
 
-    <meta name="description" content="更新日期: 2023-09-22
-接口说明基本参数url : https://{domain}:{port}/api/jtbl-batch-issue/get-batch-issue-base-info-page-by-jobid http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目id (必二选一) WorkPackageID 正整数 xxxxx 工作包ID (必二选一) BatchIssueNo 正整数 xxxxx 生产批次号 (可选项) 样例body：
-{ &#34;JobId&#34;: 167056742611168, &#34;WorkPackageID&#34;:1, &#34;BatchIssueNo&#34;: 1, &#34;page&#34;: 1, &#34;limit&#34;: 3 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 168448135911546, &#34;BatchIssueNo&#34;: 1, &#34;BatchIssueName&#34;: &#34;STRUCTURE&#34;, &#34;Rev&#34;: &#34;0&#34; } ], &#34;count&#34;: 1 } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;BatchIssueDate 不可为空&#34;, &#34;english_msg&#34;: &#34;BatchIssueDate can&#39;t be empty.">
+    <meta name="description" content="更新日期: 2023-11-28
+基本参数url : https://{domain}:{port}/api/time-sheet/add-time-sheet http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 JobId number 1 项目ID SubContractorID number 1 分包商ID DisciplineID number 1 专业ID BatchIssueNameID number 1 中队(工厂/车间字典)ID WorkshopID number 1 项目ID OccupationID number 1 工种ID EntryDate number 1 工种ID Manpower number 1 人力 WorkHours int64 1 工时 Comment string xxx 备注 样例body：
+{ // 项目ID &#34;JobId&#34;: 1, // 分包商ID &#34;SubContractorID&#34;: 1, // 专业ID &#34;DisciplineID&#34;: 1, // 生产批次名称ID &#34;BatchIssueNameID&#34;: 1, // 中队(工厂/车间字典)ID &#34;WorkshopID&#34;: 1, // 工种ID &#34;OccupationID&#34;: 1, // 日期 &#34;EntryDate&#34;: &#34;2023-11-29&#34;, // 人力 &#34;Manpower&#34;: 1, // 工时 &#34;WorkHours&#34;: 2.">
 
 
 
-    <title>12.分页获取生产批次基本信息 | SMCS</title>
+    <title>6.新增一个 工时 信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -2043,7 +2043,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-7e03f9c5" class="gdoc-nav__toggle" >
             <label for="navtree-7e03f9c5" class="flex justify-between">
             
             
@@ -2381,7 +2381,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-aab53b96" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-aab53b96" class="gdoc-nav__toggle" >
             <label for="navtree-aab53b96" class="flex justify-between">
             
             
@@ -2673,7 +2673,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/" class="gdoc-nav__entry is-active">
+                    <a href="/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/" class="gdoc-nav__entry ">
                         12.分页获取生产批次基本信息
                     </a>
                 </span>
@@ -4501,7 +4501,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6bc82dbc" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-6bc82dbc" class="gdoc-nav__toggle" checked>
             <label for="navtree-6bc82dbc" class="flex justify-between">
             
             
@@ -4663,7 +4663,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/time-sheet/6.add-time-sheet/" class="gdoc-nav__entry ">
+                    <a href="/time-sheet/6.add-time-sheet/" class="gdoc-nav__entry is-active">
                         6.新增一个 工时 信息
                     </a>
                 </span>
@@ -4811,15 +4811,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        
-        
-        
-        
-    
-    
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/' href='/%E7%94%9F%E4%BA%A7/'><span itemprop='name'>生产</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/' href='/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/'><span itemprop='name'>生产批次</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>12.分页获取生产批次基本信息</span><meta itemprop='position' content='4' /></li>
-    
-
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/time-sheet/' href='/time-sheet/'><span itemprop='name'>工时</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>6.新增一个 工时 信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -4843,30 +4835,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>12.分页获取生产批次基本信息</h1>
-        <p><small>更新日期: 2023-09-22</small></p>
+        <h1>6.新增一个 工时 信息</h1>
+        <p><small>更新日期: 2023-11-28</small></p>
 <div class="gdoc-page__anchorwrap">
-    <h4 id="接口说明">
-        接口说明
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#接口说明" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 接口说明" href="#%e6%8e%a5%e5%8f%a3%e8%af%b4%e6%98%8e">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h4>
-</div><div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/jtbl-batch-issue/get-batch-issue-base-info-page-by-jobid</li>
+<li>url : https://{domain}:{port}/api/time-sheet/add-time-sheet</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4897,19 +4882,61 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>JobId</td>
 <td>number</td>
 <td>1</td>
-<td>项目id (必二选一)</td>
+<td>项目ID</td>
 </tr>
 <tr>
-<td>WorkPackageID</td>
-<td>正整数</td>
-<td>xxxxx</td>
-<td>工作包ID (必二选一)</td>
+<td>SubContractorID</td>
+<td>number</td>
+<td>1</td>
+<td>分包商ID</td>
 </tr>
 <tr>
-<td>BatchIssueNo</td>
-<td>正整数</td>
-<td>xxxxx</td>
-<td>生产批次号 (可选项)</td>
+<td>DisciplineID</td>
+<td>number</td>
+<td>1</td>
+<td>专业ID</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>number</td>
+<td>1</td>
+<td>中队(工厂/车间字典)ID</td>
+</tr>
+<tr>
+<td>WorkshopID</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>OccupationID</td>
+<td>number</td>
+<td>1</td>
+<td>工种ID</td>
+</tr>
+<tr>
+<td>EntryDate</td>
+<td>number</td>
+<td>1</td>
+<td>工种ID</td>
+</tr>
+<tr>
+<td>Manpower</td>
+<td>number</td>
+<td>1</td>
+<td>人力</td>
+</tr>
+<tr>
+<td>WorkHours</td>
+<td>int64</td>
+<td>1</td>
+<td>工时</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
 </tr>
 </tbody>
 </table> </div>
@@ -4924,11 +4951,26 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">167056742611168</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;WorkPackageID&#34;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;BatchIssueNo&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 项目ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 分包商ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;SubContractorID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 专业ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;DisciplineID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 生产批次名称ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;BatchIssueNameID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 中队(工厂/车间字典)ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkshopID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工种ID
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;OccupationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 日期
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;EntryDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-29&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 人力
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Manpower&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工时
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;WorkHours&#34;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 备注
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;备注&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -4938,7 +4980,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4955,16 +4997,37 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">168448135911546</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueNo&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;BatchIssueName&#34;</span><span class="p">:</span> <span class="s2">&#34;STRUCTURE&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;Rev&#34;</span><span class="p">:</span> <span class="s2">&#34;0&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;count&#34;</span><span class="p">:</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;添加成功&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Add success&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">170127672380000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;SubContractorID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DisciplineID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;BatchIssueNameID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;WorkshopID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;OccupationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;EntryDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-29&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Manpower&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;WorkHours&#34;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Comment&#34;</span><span class="p">:</span> <span class="s2">&#34;备注&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;CreateTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-30 00:52:03&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ModifyTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-30 00:52:03&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;JobTitle&#34;</span><span class="p">:</span> <span class="s2">&#34;IDLER&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;JobNo&#34;</span><span class="p">:</span> <span class="s2">&#34;MCS-08&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;SubContractorCode&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;SubContractorName&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DisciplineCN&#34;</span><span class="p">:</span> <span class="s2">&#34;结构&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;DisciplineEN&#34;</span><span class="p">:</span> <span class="s2">&#34;Structure&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;BatchIssueName&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;Code&#34;</span><span class="p">:</span> <span class="s2">&#34;Code&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;WorkshopName&#34;</span><span class="p">:</span> <span class="s2">&#34;二中队&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;OccupationCN&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;OccupationEN&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;WeekDayCN&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;WeekDayEN&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -4975,11 +5038,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
       失败
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;BatchIssueDate 不可为空&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;BatchIssueDate can&#39;t be empty.&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> 
 </span></span></code></pre></div>
     </div>
   
@@ -4988,7 +5047,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="data-参数">
         data 参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#data-参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor data 参数" href="#data-%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -5005,14 +5064,98 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <tr>
 <td>Id</td>
 <td>number</td>
-<td>144095520480001</td>
-<td>生产批次ID</td>
+<td>1</td>
+<td>工时ID</td>
 </tr>
 <tr>
-<td>BatchIssueNo</td>
-<td>整数</td>
-<td>xxxx</td>
-<td>生产批次号</td>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>SubContractorID</td>
+<td>number</td>
+<td>1</td>
+<td>分包商ID</td>
+</tr>
+<tr>
+<td>DisciplineID</td>
+<td>number</td>
+<td>1</td>
+<td>专业ID</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>number</td>
+<td>1</td>
+<td>中队(工厂/车间字典)ID</td>
+</tr>
+<tr>
+<td>WorkshopID</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>OccupationID</td>
+<td>number</td>
+<td>1</td>
+<td>工种ID</td>
+</tr>
+<tr>
+<td>EntryDate</td>
+<td>number</td>
+<td>1</td>
+<td>工种ID</td>
+</tr>
+<tr>
+<td>Manpower</td>
+<td>number</td>
+<td>1</td>
+<td>人力</td>
+</tr>
+<tr>
+<td>WorkHours</td>
+<td>int64</td>
+<td>1</td>
+<td>工时</td>
+</tr>
+<tr>
+<td>JobNo</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目编号</td>
+</tr>
+<tr>
+<td>JobTitle</td>
+<td>string</td>
+<td>xxx</td>
+<td>项目名称</td>
+</tr>
+<tr>
+<td>SubContractorCode</td>
+<td>string</td>
+<td>xxx</td>
+<td>分包商代码</td>
+</tr>
+<tr>
+<td>SubContractorName</td>
+<td>string</td>
+<td>xxx</td>
+<td>分包商名称</td>
+</tr>
+<tr>
+<td>DisciplineCN</td>
+<td>string</td>
+<td>xxx</td>
+<td>专业中文名称</td>
+</tr>
+<tr>
+<td>DisciplineEN</td>
+<td>string</td>
+<td>xxx</td>
+<td>专业英文名称</td>
 </tr>
 <tr>
 <td>BatchIssueName</td>
@@ -5021,17 +5164,47 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>生产批次名称</td>
 </tr>
 <tr>
-<td>Rev</td>
+<td>WorkshopName</td>
 <td>string</td>
 <td>xxx</td>
-<td>生产批次版本</td>
+<td>工厂/车间字典名称</td>
+</tr>
+<tr>
+<td>OccupationCN</td>
+<td>string</td>
+<td>xxx</td>
+<td>工种(中文)</td>
+</tr>
+<tr>
+<td>OccupationEN</td>
+<td>string</td>
+<td>xxx</td>
+<td>工种(英文)</td>
+</tr>
+<tr>
+<td>WeekDayCN</td>
+<td>string</td>
+<td>xxx</td>
+<td>星期(中文)</td>
+</tr>
+<tr>
+<td>WeekDayEN</td>
+<td>string</td>
+<td>xxx</td>
+<td>星期(英文)</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>string</td>
+<td>xxx</td>
+<td>备注</td>
 </tr>
 </tbody>
 </table> </div>
 <div class="gdoc-page__anchorwrap">
     <h4 id="向服务器端发送数据中的通用参数">
         向服务器端发送数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#向服务器端发送数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 向服务器端发送数据中的通用参数" href="#%e5%90%91%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e5%8f%91%e9%80%81%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -5119,7 +5292,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
