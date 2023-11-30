@@ -15,8 +15,8 @@
 
 
     <meta name="description" content="更新日期: 2023-11-28
-基本参数url : https://{domain}:{port}/api/time-sheet/get-time-sheet-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 样例body：
-{ &#34;page&#34;: 1, &#34;limit&#34;: 30 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 170127548380000, &#34;JobId&#34;: 1, &#34;SubContractorID&#34;: 1, &#34;DisciplineID&#34;: 1, &#34;BatchIssueNameID&#34;: 1, &#34;WorkshopID&#34;: 1, &#34;OccupationID&#34;: 1, &#34;EntryDate&#34;: &#34;2023-11-29&#34;, &#34;Manpower&#34;: 1, &#34;WorkHours&#34;: 2.5, &#34;Comment&#34;: &#34;备注&#34;, &#34;CreateTime&#34;: &#34;2023-11-30 00:31:23&#34;, &#34;ModifyTime&#34;: &#34;2023-11-30 00:31:23&#34;, &#34;JobTitle&#34;: &#34;IDLER&#34;, &#34;JobNo&#34;: &#34;MCS-08&#34;, &#34;SubContractorCode&#34;: &#34;&#34;, &#34;SubContractorName&#34;: &#34;&#34;, &#34;DisciplineCN&#34;: &#34;结构&#34;, &#34;DisciplineEN&#34;: &#34;Structure&#34;, &#34;BatchIssueName&#34;: &#34;&#34;, &#34;Code&#34;: &#34;Code&#34;, &#34;WorkshopName&#34;: &#34;二中队&#34;, &#34;OccupationCN&#34;: &#34;&#34;, &#34;OccupationEN&#34;: &#34;&#34;, &#34;WeekDayCN&#34;: &#34;&#34;, &#34;WeekDayEN&#34;: &#34;&#34; }, { &#34;Id&#34;: 170127295180000, &#34;JobId&#34;: 1, &#34;SubContractorID&#34;: 1, &#34;DisciplineID&#34;: 1, &#34;BatchIssueNameID&#34;: 1, &#34;WorkshopID&#34;: 1, &#34;OccupationID&#34;: 1, &#34;EntryDate&#34;: &#34;2023-11-29&#34;, &#34;Manpower&#34;: 1, &#34;WorkHours&#34;: 2.">
+基本参数url : https://{domain}:{port}/api/time-sheet/get-time-sheet-page http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 1 工时ID JobId number 1 项目ID SubContractorID number 1 分包商ID DisciplineID number 1 专业ID BatchIssueNameID number 1 中队(工厂/车间字典)ID WorkshopID number 1 项目ID OccupationID number 1 工种ID StartDate 日期 2023-11-20 起始日期(包含) EndDate 日期 2023-12-20 终止日期(不包含) 样例body：
+{ &#34;Id&#34;: 2, &#34;JobId&#34;: 2, &#34;SubContractorID&#34;: 2, &#34;DisciplineID&#34;: 1, &#34;BatchIssueNameID&#34;: 1, &#34;WorkshopID&#34;: 1, &#34;OccupationID&#34;: 1, // 起始日期(包含) &#34;StartDate&#34;: &#34;2023-11-20&#34;, // 终止日期(不包含) &#34;EndDate&#34;: &#34;2023-12-30&#34;, &#34;page&#34;: 1, &#34;limit&#34;: 30 } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 170127548380000, &#34;JobId&#34;: 1, &#34;SubContractorID&#34;: 1, &#34;DisciplineID&#34;: 1, &#34;BatchIssueNameID&#34;: 1, &#34;WorkshopID&#34;: 1, &#34;OccupationID&#34;: 1, &#34;EntryDate&#34;: &#34;2023-11-29&#34;, &#34;Manpower&#34;: 1, &#34;WorkHours&#34;: 2.">
 
 
 
@@ -4689,6 +4689,58 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
+                    <a href="/time-sheet/7.del-time-sheet/" class="gdoc-nav__entry ">
+                        7.删除一（多）个 工时 信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/time-sheet/8.edit-time-sheet/" class="gdoc-nav__entry ">
+                        8.编辑 工时 信息
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+        
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
                     <a href="/time-sheet/9.get-time-sheet-page/" class="gdoc-nav__entry is-active">
                         9.分页获取 工时 信息
                     </a>
@@ -4877,6 +4929,62 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <th>描述</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td>Id</td>
+<td>number</td>
+<td>1</td>
+<td>工时ID</td>
+</tr>
+<tr>
+<td>JobId</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>SubContractorID</td>
+<td>number</td>
+<td>1</td>
+<td>分包商ID</td>
+</tr>
+<tr>
+<td>DisciplineID</td>
+<td>number</td>
+<td>1</td>
+<td>专业ID</td>
+</tr>
+<tr>
+<td>BatchIssueNameID</td>
+<td>number</td>
+<td>1</td>
+<td>中队(工厂/车间字典)ID</td>
+</tr>
+<tr>
+<td>WorkshopID</td>
+<td>number</td>
+<td>1</td>
+<td>项目ID</td>
+</tr>
+<tr>
+<td>OccupationID</td>
+<td>number</td>
+<td>1</td>
+<td>工种ID</td>
+</tr>
+<tr>
+<td>StartDate</td>
+<td>日期</td>
+<td>2023-11-20</td>
+<td>起始日期(包含)</td>
+</tr>
+<tr>
+<td>EndDate</td>
+<td>日期</td>
+<td>2023-12-20</td>
+<td>终止日期(不包含)</td>
+</tr>
+</tbody>
 </table> </div>
 
     </div>
@@ -4889,6 +4997,17 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>body：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;Id&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;JobId&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;SubContractorID&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">     <span class="nt">&#34;DisciplineID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;BatchIssueNameID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;WorkshopID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;OccupationID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 起始日期(包含)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;StartDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-11-20&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 终止日期(不包含)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;EndDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2023-12-30&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;page&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">30</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>

@@ -14,16 +14,16 @@
 
 
 
-    <meta name="description" content="更新日期: 2021-11-05
-基本参数url : https://{domain}:{port}/api/company/del-companies http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number[] [1,2] 公司id数组 样例body：
-{ &#34;Ids&#34;: [ 143042941580001, 143042904770001 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功&#34;, &#34;english_msg&#34;: &#34;Delete success&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败&#34;, &#34;english_msg&#34;: &#34;Delete failed&#34; } 服务器端返回客户端数据中的通用参数参数： status
+    <meta name="description" content="更新日期: 2023-11-28
+基本参数url : https://{domain}:{port}/api/time-sheet/del-time-sheet http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Ids number[] [1,2] 工时id数组 样例body：
+{ &#34;Ids&#34;: [ 143042941580001, 143084106780001 ] } 返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;删除成功。&#34;, &#34;english_msg&#34;: &#34;Success&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;删除失败。&#34;, &#34;english_msg&#34;: &#34;Failed&#34; } 服务器端返回客户端数据中的通用参数参数： status
 类型：number
 补充说明： 仅供前端参考，前端逻辑不必完全按照此编码处理。
 编码 描述 解决方案 0 数据正确返回/处理,不需要界面提示 &mdash;- 1 未正确返回/处理数据,须界面提示,系统自动关闭提示 &mdash;- 2 未正确返回/处理数据,但不要界面提示 &mdash;- 3 数据正确返回/处理,但需要界面提示，系统自动关闭提示 &mdash; 4 未正确返回/处理数据,须界面提示，由用户自己关闭提示 &mdash;- 5 数据正确返回/处理,但需要界面提示，由用户自己关闭提示 &mdash;- 100 未正确返回/处理数据,是因数据重复。 &mdash;- 参数： msg">
 
 
 
-    <title>删除公司(们) | SMCS</title>
+    <title>7.删除一（多）个 工时 信息 | SMCS</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -896,7 +896,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-4c16a855" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-4c16a855" class="gdoc-nav__toggle" >
             <label for="navtree-4c16a855" class="flex justify-between">
             
             
@@ -989,7 +989,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-37ca7e1f" class="gdoc-nav__toggle" checked>
+            <input type="checkbox" id="navtree-37ca7e1f" class="gdoc-nav__toggle" >
             <label for="navtree-37ca7e1f" class="flex justify-between">
             
             
@@ -1073,7 +1073,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/%E8%AE%BE%E7%BD%AE/company/del-company/" class="gdoc-nav__entry is-active">
+                    <a href="/%E8%AE%BE%E7%BD%AE/company/del-company/" class="gdoc-nav__entry ">
                         删除公司(们)
                     </a>
                 </span>
@@ -4504,7 +4504,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
             <li>
             
-            <input type="checkbox" id="navtree-6bc82dbc" class="gdoc-nav__toggle" >
+            <input type="checkbox" id="navtree-6bc82dbc" class="gdoc-nav__toggle" checked>
             <label for="navtree-6bc82dbc" class="flex justify-between">
             
             
@@ -4692,7 +4692,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             
             
                 <span class="flex">
-                    <a href="/time-sheet/7.del-time-sheet/" class="gdoc-nav__entry ">
+                    <a href="/time-sheet/7.del-time-sheet/" class="gdoc-nav__entry is-active">
                         7.删除一（多）个 工时 信息
                     </a>
                 </span>
@@ -4866,15 +4866,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         
     
     
-        
-        
-        
-        
-    
-    
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E8%AE%BE%E7%BD%AE/' href='/%E8%AE%BE%E7%BD%AE/'><span itemprop='name'>设置</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/%E8%AE%BE%E7%BD%AE/company/' href='/%E8%AE%BE%E7%BD%AE/company/'><span itemprop='name'>公司</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>删除公司(们)</span><meta itemprop='position' content='4' /></li>
-    
-
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>欢迎使用文档</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/time-sheet/' href='/time-sheet/'><span itemprop='name'>工时</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>7.删除一（多）个 工时 信息</span><meta itemprop='position' content='3' /></li>
     
 
     
@@ -4898,23 +4890,23 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 
 
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>删除公司(们)</h1>
-        <p><small>更新日期: 2021-11-05</small></p>
+        <h1>7.删除一（多）个 工时 信息</h1>
+        <p><small>更新日期: 2023-11-28</small></p>
 <div class="gdoc-page__anchorwrap">
     <h4 id="基本参数">
         基本参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/7.del-time-sheet/#基本参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 基本参数" href="#%e5%9f%ba%e6%9c%ac%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
 </div><ol>
-<li>url : https://{domain}:{port}/api/company/del-companies</li>
+<li>url : https://{domain}:{port}/api/time-sheet/del-time-sheet</li>
 <li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
         请求数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/7.del-time-sheet/#请求数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 请求数据" href="#%e8%af%b7%e6%b1%82%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4945,7 +4937,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <td>Ids</td>
 <td>number[]</td>
 <td>[1,2]</td>
-<td>公司id数组</td>
+<td>工时id数组</td>
 </tr>
 </tbody>
 </table> </div>
@@ -4962,7 +4954,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;Ids&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="mi">143042941580001</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="mi">143042904770001</span>
+</span></span><span class="line"><span class="cl">        <span class="mi">143084106780001</span>
 </span></span><span class="line"><span class="cl">    <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
@@ -4973,7 +4965,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="返回数据">
         返回数据
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/7.del-time-sheet/#返回数据" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 返回数据" href="#%e8%bf%94%e5%9b%9e%e6%95%b0%e6%8d%ae">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
@@ -4991,8 +4983,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Delete success&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除成功。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Success&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -5005,8 +4997,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Delete failed&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;删除失败。&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Failed&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
@@ -5016,7 +5008,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <div class="gdoc-page__anchorwrap">
     <h4 id="服务器端返回客户端数据中的通用参数">
         服务器端返回客户端数据中的通用参数
-        <a data-clipboard-text="https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
+        <a data-clipboard-text="https://smcsdocs.zhsit.cn/time-sheet/7.del-time-sheet/#服务器端返回客户端数据中的通用参数" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 服务器端返回客户端数据中的通用参数" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%bf%94%e5%9b%9e%e5%ae%a2%e6%88%b7%e7%ab%af%e6%95%b0%e6%8d%ae%e4%b8%ad%e7%9a%84%e9%80%9a%e7%94%a8%e5%8f%82%e6%95%b0">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h4>
