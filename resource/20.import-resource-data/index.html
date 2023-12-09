@@ -15,14 +15,9 @@
 
 
     <meta name="description" content="更新日期: 2023-12-07
-基本参数url : https://{domain}:{port}/api/resource/import-resource-data http method : GET 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 file File Excel文件 文件 样例url：
+基本参数url : https://{domain}:{port}/api/resource/import-resource-data http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 file File Excel文件 文件 样例url：
 https://{domain}:{port}/api/download/download-resource-tpl/cn
-返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;导入成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;导入数据失败&#34;, &#34;english_msg&#34;: &#34;Import data failed.&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： search
-类型： string
-可为空： 是
-补充说明：
-编码 类型 描述 解决方案 search string 查询条件 xxxx 参数： page
-类型：number">
+返回数据成功{ &#34;status&#34;: 3, &#34;msg&#34;: &#34;导入成功。&#34;, &#34;english_msg&#34;: &#34;Success.&#34; } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;导入数据失败&#34;, &#34;english_msg&#34;: &#34;Import data failed.&#34; } or { &#34;status&#34;: 1, &#34;msg&#34;: &#34;导入数据失败,从数据库中未查询到此资源类型 Crane&#34;, &#34;english_msg&#34;: &#34;Import data failed, Crane not found in the database&#34; } data 参数参数名称 类型 示例 描述 向服务器端发送数据中的通用参数参数： search">
 
 
 
@@ -4956,7 +4951,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
     </h4>
 </div><ol>
 <li>url : https://{domain}:{port}/api/resource/import-resource-data</li>
-<li>http method : GET</li>
+<li>http method : POST</li>
 </ol>
 <div class="gdoc-page__anchorwrap">
     <h4 id="请求数据">
@@ -5049,6 +5044,14 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入数据失败&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Import data failed.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">or</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;msg&#34;</span><span class="p">:</span> <span class="s2">&#34;导入数据失败,从数据库中未查询到此资源类型 Crane&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;english_msg&#34;</span><span class="p">:</span> <span class="s2">&#34;Import data failed, Crane not found in the database&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
