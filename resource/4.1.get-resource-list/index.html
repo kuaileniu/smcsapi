@@ -16,7 +16,7 @@
 
     <meta name="description" content="更新日期: 2023-11-23
 基本参数url : https://{domain}:{port}/api/resource/get-resource-list http method : POST 请求数据遵守鉴权机制 参数参数名称 类型 示例 描述 Id number 2 资源ID （若想根据id查询单条信息，可传入此值，则最多返回一条数据） ResourceCode string DC01 资源code(此字段为模糊查询) ResourceSpec string 50T吊03 旺海 规格 (此字段为模糊查询) ResourceStatus number 1 设备状态：1正常，2维修 InventoryStatus number 1 库存状态:1已归还，2已借出 Enable boolean true 启用状态true/false 样例body：
-{ &#34;Id&#34;: 170075445480002, &#34;ResourceCode&#34;: &#34;D&#34;, &#34;ResourceSpec&#34;: &#34;格&#34;, &#34;InventoryStatus&#34;: 1, &#34;ResourceStatus&#34;: 1, &#34;Enable&#34;:true } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 170075445480002, &#34;ResourceCode&#34;: &#34;DC01&#34;, &#34;ResourceTypeID&#34;: 1, &#34;ResourceSpec&#34;: &#34;规格&#34;, &#34;LiftingWeight&#34;: 50, &#34;DutyParameter&#34;: &#34;Duty Parameter&#34;, &#34;ResourceStatus&#34;: 1, &#34;InventoryStatus&#34;: 1, &#34;WorkLocationID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Enable&#34;: true, &#34;Comment&#34;: &#34;bei备注&#34;, &#34;CreateTime&#34;: &#34;2023-11-23 23:47:34&#34;, &#34;ModifyTime&#34;: &#34;2023-11-23 23:51:39&#34;, &#34;CreatedBy&#34;: &#34;15652963646&#34;, &#34;WorkLocationChineseName&#34;: &#34;中文位置&#34;, &#34;WorkLocationEnglishName&#34;: &#34;英文位置&#34;, &#34;ResourceTypeChineseName&#34;: &#34;中文资源类型&#34;, &#34;ResourceTypeEnglishName&#34;: &#34;英文资源类型&#34; } ], &#34;count&#34;: 1 } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be empty&#34; } data 参数参数名称 类型 示例 描述 Id number 2 资源ID ResourceCode string DC01 资源code ResourceTypeID number 1 资源类型ID ResourceSpec string 50T吊03 旺海 规格 LiftingWeight float 1.">
+{ &#34;Id&#34;: 170075445480002, &#34;ResourceCode&#34;: &#34;D&#34;, &#34;ResourceSpec&#34;: &#34;格&#34;, &#34;InventoryStatus&#34;: 1, &#34;ResourceStatus&#34;: 1, &#34;Enable&#34;:true } 返回数据成功{ &#34;status&#34;: 0, &#34;data&#34;: [ { &#34;Id&#34;: 170075445480002, &#34;ResourceCode&#34;: &#34;DC01&#34;, &#34;ResourceTypeID&#34;: 1, &#34;ResourceSpec&#34;: &#34;规格&#34;, &#34;LiftingWeight&#34;: &#34;50KG&#34;, &#34;DutyParameter&#34;: &#34;Duty Parameter&#34;, &#34;ResourceStatus&#34;: 1, &#34;InventoryStatus&#34;: 1, &#34;WorkLocationID&#34;: 1, &#34;VehicleSource&#34;: 1, &#34;Enable&#34;: true, &#34;Comment&#34;: &#34;bei备注&#34;, &#34;CreateTime&#34;: &#34;2023-11-23 23:47:34&#34;, &#34;ModifyTime&#34;: &#34;2023-11-23 23:51:39&#34;, &#34;CreatedBy&#34;: &#34;15652963646&#34;, &#34;WorkLocationChineseName&#34;: &#34;中文位置&#34;, &#34;WorkLocationEnglishName&#34;: &#34;英文位置&#34;, &#34;ResourceTypeChineseName&#34;: &#34;中文资源类型&#34;, &#34;ResourceTypeEnglishName&#34;: &#34;英文资源类型&#34; } ], &#34;count&#34;: 1 } 失败{ &#34;status&#34;: 1, &#34;msg&#34;: &#34;Id不可为空&#34;, &#34;english_msg&#34;: &#34;Id can&#39;t be empty&#34; } data 参数参数名称 类型 示例 描述 Id number 2 资源ID ResourceCode string DC01 资源code ResourceTypeID number 1 资源类型ID ResourceSpec string 50T吊03 旺海 规格 LiftingWeight string 1.">
 
 
 
@@ -5070,7 +5070,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;ResourceCode&#34;</span><span class="p">:</span> <span class="s2">&#34;DC01&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;ResourceTypeID&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;ResourceSpec&#34;</span><span class="p">:</span> <span class="s2">&#34;规格&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;LiftingWeight&#34;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;LiftingWeight&#34;</span><span class="p">:</span> <span class="s2">&#34;50KG&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;DutyParameter&#34;</span><span class="p">:</span> <span class="s2">&#34;Duty Parameter&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;ResourceStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="nt">&#34;InventoryStatus&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -5151,7 +5151,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 </tr>
 <tr>
 <td>LiftingWeight</td>
-<td>float</td>
+<td>string</td>
 <td>1.3</td>
 <td>起重量</td>
 </tr>
