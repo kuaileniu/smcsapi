@@ -13,122 +13,458 @@
     <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/refresh-token/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/preface/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%89%B4%E6%9D%83%E6%9C%BA%E5%88%B6/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/set-jobs-tech-route/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/1-add-tech-route/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/1.add-jtbl-job/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/1.str-jtbl-batch-issue-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/file_upload_download/upload_pub/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/change-staff-for-job/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/attached-code/save-attached-code/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/save-job-plan/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/job_process/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-start/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/add-jtbl-client/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/add-jtbl-service/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service-type/add-jtbl-service-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-priority/add-jtbl-priority/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/add-company/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/add-subcontractor/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/add-jtbl-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/add-jtbl-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/add-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-jtbl-packing-list-str/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/add-jtbl-isometric/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/add-jtbl-pressure-guage/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/add-jtbl-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/add-jtbl-delivery-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/add-jtbl-employee/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/add-jtbl-wbs/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/add-jtbl-work-package/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/add-jtbl-workshop/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/add-jtbl-batch-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/add-jtbl-report-grouping/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/add-jtbl-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/add-jtbl-assembly-items/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/add-jtbl-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/add-jtbl-batch-issue-name/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/add-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/add-jtbl-spool/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/add-jtbl-spool-material/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/add-jtbl-line/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/add-jtbl-pipe-spec/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-component/add-jtbl-component/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/add-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/add-jtbl-plant-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-ht-reports/add-jtbl-ht-reports/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/add-department/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/add-job-task/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/get-job-task-list/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/add-job-task-assignee/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/add-jtbl-sow/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/get-staff-page-have-this-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/get-role-permission-tree/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-permission/my-menu-tree/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/get_jtbl_progress_weightings/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/2-del-tech-route/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/edit-process-in-job/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/2.del-jtbl-job/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/2.str-jtbl-work-package-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/change-job-for-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/change-permission-for-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/del-jtbl-client/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/del-jtbl-service/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service-type/del-jtbl-service-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-priority/del-jtbl-priority/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/del-subcontractor/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/del-job-task-assignee/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/del-jtbl-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/del-jtbl-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/del-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-jtbl-packing-list-str/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/del-jtbl-isometric/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/del-jtbl-pressure-guage/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/del-jtbl-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/del-jtbl-delivery-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/del-jtbl-employee/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/del-jtbl-wbs/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/del-jtbl-work-package/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/del-jtbl-workshop/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/del-jtbl-batch-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/del-jtbl-report-grouping/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/del-jtbl-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/del-jtbl-assembly-items/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/del-jtbl-batch-issue/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/del-jtbl-batch-issue-name/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/del-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/del-jtbl-spool/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/del-jtbl-spool-material/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/del-jtbl-line/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/del-jtbl-pipe-spec/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-component/del-jtbl-component/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/del-jtbl-plant-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-ht-reports/del-jtbl-ht-reports/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/del-jtbl-sow/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-end/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/get-staff-page-not-have-this-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/file_upload_download/down_pub/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/get-company-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/get-job-plan/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-permission/my-permission-tree/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/get-role-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/get-department-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/attached-code/get-attached-code/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/get-process-by-job-and-type/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/3-edit-tech-route/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/3.str-jtbl-area-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/3.edit-jtbl-job/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/change-role-for-permission/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/add-staff-for-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-have-this-job/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/jtbl-work-time-inspected/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/edit-jtbl-client/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/edit-jtbl-service/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service-type/edit-jtbl-service-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-priority/edit-jtbl-priority/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/edit-subcontractor/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/edit-jtbl-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/edit-jtbl-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/edit-jtbl-packing-list-raw-mt/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/edit-jtbl-packing-list-str/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/edit-jtbl-isometric/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/edit-jtbl-pressure-guage/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/edit-jtbl-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/edit-jtbl-delivery-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/edit-jtbl-employee/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/edit-jtbl-wbs/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/edit-jtbl-work-package/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/edit-jtbl-workshop/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/edit-jtbl-batch-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/edit-jtbl-report-grouping/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/edit-jtbl-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/edit-jtbl-assembly-items/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/edit-jtbl-batch-issue-name/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/edit-jtbl-batch-issue/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/edit-staffs/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/edit-jtbl-spool-material/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/edit-jtbl-spool/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/edit-jtbl-line/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/edit-jtbl-pipe-spec/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-component/edit-jtbl-component/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/edit-jtbl-plant-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-ht-reports/edit-jtbl-ht-reports/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/edit-jtbl-sow/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/1.1.get-discipline-list/</loc>
-    <lastmod>2023-10-29T20:10:01+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/4-get-tech-route-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/4.str-jtbl-wbs-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/4.get-jtbl-job-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/add-role-for-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-staff-page-not-have-this-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-assembly-items-page-have-this-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-packing-list-str-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/get-jtbl-client-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/get-jtbl-service-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service-type/get-jtbl-service-type-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-priority/get-jtbl-priority-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/get-subcontractor-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/get-jtbl-area-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/get-jtbl-packing-list-raw-mt-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/get-jtbl-isometric-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/get-jtbl-pressure-guage-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-jtbl-delivery-docket-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/get-jtbl-delivery-group-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/get-jtbl-employee-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/get-jtbl-wbs-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/get-jtbl-work-package-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/get-jtbl-workshop-page/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/get-jtbl-batch-group-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/get-jtbl-report-grouping-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/get-jtbl-assembly-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-batch-issue-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue_name/get-jtbl-batch-issue-name-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/get-jtbl-spool-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/get-jtbl-spool-material-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/get-jtbl-line-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/get-jtbl-pipe-spec-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-component/get-jtbl-component-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/get-jtbl-plant-area-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/plant-area-type/get-plant-area-type-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-ht-reports/get-jtbl-ht-reports-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/get-jtbl-sow-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/del-company/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/del-jtbl-work-package/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/del-role/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/del-department/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/get-staff-by-id/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/add_or_edit_jtbl_progress_weightings/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/get-job-process-list/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/1.2.get-discipline-completion/</loc>
-    <lastmod>2023-11-09T20:08:30+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/5-get-process-in-tech-route/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/5.str-jtbl-priority-report/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/5.get-subcontractor-list/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/5.get-jtbl-job-list/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-staff-for-role/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-have-this-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/my-job-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-jtbl-assembly-items-page-not-have-this-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/del_jtbl_progress_weightings/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/get-jtbl-package-no-list-by-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/get-package-str-by-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/edit-company/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/edit-jtbl-work-time/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/edit-role/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/edit-department/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-type/get-job-type-list/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/get-staff-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/get-my-employee-info/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/6-get-process-exclude-tech-route/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/6.str-jtbl-batch-group-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/add-assembly-items-for-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/del-role-for-staff/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-jtbl-assembly-page-not-have-this-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/get-job-task-assignee-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/dict/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-my-jobs-for-set-show/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/my-base-info/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/7-add-process-for-tech-route/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/7.str-jtbl-delivery-group-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/download-staff-io-tpl/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/del-assembly-items-for-package-no/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/add-assembly-for-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/set-my-jobs-show/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/company/</loc>
   </url><url>
@@ -138,35 +474,173 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/8-del-process-from-tech-route_bak20221022/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/8.str-subcontractor-report/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/del-assembly-for-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff/import-staff/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/get-package-detail-struct-by-package-no-id/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/get-my-job-process-for-set-show/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/department/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/9-get-tech-route-list-by-job-type/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/9.str-jtbl-workshop-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/set-my-job-process-show/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/attached-code/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/get-struct-by-batch-issue/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E9%A1%B9%E7%9B%AE%E4%BB%BB%E5%8A%A1/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/10-edit-process-in-route/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/10.str-jtbl-employee-report/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/edit-batch-issue-date-by-assembly/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-role/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/%E8%B4%A3%E4%BB%BB%E4%BA%BA/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/11-edit-process-in-route-batch/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/11.today-production-data/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/12.current-month-production-data/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/13.current-year-production-data/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/14.jobs-completed-progress/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/role-permission/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/15.job-process-progress/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%9D%83%E9%99%90/staff-permission/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-client/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93-%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/16.job-process-by-batch-issue/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-delivery-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/17.job-process-by-work-package/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/staff-job/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/%E8%BF%9B%E5%BA%A6/18.month-production-data/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/subcontractor/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-workshop/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/plant-area-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-plant-area/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-priority/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-batch-group/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-service/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-report-grouping/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-isometric/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl_progress_weightings/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-pressure-guage/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E8%B4%A8%E9%87%8F/jtbl-ht-reports/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/file_upload_download/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/jtbl-sow/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-wbs/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-process/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-type/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE/job-tech-route/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-component/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E6%8A%A5%E8%A1%A8/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E5%85%AC%E7%94%A8/get-id/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E9%A1%B9%E7%9B%AE%E8%AE%A1%E5%88%92/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/download-jtbl-assembly-tpl-cn/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/download-jtbl-assembly-tpl-en/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-package-no/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/import-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/edit-jtbl-assembly-batch/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/edit-jtbl-assembly-items-batch/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-raw-mt/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-delivery-docket/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%89%A9%E6%B5%81/jtbl-packing-list-str/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/</loc>
   </url><url>
@@ -174,232 +648,246 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-one-jtbl-assembly-item/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-time/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/tech-route/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-attach-by-assembly/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-jtbl-assembly-items-page-by-trunkno/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/get-trunkno-page-in-assembly-items-by-jobid/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly-items/split-jtbl-assembly-items-by-server/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl-work-package/get-jtbl-work-package-base-info-page-by-jobid/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/jtbl_batch_issue/12.get-batch-issue-base-info-page-by-jobid/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%BB%93%E6%9E%84%E6%95%B0%E6%8D%AE/jtbl-assembly/8.get-assembly-base-info-page/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/1.add-resource/</loc>
-    <lastmod>2023-12-11T19:44:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/2.del-resource/</loc>
-    <lastmod>2023-11-24T00:13:33+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/3.edit-resource/</loc>
-    <lastmod>2023-12-11T19:44:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/4.get-resource-page/</loc>
-    <lastmod>2023-12-11T19:44:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/4.1.get-resource-list/</loc>
-    <lastmod>2023-12-11T19:44:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/4.2.get-resource-by-id/</loc>
-    <lastmod>2023-12-11T19:44:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/5.add-resource-elements/</loc>
-    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/6.del-resource-elements/</loc>
-    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/7.edit-resource-elements/</loc>
-    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/8.get-resource-elements-page/</loc>
-    <lastmod>2023-11-26T22:35:04+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/8.1.get-resource-elements-list/</loc>
-    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/9.add-car-request/</loc>
-    <lastmod>2023-11-27T22:32:39+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/10.del-car-request/</loc>
-    <lastmod>2023-11-26T21:59:36+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/11.edit-car-request/</loc>
-    <lastmod>2023-11-28T20:31:15+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/11.1.batch-edit-car-request/</loc>
-    <lastmod>2023-11-28T20:31:15+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/12.get-car-request-page/</loc>
-    <lastmod>2023-12-04T22:08:42+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/13.get-car-request-list/</loc>
-    <lastmod>2023-11-27T21:00:31+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/14.add-scaffold-request/</loc>
-    <lastmod>2023-11-28T19:12:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/15.del-scaffold-request/</loc>
-    <lastmod>2023-11-27T23:45:38+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/16.edit-scaffold-request/</loc>
-    <lastmod>2023-11-28T20:31:15+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/16.1.batch-edit-scaffold-request/</loc>
-    <lastmod>2023-11-28T20:31:15+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/17.get-scaffold-request-page/</loc>
-    <lastmod>2023-11-28T19:12:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/18.get-scaffold-request-list/</loc>
-    <lastmod>2023-11-28T19:12:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/1.add-workshop/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/1.add-occupation/</loc>
-    <lastmod>2023-11-28T21:36:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/2.del-workshop/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/2.del-occupation/</loc>
-    <lastmod>2023-11-28T21:36:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/3.edit-workshop/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/3.edit-occupation/</loc>
-    <lastmod>2023-11-28T21:36:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/4.get-workshop-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/4.get-occupation-page/</loc>
-    <lastmod>2023-11-28T21:36:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E8%AE%BE%E7%BD%AE/workshop/5.get-workshop-list/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/5.get-occupation-list/</loc>
-    <lastmod>2023-11-28T22:04:19+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/6.add-time-sheet/</loc>
-    <lastmod>2023-11-30T01:04:15+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/7.del-time-sheet/</loc>
-    <lastmod>2023-11-30T21:39:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/8.edit-time-sheet/</loc>
-    <lastmod>2023-11-30T22:02:21+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/9.get-time-sheet-page/</loc>
-    <lastmod>2023-11-30T23:25:24+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/19.download-resource-tpl/</loc>
-    <lastmod>2023-12-09T16:29:54+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/20.import-resource-data/</loc>
-    <lastmod>2023-12-09T21:38:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/2.add-part1-floor/</loc>
-    <lastmod>2023-11-09T20:56:52+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/3.del-part1-floor/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/4.edit-part1-floor/</loc>
-    <lastmod>2023-11-09T20:56:52+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/5.get-part1-floor-page/</loc>
-    <lastmod>2023-11-09T20:56:52+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/6.add-part1-work-time/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/7.del-part1-work-time/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/8.edit-part1-work-time/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/9.get-part1-work-time-page/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/11.add-part2-floor/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/12.del-part2-floor/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/13.edit-part2-floor/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/14.get-part2-floor-page/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/15.add-part2-work-time/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/16.del-part2-work-time/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/17.edit-part2-work-time/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/18.get-part2-work-time-page/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/19.get-part1-floor/</loc>
-    <lastmod>2023-11-09T21:00:21+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/20.get-part1-work-time/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/21.get-part2-floor/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/22.get-part2-work-time/</loc>
-    <lastmod>2023-11-14T20:44:14+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/23.import-part-floor-data/</loc>
-    <lastmod>2023-11-13T21:48:05+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/job-process/24.download-discipline-tpl/</loc>
-    <lastmod>2023-11-13T21:33:18+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/resource/</loc>
-    <lastmod>2023-11-23T23:38:22+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/time-sheet/</loc>
-    <lastmod>2023-11-28T21:36:49+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_2/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/i18n/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include-headers/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include-page/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include_request_body_common/</loc>
-    <lastmod>2023-11-24T22:32:09+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/_includes/include_response_body_common/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/tags/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/posts/news_1/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/tags/%E9%89%B4%E6%9D%83/</loc>
-    <lastmod>2023-10-06T22:11:56+08:00</lastmod>
+    <lastmod>2024-02-24T10:37:53+08:00</lastmod>
   </url>
 </urlset>
