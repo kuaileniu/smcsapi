@@ -96,6 +96,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/add-jtbl-spool-material/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/add-jtbl-spool-material/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/add-jtbl-line/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-pipe-spec/add-jtbl-pipe-spec/</loc>
@@ -191,6 +193,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/del-jtbl-spool/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/del-jtbl-spool-material/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/del-jtbl-spool-material/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/del-jtbl-line/</loc>
   </url><url>
@@ -288,6 +292,8 @@
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/edit-jtbl-spool-material/</loc>
   </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/edit-jtbl-spool-material/</loc>
+  </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/edit-jtbl-spool/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/edit-jtbl-line/</loc>
@@ -366,6 +372,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-spool/get-jtbl-spool-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/get-jtbl-spool-material-page/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/get-jtbl-spool-material-page/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/jtbl-line/get-jtbl-line-page/</loc>
   </url><url>
@@ -615,6 +623,8 @@
     <loc>https://smcsdocs.zhsit.cn/%E7%94%9F%E4%BA%A7/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/</loc>
+  </url><url>
+    <loc>https://smcsdocs.zhsit.cn/%E7%AE%A1%E9%81%93%E6%95%B0%E6%8D%AE/%E7%AE%A1%E6%AE%B5%E7%89%A9%E6%96%99/</loc>
   </url><url>
     <loc>https://smcsdocs.zhsit.cn/%E5%91%98%E5%B7%A5/</loc>
   </url><url>
